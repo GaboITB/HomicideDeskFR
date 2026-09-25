@@ -1,0 +1,583 @@
+{
+ "title": "#hdfr:22:462034094:2d9869d836a57a1dabb0",
+ "tagline": "Un dimanche soir. Des bureaux déserts. Un coffre fermé à clé, qu'il est mort en protégeant.",
+ "description": "Marcus Reeves, 41 ans, développeur principal chez Vanta Systems, retrouvé mort dans la salle des serveurs B. Un coup violent à la tête. Aucune effraction. Parmi ses affaires, un coffre en acier fermé à clé. Et pas la moindre clé dans tout l'immeuble.",
+ "captainBriefing": "Inspecteur, on a un corps chez Vanta Systems, à Eastdock. Marcus Reeves, 41 ans, développeur principal. L'équipe de nettoyage l'a trouvé dans la salle des serveurs B à 21h47. Un seul coup à la tête, aucune effraction : celui qui a fait ça avait le droit d'être là. Les techniciens ont saisi un coffre fermé à clé dans son casier. Pas de clé sur lui, pas de clé dans l'immeuble. Le conseil d'administration se réunit mardi et la boîte a des amis dans la presse. Faites vite, faites bien.",
+ "suspects/sophie-ward/role": "Directrice technique, 38 ans",
+ "witnesses/witness-cleaner/openingStatement": {
+  "_hdfr": [
+   "#hdfr:26:1138610683:30934bfa54d4feb22f78",
+   " Vingt-deux ans de nuits, et jamais je… pardon, excusez-moi. Asseyez-vous donc, demandez-moi ce que vous voulez. ",
+   "#hdfr:79:1050190373:cd8969dfec898f41dc72"
+  ]
+ },
+ "witnesses/witness-cleaner/clue/label": "Des talons dans l'escalier, vers 21h25",
+ "witnesses/witness-cleaner/clue/detail": "Vers 21h25, Grace a entendu des talons vifs et pressés descendre l'escalier, et entrevu un manteau sombre, bien coupé. En plein dans le créneau du meurtre.",
+ "files/file-E11/name": "Dossier fournisseur, fiche de contact de D. Kessler",
+ "files/root/name": "AFFAIRE N° 001 · Heures supplémentaires",
+ "files/folder-incident/name": "Rapports d'intervention",
+ "files/file-E2/name": "Relevé des badges d'accès",
+ "files/file-E5/name": "Salle des serveurs B · photo de scène",
+ "files/file-E8/name": "Le coffre de Marcus (SOUS SCELLÉS)",
+ "files/file-E3/name": "Le dernier message vocal de Marcus",
+ "files/file-E6/name": "Le relevé téléphonique de Marcus",
+ "files/file-E4/name": "#hdfr:36:1954064043:8638ace65fadb9a8feb2",
+ "files/folder-effects/name": "Effets personnels et objets récupérés",
+ "files/file-E7/name": "Clé de consigne n° M-1146 (À RÉCUPÉRER SUR LE TERRAIN)",
+ "files/file-E9/uvText": {
+  "_hdfr": [
+   "#hdfr:27:1711137896:b6a95884cf4b3ec27aab",
+   "\nSi cette page passe sous une lampe UV de la police, c'est que je\nn'ai pas vu lundi.\nLes copies de toutes les factures Kessler sont dans le coffre\nbancaire de ma sœur.\nNe laissez pas Ward s'approcher du serveur de la paie.\n",
+   "#hdfr:34:1425614783:cc1dd5b3a3509452ebd0"
+  ]
+ },
+ "evidence/va:E11/name": "Dossier fournisseur, fiche de contact de D. Kessler",
+ "evidence/va:E11/description": {
+  "_hdfr": [
+   "La fiche de contact du dossier fournisseur de Kessler, avec l'historique d'appels du service de la paie : quatorze mois d'appels de vérification vers le portable indiqué, tous tombés sur la même messagerie. ",
+   "#hdfr:42:625675846:f3e2dedcd8a408fda076"
+  ]
+ },
+ "evidence/va:E11/presentationMessage": "Voici le dossier fournisseur de votre prestataire, madame Ward. Un seul numéro de portable, et quatorze mois d'appels de vérification de la paie qui ont tous fini sur la même messagerie. Cent quarante et un mille dollars versés à un homme que personne n'a jamais eu au bout du fil.",
+ "evidence/va:E11/clue/detail": "Chaque appel de vérification vers le portable de D. Kessler est tombé sur la même messagerie, quatorze mois de suite. La police scientifique numérique peut identifier l'abonné : transmettez la fiche au labo.",
+ "evidence/va:E11/phoneRecords/0/note": "vérification nouveau fournisseur · messagerie",
+ "evidence/va:E11/phoneRecords/1/note": "contrôle trimestriel · messagerie",
+ "evidence/va:E11/phoneRecords/2/note": "contrôle trimestriel · messagerie",
+ "evidence/va:E11/phoneRecords/3/note": "relance fête du personnel · messagerie",
+ "evidence/va:E11/phoneRecords/4/note": "contrôle trimestriel · messagerie",
+ "evidence/va:E11/phoneRecords/5/note": "QUATRE tentatives, 19:02–19:31 · pas de réponse, aucun message",
+ "evidence/va:E11/forensicsReport": {
+  "_hdfr": [
+   "POLICE SCIENTIFIQUE NUMÉRIQUE · IDENTIFICATION D'ABONNÉ\nOBJET : portable indiqué pour le prestataire « D. Kessler »\n\nRÉPONSE DE L'OPÉRATEUR : carte SIM prépayée, activée le 9 janvier\n2023, trois jours avant la validation de la première feuille\nd'heures Kessler. ",
+   "#hdfr:46:1644643719:98420df1f16b9265e708",
+   "\n(règles antérieures à 2024).\n\nACTIVITÉ DE L'APPAREIL : la SIM n'a jamais passé un seul appel.\nElle ne se réveille que pour recevoir et, en quatorze mois, elle\nne s'est accrochée qu'à deux antennes : le siège de Vanta Systems, à\nEastdock, et une antenne résidentielle de Mayfair, le soir et le\nweek-end.\n\n",
+   "#hdfr:60:643467760:efcdb86ca4db9f3cb6e5",
+   "\nl'opérateur. ",
+   "#hdfr:54:708915194:8eeb3895f82f97a5d69c",
+   "\n\n",
+   "#hdfr:62:1232400803:61aff3cd05d87fd2e7b2",
+   "\ntoutes réglées avec la même carte bancaire personnelle.\n",
+   "#hdfr:26:106531705:03283ae4e6ca6b1d2cfa",
+   " WARD.\n\n",
+   "#hdfr:33:1228518970:fef2300b20964040bb33",
+   " Kessler » ne quitte jamais un\ntiroir. Derrière le numéro Kessler, il y a Sophie Ward."
+  ]
+ },
+ "evidence/va:E11/fileContent": {
+  "_hdfr": [
+   "#hdfr:46:616236373:9e58f5931d6a17671887",
+   "\n",
+   "#hdfr:36:175208844:156f95e612ef8d99d9e8",
+   " Kessler »), prestataire,\n",
+   "#hdfr:33:1006312094:4f53bc3969c3cce67b06",
+   "\n\nLe formulaire 7-B (nouveau fournisseur) n'indique qu'un seul moyen\nde contact : un numéro de portable. Pas d'adresse, seulement une\nboîte postale fermée en 2021. Aucune coordonnée bancaire sur le\nformulaire. Le journal d'appels joint est l'historique des\nvérifications faites par la paie sur ce numéro.\n\nNOTE DE LA POLICE DE RAVENPORT : transmettez cette fiche au labo.\nLa section numérique peut obtenir de l'opérateur, sur réquisition,\nl'identité de l'abonné."
+  ]
+ },
+ "evidence/va:E1/description": {
+  "_hdfr": [
+   "#hdfr:52:1662397746:92515b8a05efdc8f413f",
+   " Un seul coup violent à la tempe droite, porté avec un rail de baie en acier arraché de son support. Décès entre 21h00 et 21h45. Aucune effraction. Un coffre fermé à clé saisi dans son casier."
+  ]
+ },
+ "evidence/va:E1/presentationMessage": "Le rapport de scène est clair : Marcus est mort d'un seul coup de rail de baie, arraché d'un support à deux pas de sa chaise. Aucune effraction dans l'immeuble, aucune blessure de défense. Il connaissait la personne qui était dans cette pièce, et il n'en avait pas peur.",
+ "evidence/va:E1/clue/detail": "Rail pris dans la pièce même, aucune effraction, aucune blessure de défense. Décès entre 21h00 et 21h45.",
+ "evidence/va:E1/fileContent": {
+  "_hdfr": [
+   "#hdfr:40:1628487441:12f41f747cd27aaa26ef",
+   "\nRAPPORT DE SCÈNE · RÉF. : MC/2024/0317/001\n\nDATE : dimanche 17 mars 2024, 21:47\nLIEU : Vanta Systems, 14 Blackfriars Rd, Eastdock, Ravenport\nRÉDACTRICE : inspectrice Amanda Torres\n\nRÉSUMÉ :\nMarcus Reeves, 41 ans, développeur principal, retrouvé mort dans\nla salle des serveurs B, 4e étage. Un seul coup violent, région\ntemporale droite. Aucune trace d'effraction sur les accès.\n\n",
+   "#hdfr:25:1428781652:35451cc228b5c76dfe7d",
+   "\n- Arme probable : rail en acier manquant sur le support R-4, à deux\n  mètres de la victime. ",
+   "#hdfr:28:988010312:d89bee24b44511fba432",
+   "\n- Victime assise au terminal de diagnostic, frappée par le côté.\n",
+   "#hdfr:57:386575651:2d1e2d0b94cb93c58b9d",
+   "\n",
+   "#hdfr:57:1701282432:d02042160d51efe6526b",
+   " Contenu\n  inventorié, dont un COFFRE EN ACIER fermé à clé, env. 40 cm.\n  Aucune clé sur la victime, dans le casier ni ailleurs dans les\n  locaux.\n- Aucun signe de vol. Portefeuille, téléphone et montre en place.\n\n",
+   "#hdfr:29:822980761:9afe638767d03c471c5c",
+   "\nLe Dr K. Patel l'estime entre 21:00 et 21:45, dimanche 17 mars.\n\n",
+   "#hdfr:27:271878663:7970572051c0a28c4cf8"
+  ]
+ },
+ "evidence/va:E2/name": "Relevé des badges d'accès",
+ "evidence/va:E2/description": {
+  "_hdfr": [
+   "#hdfr:33:954137420:6f8283baa3ea1c6101d2",
+   " La sortie de Sophie Ward est enregistrée à 20h58, mais la ligne porte la mention CORRECTION MANUELLE, et les détecteurs de mouvement du quatrième ont continué à se déclencher jusqu'à 21h33."
+  ]
+ },
+ "evidence/va:E2/presentationMessage": "D'après le relevé des badges, vous êtes partie à 20h58, madame Ward. Sauf que cette ligne porte la mention « correction manuelle » : quelqu'un l'a modifiée depuis un terminal d'administration. Et les détecteurs de mouvement du quatrième ont continué à se déclencher jusqu'à 21h33. Un immeuble n'a pas de trous de mémoire. Les gens, si.",
+ "evidence/va:E2/clue/label": "La ligne de sortie a été modifiée",
+ "evidence/va:E2/clue/detail": "La sortie de Sophie à 20h58 porte la mention CORRECTION MANUELLE. Les détecteurs du 4e enregistrent du mouvement jusqu'à 21h33.",
+ "evidence/va:E2/spreadsheetRows/2/4": "vérifiée · détecteur de l'entrée",
+ "evidence/va:E2/spreadsheetRows/4/4": "vérifiée · détecteur de l'entrée",
+ "evidence/va:E2/spreadsheetRows/7/3": "#hdfr:25:1785971818:eb81e8de413a5c121b38",
+ "evidence/va:E2/spreadsheetRows/7/4": "poste de sécurité, rez-de-chaussée",
+ "evidence/va:E2/fileContent": {
+  "_hdfr": [
+   "#hdfr:41:616236373:294d729646f248d9e89f",
+   "\nDimanche 17 mars 2024\n\nNOM          |BADGE |ENTRÉE|SORTIE|INDICATEURS\n-------------|------|------|------|--------------------------------\nMarcus Reeves|MR-001|10:22 |-     |\nOmar Farooq  |OF-012|17:30 |20:47 |vérifiée, détecteur de l'entrée\nSophie Ward  |SW-003|18:50 |20:58 |[!] CORRECTION MANUELLE 21:44\nLisa Chen    |LC-001|09:15 |17:15 |vérifiée, détecteur de l'entrée\n\nDÉTECTEURS (4e ÉTAGE) : mouvement enregistré jusqu'à 21:33.\nNe correspond pas à la sortie SW-003 enregistrée.\n",
+   "#hdfr:68:833332430:c4d7286f4f867726d4d4",
+   "\ndu rez-de-chaussée."
+  ]
+ },
+ "evidence/va:E3/name": "Le dernier message vocal de Marcus",
+ "evidence/va:E3/description": "Un message vocal que Marcus a laissé à sa sœur le samedi soir, la veille de sa mort. Obtenu auprès de l'opérateur sur réquisition.",
+ "evidence/va:E3/presentationMessage": "Marcus a laissé un message à sa sœur la veille de sa mort. Il dit que s'il lui arrive quelque chose, c'est à cause des factures, que la preuve est dans son coffre et que la clé est « là où on prenait le train pour le nord ». Il se savait en danger.",
+ "evidence/va:E3/clue/label": "La clé est à la gare de Northloop",
+ "evidence/va:E3/clue/detail": "« Là où on prenait le train pour le nord » : la gare de Northloop. La clé du coffre y est cachée.",
+ "evidence/va:E3/audioTranscript": {
+  "_hdfr": [
+   "RELEVÉ OPÉRATEUR · TRANSCRIPTION DU MESSAGE VOCAL\n",
+   "#hdfr:43:1935101664:4cdfcccfd4c8c1c7b2af",
+   "\nSamedi 16 mars 2024, 22:19 · durée 0:29\n\n« Dana, c'est moi. Ne me rappelle pas ce soir. Écoute… écoute-moi,\nc'est tout. ",
+   "#hdfr:50:955059102:ab86d0492383f0e8c2bc",
+   "\ncause des factures, au boulot. Je suis tombé sur un truc que je\nn'aurais jamais dû voir, et demain… demain, je vais le dire à la\n",
+   "#hdfr:50:996554866:52bfd5eafa7e175fbadb",
+   "\n\nLa preuve est dans mon coffre. Tu sais lequel.\nLa clé, elle est là où on prenait le train pour le nord. À notre\nancien nom.\n\nC'est sûrement rien… Je me fais des films…\nJe t'aime… Dis à maman que je l'appelle dimanche. »\n\n[FIN DU MESSAGE]"
+  ]
+ },
+ "evidence/va:E3/fileContent": {
+  "_hdfr": [
+   "#hdfr:47:1909838276:e892019531fa5a80978b",
+   "\n",
+   "#hdfr:43:1935101664:4cdfcccfd4c8c1c7b2af",
+   "\nSamedi 16 mars 2024, 22:19\n\n",
+   "#hdfr:48:319065333:4e32e184a443e3a88df5",
+   "\nLa transcription se débloque après l'écoute."
+  ]
+ },
+ "evidence/va:E4/name": "#hdfr:36:1954064043:8638ace65fadb9a8feb2",
+ "evidence/va:E4/description": {
+  "_hdfr": [
+   "L'export de facturation que Marcus avait demandé vendredi, livré par les Archives. Le prestataire « D. ",
+   "#hdfr:97:136010958:2870e85997ea41d74776",
+   " Ward. Personne chez Vanta ne l'a jamais vu."
+  ]
+ },
+ "evidence/va:E4/presentationMessage": {
+  "_hdfr": [
+   "#hdfr:61:27288605:99c0c5f41fafd732ea88",
+   " Un prestataire du nom de D. Kessler a facturé cent quarante et un mille dollars d'heures supplémentaires en quatorze mois. Toutes les feuilles d'heures, sans exception, validées par la même signature : S. Ward. Et personne dans cet immeuble n'a jamais vu Kessler."
+  ]
+ },
+ "evidence/va:E4/clue/detail": "« D. Kessler » : 141 300 $ en 14 mois, chaque feuille validée par S. Ward. Personne ne l'a jamais vu.",
+ "evidence/va:E4/spreadsheetRows/10/4": "S. Ward, 14 feuilles sur 14",
+ "evidence/va:E4/fileContent": {
+  "_hdfr": [
+   "VANTA SYSTEMS · EXPORT DE FACTURATION DES PRESTATAIRES\nDemandé par : M. ",
+   "#hdfr:29:632002849:64ba7126177a09dd1570",
+   "\nLivré par le service des archives\n\nPRESTATAIRE « D. KESSLER » · HEURES SUP, JANV. 2023 – FÉVR. 2024\n",
+   "#hdfr:53:1178606424:4ea06dad2232a11b998b",
+   "\nValidé sur chaque feuille par : S. Ward.\n\n",
+   "#hdfr:66:1681473166:537227f0d54aa815596d",
+   "\n",
+   "#hdfr:66:673770873:f3a02316724704648912"
+  ]
+ },
+ "evidence/va:E5/name": "Salle des serveurs B · photo de scène",
+ "evidence/va:E5/description": "Une image de la caméra CCTV1, horodatée 21:47:12, extraite du système de l'immeuble lors de la passation de la scène. On y voit le support R-4 sans son rail. L'examen aux UV révèle une trace d'essuyage à hauteur d'homme.",
+ "evidence/va:E5/presentationMessage": "Regardez l'image de la caméra : 21:47:12, l'instant où Grace l'a trouvé. Le support de rail est vide : l'arme a été prise sur place, dans la salle. Et sous UV, une trace d'essuyage sur la baie, à hauteur d'homme : quelqu'un dans les un mètre soixante-dix a effacé ses traces.",
+ "evidence/va:E5/clue/label": "Agresseur d'environ 1,68 m à 1,78 m",
+ "evidence/va:E5/clue/detail": "Trace d'essuyage aux UV à hauteur d'homme, entre 168 et 178 cm environ. Quelqu'un a effacé ses traces, et a laissé sa taille en signature.",
+ "evidence/va:E5/hotspotLabels/0": "Support R-4 de la baie : le rail de montage a disparu. L'arme n'est pas venue de l'extérieur, elle a été prise ici, dans la salle.",
+ "evidence/va:E5/hotspotLabels/1": "Une tige en aluminium au sol, près de la porte : le manche télescopique d'une serpillière. Le chariot de Grace, lui, est resté dans le couloir, donc elle l'avait en main en entrant. Ce n'est pas le rail de la baie, qui n'a jamais été retrouvé sur place.",
+ "evidence/va:E5/hotspotLabels/2": "La seule porte d'accès de ce côté de la salle : ouverture par badge, aucune trace d'effraction. Celui qui est entré avait ses accès, il était ici chez lui.",
+ "evidence/va:E5/hotspotLabels/3": "Le chariot technique et le siège à roulettes du poste de diagnostic, là où Marcus était assis. Le chariot de ménage de Grace, lui, est resté dans le couloir : à 21:47, sa tournée n'était pas encore passée par cette salle.",
+ "evidence/va:E5/hotspotLabels/4": "UV : une trace d'essuyage sur l'arête de la baie, entre 168 et 178 cm du sol environ. Quelqu'un a effacé l'endroit où sa main s'était posée.",
+ "evidence/va:E5/forensicsReport": {
+  "_hdfr": [
+   "ANALYSE D'IMAGE · SALLE DES SERVEURS B (PHT-04)\n\nCOUCHE UV : la trace d'essuyage sur l'arête de la baie R-4 a été\nfaite avec un chiffon imbibé de solvant, en trois passages qui se\nchevauchent, entre 168 et 178 cm de hauteur. Le sens des passages\nindique une personne droitière, face à la baie.\n\n",
+   "#hdfr:65:1398355040:9e39143f2e91ac3d7ad7",
+   "\n158 cm. Un seul des trois suspects tombe dans cette fourchette.\n\n",
+   "#hdfr:67:729424463:146dfe23b965379aab60",
+   "\n(le transfert de fibres repose SUR la pellicule de cire de la\nsociété de nettoyage)."
+  ]
+ },
+ "evidence/va:E5/fileContent": {
+  "_hdfr": [
+   "PHOTOGRAPHIE DE POLICE SCIENTIFIQUE · SALLE DES SERVEURS B\nRÉF. : MC/2024/0317/PHT-04\n\nImage CCTV1, 21:47:12, récupérée sur l'enregistreur de l'immeuble\nlors de la passation de la scène.\n",
+   "#hdfr:37:886961994:5a4ed6c8f152a89deba1",
+   "\nNOTE DU LABO : traces de solvant présentes. Un passage aux\nultraviolets est recommandé (outil LAMPE UV, clic droit sur le\nbureau)."
+  ]
+ },
+ "evidence/va:E6/phoneRecords/0/note": "sœur · appel hebdomadaire",
+ "evidence/va:E6/phoneRecords/6/note": "refusé",
+ "evidence/va:E6/phoneRecords/7/note": "#hdfr:22:282622226:5d31a5324273caa81c5d",
+ "evidence/va:E6/name": "Le relevé téléphonique de Marcus",
+ "evidence/va:E6/description": "Le journal des appels du dimanche, relevé sur la ligne de la victime. Six appels d'O. Farooq, de plus en plus courts et rapprochés, entre 19h50 et 20h40. Tous avant le créneau du meurtre.",
+ "evidence/va:E6/presentationMessage": "Le téléphone de Marcus montre six appels d'Omar Farooq dimanche soir, de 19h50 à 20h40, chacun plus court et plus furieux que le précédent. Vous voulez bien m'expliquer ce que c'était ?",
+ "evidence/va:E6/clue/label": "Six appels d'Omar, tous avant 20h47",
+ "evidence/va:E6/clue/detail": "Les appels furieux d'Omar s'arrêtent à 20h40 et sa sortie vérifiée est à 20h47. Les appels cessent AVANT le début du créneau du meurtre.",
+ "evidence/va:E6/fileContent": {
+  "_hdfr": [
+   "RELEVÉ OPÉRATEUR · JOURNAL DES APPELS\n",
+   "#hdfr:45:365839656:625a1767f16fcbad0dd8",
+   "\n\nSix appels entrants d'O. Farooq, 19:50–20:40, de plus en plus\ncourts.\nUn appel entrant de S. Ward à 21:02, le dernier auquel la victime a\nrépondu.\n",
+   "#hdfr:41:1461654583:db0273e04ba2e24daa97"
+  ]
+ },
+ "evidence/va:E7/description": "Une petite clé en laiton accrochée à une étiquette de consigne, rapportée par une patrouille depuis la gare de Northloop. Elle n'ouvre qu'une seule serrure parmi les pièces saisies.",
+ "evidence/va:E7/presentationMessage": "Une patrouille a récupéré une clé en laiton à la consigne de la gare de Northloop, déposée sous un ancien nom de sa famille et payée trois mois d'avance. Elle ouvre le coffre trouvé dans le casier de Marcus.",
+ "evidence/va:E7/clue/label": "Clé récupérée, trois mois payés d'avance",
+ "evidence/va:E7/clue/detail": {
+  "_hdfr": [
+   "#hdfr:50:815761263:bc3154e36b2a66c7782b",
+   " Il ne voulait pas qu'on retrouve cette clé de sitôt."
+  ]
+ },
+ "evidence/va:E7/fieldHint": {
+  "_hdfr": [
+   "Le message de Marcus : « la clé, elle est là où on prenait le train pour le nord, à notre ancien nom. » Le terminus ferroviaire nord de la ville a une consigne. ",
+   "#hdfr:66:1041603557:b6b458827573e4b82364"
+  ]
+ },
+ "evidence/va:E7/fileContent": {
+  "_hdfr": [
+   "#hdfr:49:1628487441:58e63bd3351c242c98cb",
+   "\nOBJET RÉCUPÉRÉ · PIÈCE N° M-1146\n\nRÉCUPÉRÉ À : consigne de la gare de Northloop\n",
+   "#hdfr:30:1473277257:2850985c11f1d6f93e8c",
+   "\n",
+   "#hdfr:66:1548660318:df5ba5bf6d394b4fe8d0",
+   "\nmère de la victime)\n",
+   "#hdfr:51:177820197:28d5cad1ef74de893162",
+   "\n\n",
+   "#hdfr:47:1612186615:ff864a3f355386d06512",
+   " Correspond au profil\nde serrure du coffre en acier saisi dans le casier de la victime\n(pièce E8).\n\n",
+   "#hdfr:49:1706534605:521c3d944f7e6db128a4",
+   " Il a payé le\ntrimestre entier en liquide et m'a demandé deux fois si on ouvrait\nparfois les casiers nous-mêmes. »"
+  ]
+ },
+ "evidence/va:E8/name": "Le coffre de Marcus",
+ "evidence/va:E8/description": "Un coffre en acier cabossé, sorti du casier de la victime. Gros cadenas en laiton. Enregistré sous scellés : aucune clé trouvée sur place.",
+ "evidence/va:E8/presentationMessage": "Ce coffre sort du casier de Marcus, fermé, et il n'y a pas une clé dans tout l'immeuble. On ne verrouille pas une boîte pareille pour aller en cacher la clé à l'autre bout de la ville, sauf quand on a peur de quelqu'un de proche.",
+ "evidence/va:E8/lockedHint": "Un gros cadenas en laiton, frappé « SB-40 ». Il faudrait quelque chose de petit, en laiton, pour l'ouvrir. Et ce quelque chose n'est pas dans cet immeuble.",
+ "evidence/va:E8/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · COFFRE EN ACIER (SCELLÉ)\nSaisi dans le casier de la victime, couloir du 4e étage.\nEnv. ",
+   "#hdfr:42:342145101:0fa79882b2cf96d94619",
+   " Aucune clé trouvée\nsur place.\n",
+   "#hdfr:59:886947167:41bfa3baf4926a48a805"
+  ]
+ },
+ "evidence/va:E9/description": "La preuve écrite de la main de Marcus, trouvée dans le coffre : quatorze mois de dates et de montants, recoupés avec la paie. Dernière ligne : « S.W. valide chaque feuille. »",
+ "evidence/va:E9/presentationMessage": {
+  "_hdfr": [
+   "Ça vient du coffre, madame Ward. Quatorze mois de factures Kessler de la main de Marcus : dates, montants, recoupés avec la paie. ",
+   "#hdfr:30:983944171:19eced72282a445eaae9",
+   " ",
+   "#hdfr:35:150573112:4e8117a173dbd3d4ee1c",
+   " ",
+   "#hdfr:28:705857791:8efc3c01fa6c28945693"
+  ]
+ },
+ "evidence/va:E9/clue/label": "Marcus savait, et elle savait qu'il savait",
+ "evidence/va:E9/clue/detail": "Son relevé manuscrit de la fraude Kessler, mis sous clé quelques jours avant sa mort. Dernière ligne : « S.W. valide chaque feuille ».",
+ "evidence/va:E9/forensicsReport": {
+  "_hdfr": [
+   "SECTION DOCUMENTS · VÉRIFICATION D'ÉCRITURE\n\n",
+   "#hdfr:66:2019621365:9a6db206a2bb1db2f478",
+   "\nscellé E8.\n",
+   "#hdfr:68:1398355040:2fc04f0e7d8dd5d13879",
+   "\nspécimens K-2).\n\n",
+   "#hdfr:65:1228518970:e9716765c14d42b71fdb",
+   "\nMême lot d'encre d'un bout à l'autre. Pages rédigées en plusieurs\nfois, sur deux à trois semaines environ (variations de pression et\nde fatigue).\n\nLa page finale a été écrite en dernier, et le plus vite : l'écriture\nse dégrade nettement sur les dernières lignes. Il était pressé, ou\nil avait peur."
+  ]
+ },
+ "evidence/va:E9/fileContent": {
+  "_hdfr": [
+   "PAGES MANUSCRITES · RÉCUPÉRÉES DANS LE COFFRE (PIÈCE E8)\nQuatorze pages au stylo à bille, l'écriture de la victime d'un bout\nà l'autre.\n\nEn tête de la page 1 : « KESSLER, ce que je peux prouver »\n\n- janv. 23 ...... ",
+   "#hdfr:41:556271751:2c465f9813c299d7a830",
+   "\n- févr. 23 ...... 9 700 $, badge jamais délivré (vu sécurité)\n- avr. 23 ...... 9 300 $, « son » bureau est un placard à balais\n- juin 23 ...... 10 800 $, compte bénéficiaire changé deux fois,\n  deux comptes personnels\n- août 23 ...... 10 100 $\n- oct. 23 ...... 11 700 $\n- déc. 23 ...... 13 200 $, le plus gros mois tombe toujours quand\n  les auditeurs dorment\n- févr. 24 ...... 12 500 $\n\n(dernière page, soulignée deux fois :)\n« Total 141 300 $. Quatorze feuilles. Une seule personne qui valide.\nS.W. valide chaque feuille.\nJe lui dis dimanche. Conseil mardi. ",
+   "#hdfr:27:1590047037:46b1b32794adec9424d0",
+   " »"
+  ]
+ },
+ "evidence/va:E10/description": "Les originaux de la paie, ressortis après que Sophie Ward a été confrontée au dossier : quatorze autorisations de feuilles d'heures Kessler, toutes signées S. Ward.",
+ "evidence/va:E10/presentationMessage": {
+  "_hdfr": [
+   "La paie a ressorti les originaux. ",
+   "#hdfr:40:725076112:a8f7b2dce1ff38452c37",
+   " ",
+   "#hdfr:97:466972357:69b4f092958e24e6adc9",
+   " Pas des initiales. ",
+   "#hdfr:40:950352899:16469fd3bf0e185e30af"
+  ]
+ },
+ "evidence/va:E10/clue/detail": "Les originaux de la paie : chaque autorisation Kessler porte la signature complète de S. Ward. La pièce maîtresse.",
+ "evidence/va:E10/fileContent": {
+  "_hdfr": [
+   "#hdfr:56:616236373:9443c73d5dc8cc7cc316",
+   "\nFEUILLES D'AUTORISATION PRESTATAIRE · « D. KESSLER »\n\n",
+   "#hdfr:61:720967645:366d666dca831d292b36",
+   "\nd'heures, janvier 2023 à février 2024.\n\n",
+   "#hdfr:25:176848689:89be635722f07cfcb894",
+   "\n",
+   "#hdfr:25:20472253:3595c21dcd0bd3d23c2f",
+   " Kessler (aucun matricule, sur aucun\n  formulaire)\n",
+   "#hdfr:37:429991395:594103e22bc15d38a12a",
+   "\n",
+   "#hdfr:32:1038310030:7a25ffc1d9a10c08bcc2",
+   " ",
+   "#hdfr:27:1126523568:e738f46a7dcf003b675d",
+   "\n  écriture constante, comparée au spécimen de signature versé au\n  dossier RH (98,7 % de concordance, section documents de la police\n  de Ravenport)\n\nNOTE DE LA PAIE : le compte bénéficiaire de « D. Kessler » a changé\ndeux fois sur la période. Les deux comptes sont des comptes\npersonnels ouverts à Meridia sur la base de justificatifs désormais\n",
+   "#hdfr:33:1569646765:ce15a842a8364b78227b"
+  ]
+ },
+ "openingStatements/va:sophie-ward": "J'ai fait ma déposition dimanche soir et je vais la refaire : j'ai quitté l'immeuble à 20h58. Le relevé des badges le confirme. Posez vos questions, inspecteur.",
+ "openingStatements/va:omar-farooq": "Bon, avant toute chose : ces appels, je sais de quoi ça a l'air, JE SAIS, mais je peux les expliquer, et franchement c'est tellement plus bête que tout ce que vous imaginez, inspecteur.",
+ "openingStatements/va:lisa-chen": "Inspecteur. Je vous aiderai autant que les règles me le permettent. Vous comprendrez qu'une partie de ce que vous allez me demander relève de la confidentialité, et je tiens à ce que nous respections la procédure, vous comme moi.",
+ "questions/va:sophie-q1/messageToLLM": "Madame Ward, racontez-moi votre dimanche soir, depuis le départ de la plupart des employés jusqu'à votre retour chez vous.",
+ "questions/va:sophie-q2/messageToLLM": "Quatorze mois d'heures supplémentaires facturées par un prestataire du nom de D. Kessler : cent quarante et un mille dollars. Les RH n'ont ni dossier d'embauche, ni pièce d'identité, ni bureau à son nom. Qui est-ce, madame Ward ?",
+ "questions/va:sophie-q3/displayText": "Votre ligne de sortie a été corrigée à la main à 21h44.",
+ "questions/va:sophie-q3/messageToLLM": "Votre badge enregistre une sortie à 20h58, mais la ligne porte la mention « correction manuelle », saisie à 21h44 depuis le terminal d'administration du rez-de-chaussée. Et les détecteurs du quatrième ont enregistré du mouvement jusqu'à 21h33. Qui a corrigé votre heure de sortie, madame Ward ?",
+ "questions/va:sophie-q4/displayText": "Présenter le dossier de Marcus : « S.W. valide chaque feuille. »",
+ "questions/va:sophie-q4/messageToLLM": {
+  "_hdfr": [
+   "C'est l'écriture de Marcus, retrouvée dans un coffre fermé à clé qu'il a caché quelques jours avant de mourir. Quatorze mois de paiements Kessler, recoupés avec la paie, et une dernière ligne : « S.W. valide chaque feuille. » La paie ressort les originaux en ce moment même. ",
+   "#hdfr:63:1559789139:2b71e073e1cddf3879fc"
+  ]
+ },
+ "questions/va:omar-q2/displayText": {
+  "_hdfr": [
+   "#hdfr:32:1247525474:96377f265a44e313bae1",
+   " Expliquez-moi."
+  ]
+ },
+ "questions/va:omar-q2/messageToLLM": "Votre numéro apparaît six fois dans le journal d'appels de Marcus entre 19h50 et 20h40 dimanche. Des appels de plus en plus courts, et le dernier refusé. Ce n'est pas un appel de boulot, ça, monsieur Farooq. C'était quoi ?",
+ "questions/va:omar-q3/displayText": "Sur quoi travaillait Marcus ces derniers temps ?",
+ "questions/va:omar-q3/messageToLLM": {
+  "_hdfr": [
+   "#hdfr:88:1193529910:db708e4ce0616a577f3b",
+   " Ce sur quoi il travaillait, sa façon d'être ?"
+  ]
+ },
+ "questions/va:lisa-q1/displayText": "Un prestataire nommé D. Kessler a-t-il jamais été enregistré ?",
+ "questions/va:lisa-q1/messageToLLM": {
+  "_hdfr": [
+   "Madame Chen, j'ai besoin d'une réponse officielle des RH. Un prestataire du nom de D. ",
+   "#hdfr:51:844958006:86f710bb9c2eb1baf796",
+   " Avez-vous un dossier d'embauche à son nom ?"
+  ]
+ },
+ "questions/va:lisa-q2/displayText": "Qui peut modifier le relevé des badges ?",
+ "questions/va:lisa-q2/messageToLLM": {
+  "_hdfr": [
+   "#hdfr:69:1484705996:8937a4fafa3c14a9ab93",
+   " En tant que DRH, vous gérez la politique d'accès : à qui appartiennent les comptes capables de modifier une ligne de badge ?"
+  ]
+ },
+ "questions/va:lisa-q3/displayText": "Décrivez-moi les rapports entre madame Ward et Marcus.",
+ "questions/va:lisa-q3/messageToLLM": "Officieusement si vous préférez, madame Chen : comment décririez-vous les relations de travail entre Sophie Ward et Marcus Reeves ces dernières semaines ?",
+ "endings/va/perfect": {
+  "_hdfr": [
+   "AFFAIRE CLASSÉE. Sophie Ward a été arrêtée à son appartement de Mayfair mardi à 05h40, trois heures avant la réunion du conseil. Le relevé des badges falsifié, le dossier écrit de la main de Marcus et quatorze autorisations Kessler signées n'ont laissé aucune marge à sa défense. Les comptes « D. Kessler » ont été gelés le matin même : 141 300 $ récupérés. ",
+   "#hdfr:43:1583279560:0bb843bda93087683679"
+  ]
+ },
+ "endings/va/good": {
+  "_hdfr": [
+   "#hdfr:38:478532766:6bf8e359a397fc85de01",
+   " Ses avocats ont contesté le relevé des badges pendant des semaines, mais l'écriture de Marcus, les dates, les montants, sa signature complète sur chaque feuille a tenu. Elle a été condamnée pour meurtre sans préméditation et fraude. Onze ans."
+  ]
+ },
+ "endings/va/wrong": {
+  "_hdfr": [
+   "Vous n'aviez qu'une seule chance, et le vrai coupable vous a regardé la gâcher. ",
+   "#hdfr:44:239971595:6f7c220b0ca424fa66aa",
+   " Sophie Ward a discrètement démissionné, en invoquant le surmenage, et a quitté Meridia par un vol du vendredi. L'argent Kessler n'a jamais été retrouvé. Le dossier Reeves est parti aux archives avec le tampon NON RÉSOLU."
+  ]
+ },
+ "endings/va/cold": "L'enquête s'est enlisée. Le coffre est resté au dépôt des scellés, jamais ouvert. Vanta Systems a mis la mort de Marcus sur le compte d'une intrusion qui a mal tourné, et les factures d'heures supplémentaires ont continué d'être payées, mois après mois, sur un compte que personne n'a pensé à vérifier.",
+ "emails/email-kessler-number/subject": {
+  "_hdfr": [
+   "RE : prestataire D. ",
+   "#hdfr:34:467105550:0f3df00f9d2980ac41e1"
+  ]
+ },
+ "emails/email-kessler-number/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nVoici le dossier fournisseur de « D. Kessler », comme vous l'avez demandé. Il tient en peu de chose : le formulaire de création indique le nom Dominic Kessler, un numéro de portable et une boîte postale, fermée depuis 2021.\n\nSachez que nous avons nous-mêmes appelé ce numéro chaque trimestre, pour les vérifications habituelles, quatorze mois durant. Ça n'a jamais décroché. À chaque fois, la même messagerie.\n\nVous trouverez ci-joint la fiche de contact, avec l'historique de nos appels.\n\n",
+   "#hdfr:33:1519998295:97f51ed7357d28a7a28e"
+  ]
+ },
+ "emails/email-001/from": "Inspectrice Amanda Torres",
+ "emails/email-001/subject": "TR : Vanta Systems, passation de la scène",
+ "emails/email-001/body": "Inspecteur,\n\nJe vous laisse la scène. Tout est consigné et photographié. Le coffre trouvé dans le casier de la victime vous attend dans vos pièces, toujours sous scellés. Pas de clé sur le corps, pas de clé dans le casier, pas de clé sur tout l'étage. D'après le serrurier, forcer le coffre abîmerait ce qu'il y a dedans. C'est vous qui voyez, mais à votre place, je chercherais la clé.\n\nJ'ai demandé les relevés de badges et les données des détecteurs aux services de l'immeuble. La famille est prévenue. La sœur a parlé d'un message vocal : la réquisition est déjà partie chez l'opérateur, vous devriez avoir l'audio dans votre dossier ce soir.\n\nTorres",
+ "emails/email-001/imageCaptions/0": "Image CCTV1, salle des serveurs B, horodatage 21:47:12, extraite du système de l'immeuble lors de la passation de la scène.",
+ "emails/email-002/subject": "Marcus Reeves, une chose que vous devez savoir",
+ "emails/email-002/body": "Inspecteur,\n\nOn m'a dit que vous considériez cette mort comme suspecte. Il y a une chose que vous devez savoir : Marcus m'avait demandé un rendez-vous urgent pour lundi matin. Il m'a seulement dit que c'était « urgent », et que je préférerais l'apprendre de lui plutôt que par quelqu'un d'autre.\n\nJ'ai pensé à un problème sur un projet. Aujourd'hui, je ne suis plus sûr de rien.\n\nJe suis à votre disposition quand vous voulez.\n\nDaniel Marsh\nPDG, Vanta Systems",
+ "emails/email-003/subject": "Système de badges : l'audit de correction que vous avez demandé",
+ "emails/email-003/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nJe vous confirme ce que votre équipe a relevé : la ligne de sortie SW-003 a été corrigée manuellement dimanche à 21h44, depuis le terminal d'administration du rez-de-chaussée.\n\nPour que ce soit clair : seuls trois comptes peuvent corriger une ligne du relevé, celui de la sécurité de l'immeuble, mon compte de responsable informatique et le compte administrateur de la directrice technique. La session du poste de sécurité était fermée depuis 19h00. Quant à moi, je n'étais pas dans l'immeuble.\n\nJ'ai mis de côté l'historique complet pour votre réquisition.\n\n",
+   "#hdfr:52:290962052:29e3eae65cd12fcce587"
+  ]
+ },
+ "emails/email-005/subject": "au sujet des appels, lisez-moi s'il vous plaît",
+ "emails/email-005/body": "Inspecteur,\n\nVous allez tomber sur mon numéro dans le téléphone de Marcus, dimanche soir, et je ne dors plus à force d'imaginer ce que vous allez en penser. Alors autant vous le dire moi-même : je l'ai appelé six fois. SIX. Pour une revue de code. Il n'y a rien de plus bête.\n\nVendredi, il avait démoli mon travail devant toute l'équipe. Je voulais des excuses. Il me raccrochait au nez à chaque fois. Et maintenant il est mort, et les derniers mots que je lui ai dits étaient des mots de colère.\n\nJe suis parti à 20h47, le détecteur de la porte d'entrée l'a forcément enregistré. Vérifiez, s'il vous plaît. Je passe quand vous voulez.\n\nOmar",
+ "emails/email-006/subject": "Conseil d'administration mardi, j'ai besoin de quelque chose",
+ "emails/email-006/body": "Inspecteur,\n\nExcusez-moi d'insister, je sais comment ça peut être pris.\n\nLe conseil d'administration se réunit mardi à 09h00. Trois administrateurs m'ont déjà appelé aujourd'hui. Notre contact dans la presse retient un article qui, à ce qu'on me dit, contient « enquête de police » dès la première ligne.\n\nSi vous pouvez me dire quoi que ce soit, même à titre officieux, ça m'aiderait à tenir la maison. Je ne cherche pas à gêner votre travail. J'ai juste besoin de savoir si mon entreprise pleure un accident ou si elle cache quelque chose de bien pire.\n\nDaniel Marsh",
+ "emails/email-007/body": "Inspecteur,\n\nNous sommes les avocats de Mme Sophie Ward, directrice technique chez Vanta Systems.\n\nNotre cliente coopère pleinement avec vos services depuis dimanche soir. Nous vous demandons officiellement soit d'engager des poursuites à son encontre, soit de lui confirmer par écrit qu'elle n'est plus visée par l'enquête. L'incertitude actuelle lui cause un préjudice professionnel et personnel important.\n\nÀ défaut de réponse sur le fond avant lundi 09h00, nous saisirons le Comité de contrôle indépendant d'une plainte en bonne et due forme.\n\nNous vous prions d'agréer, Inspecteur, l'expression de nos salutations distinguées.\n\nRachel Hardwick\nHardwick & Crane LLP",
+ "emails/email-morrison-1/from": "Capitaine R. Morrison",
+ "emails/email-morrison-1/body": "Inspecteur,\n\nUn point rapide. L'affaire Reeves est suivie très haut : le commandant d'arrondissement m'en a parlé ce matin, en la citant nommément. Le conseil de Vanta se réunit mardi, et la presse rôde déjà.\n\nFaites les choses dans l'ordre : dossiers, labo, auditions. Mais ne laissez pas traîner. Je veux une note d'avancement sur mon bureau à la fin de votre service.\n\nMorrison",
+ "emails/email-morrison-2/from": "Capitaine R. Morrison",
+ "emails/email-morrison-2/body": "Inspecteur,\n\nJ'ai eu le bureau du PDG ET le service de presse au téléphone. J'ai fait écran. Pour cette fois.\n\nVous n'aurez droit qu'à UNE arrestation dans ce dossier. Si un suspect se dessine, vous m'apportez une chaîne de preuves qui tient, pas une intuition. Sinon, vous me dites ce qui manque, et vous allez le chercher.\n\nMorrison",
+ "emails/email-hr/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nJ'apprends que des données de facturation de nos prestataires circulent en dehors des circuits prévus. Je tiens à préciser, pour mémoire, que les ressources humaines ne sont pas à l'origine de cette diffusion, et que nos propres fichiers ont été transmis à votre équipe par la voie officielle, à chaque étape.\n\nSi vous avez besoin de quoi que ce soit de la part de mon service, je reste bien entendu à votre entière disposition.\n\nBien à vous,\nLisa Chen\n",
+   "#hdfr:49:44733470:a10524f8d002f83b4a32"
+  ]
+ },
+ "emails/email-anon-tip/subject": "c'est sur le développeur junior qu'il faut se pencher",
+ "emails/email-anon-tip/body": {
+  "_hdfr": [
+   "Inspecteur,\n\n",
+   "#hdfr:60:579197096:93450257977fa9607e4e",
+   " Demandez à Omar Farooq pourquoi il a annulé le déploiement de vendredi à 18h, juste avant de se mettre à appeler Marcus sans arrêt. ",
+   "#hdfr:37:1004406451:37c5b538c4d3f8931f7a",
+   "\n\nJe veux seulement aider."
+  ]
+ },
+ "emails/email-ia/from": "Les affaires internes · Police de Ravenport",
+ "emails/email-ia/body": "Inspecteur,\n\nNotre service a ouvert un dossier d'examen concernant l'arrestation effectuée dans l'affaire MC/2024/0317, à la suite de la remise en liberté sans poursuites de la personne interpellée.\n\nUne arrestation injustifiée, sous les yeux de la presse, retombe sur tout le service. Cet examen restera inscrit à votre dossier. Nous vous rappelons qu'une telle mention ne s'efface que par un travail d'enquête rigoureux et constant. Par rien d'autre.\n\nLes affaires internes, police de Ravenport",
+ "emails/email-commend/from": "Capitaine R. Morrison",
+ "emails/email-commend/body": "Inspecteur,\n\nLe procureur m'a appelé avant que j'aie fini mon premier café. Un coffre fermé à clé, l'écriture de la victime, quatorze signatures : c'est à ça que doit ressembler un dossier.\n\nLe conseil s'est réuni ce matin avec la vérité sur la table, et pas une rumeur. C'est grâce à vous.\n\nPrenez votre soirée. Et passez me voir après : il y aura d'autres affaires.\n\nMorrison",
+ "script/ev-kessler-file/actions/1/body": {
+  "_hdfr": [
+   "#hdfr:63:471778098:b9549edcb413f08e7c7d",
+   " La police scientifique numérique peut identifier l'abonné derrière ce numéro : transmettez la fiche au labo."
+  ]
+ },
+ "script/ev-kessler-traced/actions/0/clue/detail": "Identification par l'opérateur : un téléphone prépayé qui dort dans un tiroir, qui n'a jamais passé un appel et qui ne vit qu'entre le siège de Vanta et un appartement de Mayfair. Chaque recharge payée avec la carte personnelle de Sophie Ward.",
+ "script/ev-kessler-traced/actions/1/body": "La police scientifique numérique a reçu la réponse de l'opérateur sur le numéro Kessler. Le rapport complet est joint à la pièce, au labo. Le nom du titulaire de la carte, sur chaque recharge, mérite d'être lu deux fois.",
+ "script/ev-floor-welcome/actions/0/text": {
+  "_hdfr": [
+   "#hdfr:42:1686539654:32fa3b7c88d80ef0afd0",
+   " les costards d'en haut appellent déjà. bon courage"
+  ]
+ },
+ "script/ev-records-export/actions/1/title": "SERVICE DES ARCHIVES",
+ "script/ev-records-export/actions/1/body": "L'export de facturation des prestataires que M. Reeves avait demandé vendredi a été déposé dans votre dossier Preuves numériques.",
+ "script/ev-key-found/actions/0/text": {
+  "_hdfr": [
+   "#hdfr:45:1468931146:7e139a70a10a0563656c",
+   " l'employé de la consigne dit que le mort avait payé trois mois d'avance. quoi que cette clé ouvre, il ne voulait pas qu'on tombe dessus"
+  ]
+ },
+ "script/ev-dossier-file/actions/1/title": "PIÈCE ENREGISTRÉE",
+ "script/ev-dossier-file/actions/1/body": "Le dossier manuscrit trouvé dans le coffre est enregistré. Vous pouvez le lire dans Effets personnels et objets récupérés.",
+ "script/ev-authorizations-file/actions/1/body": "Les quatorze autorisations Kessler signées ont été certifiées et classées dans Effets personnels et objets récupérés.",
+ "script/ev-dvr-twist/actions/0/body": {
+  "_hdfr": [
+   "#hdfr:31:482466728:51d99b21f1f6d63e2614",
+   " Asseyez-vous avant d'écouter.\n\nOn a fini d'exploiter l'enregistreur vidéo que vous nous aviez demandé. Dimanche soir, à 21h31, quelqu'un a tenté d'effacer à distance les archives des caméras du quatrième étage. ",
+   "#hdfr:43:602360002:4bf3e6a737cda6434f4e",
+   "\n\nEt voilà ce qui compte : la demande d'effacement est passée par le VPN de l'immeuble, avec un compte ADMINISTRATEUR. ",
+   "#hdfr:26:1863953524:9167925db41ba6f20638",
+   "\n\n",
+   "#hdfr:50:814967284:11ac588ca68843f6af13",
+   " Ce qu'elle ne savait pas, c'est que l'enregistreur garde une archive miroir, et qu'une connexion administrateur laisse un nom."
+  ]
+ },
+ "script/ev-dvr-twist/actions/0/clue/label": "Effacement vidéo à 21h31, compte sward-adm",
+ "script/ev-dvr-twist/actions/0/clue/detail": "Quelqu'un a tenté d'effacer à distance les archives des caméras du 4e dimanche à 21h31, APRÈS la sortie de 20h58 affichée par le relevé des badges, avec le compte administrateur sward-adm.",
+ "script/ev-omar-rattled/actions/0/text": "ton développeur junior a appelé l'accueil deux fois pour savoir s'il lui faut un avocat. le gamin est terrorisé. soit il est innocent, soit c'est le criminel le plus nul que la terre ait porté",
+ "script/ev-sophie-counsel/actions/0/message": "Les avocats de Ward viennent d'appeler le directeur de la police. Le DIRECTEUR, inspecteur. Je me fiche de ce qu'en diront les journaux, mais le jour où vous inculpez quelqu'un, ce que vous avez en main doit tenir. Vous n'avez droit qu'à une arrestation.",
+ "script/ev-fake-source-call/actions/0/body": {
+  "_hdfr": [
+   "#hdfr:40:1666725752:e0826c0b6f7e790e4b5c",
+   " Je sais des choses sur Lisa Chen qui vont vous intéresser. Pas sur cette ligne. Je vous rappelle. »\n\n",
+   "#hdfr:29:639510:aa128c6e4541f93ee7b2",
+   " ",
+   "#hdfr:25:547797423:e034cc6ca8daef1351c0"
+  ]
+ },
+ "script/ev-sophie-quiet/actions/0/text": "quelqu'un de l'accueil de Vanta m'a dit que Ward pose des questions au service juridique sur « la vie privée des salariés pendant une enquête en cours ». elle sent qu'on se rapproche",
+ "script/ev-grace-pressured/actions/0/text": "l'accueil a reçu un appel pour toi, la chef d'équipe de nettoyage de Vanta, pas rassurée. elle dit que quelqu'un des RH lui a glissé un « rappel » sur sa clause de confidentialité avant sa déposition",
+ "script/ev-fake-source-debunk/actions/0/text": "on a tracé le numéro masqué de tout à l'heure. c'est un ancien prestataire de Vanta que Chen a viré l'an dernier. il voulait faire des histoires, pas témoigner. impasse",
+ "script/ev-dvr-followup/actions/0/text": "la technique dit que l'archive miroir a failli ne pas survivre à la tentative d'effacement. une commande de plus et la soirée de dimanche disparaissait pour de bon. on a eu de la chance",
+ "script/ev-gazette-leak/actions/0/text": "la journaliste de la Gazette campe dans le hall maintenant, elle n'appelle plus, elle attend. Morrison a dit au sergent de permanence de lui offrir un café et rien d'autre",
+ "script/ev-locker-allclear/actions/0/text": "fausse alerte à la salle des scellés : l'échelle d'un ouvrier appuyée contre le détecteur de la porte. tout est exactement à sa place, le coffre Vanta compris",
+ "script/ev-omar-cleared/actions/0/text": "j'ai sorti les journaux de déploiement dont parlait Omar. l'annulation s'est terminée à 18h52, rien de louche dedans. le gamin est juste nul le vendredi, pas suspect",
+ "script/ev-omar-cleared/actions/1/body": {
+  "_hdfr": [
+   "La version d'Omar Farooq tient : dernier appel à Marcus à 20h40, sortie badge vérifiée à 20h47, treize minutes avant l'heure de décès la plus précoce. ",
+   "#hdfr:43:672489996:9bd4cc25d9624abea04a"
+  ]
+ },
+ "script/ev-board-pressure/actions/0/text": {
+  "_hdfr": [
+   "#hdfr:76:931911397:6fd00daa40723d3d556c",
+   " une ligne dans la note de synthèse : « procédure judiciaire en cours ». le compte à rebours est lancé"
+  ]
+ },
+ "script/ev-sophie-personal-call/actions/0/body": "« Inspecteur. J'ai eu ce numéro par une connaissance commune, j'espère que ça ne vous ennuie pas. Je voulais seulement dire ceci : j'ai coopéré à tout ce que vous avez demandé. Quoi que vous soyez en train d'échafauder, je vous demanderais d'y faire attention. Une erreur pareille, ce sont des vies entières qui basculent. »\n\n[La ligne coupe avant que vous ayez pu répondre.]",
+ "script/ev-sophie-flight-risk/actions/0/text": "pour info, l'assistante de Ward vient d'appeler les services généraux pour se renseigner sur l'accès au parking en dehors des heures de bureau. sûrement rien. sûrement",
+ "script/ev-custody-scare/actions/0/title": "PIÈCES · ANOMALIE D'ENREGISTREMENT",
+ "script/ev-custody-scare/actions/0/body": "Les Archives signalent une incohérence sur l'identité de la personne qui a enregistré le dossier Kessler sous scellés. Vérification en cours : ne présentez pas d'autres pièces avant le feu vert.",
+ "script/ev-custody-cleared/actions/0/title": "PIÈCES · ANOMALIE LEVÉE",
+ "script/ev-custody-cleared/actions/0/body": "Les Archives confirment que l'incohérence n'était qu'une erreur de saisie. Le dossier et les autorisations signées sont correctement enregistrés et recevables. Poursuivez, inspecteur.",
+ "script/ev-grace-epilogue/actions/0/text": {
+  "_hdfr": [
+   "#hdfr:64:23987802:d2cf1895a1bcea927dd0",
+   " elle commence encore par le quatrième, comme au premier jour. il y a des habitudes qui ne changent pas"
+  ]
+ },
+ "script/ev-wrong/actions/1/text": {
+  "_hdfr": [
+   "#hdfr:52:1631937680:1f21ce714600b9733f9c",
+   " silence complet. c'est pire, d'une certaine façon"
+  ]
+ },
+ "script/ev-solved/actions/1/text": "ce soir, c'est la personne qui a bouclé Vanta qui régale. un coffre fermé à clé et l'écriture de la victime : ça, c'est du vrai travail de police",
+ "pressArchive/mastheadTitle": "L'EASTDOCK REGISTER",
+ "pressArchive/articles/0/subhead": "L'entreprise technologique d'Eastdock remporte le marché très convoité de l'infrastructure numérique de la Santé municipale",
+ "pressArchive/articles/0/body/0": {
+  "_hdfr": [
+   "Vanta Systems, la société de développement logiciel installée à Eastdock, s'est vu attribuer un contrat de 12 millions de dollars pour moderniser l'infrastructure numérique de trois établissements publics de santé. ",
+   "#hdfr:135:1267163912:1f4f1a30bbec7092d97c"
+  ]
+ },
+ "pressArchive/articles/0/body/1": "Le PDG Daniel Marsh a qualifié ce succès de « validation du travail de toute notre équipe de développement ». Sophie Ward, directrice technique, qui a piloté la proposition technique, a déclaré que la société avait « considérablement accru sa capacité de réalisation » sur la durée du contrat.",
+ "pressArchive/articles/0/body/2": "L'action de la maison mère de Vanta a gagné 4,2 % à l'annonce.",
+ "pressArchive/articles/1/date": "15 mars 2024, deux jours avant les faits",
+ "pressArchive/articles/1/headline": "LE PRIX CACHÉ DE LA CROISSANCE : LA SOUS-TRAITANCE DANS LE VISEUR CHEZ LES SOCIÉTÉS TECHNOLOGIQUES DE RAVENPORT",
+ "pressArchive/articles/1/subhead": "Les auditeurs préviennent : la fraude au « salarié fantôme » est la fraude en col blanc qui progresse le plus vite à Meridia",
+ "pressArchive/articles/1/hotspot/phrase": "celui qui valide et celui qui encaisse sont la même personne sous deux noms",
+ "pressArchive/articles/1/hotspot/clue/detail": "L'Eastdock Register, deux jours avant le meurtre : dans la fraude au salarié fantôme, « celui qui valide et celui qui encaisse sont la même personne sous deux noms ».",
+ "pressArchive/articles/1/body/0": "Une enquête de l'Eastdock Register sur les dépôts de bilan et les signalements transmis à la brigade financière suggère que les abus de facturation de sous-traitance ont triplé en deux ans dans le secteur technologique de Meridia. Le schéma que décrivent les auditeurs est toujours le même : un prestataire qui n'existe que sur le papier, des factures payées à l'heure, et un seul signataire haut placé.",
+ "pressArchive/articles/1/body/1": "« Le signe ne trompe jamais », explique un expert-comptable judiciaire, qui parle en termes généraux. « Aucune trace d'embauche, des comptes bénéficiaires qui changent, et quand on finit par sortir le dossier, on découvre que celui qui valide et celui qui encaisse sont la même personne sous deux noms. »",
+ "pressArchive/articles/1/body/2": "Plusieurs sociétés d'Eastdock ont refusé de commenter leurs contrôles de sous-traitance, parmi lesquelles Vanta Systems, qui prépare une réunion de son conseil d'administration la semaine prochaine.",
+ "pressArchive/articles/2/date": "18 mars 2024, le lendemain",
+ "pressArchive/articles/2/headline": "UN DÉVELOPPEUR PRINCIPAL RETROUVÉ MORT CHEZ VANTA SYSTEMS",
+ "pressArchive/articles/2/subhead": "La police de Ravenport ouvre une enquête criminelle. L'immeuble est bouclé",
+ "pressArchive/articles/2/imageCaption": "La salle des serveurs B de Vanta Systems, Blackfriars Rd, mise sous scellés par la police de Ravenport dimanche soir.",
+ "pressArchive/articles/2/body/0": "La police de Ravenport a ouvert une enquête criminelle après la mort de Marcus Reeves, 41 ans, développeur principal chez Vanta Systems, dont le corps a été découvert dimanche soir dans une salle des serveurs du quatrième étage. Un porte-parole de la police a confirmé que le décès était traité comme suspect.",
+ "pressArchive/articles/2/body/1": {
+  "_hdfr": [
+   "#hdfr:131:1232621843:9143a6c69366c1436616",
+   " L'immeuble est bouclé dans l'attente des constatations de la police scientifique."
+  ]
+ },
+ "pressArchive/articles/2/body/2": "Entré chez Vanta Systems en 2019, Reeves était décrit par ses collègues comme « la colonne vertébrale de l'équipe de développement ». Il laisse une mère et une sœur.",
+ "pressArchive/articles/1/hotspot/clue/id": "#hdfr:16:1350193396:a0e7fdb90b385671f7f8",
+ "emails/email-001/timestamp": "17 MARS 2024 · 22:15",
+ "emails/email-002/timestamp": "18 MARS 2024 · 07:44",
+ "emails/email-003/timestamp": "18 MARS 2024 · 09:02",
+ "emails/email-kessler-number/timestamp": "18 MARS 2024 · 11:20",
+ "emails/email-005/timestamp": "18 MARS 2024 · 13:30",
+ "emails/email-006/timestamp": "18 MARS 2024 · 15:00",
+ "emails/email-007/timestamp": "18 MARS 2024 · 17:45",
+ "emails/email-morrison-1/timestamp": "18 MARS 2024 · 12:10",
+ "emails/email-morrison-2/timestamp": "18 MARS 2024 · 16:20",
+ "emails/email-hr/timestamp": "18 MARS 2024 · 14:05",
+ "emails/email-anon-tip/timestamp": "18 MARS 2024 · 11:20",
+ "emails/email-ia/timestamp": "19 MARS 2024 · 09:00",
+ "emails/email-commend/timestamp": "19 MARS 2024 · 08:10",
+ "evidence/va:E11/phoneRecords/0/to": "D. Kessler (portable)",
+ "evidence/va:E11/phoneRecords/1/to": "D. Kessler (portable)",
+ "evidence/va:E11/phoneRecords/2/to": "D. Kessler (portable)",
+ "evidence/va:E11/phoneRecords/3/to": "D. Kessler (portable)",
+ "evidence/va:E11/phoneRecords/4/to": "D. Kessler (portable)",
+ "evidence/va:E11/phoneRecords/5/to": "D. Kessler (portable)"
+}

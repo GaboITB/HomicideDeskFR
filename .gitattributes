@@ -1,0 +1,6 @@
+# Fins de ligne fixées : patch.js et release.js lisent du LF, Windows attend du CRLF pour .bat et .ps1
+* text=auto eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+LISEZ-MOI.txt text eol=crlf
+*.png binary

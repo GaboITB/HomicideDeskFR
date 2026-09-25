@@ -1,0 +1,640 @@
+{
+ "title": "Un peu d'air",
+ "description": "Nadia Petrov, 34 ans, journaliste d'investigation indépendante, retrouvée pendue dans son appartement du rez-de-chaussée à Harborview au cours de la nuit. Les premiers intervenants ont conclu à un suicide apparent, avant que le bureau du médecin légiste ne relève des incohérences et ne fasse rouvrir le dossier en homicide. Elle était à six semaines de publier une enquête sur des pots-de-vin liés au réaménagement du terminal de Dockside.",
+ "captainBriefing": {
+  "_hdfr": [
+   "#hdfr:59:482466728:bc790a060ba24c420a7a",
+   " Une journaliste, Nadia Petrov, retrouvée pendue. Les premiers intervenants ont conclu au suicide et ont failli refermer le dossier. Le bureau du médecin légiste n'y croit pas, et moi non plus. ",
+   "#hdfr:167:1107420599:828520fcf801da84e380",
+   " Trouvez qui a écrit sa fin à sa place."
+  ]
+ },
+ "witnesses/farrah-odom/clue/label": "Une voix d'homme, une dispute, après vingt-deux heures",
+ "witnesses/farrah-odom/clue/detail": "Farrah a entendu un homme se disputer avec Nadia vers 22h00, bien loin de l'heure tardive qu'on imaginait pour un suicide calme et prémédité. La voix était posée, maîtrisée, rien à voir avec celle de Tomas.",
+ "witnesses/priya-anand/openingStatement": {
+  "_hdfr": [
+   "C'était mon amie la plus proche au journal, inspecteur. ",
+   "#hdfr:53:1026456875:0d81d987969b51854ec5",
+   " ",
+   "#hdfr:32:213282724:145dd52c5a88016122ef"
+  ]
+ },
+ "witnesses/priya-anand/clue/detail": "Nadia venait de régler la garde de sa fille et de prendre rendez-vous chez le dentiste pour la semaine suivante. Tout le contraire de quelqu'un qui a vraiment décidé d'en finir.",
+ "phoneNumbers/555-0172/transcript": {
+  "_hdfr": [
+   "#hdfr:50:1209054087:abee879c85a3bff92e85",
+   "\n",
+   "#hdfr:53:1754448583:6667023baedbdc1a10e7",
+   " »\n\n",
+   "#hdfr:50:307999185:bb839a4d9df9f8bcdb34",
+   "\n« …Inspecteur… Je… Oui. J'ai vu les infos, pour Nadia Petrov. C'est\naffreux… Si vous avez des questions pour le cabinet du conseiller,\nil faut passer par la voie officielle… Je ne peux vraiment pas en\nparler au téléphone. »\n\n[la ligne reste silencieuse, puis raccroche]"
+  ]
+ },
+ "phoneNumbers/555-0172/grantsClue/label": "La ligne de Renee, sur ses gardes",
+ "phoneNumbers/555-0172/grantsClue/detail": "Le poste non répertorié qui a appelé Nadia aboutit au bureau de Renee Okafor, visiblement secouée d'avoir la police au bout du fil.",
+ "phoneNumbers/555-0161/label": "Le portable de Tomas",
+ "phoneNumbers/555-0161/transcript": {
+  "_hdfr": [
+   "#hdfr:27:68945294:7dc69d805d3fb731f4b2",
+   "\n",
+   "#hdfr:28:319291900:7f31a9dd76cce99bbb9b",
+   " Laissez un message. »\n\n[FIN, rien de plus à tirer de cette ligne]"
+  ]
+ },
+ "files/root/name": "AFFAIRE N° 004 · Un peu d'air",
+ "files/file-E3/name": "Le mot · document litigieux",
+ "files/file-E17/name": "Image de la caméra intérieure · 2 janvier",
+ "files/file-E4/name": "Brouillon de l'enquête et agenda",
+ "files/file-E7/name": "Registre des sociétés-écrans · marchés municipaux",
+ "files/file-E8/name": "Tomas Petrov · messages vocaux",
+ "files/file-E9/name": "Marcus Bell · échange de courriels",
+ "files/folder-bank/name": "Documents bancaires",
+ "files/file-E10/name": "Coffre bancaire n° 2214",
+ "files/folder-field/name": "Objets récupérés",
+ "files/file-E12/name": "Téléphone jetable / carte SD (À RÉCUPÉRER SUR LE TERRAIN)",
+ "files/file-E16/name": "Stylo gravé (À RÉCUPÉRER SUR LE TERRAIN)",
+ "files/file-E13/name": "Renee Okafor · aveu consigné",
+ "files/file-E14/name": "Victor Calloway · non-démenti consigné",
+ "evidence/va:E1/description": {
+  "_hdfr": [
+   "#hdfr:27:105594700:af7bc934b044e3e8f530",
+   " Nadia Petrov retrouvée pendue à une poutre du salon, une chaise de cuisine « renversée d'un coup de pied » en dessous. La porte de l'appartement avait été refermée de l'extérieur sans être verrouillée. Les premiers intervenants ont supposé qu'elle l'avait simplement laissée comme ça."
+  ]
+ },
+ "evidence/va:E1/presentationMessage": "Appartement 04. Nadia Petrov, retrouvée pendue dans le salon, une chaise renversée en dessous. Voilà ce qu'on lisait à 04h40 ce matin. La porte avait été refermée de l'extérieur, ce que personne n'a relevé avant l'appel du bureau du médecin légiste.",
+ "evidence/va:E1/fileContent": {
+  "_hdfr": [
+   "#hdfr:48:1998410735:b8b7ce0d8aeb3d6123f5",
+   "\nAFFAIRE N° 004 · Résidence Harborview, appartement 04, Dockside\n\n",
+   "#hdfr:59:1532739831:dcef5eab878495cc6918",
+   "\nLIEU : salon, résidence Harborview, appartement 04\nHEURE DU DÉCÈS (provisoire) : 22:00–23:30, samedi 1er février 2020\n",
+   "#hdfr:59:552347044:bb6d13259cdc75fe37ed",
+   "\n\nRÉSUMÉ :\nVictime retrouvée suspendue à la poutre apparente du salon, une\n",
+   "#hdfr:39:194283930:1bde0da33491f0ab9491",
+   " ",
+   "#hdfr:25:1338123348:b61aa354439cf2bbcba0",
+   "\nont conclu à un suicide apparent à 04:31 et libéré la scène moins\nde neuf minutes après leur arrivée, avant même que le légiste\n",
+   "#hdfr:37:1015373850:59a09bee820d0e0042d0",
+   "\n\nACCÈS :\nPorte de l'appartement trouvée non verrouillée, verrou non tiré,\npêne engagé DE L'EXTÉRIEUR. Cohérent avec quelqu'un qui sort et tire\nla porte derrière lui, pas avec une personne seule chez elle pour la\nnuit.\n\nPREMIÈRE ANALYSE (CADUQUE, voir le rapport complémentaire du\nlégiste) :\nMort présumée volontaire. Un mot dactylographié a été retrouvé sur\nson ordinateur portable et un mot manuscrit sur le plan de travail\nde la cuisine. Ces deux lectures ont été écartées une fois les\necchymoses du cou confrontées à la mise en scène de la « chaise\nrenversée ».\n\n",
+   "#hdfr:67:272737642:491ea1b2bafd909cbdda"
+  ]
+ },
+ "evidence/va:E2/description": "Le constat qui a rouvert le dossier : des ecchymoses au cou et des pétéchies incompatibles avec une pendaison volontaire, et un créneau de décès resserré qui ne colle pas au profil « calme et prémédité » supposé par les premiers intervenants.",
+ "evidence/va:E2/presentationMessage": "Le rapport complémentaire du légiste est la seule raison pour laquelle nous sommes assis dans cette pièce. Les ecchymoses au cou et les pétéchies dans les yeux sont incompatibles avec une pendaison volontaire, et le créneau du décès ne ressemble pas à celui d'un suicide calme et préparé.",
+ "evidence/va:E2/clue/label": "Des ecchymoses qui ne collent pas avec un suicide",
+ "evidence/va:E2/clue/detail": "Les ecchymoses au cou et les pétéchies sont incompatibles avec une pendaison volontaire. Le dossier a été rouvert en homicide sur ce seul constat.",
+ "evidence/va:E2/fileContent": {
+  "_hdfr": [
+   "BUREAU DU MÉDECIN LÉGISTE DE RAVENPORT\nRAPPORT COMPLÉMENTAIRE · AFFAIRE N° 004\nOBJET : Nadia Petrov, résidence Harborview, appartement 04\n\n",
+   "#hdfr:32:751870686:22e81f830b5cdc31fc19",
+   "\nLes ecchymoses du cou dessinent un sillon peu profond et horizontal,\n",
+   "#hdfr:26:1746565299:9825847df9c0902cc9db",
+   " Une pendaison volontaire depuis un point\nd'attache bas (la hauteur de cette poutre) laisse en général un\nsillon oblique, qui remonte vers le point d'attache. Celui-ci est\nplus proche de l'horizontale que de l'oblique, ce qui correspond\ndavantage à une victime déjà inconsciente, ou immobilisée, au\nmoment de la suspension.\n\nCONSTAT 2 · PÉTÉCHIES :\nLes pétéchies de la conjonctive sont plus étendues que ce que l'on\nobserve dans une pendaison rapide à faible chute. Elles\ncorrespondent davantage à une strangulation, manuelle ou par lien,\navant la suspension.\n\n",
+   "#hdfr:28:785819872:762a6e8664eab8db9573",
+   "\nLe contenu gastrique et les lividités situent le décès entre 22:00\net 22:30 environ. Ce créneau est incompatible avec le profil « acte\ncalme et prémédité, probablement au petit matin » retenu par les\npremiers intervenants quand ils ont clôturé la scène à 04:31.\n\nCONSTAT 4 · GÉOMÉTRIE DE LA SCÈNE (d'après les photographies des\nintervenants) :\nLa chaise de cuisine notée comme « renversée d'un coup de pied »\ns'est immobilisée à environ 1,20 m de l'aplomb du point d'attache.\nUne chaise repoussée sous un corps qui se pend parcourt une courte\ndistance et retombe près de l'aplomb. Un écart latéral de 1,20 m ne\ncorrespond pas à ce mécanisme. ",
+   "#hdfr:35:230287255:970742d18f6b4e985d96",
+   "\nune légère trace de traînée dans la moquette, de la poutre vers la\nporte d'entrée, qui ne figure pas dans le procès-verbal initial.\n\n",
+   "#hdfr:63:1228518970:71e37206d6647c65dba7",
+   "\nvolontaire. ",
+   "#hdfr:49:1501820922:9d5f89d4a1ca97fed5a9",
+   "\nDr R. ",
+   "#hdfr:31:1687216106:e621e53010055a7f6dc2"
+  ]
+ },
+ "evidence/va:E3/name": "Le mot · document litigieux",
+ "evidence/va:E3/description": "Un mot de la main de Nadia, laissé sur le plan de travail de la cuisine. Ou écrit pour le faire croire. Posez-le sur la table de comparaison à côté d'un échantillon authentique et regardez l'encre.",
+ "evidence/va:E3/presentationMessage": {
+  "_hdfr": [
+   "Ce mot a été trouvé sur le plan de travail de Nadia. On a voulu qu'il ressemble à son écriture. Je l'ai posé sur la table de comparaison à côté d'un échantillon authentique. ",
+   "#hdfr:28:1898286368:e368eee40e6b3a1df5a6"
+  ]
+ },
+ "evidence/va:E3/handwritingCompare/questionedName": "LE MOT · DOCUMENT LITIGIEUX (plan de travail)",
+ "evidence/va:E3/handwritingCompare/questionedText": {
+  "_hdfr": [
+   "#hdfr:26:1433911383:5025b67f31d04a4f1dc5",
+   " Je suis tellement [[Q:trace:fatiguée]].\n",
+   "#hdfr:30:1349513364:7e6da6f2287017f50ec9",
+   " ",
+   "#hdfr:27:487259849:84b7e06c7fde39fee25d",
+   "\nJ'ai besoin de [[Q:baseline:me reposer]], c'est tout.\n[[Q:signoff: N]]"
+  ]
+ },
+ "evidence/va:E3/handwritingCompare/knownName": "AUTHENTIQUE · MARGES DE L'AGENDA, 2019-2020",
+ "evidence/va:E3/handwritingCompare/knownText": {
+  "_hdfr": [
+   "#hdfr:33:152482928:6484340e1edaf4d30070",
+   "\n",
+   "#hdfr:44:1396821750:e8d0200ba3c277db6ee0",
+   "\nCode coffre = mois + jour, anniv de M, changé après le divorce\nRécupérer M jeudi 17h30, la garderie [[X:spacing:ferme tôt]]\nTellement [[X:trace:fatiguée]] cette semaine. ",
+   "#hdfr:30:2136659082:b80080976f52ae2f106c",
+   "\n",
+   "#hdfr:37:1624926133:7da7bd51b9eed7fe3630",
+   "\n[[X:signoff: N.P.]]"
+  ]
+ },
+ "evidence/va:E3/handwritingCompare/findings/trace/note": "Chaque trait du mot est d'une épaisseur uniforme, sans la moindre modulation, avec un point d'arrêt au départ de chaque lettre. Dans l'agenda, l'encre gonfle, s'affine et revient sur elle-même. Ce mot a été dessiné, pas écrit.",
+ "evidence/va:E3/handwritingCompare/findings/letterform/note": "Sous la loupe, les deux « a » du mot sont des « a » d'imprimerie, bien droits. Partout dans l'agenda, le « a » est bouclé et penché comme le reste de l'écriture.",
+ "evidence/va:E3/handwritingCompare/findings/spacing/note": {
+  "_hdfr": [
+   "Les espacements du mot sont réguliers au pixel près. Dans l'agenda, l'écriture se resserre à l'approche de la fin de chaque ligne, comme une main qui accélère. ",
+   "#hdfr:28:1191111095:c7a7f7367d12dd37e43e"
+  ]
+ },
+ "evidence/va:E3/handwritingCompare/findings/baseline/note": "Les lettres du mot montent régulièrement au-dessus de la ligne de base, mot après mot. Son écriture à elle ondule autour de la réglure, elle ne s'en éloigne pas en montant.",
+ "evidence/va:E3/handwritingCompare/findings/signoff/note": {
+  "_hdfr": [
+   "#hdfr:35:1928852909:cfaf5e5248996949743d",
+   " Sur cinq mois de marges d'agenda, chaque note est signée « N.P. ",
+   "#hdfr:28:1910524241:87c8f44bea9af1c01542"
+  ]
+ },
+ "evidence/va:E3/handwritingCompare/verdictHeadline": "#hdfr:22:1746349248:0036139135f80c12be49",
+ "evidence/va:E3/handwritingCompare/verdictBody": {
+  "_hdfr": [
+   "L'écriture ne correspond pas. ",
+   "#hdfr:45:1889771425:727c443c06d1c7bba7fb"
+  ]
+ },
+ "evidence/va:E3/deferredClue/detail": "La comparaison avec cinq mois d'échantillons authentiques confirme que le mot du plan de travail est un faux, dessiné pour compléter la mise en scène du suicide.",
+ "evidence/va:E3/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · DOCUMENT LITIGIEUX\n",
+   "#hdfr:61:529766470:cb030a1fcb6a200e8b85",
+   "\n\nComparez-le à un échantillon authentique de l'écriture de la\nvictime. ",
+   "#hdfr:56:70552193:9be97ba063db72bd4466",
+   "\ncomparaison."
+  ]
+ },
+ "evidence/va:E4/name": "Brouillon de l'enquête et agenda",
+ "evidence/va:E4/description": "Les fichiers de travail de Nadia : un brouillon presque terminé qui nomme les sociétés-écrans du conseiller Victor Calloway dans un système de pots-de-vin lié à l'appel d'offres du terminal de Dockside, plus des pages d'agenda, dont un rappel énigmatique sur le code d'un coffre bancaire.",
+ "evidence/va:E4/presentationMessage": "Son brouillon vous nomme directement, monsieur le conseiller : sociétés-écrans, registre des pots-de-vin, appel d'offres du terminal. À six semaines de la parution, d'après les dates de ses fichiers.",
+ "evidence/va:E4/clue/detail": "Le brouillon d'enquête de Nadia nomme les sociétés-écrans de Victor Calloway dans un système de pots-de-vin lié à l'appel d'offres du terminal de Dockside.",
+ "evidence/va:E4/spreadsheetRows/0/2": "REMARQUE",
+ "evidence/va:E4/spreadsheetRows/1/1": "Première société-écran identifiée : « Harborline Consulting LLC »",
+ "evidence/va:E4/spreadsheetRows/1/2": "Son mandataire déclaré est domicilié au local de campagne de Calloway",
+ "evidence/va:E4/spreadsheetRows/3/1": "Deuxième société-écran : « Dockside Advisory Group »",
+ "evidence/va:E4/spreadsheetRows/3/2": "Même mandataire déclaré que Harborline",
+ "evidence/va:E4/spreadsheetRows/4/1": "Brouillon terminé, en attente d'un dernier appel à une source",
+ "evidence/va:E4/spreadsheetRows/4/2": "Vérification auprès des marchés publics prévue le 10 févr.",
+ "evidence/va:E4/spreadsheetRows/5/1": "Code coffre = mois + jour, anniv de M, changé après le divorce",
+ "evidence/va:E4/spreadsheetRows/7/1": "Récupérer M jeudi 17h30 · la garderie ferme tôt",
+ "evidence/va:E4/fileContent": {
+  "_hdfr": [
+   "NADIA PETROV · FICHIERS DE TRAVAIL (ORDINATEUR PORTABLE ET BUREAU)\nNotes du brouillon d'enquête et pages d'agenda, déc. 2019 – janv.\n2020.\n\n",
+   "#hdfr:65:1085968795:4ba659d008706f5a06d5",
+   "\nsystème de pots-de-vin lié à l'appel d'offres du terminal de\nDockside. Voir la vue tableau pour la chronologie complète. Les\nnotes d'agenda sont personnelles, mais peuvent renvoyer à des\néléments trouvés ailleurs dans le dossier."
+  ]
+ },
+ "evidence/va:E5/description": "Le journal des appels de Nadia la nuit de sa mort. Un poste non répertorié de la mairie l'a appelée à 21h52, huit minutes avant qu'une voisine n'entende un homme se disputer avec elle.",
+ "evidence/va:E5/presentationMessage": {
+  "_hdfr": [
+   "Le poste de votre cabinet a appelé Nadia à 21h52 cette nuit-là, monsieur le conseiller. ",
+   "#hdfr:93:1038649371:7195388adcee8b14d9ab",
+   " Ce n'est pas une coïncidence que je puisse ignorer."
+  ]
+ },
+ "evidence/va:E5/clue/label": "Un appel d'un poste non répertorié, 21h52",
+ "evidence/va:E5/clue/detail": "Un poste non répertorié de la mairie a appelé Nadia à 21h52, huit minutes avant qu'une voisine n'entende un homme se disputer avec elle.",
+ "evidence/va:E5/phoneRecords/0/from": "Gazette de Ravenport (bureau)",
+ "evidence/va:E5/phoneRecords/0/note": "entrant · Marcy, du journal",
+ "evidence/va:E5/phoneRecords/1/note": "sortant · Priya",
+ "evidence/va:E5/phoneRecords/2/from": "NON RÉPERTORIÉ · mairie, poste 4471",
+ "evidence/va:E5/phoneRecords/2/note": "entrant · appel court, abouti",
+ "evidence/va:E5/fileContent": {
+  "_hdfr": [
+   "#hdfr:34:1936053237:b68b86758792234c630c",
+   "\nSamedi 1er février 2020\n\nHEURE  | DE                            | VERS                 | DURÉE | NOTE\n14:10  | Gazette de Ravenport (bureau) | N. Petrov (portable) | 4:00  | entrant, Marcy, du journal\n18:35  | N. ",
+   "#hdfr:31:60371791:4478d9a0ffdb20e09350",
+   " ",
+   "#hdfr:42:1127042700:89261aea64c0d33da400",
+   "\n21:52  | NON RÉPERTORIÉ, mairie 4471   | N. Petrov (portable) | 1:35  | entrant, appel court, abouti\n22:40  | T. ",
+   "#hdfr:31:60371791:cfcb198d5d0f9028084e",
+   " ",
+   "#hdfr:40:60371791:3c4712c68caa41e796c9",
+   "\n\nLe poste 4471 de la mairie ne figure pas dans l'annuaire public. À\nrecouper avec les affectations internes du personnel."
+  ]
+ },
+ "evidence/va:E7/name": "Registre des sociétés-écrans · marchés municipaux",
+ "evidence/va:E7/description": "Une piste d'audit des marchés publics : des paiements passés par « Harborline Consulting LLC » et « Dockside Advisory Group », toutes deux liées à l'appel d'offres du terminal, toutes deux domiciliées dans le local de campagne de Victor Calloway.",
+ "evidence/va:E7/presentationMessage": "Ce registre confirme son brouillon ligne par ligne, monsieur le conseiller. Deux sociétés-écrans, toutes deux domiciliées à l'adresse de votre local de campagne, toutes deux payées par le fonds de réaménagement du terminal pour un travail de conseil dont personne ne peut montrer le moindre résultat.",
+ "evidence/va:E7/clue/label": "Deux sociétés-écrans, une seule adresse",
+ "evidence/va:E7/clue/detail": "Harborline Consulting et Dockside Advisory Group sont toutes deux domiciliées au local de campagne de Victor Calloway et toutes deux payées par le fonds de réaménagement du terminal.",
+ "evidence/va:E7/spreadsheetRows/0/3": "LIGNE DU FONDS",
+ "evidence/va:E7/spreadsheetRows/0/4": "ADRESSE DÉCLARÉE",
+ "evidence/va:E7/spreadsheetRows/1/3": "Réaménagement du terminal · conseil",
+ "evidence/va:E7/spreadsheetRows/2/3": "Réaménagement du terminal · services de conseil",
+ "evidence/va:E7/spreadsheetRows/3/3": "Réaménagement du terminal · conseil",
+ "evidence/va:E7/spreadsheetRows/4/3": "Réaménagement du terminal · services de conseil",
+ "evidence/va:E7/fileContent": {
+  "_hdfr": [
+   "#hdfr:60:1544536921:0b4f06b2c2cf060751df",
+   "\nEnvoi anonyme, transmis par la ligne de signalement de la police\n\n",
+   "#hdfr:60:590577845:d22669043dfdd8b81f2b",
+   " Les\ndeux sociétés bénéficiaires partagent une seule adresse, 118 Charter\nAve, bureau 4, que le registre du commerce de la ville attribue au\n",
+   "#hdfr:37:757085711:f4fde825e569850a49fe",
+   " Aucun livrable au dossier pour\nles lignes « conseil » ou « services de conseil » de l'une ou\nl'autre société."
+  ]
+ },
+ "evidence/va:E8/name": "Tomas Petrov · messages vocaux",
+ "evidence/va:E8/description": "Des messages furieux de l'ex-mari de Nadia, Tomas, la semaine avant sa mort : la garde, l'argent, une date d'audience. Pas un mot sur l'enquête. Le registre qu'il a signé en venant chercher sa fille le place à trois heures de route la nuit de sa mort.",
+ "evidence/va:E8/presentationMessage": "Ces messages sont furieux, monsieur Petrov : la garde, l'argent, une audience. Rien sur son enquête. Et le registre de sortie confirme que vous étiez à trois heures de route, en train d'aller chercher votre fille, la nuit de sa mort.",
+ "evidence/va:E8/mediaClips/0/transcript": "« Tu ne peux pas changer encore une fois l'heure où je passe la\nprendre, Nadia, ça ne marche pas comme ça. J'ai des DROITS, le\ntribunal m'a donné des droits, et si tu crois que tu peux…\nRappelle-moi. »",
+ "evidence/va:E8/mediaClips/1/transcript": {
+  "_hdfr": [
+   "#hdfr:62:1467527487:24e60f526ae7e8824e17",
+   "\nbien plus que tu ne crois. Je ne te menace pas. Je te dis ce qui\nva se passer, c'est tout. »"
+  ]
+ },
+ "evidence/va:E8/mediaClips/2/transcript": {
+  "_hdfr": [
+   "« J'arrête, Nadia. ",
+   "#hdfr:32:559336464:e65f3a2a528f230f9647",
+   " Mon avocat\nt'appelle lundi. »"
+  ]
+ },
+ "evidence/va:E8/audioTranscript": {
+  "_hdfr": [
+   "RÉCUPÉRATION DE MESSAGERIE · TÉLÉPHONE DE N. PETROV\nDe : T. Petrov (ex-mari)\n\n[27 janv. 2020, 21:14]\n« Tu ne peux pas changer encore une fois l'heure où je passe la\nprendre, Nadia, ça ne marche pas comme ça. J'ai des DROITS, le\ntribunal m'a donné des droits, et si tu crois que tu peux…\nRappelle-moi. »\n\n[29 janv. 2020, 20:02]\n",
+   "#hdfr:62:1467527487:24e60f526ae7e8824e17",
+   "\nbien plus que tu ne crois. Je ne te menace pas. Je te dis ce qui\nva se passer, c'est tout. »\n\n[31 janv. 2020, 19:45]\n« J'arrête, Nadia. ",
+   "#hdfr:32:559336464:e65f3a2a528f230f9647",
+   " Mon avocat\nt'appelle lundi. »\n\n",
+   "#hdfr:28:1771083336:1ee0e8698e830fb39ba0"
+  ]
+ },
+ "evidence/va:E8/fileContent": "PIÈCE À CONVICTION · RÉCUPÉRATION DE MESSAGERIE\nExtraite du téléphone de la victime.\n\nLancez les enregistrements pour écouter les messages. La\ntranscription se débloque après l'écoute. À recouper avec le\nregistre de sortie signé par le père (obtenu en audition) pour la\nnuit en question.",
+ "evidence/va:E9/name": "Marcus Bell · échange de courriels",
+ "evidence/va:E9/description": "Le rédacteur en chef de Nadia plaide pour enterrer l'enquête au nom du risque juridique, deux semaines avant sa mort. Puis, plus bas dans le même fil, il change complètement d'avis et la soutient jusqu'à la publication.",
+ "evidence/va:E9/presentationMessage": "Vous vous êtes battu contre cette enquête deux semaines avant sa mort, monsieur Bell : les avocats du journal étaient nerveux. Mais à la fin de ce même fil, vous aviez complètement changé d'avis. Vous la souteniez, monsieur Bell, jusqu'au bout.",
+ "evidence/va:E9/emailAccount": "N. PETROV · boîte saisie sur mandat",
+ "evidence/va:E9/emailThread/0/body": {
+  "_hdfr": [
+   "#hdfr:27:732754102:de7304552004779f3073",
+   " Le service juridique s'inquiète : on met en cause des sociétés-écrans sans troisième source documentaire. ",
+   "#hdfr:97:614571979:02d0d0ea9e4ccd8f2800",
+   "\n\nJe veux le retenir tant qu'on n'a pas les registres des marchés publics, et pas seulement tes notes."
+  ]
+ },
+ "evidence/va:E9/emailThread/1/body": "Je n'enterre pas six mois de travail parce que le juridique veut se couvrir.\n\nJe te trouverai la troisième source.",
+ "evidence/va:E9/emailThread/2/body": "D'accord. Mais je veux le lire avant qu'il approche du bouclage.",
+ "evidence/va:E9/emailThread/3/body": {
+  "_hdfr": [
+   "#hdfr:27:1832102762:d31e6c3057427508eeb6",
+   " Si tu as vraiment la piste des marchés publics maintenant, je ne retiens plus rien. Envoie-le-moi, je ferai de la place moi-même.\n\nJ'ai eu tort de m'y opposer aussi fort. Publie."
+  ]
+ },
+ "evidence/va:E9/emailThread/4/body": {
+  "_hdfr": [
+   "Je prends des nouvelles, tu n'as pas donné signe de vie aujourd'hui. Tout va bien ?\n\n",
+   "#hdfr:30:2004039955:f6c8122dcfc943004999",
+   " Je le pense vraiment."
+  ]
+ },
+ "evidence/va:E9/fileContent": {
+  "_hdfr": [
+   "ÉCHANGE DE COURRIELS\nM. ",
+   "#hdfr:38:457257699:2ed4635dc90fe21da82f",
+   " PETROV\n",
+   "#hdfr:41:2064062321:0b6f2448be95833f4241",
+   "\n\nSaisi dans la boîte de la victime sur mandat. Cinq messages entre le\n",
+   "#hdfr:25:83277977:2c380aa55487897688aa",
+   " ",
+   "#hdfr:48:1796991403:3238c639286700903767"
+  ]
+ },
+ "evidence/va:E10/name": "Coffre bancaire n° 2214",
+ "evidence/va:E10/description": {
+  "_hdfr": [
+   "Un coffre bancaire au nom de Nadia. ",
+   "#hdfr:79:1129727364:1bf0f029e34a6be2c109"
+  ]
+ },
+ "evidence/va:E10/presentationMessage": "Nadia louait un coffre à la banque, monsieur le conseiller. Quoi qu'il contienne, elle estimait que ça devait lui survivre.",
+ "evidence/va:E10/lockHint": {
+  "_hdfr": [
+   "#hdfr:34:1129727364:493d1b06730160110beb",
+   " ",
+   "#hdfr:90:1884070472:f7ef7f199fdc1bbd6fbd",
+   " ",
+   "#hdfr:49:510154402:f0fde10b618d19ab96b3",
+   " Et une date, chez elle, c'était le mois d'abord, le jour ensuite."
+  ]
+ },
+ "evidence/va:E10/fileContent": "DOCUMENTS BANCAIRES · COFFRE N° 2214\nLoué au nom de N. Petrov depuis septembre 2019.\n\nOuverture par code à 4 chiffres. Le code ne figure nulle part dans\nce dossier. À recouper avec les autres pièces.",
+ "evidence/va:E11/description": "La version complète et sans précaution de l'enquête de Nadia : pas de « présumé », pas d'euphémisme sur les sociétés-écrans. Elle nomme directement Victor Calloway comme bénéficiaire des pots-de-vin, registres des marchés à l'appui.",
+ "evidence/va:E11/presentationMessage": {
+  "_hdfr": [
+   "#hdfr:76:623603325:66540582a822ccfd1c4d",
+   " Pas de « présumé ». Votre nom, dans son fichier, à côté de chaque paiement."
+  ]
+ },
+ "evidence/va:E11/clue/label": "L'enquête sans plus aucune précaution",
+ "evidence/va:E11/clue/detail": "Les fichiers de sauvegarde non caviardés de Nadia nomment directement Victor Calloway comme bénéficiaire des pots-de-vin du réaménagement du terminal.",
+ "evidence/va:E11/fileContent": {
+  "_hdfr": [
+   "#hdfr:49:620235680:de8e7a513384e72128c1",
+   "\n\nLa version finale est dans ce coffre, avec ce mot. Pas de\nprécautions, pas de « présumé », parce que je n'en ai plus besoin.\n\n",
+   "#hdfr:62:1698973040:42177d923a187ce4322d",
+   "\n",
+   "#hdfr:61:1028033796:29f39f4a0d3250cadc0d",
+   "\nl'emploi.\n\nIl a passé ces mêmes dix-huit mois à faire sortir de ce même\nfonds des honoraires de conseil, vers deux sociétés domiciliées\ndans son propre local de campagne.\n\nCe n'est pas du « présumé ». ",
+   "#hdfr:29:3766162:d81b396905c942078b3d",
+   " J'ai\nl'adresse commune. J'ai demandé trois fois une réaction à son\ncabinet sans jamais obtenir de réponse, et la troisième fois,\nquelqu'un est venu jusque chez moi.\n\nMarcus ne sait rien de ce coffre. C'est voulu. S'il avait su, le\njuridique aurait su, et ça ne m'aurait plus appartenu.\n\n",
+   "#hdfr:66:955059102:c5ab8ae7324d9426ad52",
+   "\n\nN.P."
+  ]
+ },
+ "evidence/va:E12/description": "Un téléphone jetable effacé, récupéré dans une ruelle de Dockyard Way, près du terminal à conteneurs. Nettoyé, sauf une entrée du journal des appels qui a survécu, et dont l'heure correspond à l'appel du poste non répertorié de la mairie à Nadia, à 21h52.",
+ "evidence/va:E12/presentationMessage": {
+  "_hdfr": [
+   "#hdfr:66:1759500777:439c920a9e04d2b1bd50",
+   " Effacé, sauf un appel que le nettoyage a laissé passer. Et il tombe à la minute près sur celui du poste qui a appelé Nadia la nuit de sa mort."
+  ]
+ },
+ "evidence/va:E12/fieldHint": "Un tuyau anonyme désigne « la ruelle derrière l'ancien magasin d'accastillage de Dockyard Way, près du terminal à conteneurs ». Il faut y envoyer une patrouille.",
+ "evidence/va:E12/clue/label": "Un téléphone effacé, une seule entrée restante",
+ "evidence/va:E12/clue/detail": "La seule entrée qui a survécu dans le journal des appels du jetable correspond au poste non répertorié de la mairie qui a appelé Nadia à 21h52 la nuit de sa mort.",
+ "evidence/va:E12/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · OBJET RÉCUPÉRÉ\nTéléphone jetable / carte SD, récupéré par une patrouille dans une\nruelle de Dockyard Way, Dockside.\n\nL'appareil a été effacé, mais une entrée du journal des appels a\nsurvécu. Voir les notes de récupération du labo jointes.\n\n",
+   "#hdfr:35:1520166567:656c46820a8186507a3c",
+   " ",
+   "#hdfr:32:557854855:5ae32c6fc4673ca58ca5",
+   "\nnuméro appelé : N. PETROV (portable). Correspond exactement à\nl'heure de l'appel du poste 4471 de la mairie."
+  ]
+ },
+ "evidence/va:E13/description": "Consigné en audition : confrontée à l'emploi du temps réel de Victor la nuit de la mort de Nadia, Renee Okafor perd son sang-froid et admet qu'il était à Harborview, et non au dîner de levée de fonds qu'il invoquait.",
+ "evidence/va:E13/presentationMessage": "Vous me l'avez déjà dit, madame Okafor, c'est au procès-verbal. Il n'était pas au dîner de levée de fonds. Il était à Harborview.",
+ "evidence/va:E13/clue/label": "Il n'a jamais mis les pieds au dîner de levée de fonds",
+ "evidence/va:E13/clue/detail": "Renee Okafor admet en audition que Victor Calloway était à Harborview la nuit de la mort de Nadia, et non au dîner de levée de fonds qu'il invoquait publiquement.",
+ "evidence/va:E13/fileContent": {
+  "_hdfr": [
+   "COMPLÉMENT D'AUDITION · R. OKAFOR\n",
+   "#hdfr:41:1306007475:bcb027c18f62fe60af71",
+   "\n\n",
+   "#hdfr:68:1715114280:ba940867065c812809f5",
+   "\nsur l'endroit où se trouvait vraiment Victor Calloway la nuit du 1er\nfévrier, Mme Okafor n'a pas pu maintenir sa version de la « présence\nau dîner de levée de fonds ». ",
+   "#hdfr:36:1539197276:5bac8066a13c39977426",
+   "\nsoir-là à la résidence Harborview, et non au dîner inscrit à son\nagenda public. Versé au dossier."
+  ]
+ },
+ "evidence/va:E14/description": "Consigné en audition : confronté au brouillon de l'enquête et au registre des sociétés-écrans en même temps, Victor Calloway ne dément jamais le système. Il se réfugie derrière « le cabinet » et le jargon juridique, et ne dit pas une seule fois qu'il ne l'a pas fait.",
+ "evidence/va:E14/clue/detail": "Confronté au brouillon de l'enquête et au registre des sociétés-écrans en même temps, Victor Calloway n'a pas démenti une seule fois. Il n'a fait que se retrancher derrière la procédure.",
+ "evidence/va:E14/fileContent": {
+  "_hdfr": [
+   "COMPLÉMENT D'AUDITION · V. CALLOWAY\n",
+   "#hdfr:41:1306007475:f335da793cd09eb581a4",
+   "\n\nConfronté directement au brouillon de l'enquête (E4) et au registre\ndes sociétés-écrans (E7) en même temps, le conseiller Calloway n'a\nrépondu que par des esquives de procédure (« le cabinet », « notre\néquipe juridique », « toute qualification serait prématurée ») et\n",
+   "#hdfr:54:229020883:4594767b7724f0d1efdd",
+   "\n",
+   "#hdfr:68:1809697910:ac7c4ba0cb242d70239c",
+   "\ndes paiements. ",
+   "#hdfr:35:2127635348:a308f74cc7c8d787b370"
+  ]
+ },
+ "evidence/va:E16/name": "Stylo gravé, retrouvé sous le canapé",
+ "evidence/va:E16/description": {
+  "_hdfr": [
+   "#hdfr:38:530218672:899a1a8ef3734b9eaf27",
+   " », retrouvé coincé sous le canapé de Nadia lors d'un second passage dans l'appartement. Le premier passage l'avait manqué. ",
+   "#hdfr:104:1070968078:7fd8ceecfd9970997beb"
+  ]
+ },
+ "evidence/va:E16/presentationMessage": "Ce stylo était sous le canapé de Nadia, coincé assez loin dessous pour que le premier passage le manque. Du laiton lourd, gravé « T.P. ». Les initiales de Tomas Petrov, dans l'appartement de son ex-femme.",
+ "evidence/va:E16/fieldHint": "Les premiers intervenants ont libéré l'appartement 04 en neuf minutes en concluant au suicide. Personne n'a fouillé cet appartement correctement. Renvoyez une patrouille sur place, qu'elle reprenne le salon au peigne fin, sous les meubles cette fois.",
+ "evidence/va:E16/clue/detail": {
+  "_hdfr": [
+   "#hdfr:37:530218672:43b515eee513c7cc5930",
+   " », les initiales de Tomas Petrov, récupéré sous le canapé de Nadia lors d'un second passage. Il affirme ne pas être entré dans l'appartement depuis un an."
+  ]
+ },
+ "evidence/va:E16/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · OBJET RÉCUPÉRÉ\n",
+   "#hdfr:65:529764931:6198c559d7639f3d91f5",
+   "\nde la patrouille à la résidence Harborview, appartement 04.\n\nUn lourd stylo à plume en laiton, gravé « T.P. » sur le corps. Il ne\nfigure dans aucun inventaire des effets personnels connus de la\nvictime et n'apparaît nulle part dans le procès-verbal initial,\nbouclé en neuf minutes. ",
+   "#hdfr:43:1070968078:d4dbf0aa130d09721dbd",
+   "\nl'ex-mari de la victime. ",
+   "#hdfr:39:285386080:fd9af56e0a2aa0621b7d",
+   "\ngravure."
+  ]
+ },
+ "evidence/va:E17/name": "Image de la caméra intérieure · 2 janvier",
+ "evidence/va:E17/description": {
+  "_hdfr": [
+   "Récupérée sur mandat auprès de la société de télésurveillance : une image de la petite caméra intérieure que Nadia avait installée après un cambriolage en décembre. ",
+   "#hdfr:65:827968047:11f89e65d09a6e0678ea"
+  ]
+ },
+ "evidence/va:E17/presentationMessage": {
+  "_hdfr": [
+   "Elle a installé une caméra dans son propre salon en décembre, monsieur le conseiller, parce que quelqu'un y était déjà passé une fois. Voici cette caméra, le 2 janvier : un homme à genoux qui fouille sa table pendant qu'elle est sortie. ",
+   "#hdfr:39:264273737:f747e92dc6d75d846687",
+   " Elle ne se doutait pas qu'il viendrait en personne."
+  ]
+ },
+ "evidence/va:E17/clue/detail": "Une caméra intérieure installée par Nadia après un cambriolage en décembre a filmé un homme en train de fouiller son salon le 2 janvier. Un mois avant sa mort, et la raison pour laquelle ses vrais fichiers ont fini dans un coffre à la banque.",
+ "evidence/va:E17/hotspotLabels/0": "Un homme accroupi devant la table basse, en train de fouiller l'étagère du bas. Ganté. Il ne montre jamais son visage à l'objectif.",
+ "evidence/va:E17/hotspotLabels/1": "Deuxième zone de détection : la porte d'entrée, restée ouverte derrière lui. Ici non plus, aucune trace d'effraction.",
+ "evidence/va:E17/hotspotLabels/2": "Horodatage : 18:46:12, 2 janvier 2020, trente jours avant sa mort. Nadia était au journal jusqu'à 20:00 ce soir-là.",
+ "evidence/va:E17/hotspotLabels/3": "L'étagère sous le téléviseur, là où elle rangeait ses copies de travail. Nadia est retournée à son coffre à la banque la semaine suivante.",
+ "evidence/va:E17/forensicsReport": {
+  "_hdfr": [
+   "UNITÉ IMAGERIE ET AUDIO · IMAGE DE CAMÉRA INTÉRIEURE (PIÈCE E17)\nSource : Harborview, app. ",
+   "#hdfr:38:146221018:2da5eb70f634112dce57",
+   "\n18:46:12. Récupérée sur mandat auprès du prestataire de\ntélésurveillance.\n\n1. IDENTIFICATION DU SUJET · POSITIVE\nLa géométrie du visage, relevée sur deux surfaces réfléchissantes de\nl'image (la vitre du téléviseur et la fenêtre derrière l'homme), a\nété comparée aux personnes du dossier et au fichier des permis de\nconduire.\n\n   ",
+   "#hdfr:63:1178697524:806c01320ab82804b3ae",
+   "\n   Degré de certitude : élevé. ",
+   "#hdfr:32:123252906:67cbe5b9278568bb6f9c",
+   "\n   montre et la veste, toutes deux compatibles avec des effets\n   répertoriés comme les siens.\n\nIl fouille l'étagère du bas de la table basse. Il porte des gants.\nIl n'a rien dans les mains en entrant.\n\n2. AUDIO · UNE DEUXIÈME PERSONNE PRÉSENTE\nLa caméra enregistre une piste audio de faible qualité que le\nprestataire n'a jamais écoutée. Elle n'est pas muette.\n\nÀ 18:46:40, une DEUXIÈME VOIX est audible du côté de la cuisine,\nhors champ : une femme adulte, qui parle à voix normale. Deux\nphrases, à quatre secondes d'intervalle. Le contenu est\ninintelligible à cette qualité et aucune identification n'est\npossible à partir de cet extrait.\n\nL'homme à l'image ne montre aucune inquiétude. La personne qui se\ntrouve dans cette cuisine est là avec lui.\n\nNOTE À L'ENQUÊTEUR : cela place DEUX personnes dans le logement de\n",
+   "#hdfr:33:407919403:aa894130de6b381c864c",
+   " L'identité de la seconde reste à\nétablir."
+  ]
+ },
+ "evidence/va:E17/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · IMAGE DE CAMÉRA INTÉRIEURE\nRésidence Harborview, appartement 04. Récupérée sur mandat de\nperquisition auprès de la société de télésurveillance qui conserve\nl'enregistreur hors site.\n\nNadia Petrov a installé une seule caméra intérieure en décembre\n2019, après un cambriolage signalé à cette adresse, sans arrestation\nni objet volé. Elle n'en a jamais parlé à son rédacteur en chef.\n\nUne seule image a survécu à la durée de conservation. Zoomez et\nexaminez les points marqués. ",
+   "#hdfr:38:539163631:998da03619a8eabfbd99",
+   "\nne voit pas."
+  ]
+ },
+ "openingStatements/va:victor-calloway": "Inspecteur, au nom de mon cabinet, permettez-moi de vous dire combien la disparition de Mme Petrov nous attriste. Je vous accorderai le temps qu'il faudra, mais j'espère que nous saurons rester efficaces, le cabinet a un agenda très chargé.",
+ "openingStatements/va:renee-okafor": "Inspecteur. Je vous aiderai autant que je le peux, je tiens autant que n'importe qui à ce que cette affaire soit résolue. Nadia ne méritait pas ce qui lui est arrivé, quoi qu'il se soit passé.",
+ "openingStatements/va:tomas-petrov": "Divorcé, messages furieux : je sais ce que tout le monde pense. Ce n'est pas moi. Allez vérifier où j'étais, vraiment, au lieu de me regarder de travers.",
+ "openingStatements/va:marcus-bell": "Inspecteur, Marcus Bell, le rédacteur en chef de Nadia. Et je préfère le dire d'emblée, avant que vous ne le demandiez : oui, nous nous sommes disputés à propos de cette enquête il y a deux semaines, et oui, je sais comment ça peut être lu. Notre service juridique peut confirmer tout ce que je vais vous dire.",
+ "questions/va:victor-q1/displayText": "Avez-vous déjà rencontré Nadia Petrov en personne ?",
+ "questions/va:victor-q1/messageToLLM": "Monsieur le conseiller, aviez-vous déjà rencontré Nadia Petrov en personne, avant tout ça ?",
+ "questions/va:victor-q3/displayText": "Son brouillon nomme vos sociétés-écrans. Répondez.",
+ "questions/va:victor-q3/messageToLLM": "J'ai son brouillon d'enquête et la piste d'audit des marchés de la ville, ensemble, monsieur le conseiller. Les deux nomment Harborline Consulting et Dockside Advisory Group, et les rattachent l'une comme l'autre à votre local de campagne. Répondez à ça, directement.",
+ "questions/va:victor-q4/displayText": "Expliquez l'appel de votre cabinet, huit minutes avant la dispute chez Nadia.",
+ "questions/va:victor-q4/messageToLLM": {
+  "_hdfr": [
+   "Un poste non répertorié de votre cabinet a appelé Nadia à 21h52 cette nuit-là. ",
+   "#hdfr:76:1038649371:0a860e7b6653d0ac8533",
+   " Et un téléphone jetable récupéré sur Dockyard Way contient un appel à exactement la même heure. Expliquez-moi ça."
+  ]
+ },
+ "questions/va:renee-q1/messageToLLM": "Madame Okafor, expliquez-moi en quoi consiste vraiment votre travail, au quotidien.",
+ "questions/va:renee-q3/messageToLLM": "J'ai la piste d'audit des marchés maintenant, madame Okafor, et elle confirme son enquête de bout en bout. Arrêtez un instant de protéger son emploi du temps et dites-moi la vérité : où était vraiment Victor Calloway la nuit où Nadia Petrov a été tuée ?",
+ "questions/va:renee-q4/displayText": "Pourquoi la chaise mesurée par le légiste contredit-elle votre version ?",
+ "questions/va:renee-q4/messageToLLM": {
+  "_hdfr": [
+   "#hdfr:70:1856974003:ed5e6186c5dd2b6c88aa",
+   " Cette chaise s'est retrouvée à 1,20 m de l'aplomb. Elle n'est pas là où elle devrait être pour que la version que vous m'avez donnée tienne debout. Pourquoi ?"
+  ]
+ },
+ "questions/va:tomas-q1/displayText": "Comment décririez-vous vos rapports avec Nadia avant sa mort ?",
+ "questions/va:tomas-q1/messageToLLM": "Comment décririez-vous vos rapports avec Nadia dans les semaines qui ont précédé sa mort ?",
+ "questions/va:tomas-q3/displayText": "Expliquez les messages furieux que vous lui avez laissés la semaine d'avant.",
+ "questions/va:tomas-q3/messageToLLM": "J'ai les messages que vous avez laissés à Nadia la semaine avant sa mort, des messages furieux, sur la garde et l'argent. Expliquez-les-moi.",
+ "questions/va:tomas-q4/displayText": "Racontez-moi votre soirée, quand vous êtes allé chercher votre fille.",
+ "questions/va:tomas-q4/messageToLLM": "Racontez-moi ce soir-là, quand vous êtes allé chercher votre fille, du début à la fin : les horaires, l'endroit, les gens qui vous ont vu.",
+ "questions/va:marcus-q1/displayText": "Comment étaient vos rapports de travail avec Nadia ?",
+ "questions/va:marcus-q1/messageToLLM": "Comment étaient vos rapports de travail avec Nadia, au quotidien ?",
+ "questions/va:marcus-q2/displayText": "Pourquoi avoir voulu enterrer l'enquête deux semaines avant sa mort ?",
+ "questions/va:marcus-q3/displayText": "Expliquez pourquoi vos courriels suivants disent tout le contraire.",
+ "questions/va:marcus-q3/messageToLLM": "Votre propre fil de courriels montre que vous avez complètement changé d'avis : vous finissez par lui dire de publier. Expliquez-moi ce revirement.",
+ "endings/va/perfect": "UN PEU D'AIR · AFFAIRE CLASSÉE. Victor Calloway a été arrêté à son bureau lundi matin, sur la base des conclusions du légiste, du téléphone jetable récupéré sur Dockyard Way et des fichiers non caviardés qui le nomment directement. La déclaration de Renee Okafor, puis sa coopération, ont limité sa propre mise en cause à un plaider-coupable pour entrave plutôt qu'à une inculpation pour meurtre. Le contrat de réaménagement de Dockside fait désormais l'objet d'un audit officiel.",
+ "endings/va/good": {
+  "_hdfr": [
+   "Victor Calloway a été arrêté pour le meurtre de Nadia Petrov et l'inculpation tient, mais sans les fichiers non caviardés, le parquet doit reconstruire le dossier de corruption à partir de zéro. Les avocats du conseiller Calloway parlent déjà d'un simple faisceau d'indices. ",
+   "#hdfr:32:693953810:59bb512f9685235b05c0"
+  ]
+ },
+ "endings/va/wrong": {
+  "_hdfr": [
+   "Vous n'aviez qu'une seule chance, et vous avez désigné quelqu'un qui était en deuil, pas coupable. Le contrat de réaménagement de Victor Calloway a été signé dans les délais deux semaines plus tard, un soir où le journal télévisé n'a rien montré d'autre que sa photo devant le ruban coupé. Renee Okafor ne vous a plus jamais écrit. Le numéro a simplement cessé de répondre. C'est définitif. ",
+   "#hdfr:34:1803401887:579cb809d862f13f6a6a"
+  ]
+ },
+ "endings/va/cold": "Le dossier est retourné sur l'étagère sans conclusion. L'appartement 04 de Harborview a été reloué dans l'année, et personne n'a jamais dit au nouveau locataire ce qui s'y était passé.",
+ "emails/email-coroner/from": "Bureau du médecin légiste de Ravenport",
+ "emails/email-coroner/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nVous trouverez ci-joint notre rapport complémentaire sur la scène Petrov. Les constats relatifs au sillon de ligature, aux pétéchies et au créneau du décès sont incompatibles avec une pendaison volontaire. Nous recommandons que cette affaire soit reclassée et instruite comme un homicide, avec effet immédiat.\n\n",
+   "#hdfr:33:1223925078:bc1298210271ddacf718",
+   "\n\nDr R. ",
+   "#hdfr:31:1687216106:e621e53010055a7f6dc2"
+  ]
+ },
+ "emails/email-anon-tip-ledger/body": "À la personne qui s'occupe de l'affaire Petrov,\n\nJe ne peux pas signer ceci de mon nom. Ci-joint une piste d'audit des marchés pour le fonds de réaménagement du terminal. Suivez l'adresse déclarée des deux bénéficiaires. Je crois que c'est pour ça qu'elle est morte.\n\nJe ne répondrai à aucune question envoyée à cette adresse.",
+ "emails/email-warrant-return/from": "Bureau des mandats RPD · retours",
+ "emails/email-warrant-return/subject": "Retour de mandat, prestataire de télésurveillance de Dockside, Harborview appartement 04",
+ "emails/email-warrant-return/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nMandat exécuté cet après-midi auprès du prestataire de télésurveillance qui conserve les enregistrements de Harborview. Ils gardent trente jours d'images, effacées au fur et à mesure. De la nuit en question, il ne reste rien.\n\nUne image a survécu, tirée d'un dossier d'incident plus ancien que le prestataire conservait à part parce que la locataire avait contesté la facturation. ",
+   "#hdfr:28:1638996048:1a5778f821b9f1b48764",
+   "\n\n",
+   "#hdfr:25:582038371:93e62a7fa927c49640d4",
+   " Elle avait une caméra dans son propre salon, et voici pourquoi.\n\n",
+   "#hdfr:31:999033455:875b7839dd4bb8b1ad8f"
+  ]
+ },
+ "emails/email-anon-tip-alley/body": "Renseignez-vous sur la ruelle derrière l'ancien magasin d'accastillage de Dockyard Way, près du terminal à conteneurs. Quelqu'un s'est débarrassé de quelque chose là-bas, récemment. À votre place, je me dépêcherais.",
+ "emails/email-outlet-pressure-2/subject": "Meurtre ou suicide, demande de réaction de la police",
+ "emails/email-outlet-pressure-2/body": {
+  "_hdfr": [
+   "Inspecteur,\n\n",
+   "#hdfr:65:579197096:c29c9b4d15da2e73904b",
+   " On nous dit que l'affaire a été reclassée en enquête pour homicide, en lien avec une enquête qu'elle était sur le point de publier. La police peut-elle confirmer ou démentir avant que nous bouclions avec ce que nous avons ?\n\nNous préférerions publier quelque chose d'exact.\n\n",
+   "#hdfr:27:286647674:84ca88eeb8cc6a583f56"
+  ]
+ },
+ "script/ev-coroner-report/actions/0/body": {
+  "_hdfr": [
+   "Le rapport complémentaire du légiste est dans votre boîte de réception. ",
+   "#hdfr:39:2095286382:9db61b9bc0c1aa6d3d6a"
+  ]
+ },
+ "script/ev-farrah-lead/actions/0/body": "La déclaration de Farrah Odom est au procès-verbal : un homme se disputant avec Nadia vers 22h00, ce qui ne cadre pas du tout avec la chronologie d'un suicide calme et prémédité.",
+ "script/ev-anon-tip-alley/actions/1/body": "Un tuyau désigne une ruelle de Dockyard Way. Ouvrez l'Atlas de la ville et envoyez une patrouille.",
+ "script/ev-warrant-return-filed/actions/1/body": "L'image de la caméra intérieure du 2 janvier est dans Rapports de scène. Zoomez, et passez-y la lampe UV.",
+ "script/ev-prior-search-note/actions/0/body": "Une fouille de son appartement un mois avant sa mort explique le coffre à la banque mieux que n'importe quel témoin. Gardez cette image sous la main.",
+ "script/ev-me-confirms-twist/actions/0/body": "Inspecteur, je veux être parfaitement clair avant que vous n'alliez plus loin. Les ecchymoses excluent toute pendaison volontaire, sans l'ombre d'un doute. Celui qui a fait ça l'a pendue alors qu'elle était DÉJÀ inconsciente.",
+ "script/ev-me-confirms-twist/actions/0/clue/label": "Inconsciente avant la pendaison",
+ "script/ev-me-confirms-twist/actions/0/clue/detail": "Le médecin légiste le confirme directement : les ecchymoses excluent toute pendaison volontaire. Elle était déjà inconsciente quand on l'a pendue.",
+ "script/ev-tomas-cleared/actions/0/body": "Le registre de sortie met Tomas Petrov hors de cause : il était à trois heures de route la nuit de la mort de Nadia.",
+ "script/ev-marcus-cleared/actions/0/body": "Les derniers courriels de Marcus Bell montrent qu'il avait complètement changé d'avis : au moment de la mort de Nadia, il soutenait l'enquête, il ne la combattait plus.",
+ "script/ev-renee-text/actions/0/text": {
+  "_hdfr": [
+   "#hdfr:31:529486156:2ee7d8861b346eb7f189",
+   " Il faut que vous le sachiez. J'ai déplacé une chaise, j'ai essuyé une poignée de porte, parce qu'il me l'a demandé et que j'avais peur. C'est tout. ",
+   "#hdfr:28:847356302:ba322d7b11737f9e879d"
+  ]
+ },
+ "script/ev-burner-logged/actions/0/body": "Le seul appel qui a survécu dans le journal du téléphone jetable correspond, à la minute près, à l'appel du poste non répertorié à 21h52.",
+ "script/ev-daybook-pointer/actions/0/body": "Son agenda mentionne le code d'un coffre bancaire sans l'écrire. Ouvrez l'œil : ce code renvoie à autre chose dans le dossier.",
+ "script/ev-box-opened/actions/1/title": "COFFRE BANCAIRE OUVERT",
+ "script/ev-box-opened/actions/1/body": "Les fichiers de sauvegarde récupérés dans le coffre n° 2214 sont maintenant dans les Dossiers d'enquête, sous Documents bancaires.",
+ "script/ev-unredacted-flash/actions/0/body": {
+  "_hdfr": [
+   "#hdfr:77:2140566093:204cde19b1d674c3c18c",
+   " Plus la moindre précaution."
+  ]
+ },
+ "script/ev-victor-counsel-nervous/actions/0/body": {
+  "_hdfr": [
+   "#hdfr:79:536666020:be133a9b76d5c437d294",
+   " En général, ça veut dire que quelqu'un est nerveux."
+  ]
+ },
+ "script/ev-priya-clue-logged/actions/0/title": "UNE VIE PLEINE DE PROJETS",
+ "script/ev-priya-clue-logged/actions/0/body": {
+  "_hdfr": [
+   "La déclaration de Priya Anand est consignée : la garde de sa fille réglée et un rendez-vous chez le dentiste, l'un et l'autre pour la semaine qui a suivi sa mort. ",
+   "#hdfr:53:1894268074:ba7ccc95371d50800367"
+  ]
+ },
+ "script/ev-victor-nondenial-logged/actions/0/body": {
+  "_hdfr": [
+   "#hdfr:67:980372391:c2d50847d7155dc896a9",
+   " Le mandat sera signé dès que vous serez prêt."
+  ]
+ },
+ "script/ev-wrong/actions/1/text": "Vous l'aviez. Vous l'aviez, et vous vous êtes quand même trompé.",
+ "script/ev-solved/actions/0/title": "FÉLICITATIONS · AFFAIRE N° 004",
+ "script/ev-solved/actions/0/body": {
+  "_hdfr": [
+   "#hdfr:35:1698973040:1c3b39ca878a54b285c6",
+   " Le parquet construit déjà le dossier de corruption grâce à la coopération de Renee Okafor."
+  ]
+ },
+ "script/ev-solved/actions/1/text": "Merci. Je sais que je n'ai pas le droit de me sentir soulagée, dans tout ça, mais… merci.",
+ "script/ev-story-runs/actions/0/body": "L'enquête de Nadia Petrov paraît dans le journal de demain, signée à titre posthume. Priya Anand y a veillé.",
+ "pressArchive/mastheadTitle": "#hdfr:23:765273624:ffe53de7ecdbafd16642",
+ "pressArchive/articles/0/body/0": "Le conseil municipal a voté mardi, par 11 voix contre 4, la poursuite du réaménagement du terminal à conteneurs de Dockside, un projet que son principal défenseur, le conseiller Victor Calloway, a décrit comme le plus gros investissement réalisé dans le quartier depuis quarante ans.",
+ "pressArchive/articles/0/body/1": "« On demande à Dockside d'être patient depuis très longtemps », a déclaré le conseiller Calloway devant l'assemblée. « C'est un programme pour l'emploi dans un quartier qui en a besoin, et j'entends le mener à son terme. »",
+ "pressArchive/articles/0/body/2": "Le projet sera mené dans un cadre de marchés groupés, qui permet au conseil d'attribuer des contrats de conseil sans appel d'offres individuel. Deux conseillers ont mis ce cadre en question pendant le débat. Ni l'un ni l'autre n'a poussé la question jusqu'au vote.",
+ "pressArchive/articles/1/body/1": "Les deux sociétés ont été immatriculées récemment. Les deux donnent la même adresse. Le service des marchés du conseil a refusé de préciser ce pour quoi l'une ou l'autre avait été engagée, en invoquant « la confidentialité commerciale d'un cadre en cours ».",
+ "pressArchive/articles/1/body/2": "Le cabinet du conseiller Calloway n'a pas répondu à trois demandes de réaction avant publication.",
+ "pressArchive/articles/2/subhead": "La police s'est rendue à une adresse de Dockside. Le décès a d'abord été enregistré comme non suspect",
+ "pressArchive/articles/2/body/0": {
+  "_hdfr": [
+   "Nadia Petrov, 34 ans, journaliste d'investigation à ce journal, a été retrouvée morte à son domicile de la résidence Harborview aux premières heures de dimanche. ",
+   "#hdfr:46:255121715:6f54bf33fc92c19564b7"
+  ]
+ },
+ "pressArchive/articles/2/body/1": {
+  "_hdfr": [
+   "#hdfr:118:1428908176:96540c2348dbca430f71",
+   " Le bureau du médecin légiste de Ravenport a depuis confirmé qu'il menait un examen complémentaire et que le dossier restait ouvert."
+  ]
+ },
+ "pressArchive/articles/2/body/2": "« Nadia était la journaliste la plus têtue que j'aie jamais relue, et c'est un compliment, elle l'aurait entendu comme tel », a déclaré Marcus Bell, rédacteur en chef de ce journal. « Elle était à six semaines de boucler. Nous bouclerons pour elle. »",
+ "pressArchive/articles/3/headline": "« NEUF MINUTES » : DES QUESTIONS SUR LA PRISE EN CHARGE DE LA MORT D'UNE JOURNALISTE",
+ "pressArchive/articles/3/subhead": "Un journal concurrent demande comment une scène a pu être libérée avant l'arrivée du légiste",
+ "pressArchive/articles/3/body/0": "La pression monte sur la police de Ravenport à propos du traitement initial de la mort de Nadia Petrov, journaliste à la Gazette, depuis qu'on a appris que les premiers intervenants ont enregistré la scène comme un suicide apparent et l'ont libérée dans les neuf minutes suivant leur arrivée, avant même que le légiste d'astreinte n'ait atteint l'immeuble.",
+ "pressArchive/articles/3/body/1": "Le bureau du médecin légiste a reclassé l'affaire en enquête pour homicide dès le lendemain.",
+ "pressArchive/articles/3/body/2": "Un porte-parole du service s'est borné à déclarer que « l'enquête est en cours et menée par la brigade criminelle ». Dez Ferro, du Ravenport Ledger, qui a le premier révélé le chiffre de neuf minutes, a indiqué que le service avait « refusé d'expliquer comment cette décision avait été prise, et par qui ».",
+ "pressArchive/articles/4/subhead": "La Gazette publie la dernière enquête de Nadia Petrov, intégrale et sans retouche",
+ "pressArchive/articles/4/body/0": "Nous publions aujourd'hui le travail que Nadia Petrov n'aura pas eu le temps de boucler. Il paraît sans précaution éditoriale, exactement tel qu'elle l'a laissé, parce que c'est ainsi qu'elle l'a écrit et parce qu'il n'y a plus aucun intérêt juridique à l'adoucir.",
+ "pressArchive/articles/4/body/1": "Il porte sur le fonds de réaménagement du terminal de Dockside, sur deux cabinets de conseil domiciliés à une seule adresse, et sur le conseiller qui défendait le projet en public pendant que le fonds payait en privé.",
+ "pressArchive/articles/4/body/2": "Dans sa copie de sauvegarde, Nadia avait glissé une ligne que nous avons choisi d'imprimer ici telle qu'elle l'a écrite : « S'il m'arrive quelque chose avant que ça sorte, demandez pourquoi. »",
+ "pressArchive/articles/4/body/3": "Quelqu'un vient de demander. M. Bell, rédacteur en chef",
+ "emails/email-coroner/timestamp": "2 FÉVR. 2020 · 06:14",
+ "emails/email-anon-tip-ledger/timestamp": "2 FÉVR. 2020 · 16:05",
+ "emails/email-warrant-return/timestamp": "2 FÉVR. 2020 · 17:30",
+ "emails/email-anon-tip-alley/timestamp": "2 FÉVR. 2020 · 20:40",
+ "emails/email-outlet-pressure-2/timestamp": "2 FÉVR. 2020 · 21:15"
+}

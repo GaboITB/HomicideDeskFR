@@ -1,0 +1,92 @@
+﻿PATCH FRANÇAIS DE HOMICIDE DESK
+===============================
+
+Ce patch traduit Homicide Desk en bon français : les documents des sept affaires, les pièces à
+conviction, l'interface, et ce que disent les suspects en interrogatoire.
+
+Gratuit, sans inscription, rien n'est envoyé sur Internet. Il ne touche qu'au jeu, et il se retire
+en un double-clic. Seul le téléchargement facultatif de Gemma 4B (voir plus bas) utilise la
+connexion, pour recevoir le modèle, jamais pour envoyer quoi que ce soit.
+
+
+INSTALLER
+---------
+
+1. Décompressez ce fichier zip si ce n'est pas déjà fait : clic droit sur le zip, « Extraire tout ».
+2. Fermez Homicide Desk s'il est ouvert.
+3. Dans le dossier décompressé, double-cliquez sur « Installer le patch FR ».
+4. L'installateur propose de télécharger Gemma 4B : répondez « O » (ou Entrée) pour l'avoir,
+   « n » pour vous en passer. Voir « GEMMA 4B » plus bas.
+5. Attendez le message « C'est fait ! » (1 à 5 minutes pour le patch, plus le
+   téléchargement de Gemma 4B si vous l'avez demandé).
+6. Lancez le jeu depuis Steam et choisissez « Français » dans ses paramètres.
+
+Le patch trouve le jeu tout seul dans Steam. S'il n'y arrive pas, une fenêtre vous demande
+d'indiquer le dossier du jeu : dans Steam, clic droit sur Homicide Desk, Gérer, Parcourir les
+fichiers locaux, pour savoir lequel choisir.
+
+
+GEMMA 4B, LE MODÈLE CONSEILLÉ POUR LE FRANÇAIS
+----------------------------------------------
+
+Les suspects sont joués par une petite intelligence artificielle qui tourne sur votre ordinateur.
+Le jeu fournit Qwen 4B. Gemma 4B (Google, gratuit) donne un bien meilleur rendu aux joueurs
+francophones : des suspects plus vivants, qui réagissent mieux aux pièces qu'on leur montre.
+
+- Il se télécharge une seule fois, environ 3,3 Go, depuis le registre Ollama. Comptez environ
+  5 minutes avec une connexion à 100 Mbit/s, 25 minutes à 20 Mbit/s, une heure à 8 Mbit/s.
+  L'avancement s'affiche en pourcentage. Il faut environ 4 Go libres sur le disque du jeu.
+- Sans connexion, ou si vous répondez « n », le patch s'installe quand même et le jeu garde Qwen 4B.
+  Relancez « Installer le patch FR » plus tard pour ajouter Gemma 4B.
+- Il ne sert que pour les parties en français. Avec une carte graphique
+  NVIDIA d'au moins 10 Go, le jeu fait tourner un modèle plus gros (Gemma 12B) et
+  l'installateur ne propose pas Gemma 4B.
+- « Retirer le patch FR » le supprime aussi et rend la place.
+- Gemma est soumis aux conditions d'utilisation de Google (Gemma Terms of Use), affichées par
+  Ollama et jointes au modèle.
+
+
+SI WINDOWS AFFICHE « WINDOWS A PROTÉGÉ VOTRE ORDINATEUR »
+--------------------------------------------------------
+
+C'est normal pour un fichier téléchargé qui n'est pas signé par un éditeur commercial.
+Cliquez sur « Informations complémentaires », puis sur « Exécuter quand même ».
+
+
+APRÈS UNE MISE À JOUR DU JEU
+----------------------------
+
+Quand Steam met à jour Homicide Desk, il remplace les fichiers du jeu et le patch disparaît.
+Le jeu redevient mal traduit ? Double-cliquez à nouveau sur « Installer le patch FR ».
+
+
+RETIRER LE PATCH
+----------------
+
+Double-cliquez sur « Retirer le patch FR ». Le jeu redevient exactement tel que Steam l'a installé.
+Ne le faites pas après une mise à jour du jeu : Steam a déjà retiré le patch, il n'y a rien à faire.
+
+
+EN CAS DE PROBLÈME
+------------------
+
+- Le jeu ne démarre plus : dans Steam, clic droit sur Homicide Desk, Propriétés, Fichiers installés,
+  « Vérifier l'intégrité des fichiers ». Steam remet le jeu d'origine.
+- Si l'installateur indique qu'un fichier du patch a disparu, décompressez à nouveau le zip.
+- Pour signaler un souci, joignez le fichier « journal.txt » qui se trouve dans le dossier
+  « fichiers » : il décrit ce que le patch a fait.
+- Il faut environ 2,5 Go libres pendant l'installation. Ils sont rendus à la fin, sauf 861 Mo :
+  la sauvegarde du jeu d'origine, placée dans le dossier du jeu pour pouvoir retirer le patch.
+
+
+À SAVOIR
+--------
+
+- Windows uniquement.
+- Les réponses des suspects sont écrites en direct par une petite IA qui tourne sur votre
+  ordinateur, fournie avec le jeu. Le patch lui donne des consignes entièrement en français, mais
+  il lui arrive encore de se tromper. Un suspect qui nie même devant une preuve, c'est voulu par
+  le jeu : les coupables ne passent jamais aux aveux.
+- Le dossier « fichiers » contient le patch lui-même et sa documentation technique (README.md).
+
+Projet de fan, gratuit, sans lien avec le studio Shu'la Lab.

@@ -1,0 +1,131 @@
+{
+ "settings.language.note": {
+  "_hdfr": [
+   "#hdfr:36:1704805579:57c19fcf0a6da069eea5",
+   " Les suspects répondent toujours dans la langue de l'interface. Les documents d'enquête sont traduits en français."
+  ]
+ },
+ "int.noAnswer": "AUCUNE RÉPONSE : la ligne avec la salle d'audition a été coupée. La question n'a pas été décomptée. Réessayez dans un instant.",
+ "int.lineBusy": "LIGNE OCCUPÉE : le réseau du poste de police est saturé. La question n'a pas été décomptée. Attendez une minute puis reposez-la.",
+ "brief.body": "Nouvelle journée : un nouvel incident vous attend au POSTE DE POLICE, les gains du casse-code sont réinitialisés et votre solde s'élève à {balance} $.",
+ "tip.3": {
+  "_hdfr": [
+   "#hdfr:40:276240481:e7baf9aed5bbf933979d",
+   " Vous l'entendrez sur le canal de la centrale."
+  ]
+ },
+ "menu.quit.blockedBody": "Votre navigateur refuse de fermer cet onglet tout seul. Fermez-le vous-même quand vous voudrez.",
+ "recap.lastOpen": "Dernier document ouvert : {title}",
+ "int.releasedBody": {
+  "_hdfr": [
+   "Fin d'audition pour aujourd'hui : {name} a quitté la salle. ",
+   "#hdfr:44:1377399743:85e2fbffda1f124fa084"
+  ]
+ },
+ "int.releasedPanelBody": "{name} a quitté la salle après l'audition. Profitez-en : relisez les pièces et préparez votre prochaine offensive.",
+ "int.sessionEndBody": "Encore {n} question(s) avant la fin de l'audition de {name}.",
+ "ev.objOpenedBody": "Récupéré et versé aux scellés : {name}.",
+ "shop.reqIssuedBody": "Sorti de la boutique et rattaché à votre affaire : {name}.",
+ "cfp.iaStamp": "CONTRÔLE DES AFFAIRES INTERNES",
+ "ia.clearedTitle": "Mention des affaires internes effacée",
+ "tx.iaFine": "Amende disciplinaire · arrestation injustifiée (affaires internes)",
+ "net.dispFailed": "CLOS · ARRESTATION ERRONÉE (examen des affaires internes)",
+ "cfp.revSign": "Capitaine R. Morrison, Brigade criminelle",
+ "acc.morrisonTitle": "Capitaine Morrison",
+ "call.name": "#hdfr:20:1106224292:d08dd275350aa01662ae",
+ "shop.desk-cat.name": "La minette du poste de police",
+ "shop.catTitle": "La minette du poste de police · cliquez pour la caresser",
+ "deck.rew": "REMBOBINER",
+ "acc.releasedBody": {
+  "_hdfr": [
+   "{name} ressort libre, sans poursuites. ",
+   "#hdfr:38:260160247:62dabe07553dfdbf25cb"
+  ]
+ },
+ "acc.headline": "Enquête « {title} » : {name} sous les verrous",
+ "np.solved.headline": "AFFAIRE CLASSÉE : {suspect} INCULPÉ",
+ "acc.pMotiveQ": "Pourquoi tuer ?",
+ "acc.pOpportunityQ": "Qu’est-ce qui le place sur les lieux ?",
+ "acc.pMethodQ": "Comment le crime a-t-il été commis ?",
+ "acc.pFail.opportunity": "OPPORTUNITÉ non établie, la pièce jointe ne place pas cette personne sur les lieux dans le créneau du décès.",
+ "tutObj.6": "Quand vous n’aurez plus de doute, ouvrez le MANDAT D’ARRÊT et procédez à l’arrestation",
+ "warrant.readyBody": {
+  "_hdfr": [
+   "#hdfr:47:984725882:8a36a493423d39dab0a7",
+   " Le formulaire de MANDAT D’ARRÊT est sur votre bureau. Remplissez-le le moment venu."
+  ]
+ },
+ "shop.foot": "Ni reprise ni remboursement. Réclamations au Comité de contrôle, formulaire 77-B, en trois exemplaires.",
+ "ach.completionist.label": "Rien laissé au hasard",
+ "bounty.clues-5.label": "Fil conducteur",
+ "fe.previewTitle": "APERÇU DU DOCUMENT",
+ "cbr.sub": "#hdfr:40:131067509:1a8e79d5042f92492d77",
+ "tutObj.0": "Ouvrez AFFAIRES et prenez le dossier n° 000 · La clé du prêteur",
+ "lab.fpMatch": "CONCORDANCE",
+ "ev.phTime": "HORODATAGE",
+ "warrant.gEvidence": "Pièces sous scellés : {n}, minimum {min}",
+ "warrant.gmInterview": "ressort d’un interrogatoire, pas d’une recherche d’archives : poussez ceux qui étaient sur place",
+ "warrant.leadNeedsFirst": "On ne vous le donnera que si vous détenez déjà : {items}.",
+ "warrant.leadFolder": "Il est déjà dans vos dossiers, sous {folder}. Ouvrez-le et lisez-le.",
+ "warrant.guidanceHead": "Note du parquet. Ce qu’attend chaque pièce encore absente :",
+ "warrant.leadAfter": "Cela apparaît une fois que {name} est sous scellés.",
+ "warrant.leadTalk": "Cela apparaît une fois que vous avez interrogé {name}.",
+ "warrant.leadLab": "Cela apparaît une fois que le laboratoire a traité {name}.",
+ "warrant.leadClueFrom": "Cela apparaît une fois que vous avez exploité {source} à fond. Revenez-y et regardez de près.",
+ "warrant.insufficientNote": {
+  "_hdfr": [
+   "Le parquet ne délivrera pas encore de mandat dans cette affaire. ",
+   "#hdfr:72:300147949:bbfffe5e5f03ed3224cb"
+  ]
+ },
+ "warrant.insufficientNoteDet": "Le parquet ne délivrera pas encore de mandat dans cette affaire. Aucun motif ne vous sera communiqué : étoffez le dossier jusqu'à ce qu'il tienne, puis revenez.",
+ "tip.6": "Une arrestation injustifiée reste inscrite à votre dossier, et les affaires internes n'oublient jamais.",
+ "ia.openedTitle": "#hdfr:17:533821365:b6ae04d010a2d7a68fe8",
+ "ia.clearedBody": {
+  "_hdfr": [
+   "#hdfr:44:1408477617:3043d705a5578bd2c72a",
+   " Une mention des affaires internes a été retirée de votre dossier."
+  ]
+ },
+ "acc.morrisonBody": {
+  "_hdfr": [
+   "#hdfr:41:2108388014:9b395acaedcbdd169adc",
+   " ",
+   "#hdfr:54:1385900552:6898e44a2f81c08cfcaa",
+   " Les affaires internes ont ouvert un dossier, trouvez-moi le vrai suspect."
+  ]
+ },
+ "atlas.ranksHint": {
+  "_hdfr": [
+   "Les grades s’obtiennent en bouclant des affaires, rouvrez des affaires résolues (affaires internes) pour continuer à gravir les échelons. ",
+   "#hdfr:66:948400972:5d0abce24ef53f239b57"
+  ]
+ },
+ "dmail.iaFrom": "Affaires internes · Bureau de la division",
+ "dmail.iaSign": "#hdfr:38:533821365:99f6abf214c4566df3c0",
+ "rank.Captain": "Capitaine",
+ "ach.captain-rank.desc": "Atteignez le grade de capitaine ou supérieur.",
+ "svc.donut.where": "Poste de police, le sergent de permanence lâche un tuyau",
+ "cf.svc.donutD": "Le sergent de permanence lâche un tuyau sur le fil",
+ "pc.txCoffee": "Tournée de café pour le sergent de permanence",
+ "games.foot": {
+  "_hdfr": [
+   "#hdfr:53:1220274516:2fe1bf14fe759875bffe",
+   " Le capitaine vérifie les journaux."
+  ]
+ },
+ "pc.coffeeTitle": "Un café pour le sergent de permanence, il vous dira ce qu’il a entendu",
+ "settings.ambience": "Ambiance sonore du poste de police",
+ "shop.precinct-radio.name": "Radio du poste de police",
+ "unlock.icon-precinct": "Poste de police, le terminal du central est en ligne.",
+ "ach.bounty-hunter.desc": "Encaissez une prime du tableau du poste de police.",
+ "sm.precinct": "Poste de police",
+ "icon.icon-precinct": "Poste de police",
+ "fe.archive": "SERVICE DES ARCHIVES",
+ "onboarding.coldOpen2": {
+  "_hdfr": [
+   "#hdfr:36:1261248279:9a2dfa336fd9fae334c4",
+   " 1,1 million d’habitants, la plus grande ville de Meridia, et la plus usée."
+  ]
+ }
+}

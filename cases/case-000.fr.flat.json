@@ -1,0 +1,196 @@
+{
+ "tagline": "Pas de vitre brisée, pas de porte forcée. Une montre disparue et deux clés.",
+ "description": "Hollis Pawn & Loan, à Eastdock. Un vol pendant la nuit : une montre Longines de 1968, assurée pour 2 400 $, a disparu d'une vitrine fermée à clé. Aucune trace d'effraction, et pas une rayure sur la serrure. Seuls deux employés ont un double des clés. L'assureur a déjà envoyé un scan 3D de la montre. Dossier de formation transmis par le service du personnel : bouclez-le proprement.",
+ "captainBriefing": {
+  "_hdfr": [
+   "Affaire de formation, inspecteur. Un vol chez un prêteur sur gages d'Eastdock. Aucune trace d'effraction, deux employés ont les clés, et une montre a disparu. Le service du personnel vous guidera dans la procédure. ",
+   "#hdfr:26:2087557293:16a1b816031b412e17ab"
+  ]
+ },
+ "files/folder-physical/name": "Pièces matérielles",
+ "files/file-E5/name": "Serrure de la vitrine · saisie",
+ "files/folder-incident/name": "Rapports d'intervention",
+ "files/file-E1/name": "Rapport d'intervention · Hollis Pawn & Loan",
+ "files/file-E3/name": "Cahier de fermeture · semaine du 6 janvier",
+ "files/file-E4/name": "Bordereau d'achat · Westgate Pawn & Loan",
+ "evidence/va:E0/description": "Le scan d'expertise envoyé par l'assureur. Une montre d'homme Longines, fabriquée en 1968, cadran argenté, bracelet en cuir marron, étiquette d'inventaire HV-0417. Assurée pour 2 400 $.",
+ "evidence/va:E0/presentationMessage": {
+  "_hdfr": [
+   "Voici le scan de la Longines, envoyé par l'assureur. ",
+   "#hdfr:49:440918484:d73bf893f1035720c8ce",
+   " C'est cette montre-là qu'on a sortie de la boutique vendredi soir. Vous la reconnaissez ?"
+  ]
+ },
+ "evidence/va:E0/fileContent": {
+  "_hdfr": [
+   "SCAN D'EXPERTISE DE L'ASSUREUR · MERIDIA MUTUAL\nOBJET : montre d'homme, LONGINES, fabriquée en 1968.\nCadran argenté, bracelet en cuir marron.\n",
+   "#hdfr:31:1745873288:aed3a5d66ed7c81cb693",
+   "\n",
+   "#hdfr:25:531794631:3cf032257b582fe498d7",
+   "\nScan de référence interactif fourni pour identification."
+  ]
+ },
+ "evidence/va:E5/name": "Serrure de la vitrine",
+ "evidence/va:E5/description": "La serrure de la vitrine, démontée et placée sous scellés par l'agent. Barillet intact, aucune trace d'outil, pas une rayure autour de l'entrée de clé. Elle n'a été ni crochetée ni forcée, mais ouverte avec une clé.",
+ "evidence/va:E5/presentationMessage": {
+  "_hdfr": [
+   "Voilà la serrure de la vitrine, sous scellés. ",
+   "#hdfr:73:1764173487:f560003b199ba22b0bc6",
+   " Personne ne l'a crochetée. Elle a été ouverte avec une clé."
+  ]
+ },
+ "evidence/va:E5/fileContent": {
+  "_hdfr": [
+   "#hdfr:39:1052752096:4521207927d8e7205262",
+   "\nPrélevée sur la vitrine principale, Hollis Pawn & Loan.\nBarillet intact. Aucune trace d'outil. Entrée de clé nette.\nCompatible avec l'usage d'une clé d'origine."
+  ]
+ },
+ "evidence/va:E1/name": "Rapport d'intervention",
+ "evidence/va:E1/description": "Vitrine trouvée ouverte le samedi à 08h10, une montre Longines de 1968 manquante (2 400 $). Aucune trace d'effraction, ni sur la porte, ni sur la fenêtre, ni sur la vitrine. Toutes les serrures ont été ouvertes avec une clé.",
+ "evidence/va:E1/presentationMessage": "L'agent a vérifié chaque serrure de la boutique. La porte d'entrée, la porte de service, la vitrine. Pas une rayure, nulle part. Celui qui a pris la Longines s'est servi d'une clé. Deux fois.",
+ "evidence/va:E1/clue/label": "Aucune trace d'effraction : une clé a été utilisée",
+ "evidence/va:E1/clue/detail": "La porte et la vitrine ont été ouvertes proprement, et seuls Hollis et ses deux employés ont les clés",
+ "evidence/va:E1/fileContent": {
+  "_hdfr": [
+   "#hdfr:41:1628487441:75d608c2a33844043766",
+   "\nRAPPORT D'INTERVENTION · RÉF : ED/2020/0111/014\n\nDATE : samedi 11 janvier 2020, 08:41\n",
+   "#hdfr:61:1185525950:8c8d6c575c08fd43dc79",
+   "\nRÉDACTEUR : agent J. Okafor\n",
+   "#hdfr:46:848713757:3892294f3663a51151f8",
+   "\n\nRÉSUMÉ :\nLe propriétaire a ouvert la boutique samedi à 08:05 et a trouvé la\nvitrine principale DÉVERROUILLÉE. Un seul objet manque : une montre\nd'homme Longines, fabriquée en 1968, étiquette d'inventaire HV-0417,\nvaleur assurée 2 400 $. Rien d'autre n'a été touché. Caisse intacte.\n\nCONSTATATIONS :\n- Aucune trace d'effraction. La porte d'entrée, la porte de service\n  et la vitrine ont toutes été ouvertes avec une clé. Pas de trace\n  d'outil, pas de verre brisé.\n- La vitrine a sa propre clé, distincte de celles des portes. Tout a\n  été refermé SAUF la vitrine, laissée ouverte.\n- Locaux fermés par le plaignant lui-même le vendredi 10 janvier à\n  18:30. L'alarme ne s'est pas déclenchée de la nuit : désarmée avec\n  un code valide à 22:12 le vendredi, réarmée à 22:31.\n- Le plaignant détient son propre jeu complet. Il existe deux\n  doubles, remis à ses employés (voir registre des clés, joint).\n\nOBJET MANQUANT :\n1x montre d'homme Longines, 1968, cadran argenté, bracelet cuir\nmarron, inventaire HV-0417, 2 400 $.\n\nSTATUT : en cours · vol (délit grave)"
+  ]
+ },
+ "evidence/va:E2/description": "Hollis tient un registre des deux doubles, signé par leurs détenteurs : Dana Brook, la vendeuse, et Tommy Vale, le manutentionnaire du week-end. Les deux jeux comprennent la clé de la vitrine, et tous les trois connaissent le code d'alarme.",
+ "evidence/va:E2/presentationMessage": "Il existe deux doubles, et vous en avez un. Signé au registre, clé de la vitrine comprise. L'alarme a été désarmée avec un code valide à 22h12 vendredi soir. Les clés et le code réunis, ça fait une liste très courte.",
+ "evidence/va:E2/clue/label": "Deux doubles seulement",
+ "evidence/va:E2/clue/detail": "Dana Brook et Tommy Vale ont chacun un jeu complet, clé de la vitrine comprise, et les trois membres du personnel connaissent le code d'alarme",
+ "evidence/va:E2/spreadsheetRows/5/1": "commun à tout le personnel",
+ "evidence/va:E2/spreadsheetRows/5/4": "désarmée VEN. 22:12, réarmée 22:31",
+ "evidence/va:E2/fileContent": {
+  "_hdfr": [
+   "#hdfr:38:1445436124:ccfea3c90e8b7cd599f0",
+   "\n\nJEU A (original) : Edwin Hollis, propriétaire.\nClé de vitrine comprise.\nJEU B : Dana Brook, vendeuse. Délivré le 3 juin 2019. Signé.\nJEU C : Tommy Vale, manutentionnaire du week-end. Délivré le\n9 novembre 2019. Signé.\n\nCode d'alarme commun à tout le personnel.\n",
+   "#hdfr:39:1082936281:ecd202fb4526c487b79f",
+   "\n",
+   "#hdfr:30:22637747:417cd6e0f5c32e5a82da"
+  ]
+ },
+ "evidence/va:E3/name": "Cahier de fermeture · semaine du 6 janvier",
+ "evidence/va:E3/description": "Le cahier de la semaine, écrit à la main par Hollis. Mardi et jeudi, il note que Tommy Vale lui a demandé ce que vaudrait la Longines. Deux fois. Et vendredi : « redit à T.V. que la Longines n'est pas un jeu de devinettes ».",
+ "evidence/va:E3/presentationMessage": {
+  "_hdfr": [
+   "Le cahier de Hollis, monsieur Vale. Mardi, vous avez demandé ce que vaudrait la Longines. ",
+   "#hdfr:27:851989071:e7cad4ed56f05721b042",
+   " Vendredi, il l'a écrit. Ses mots : « redit à T.V. que la Longines n'est pas un jeu de devinettes ». Vendredi soir, elle n'était plus là. ",
+   "#hdfr:26:154699104:6e1a80f3f0f35dac52d9"
+  ]
+ },
+ "evidence/va:E3/clue/label": "Vale s'est renseigné deux fois sur le prix",
+ "evidence/va:E3/clue/detail": "Le cahier de la boutique note que Tommy Vale a demandé la valeur de la Longines le mardi et le jeudi, et que Hollis l'a rembarré le vendredi",
+ "evidence/va:E3/fileContent": {
+  "_hdfr": [
+   "HOLLIS PAWN & LOAN\nCAHIER DE FERMETURE · SEMAINE DU LUNDI 6 JANVIER 2020\n(écrit à la main, E. Hollis)\n\nLUN 6 JANV : calme. Deux dégagements, une guitare en gage. Vitrine\nfermée, 18:30.\n\nMAR 7 JANV : T.V. venu en renfort à la réserve. A demandé ce que\nvaudrait la Longines sur le marché. Répondu qu'elle vaut ce que\nje dis qu'elle vaut. Vitrine fermée, 18:30.\n\nMER 8 JANV : l'acheteur de la bague est repassé, pas de vente.\nD.B. ",
+   "#hdfr:40:1747625104:356fed88cfcd38030ff4",
+   " Vitrine fermée, 18:25.\n\nJEU 9 JANV : T.V. a ENCORE demandé le prix de la Longines. « Simple\ncuriosité. » Curieux deux fois dans la semaine.\nVitrine fermée, 18:30.\n\nVEN 10 JANV : redit à T.V. que la Longines n'est pas un jeu de\ndevinettes. T.V. parti à 17:00. D.B. est partie à 17:30. J'ai\n",
+   "#hdfr:32:485188065:d264917018a426e2ed27",
+   " Vitrine fermée. Vérifiée deux fois."
+  ]
+ },
+ "evidence/va:E4/name": "Bordereau d'achat · Westgate Pawn & Loan",
+ "evidence/va:E4/description": {
+  "_hdfr": [
+   "Le bordereau d'achat de Westgate Pawn & Loan, vendredi 10 janvier, 23h40. Une montre Longines de 1968, achetée 650 $. ",
+   "#hdfr:25:433517388:31d6a7d39856c8befcbd",
+   " Vale. Pièce d'identité relevée au comptoir."
+  ]
+ },
+ "evidence/va:E4/presentationMessage": "Westgate Pawn & Loan, vendredi soir, 23h40. Une Longines de 1968, achetée six cent cinquante dollars. Le comptoir a relevé la pièce d'identité du vendeur et le bordereau porte une signature : T. Vale. Votre signature. Pour la montre dont on vous avait dit de ne plus demander le prix. Une heure après que l'alarme a été réarmée.",
+ "evidence/va:E4/clue/detail": "La Longines a été revendue chez Westgate Pawn & Loan vendredi à 23h40. Pièce d'identité du vendeur relevée, signature T. Vale",
+ "evidence/va:E4/fileContent": {
+  "_hdfr": [
+   "WESTGATE PAWN & LOAN\n",
+   "#hdfr:34:705600322:a0578f8bf090d38c6de0",
+   "\nTÉL 555-0144 · LIC. RP-PB-2071\n\nBORDEREAU D'ACHAT N° 20-0093\nDATE : VEN 10 JANV. 2020   HEURE : 23:40\nEMPLOYÉ : R. OKONKWO · COMPTOIR DE NUIT\n\nACHAT\n1x MONTRE D'HOMME\n   LONGINES : FABR. 1968\n   CADRAN ARGENTÉ / BRACELET CUIR MARRON\n\n",
+   "#hdfr:25:316793670:a5cab006f6cfb37061da",
+   " 650,00 $\n\nDÉCLARATION DU VENDEUR :\n« Je certifie être le propriétaire\n",
+   "#hdfr:30:265699616:79b0f5d4fbd7d86a045d",
+   " »\n\nPIÈCE D'IDENTITÉ : RELEVÉE AU COMPTOIR\n(PERMIS DE CONDUIRE DE MERIDIA)\n\nSIGNATURE : T. Vale\n\nMERCI · VENTE FERME"
+  ]
+ },
+ "questions/va:dana-q1/messageToLLM": {
+  "_hdfr": [
+   "Madame Brook, vendredi soir, à partir de la fermeture. ",
+   "#hdfr:41:245924907:05e08040034c32b2beba"
+  ]
+ },
+ "questions/va:dana-q2/displayText": "Qui a les clés de la vitrine ?",
+ "questions/va:dana-q2/messageToLLM": {
+  "_hdfr": [
+   "Le registre dit que vous avez le jeu B, clé de la vitrine comprise. ",
+   "#hdfr:42:1895616573:6081750f12ae38eed941"
+  ]
+ },
+ "questions/va:dana-q3/displayText": "Rien d'inhabituel à la boutique ces temps-ci ?",
+ "questions/va:dana-q3/messageToLLM": {
+  "_hdfr": [
+   "#hdfr:66:1261077956:21d8337bf302b93c4c17",
+   " Quelqu'un qui s'intéressait d'un peu trop près à la marchandise ?"
+  ]
+ },
+ "questions/va:tommy-q1/messageToLLM": "Monsieur Vale, vendredi soir, après votre journée, à cinq heures. Où étiez-vous, et quelqu'un peut-il le confirmer ?",
+ "questions/va:tommy-q2/displayText": "Parlons de votre jeu de clés.",
+ "questions/va:tommy-q2/messageToLLM": {
+  "_hdfr": [
+   "Le registre des clés dit qu'on vous a délivré le jeu C en novembre, contre signature, portes de la boutique et vitrine. L'alarme a été désarmée avec le code du personnel à 22h12 vendredi. ",
+   "#hdfr:54:1895616573:819642603f20d3e99b28"
+  ]
+ },
+ "questions/va:tommy-q3/displayText": "Présenter le cahier : vous avez demandé le prix de cette montre deux fois.",
+ "questions/va:tommy-q3/messageToLLM": {
+  "_hdfr": [
+   "Le cahier de Hollis, monsieur Vale. Mardi vous demandez ce que vaudrait la Longines, jeudi vous redemandez, vendredi il vous dit de laisser tomber. Vendredi soir, elle disparaît d'une vitrine fermée à clé, sans la moindre trace d'effraction. Je fais remonter les bordereaux de tous les prêteurs sur gages de cette ville. ",
+   "#hdfr:33:1559789139:e5cf77e8a4cfbfbd6613"
+  ]
+ },
+ "openingStatements/va:dana-brook": {
+  "_hdfr": [
+   "Ça fait trois ans que je tiens ce comptoir et monsieur Hollis me confie les dépôts à la banque. ",
+   "#hdfr:32:213282724:145dd52c5a88016122ef",
+   " Franchement, j'ai encore plus envie que vous qu'on attrape celui qui a fait ça."
+  ]
+ },
+ "openingStatements/va:tommy-vale": {
+  "_hdfr": [
+   "#hdfr:58:1590412536:98d21cc582c52275aaf5",
+   " Le week-end. Je touche même pas à ce qui est en vitrine, ça c'est Hollis et Dana. Je vois pas ce que vous croyez que je peux vous dire."
+  ]
+ },
+ "endings/va/perfect": "AFFAIRE DE FORMATION CLOSE. Tommy Vale a été cueilli le dimanche matin. Le bordereau de Westgate, qui portait sa propre signature, ne lui laissait rien à plaider. La Longines a été retrouvée invendue et rendue à Edwin Hollis avant midi. Le service du personnel a tamponné votre dossier : APTE AU TERRAIN.",
+ "endings/va/good": "Tommy Vale a été inculpé de vol et de revente de bien volé. Il a rendu ce qui restait de l'argent dans la semaine. Edwin Hollis a récupéré sa montre et posé une deuxième serrure sur la vitrine. Le service du personnel a validé votre certification.",
+ "endings/va/wrong": {
+  "_hdfr": [
+   "Vous aviez un seul essai et vous avez désigné le mauvais employé. Dana Brook a été relâchée en moins d'une heure, et on lui a présenté des excuses. Tommy Vale, lui, a démissionné sans bruit avant que quiconque aille regarder de plus près le bordereau de Westgate. ",
+   "#hdfr:35:1146017517:5b19733034e7d3cc50e9",
+   " Le service du personnel a classé votre certification avec cette annotation : PROCÉDURE À REVOIR."
+  ]
+ },
+ "endings/va/cold": "Le dossier de formation est reparti au service du personnel sans conclusion. La montre n'est jamais réapparue, et Edwin Hollis n'a plus jamais embauché personne le week-end.",
+ "emails/email-E4/body": "Inspecteur,\n\nComme demandé, Westgate Pawn & Loan a ressorti son bordereau d'achat de vendredi soir. Une montre Longines, achetée à 23h40, signature du vendeur lisible en pièce jointe.\n\nVersé à votre dossier.\n\nLe service des archives",
+ "script/ev-solved/actions/0/title": "OBJET RÉCUPÉRÉ",
+ "script/ev-solved/actions/0/body": "La Longines a été retrouvée invendue chez Westgate Pawn & Loan et rendue à Edwin Hollis. Affaire de formation close.",
+ "script/ev-wrong/actions/0/title": "BILAN DE FORMATION",
+ "script/ev-wrong/actions/0/body": {
+  "_hdfr": [
+   "L'alibi de Dana Brook a été vérifié en moins d'une heure : douze témoins à un dîner d'anniversaire à Harrow. ",
+   "#hdfr:35:1146017517:5b19733034e7d3cc50e9"
+  ]
+ },
+ "evidence/va:E2/spreadsheetRows/0/2": "DÉLIVRÉ LE",
+ "title": "#hdfr:17:845016304:300f4330a4215665c517",
+ "files/root/name": "AFFAIRE N° 000 · La clé du prêteur",
+ "evidence/va:E2/spreadsheetRows/1/0": "JEU A (original)",
+ "evidence/va:E4/clue/label": "Vale a signé le bordereau de Westgate",
+ "emails/email-E4/from": "Service des archives · Police de Ravenport",
+ "emails/email-E4/subject": "Nouveau document, bordereau d'achat Westgate",
+ "emails/email-E4/timestamp": "11 JANV. 2020 · 14:20"
+}

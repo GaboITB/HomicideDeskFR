@@ -1,0 +1,547 @@
+{
+ "tagline": "Il a pris une chambre sous un faux nom. Il ne l'a jamais rendue.",
+ "description": "Dominic Ashworth, 41 ans, enquêteur indépendant spécialisé dans la fraude à l'assurance, retrouvé mort dans la chambre 6 du Tideline Motor Inn : un coup violent à l'arrière du crâne, aucune effraction, et la chambre passée en départ tardif pour un départ qui n'a jamais eu lieu. Il logeait là depuis deux jours, le temps de boucler son enquête sur un entrepreneur du coin quand quelqu'un a refermé le dossier à sa place.",
+ "captainBriefing": {
+  "_hdfr": [
+   "Inspecteur, on a un corps au Tideline Motor Inn, sur la promenade des Quais. Un établissement qui n'accepte que le liquide et ne pose pas de questions, et c'est exactement là qu'est le problème. Notre victime, Dominic Ashworth, avait pris une chambre sous un faux nom, le temps de boucler une affaire de fraude à l'assurance. Coup violent à la tête, aucune effraction, et quelqu'un a fait passer la chambre en départ tardif pour gagner du temps. ",
+   "#hdfr:53:919591933:b29b65fc2d3ab6f65c1e",
+   " ",
+   "#hdfr:64:1237999395:df99716bd11afff34831"
+  ]
+ },
+ "suspects/grant-holloway/role": "Entrepreneur, Holloway Restoration & Roofing, 46 ans",
+ "suspects/wade-kessler/role": "Agent de recouvrement, 53 ans",
+ "witnesses/priya-doshi/openingStatement": {
+  "_hdfr": [
+   "Je prends mon service à six heures pour relever Ellis. ",
+   "#hdfr:116:2139433529:f4517359a8b3b48c005f"
+  ]
+ },
+ "witnesses/priya-doshi/clue/label": "Un pick-up gris, moteur en marche, à 6 h du matin",
+ "witnesses/priya-doshi/clue/detail": "Priya se souvient d'un pick-up gris cabossé qui tournait au ralenti sur le parking du Tideline le matin où Dominic a été découvert. Un véhicule qu'elle avait déjà vu là.",
+ "phoneContacts/case003-unknown-caller/role": "Refuse de donner son nom. Pour l'instant.",
+ "phoneNumbers/555-3999/transcript": "« …Ne rappelez plus ce numéro. Je ne sais pas comment vous l'avez\neu. Quoi que vous croyiez savoir, vous vous trompez. Ne rappelez\nplus. »\n\n[CORRESPONDANCE VOCALE : le timbre et le débit concordent avec Grant\nHolloway. Message enregistré le lendemain matin de la mort de\nDominic Ashworth.]",
+ "phoneNumbers/555-3999/grantsClue/label": "La ligne prépayée est au nom de Grant Holloway",
+ "phoneNumbers/555-3999/grantsClue/detail": "Le numéro noté par Dominic tombe sur un message d'accueil enregistré par Grant Holloway, d'une voix mal assurée, et l'opérateur a la carte SIM à son nom.",
+ "phoneNumbers/555-0130/label": "La ligne du bar où Wade Kessler a son ardoise",
+ "phoneNumbers/555-0130/transcript": "Vous êtes bien à l'Anchor & Ale. C'est fermé pour le moment. Laissez un message après le bip, on vous rappellera.",
+ "files/root/name": "AFFAIRE N° 003 · Complet",
+ "files/file-E13/name": "Clé de la chambre 6 · double",
+ "files/file-E3/uvText": {
+  "_hdfr": [
+   "GH · Ch. 6, 21h40.\n",
+   "#hdfr:39:955059102:d2b787cd548862a78faa",
+   "\n",
+   "#hdfr:35:796776846:1f1393dfc73269560782",
+   " ",
+   "#hdfr:26:1675950748:7ff5f5d30ccb1fd304c8"
+  ]
+ },
+ "files/file-E3/uvClue/label": "Encre invisible sous UV : un nom et une heure",
+ "files/file-E3/uvClue/detail": "Le carnet de Dominic cache une note à l'encre invisible : « GH », chambre 6, 21h40. Et tout le reste est dans sa mallette.",
+ "files/file-E9/name": "Mallette fermée à combinaison",
+ "files/file-E10/name": "Le dossier d'enquête de Dominic",
+ "files/file-E10/pages/0/content": {
+  "_hdfr": [
+   "DOSSIER D'ENQUÊTE · D. ASHWORTH\nSujet : Grant Holloway / Holloway Restoration & Roofing\nMandaté par : Comité de contrôle des assurances de Ravenport\n\nCONSTATS :\nTrois demandes d'indemnisation pour accident du travail déclarées\nau titre de la police de Holloway Restoration & Roofing en quatre\nmois. Les trois citent la même clinique et le même médecin. Les\ntrois décrivent la blessure dans des termes quasi identiques au\n",
+   "#hdfr:36:905858844:04b696c128e131e9baee",
+   "\n\nDEMANDE 1 · 14 sept. 2019, R. Doyle, tissus mous, bas du dos\nDEMANDE 2 · 22 nov. 2019, tissus mous, bas du dos\nDEMANDE 3 · 6 janv. 2020, tissus mous, bas du dos\n\nDeux des trois demandeurs étaient payés par Holloway à des dates\noù, selon leur demande, ils étaient inaptes au travail. Les états\nde paie ont été obtenus sur réquisition, copies jointes au dossier\ndu comité, pas à celui-ci.\n\nPRÉJUDICE POUR L'ASSUREUR : plus de 40 000 $, hors frais.\n\n",
+   "#hdfr:45:1627950685:7a72c8ed0c53ae0fd254",
+   " On n'a pas trois\nhommes sans lien entre eux qui se blessent au même endroit du même\ndos et se font soigner dans la même clinique.\n\nRECOMMANDATION : transmettre au comité pour saisine du parquet."
+  ]
+ },
+ "files/file-E10/pages/1/label": "DERNIÈRE FEUILLE · DE SA MAIN",
+ "files/file-E10/pages/1/content": {
+  "_hdfr": [
+   "#hdfr:35:1892802338:71073b71167766210642",
+   "\n\nIl a demandé à me voir. J'ai dit d'accord : le Tideline, dimanche,\n21h40.\n\nJe lui laisse une chance de se dénoncer de lui-même avant que ça\nparte au comité. Il a des enfants. S'il la prend, la saisine ne se\nlira pas du tout de la même façon.\n\nS'il ne la prend pas, le dossier part lundi de toute façon.\n\nIl sait que je loge ici. ",
+   "#hdfr:28:1016372883:523474dbc1641e8f7cf5",
+   " Je lui ai dit.\n\nJ'aurais sans doute mieux fait de me taire."
+  ]
+ },
+ "files/file-E14/name": "Papier plié · derrière le dossier",
+ "files/file-E14/pages/0/content": {
+  "_hdfr": [
+   "#hdfr:27:1072064635:8197d1c895ad22a2c994",
+   "\n\n555-3999\n\nil n'est pas dans l'annuaire.\n",
+   "#hdfr:28:1748325896:2f1ac76746fe2ea00ba6"
+  ]
+ },
+ "files/folder-investigation/name": "Le fil de l'enquête",
+ "files/file-E11/name": "Procès-verbal · l'aveu de Grant Holloway",
+ "files/folder-digital/name": "Relevés numériques",
+ "files/file-E5/name": "Image de vidéosurveillance · la promenade",
+ "files/file-E6/name": "Le relevé téléphonique de Dominic",
+ "files/file-E15/name": "Chambre 6 · le mur de la table de nuit (À RÉCUPÉRER SUR LE TERRAIN)",
+ "files/file-E7/name": "Le message vocal de Wade Kessler",
+ "files/file-E8/name": "Le mot jeté par Marisol",
+ "evidence/va:E1/description": "Scène de la chambre 6 : Dominic Ashworth découvert par la femme de chambre un peu après 11 h, coup violent à l'arrière du crâne. Aucune effraction. La chambre avait été passée en départ tardif pour un « départ tardif » que personne n'est venu réclamer.",
+ "evidence/va:E1/presentationMessage": "Dominic Ashworth a été retrouvé dans la chambre 6 juste après onze heures. Coup violent à l'arrière du crâne, aucune effraction. Celui qui a fait ça a fait passer la chambre en départ tardif à la réception, un départ qui n'a jamais eu lieu.",
+ "evidence/va:E1/fileContent": {
+  "_hdfr": [
+   "DIVISION DES QUAIS DE RAVENPORT · RAPPORT DE SCÈNE DE CRIME\nAFFAIRE N° 003 · Tideline Motor Inn, chambre 6\n\nVICTIME : Dominic Ashworth, 41 ans, enquêteur (fraude à l'assurance)\nLIEU : chambre 6, Tideline Motor Inn, promenade des Quais, Ravenport\nHEURE DU DÉCÈS (provisoire) : 21:30–22:15, dimanche 19 janvier 2020\n\nCONSTATATIONS :\nVictime découverte par la femme de chambre à 11:04, face contre\nterre près du pied du lit. Cause du décès : coup violent en région\noccipitale, impact unique et lourd. Aucune arme retrouvée sur place.\nLa plaie correspond à l'arête de la table de nuit, qui a été\nessuyée.\n\nACCÈS :\nAucune effraction. Serrure intacte, aucune trace d'outil. Le\nterminal de la réception indique que la chambre a été repassée à\n22:40 en « DÉPART TARDIF DEMANDÉ », alors que le personnel n'a\nenregistré aucune demande de ce type et que personne n'est venu\nlibérer la chambre.\n\nINSCRIPTION AU REGISTRE :\nLa victime avait pris une chambre deux nuits plus tôt sous le nom\nde « D. Ash », en payant en liquide, et avait expressément demandé\nla chambre 6. Aucune trace de réservation en dehors du registre\npapier de la réception.\n\nPREMIÈRE ANALYSE :\nC'est le départ tardif qui trahit. Quelqu'un qui avait besoin de\ngagner du temps a maquillé les lieux après coup, pas avant. Ce\nn'est pas un cambriolage qui a mal tourné.\n\n",
+   "#hdfr:27:271878663:7970572051c0a28c4cf8"
+  ]
+ },
+ "evidence/va:E2/description": {
+  "_hdfr": [
+   "#hdfr:60:2056386155:b5adcbe6897d20503be7",
+   " « D. Ash » (Dominic) et une cliente sous un faux nom y figurent, avec plusieurs trous, dans un registre tenu par Ellis Frey."
+  ]
+ },
+ "evidence/va:E2/presentationMessage": "Votre propre registre des clients, monsieur Frey, celui de la semaine. « D. Ash » en chambre 6, un faux nom en chambre 5, et plusieurs trous, là où une arrivée aurait dû être notée et ne l'a pas été.",
+ "evidence/va:E2/clue/label": "#hdfr:38:1788843041:46dd74af9970917e5e80",
+ "evidence/va:E2/clue/detail": "Plusieurs nuits sans aucune arrivée notée alors que les chambres étaient manifestement occupées. Quelqu'un à la réception loue au noir.",
+ "evidence/va:E2/spreadsheetRows/1/4": "aucune arrivée notée, chambre occupée selon le ménage",
+ "evidence/va:E2/spreadsheetRows/4/4": "aucune arrivée notée, chambre occupée selon le ménage",
+ "evidence/va:E2/spreadsheetRows/5/2": "(pas de nouvelle arrivée, chambre occupée)",
+ "evidence/va:E2/spreadsheetRows/6/2": "(pas de nouvelle arrivée, chambre occupée)",
+ "evidence/va:E2/fileContent": {
+  "_hdfr": [
+   "#hdfr:50:762041959:1dbbb315f3cfc7d0d9a7",
+   "\n",
+   "#hdfr:32:947267047:7d95c4b2bef6df7c28ea",
+   "\n\nRegistre tenu à la main à la réception, paiements en liquide\nuniquement. À plusieurs dates, des chambres sont occupées d'après\nles relevés du ménage sans qu'aucune arrivée n'y corresponde : des\ntrous qui ressemblent à des locations au noir.\n\n« D. Ash », chambre 6, arrivé le 18 janvier, liquide.\n« M. ",
+   "#hdfr:51:324355810:51115ca37ce225c0b49c",
+   " (Le ménage\nnote que ce nom ne correspond pas à la cliente vue dans la chambre.)"
+  ]
+ },
+ "evidence/va:E3/description": "Un carnet à spirale récupéré sur le corps. Sous lumière normale, des notes en abrégé, sans intérêt. Mais il y a là-dedans quelque chose qui mérite qu'on y regarde de plus près, sous UV.",
+ "evidence/va:E3/presentationMessage": {
+  "_hdfr": [
+   "C'est le carnet de poche de Dominic. ",
+   "#hdfr:56:1946052817:c2f982697228ecb807dd",
+   " Sous UV, il raconte tout autre chose."
+  ]
+ },
+ "evidence/va:E3/fileContent": {
+  "_hdfr": [
+   "#hdfr:35:139724559:814e520a877020e26d99",
+   "\nRécupéré sur le corps, poche intérieure de la veste.\n\nNotes visibles (abréviations habituelles) :\n« Jeu, km 214. Ven, ch. ",
+   "#hdfr:29:1925217659:88b1aa352a3f2a04b943",
+   " Sam, appel\nde suivi le matin. Dim, rdv 21h40, apporter les copies. »\n\n",
+   "#hdfr:45:759770778:d936b366fce5c7db8dde",
+   " Essayez la lampe UV."
+  ]
+ },
+ "evidence/va:E4/name": "Holloway Restoration · dossier des demandes d'indemnisation",
+ "evidence/va:E4/description": "Trois demandes de « blessure » étrangement semblables, déposées par les propres employés de Grant Holloway au titre de la police accidents du travail de l'entreprise. La fraude sur laquelle Dominic montait son dossier.",
+ "evidence/va:E4/presentationMessage": "Trois de vos propres employés ont déposé des demandes d'indemnisation quasi identiques en l'espace de quatre mois, monsieur Holloway. Même clinique, même formulation sur les formulaires d'admission, le même montant à quelques dollars près. C'est le dossier que Dominic Ashworth montait contre vous.",
+ "evidence/va:E4/clue/detail": "Trois demandes d'indemnisation déposées par l'équipe de Grant Holloway, quasi identiques par la clinique, la formulation et le montant. Tout indique une fraude organisée.",
+ "evidence/va:E4/fileContent": {
+  "_hdfr": [
+   "COMITÉ DE CONTRÔLE DES ASSURANCES · DOSSIER DE L'AUDITEUR\nSujet : Holloway Restoration & Roofing, revue des demandes\n",
+   "#hdfr:40:1100254716:fc05e9502cd6502fef29",
+   "\n\nTrois demandes d'indemnisation déclarées au titre de la police de\nl'entreprise en quatre mois, chacune pour une lésion des tissus\nmous du bas du dos, sur chantier :\n\nDEMANDE 1 · 14 sept. 2019, R. ",
+   "#hdfr:34:1218065419:51cf95054a478410087a",
+   "\nDEMANDE 2 · 22 nov. ",
+   "#hdfr:33:1874349165:a9b1410f61f7167cbd25",
+   "\nDEMANDE 3 · 6 janv. ",
+   "#hdfr:33:26024306:2c4d1d8e1b472336a009",
+   "\n\n",
+   "#hdfr:61:786202038:26acd6776d6919df83b7",
+   "\n",
+   "#hdfr:67:1719044009:1f5955e80bcaaf483afa",
+   "\n",
+   "#hdfr:26:1424348358:825b729730c3870a905f",
+   " Ashworth a été mandaté par le comité pour\ndéterminer s'il s'agit d'une fraude coordonnée ou de trois blessures\nréelles et sans lien.\n\nSTATUT : enquête en cours au moment du décès de l'enquêteur."
+  ]
+ },
+ "evidence/va:E5/name": "Image de vidéosurveillance · la promenade",
+ "evidence/va:E5/description": "Une image extraite d'une caméra de la promenade : un pick-up gris garé près de la chambre 6 vers 21h30, avec une silhouette dans l'encadrement de la porte.",
+ "evidence/va:E5/presentationMessage": {
+  "_hdfr": [
+   "Voici une image de la promenade prise à 21h30 : un pick-up gris garé juste devant la chambre 6, et une silhouette dans l'encadrement de la porte. ",
+   "#hdfr:49:1702073378:8b69803a5371f569c8f0"
+  ]
+ },
+ "evidence/va:E5/clue/detail": "Une caméra de la promenade a filmé un pick-up gris garé près de la chambre 6 vers 21h30. Le même véhicule que Priya Doshi a vu tourner au ralenti sur le parking à 6 h.",
+ "evidence/va:E5/hotspotLabels/0": "Plaque arrière du pick-up gris, lecture partielle seulement. Garé le nez vers le bâtiment, plaque avant contre le mur : la caméra ne voit que l'arrière.",
+ "evidence/va:E5/hotspotLabels/1": "Silhouette dans l'encadrement de la porte de la chambre 6, visage détourné de l'objectif.",
+ "evidence/va:E5/hotspotLabels/2": "Numéro de chambre. Le pick-up est garé droit devant le 6, en travers des emplacements tracés.",
+ "evidence/va:E5/hotspotLabels/3": "Enseigne du Tideline Motor Inn. Elle situe l'angle de la caméra sur le parking.",
+ "evidence/va:E5/fileContent": {
+  "_hdfr": [
+   "#hdfr:37:1855537743:170425be75a0c0ee0e5c",
+   "\n",
+   "#hdfr:68:367014658:d980b39032df9bbbb79c",
+   "\ndu Tideline.\n",
+   "#hdfr:36:1960789889:7c811406030bb6b3f6f4",
+   "\n\nUn pick-up gris est garé tout près de la chambre 6, en limite du\nchamp de la caméra, le nez vers le bâtiment : la plaque avant est\ncontre le mur, seule la plaque arrière est visible.\nUne silhouette se tient dans l'encadrement de la porte, visage\ndétourné.\n",
+   "#hdfr:46:171964794:a4bebc24818275517cf0"
+  ]
+ },
+ "evidence/va:E6/name": "Le relevé téléphonique de Dominic",
+ "evidence/va:E6/description": "Des appels répétés entre Dominic et un numéro privé, absent de l'annuaire, dans les jours qui ont précédé sa mort. Le dernier à 21h15, le soir même.",
+ "evidence/va:E6/presentationMessage": "Ses relevés montrent des appels répétés avec un numéro privé dans les jours qui ont précédé sa mort. Le dernier à 21h15, monsieur Holloway. Un quart d'heure avant que le pick-up décrit par Priya apparaisse sur la caméra.",
+ "evidence/va:E6/clue/label": "Des appels répétés, un seul numéro privé",
+ "evidence/va:E6/clue/detail": "Dominic a échangé plusieurs appels avec un numéro privé, absent de l'annuaire, dans les jours qui ont précédé sa mort. Le dernier à 21h15, le soir même.",
+ "evidence/va:E6/phoneRecords/0/note": "abouti",
+ "evidence/va:E6/phoneRecords/1/note": "abouti",
+ "evidence/va:E6/phoneRecords/3/note": "abouti · dernier appel avant le décès",
+ "evidence/va:E6/fileContent": {
+  "_hdfr": [
+   "RELEVÉS OPÉRATEUR · D. ASHWORTH\n16–19 janvier 2020\n\n",
+   "#hdfr:63:1792099093:d72ef5694dc726c2e927",
+   "\n16 JANV. 14:20   | D. Ashworth   | PRIVÉ         | 1:35  | abouti\n17 JANV. ",
+   "#hdfr:28:182695744:fd0d158740ce6c8636a3",
+   " Ashworth   | 0:40  | abouti\n18 JANV. 11:12   | D. ",
+   "#hdfr:49:964210119:9a22e8e891903daed725",
+   "\n19 JANV. ",
+   "#hdfr:28:1166169378:c32c43660cff11652c29",
+   " Ashworth   | 1:00  | abouti, dernier appel avant le décès\n\n",
+   "#hdfr:53:1483748862:e49f1564b705285e05eb",
+   " L'opérateur ne\ncommuniquera pas le numéro sur une simple demande de relevés, et une\nréquisition judiciaire visant une ligne prépayée prend des semaines\nque nous n'avons pas.\n\nNote à l'enquêteur : impossible de remonter à l'abonné de notre\ncôté. Si Ashworth savait qui l'appelait, il l'a noté quelque part de\nson côté."
+  ]
+ },
+ "evidence/va:E7/name": "Le message vocal de Wade Kessler",
+ "evidence/va:E7/description": "Un message vocal menaçant au sujet d'une dette, laissé sur la messagerie de Dominic cinq jours avant le meurtre.",
+ "evidence/va:E7/presentationMessage": "Vous avez laissé un message à Dominic Ashworth cinq jours avant sa mort, monsieur Kessler, et il n'était pas aimable. Vous m'expliquez le ton ?",
+ "evidence/va:E7/audioTranscript": {
+  "_hdfr": [
+   "MESSAGE VOCAL · EXTRAIT DU TÉLÉPHONE DE LA VICTIME\n",
+   "#hdfr:47:1566757429:eae47003fb380bd03a7e",
+   " Kessler\n\n« Dominic. Tu sais qui c'est. Tu sais ce que tu me dois, et tu sais\n",
+   "#hdfr:37:1750548096:bfcb875427b4311d8ae6",
+   " Je ne suis pas patient quand\nil s'agit de mon argent. Tu ferais bien de t'en souvenir, avant\nd'aller mettre le nez dans les affaires des autres au lieu de régler\nles tiennes. Rappelle-moi. »\n\n[FIN DU MESSAGE]"
+  ]
+ },
+ "evidence/va:E7/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · ENREGISTREMENT VOCAL (AUDIO)\nExtrait du téléphone de la victime, cinq jours avant le meurtre.\n\n",
+   "#hdfr:48:319065333:4e32e184a443e3a88df5",
+   " La transcription se\ndébloque après l'écoute."
+  ]
+ },
+ "evidence/va:E8/name": "Le mot jeté par Marisol",
+ "evidence/va:E8/description": "Un mot griffonné à son amant à propos « des cris à côté », retrouvé en boule dans la corbeille de la chambre 5, qui contredit sa première version.",
+ "evidence/va:E8/presentationMessage": {
+  "_hdfr": [
+   "Il y avait ceci en boule dans la corbeille de la chambre 5, madame Tavares : un mot adressé à quelqu'un à propos des « cris à côté ». ",
+   "#hdfr:66:409655697:f5ef404d9fbbe80ad92e"
+  ]
+ },
+ "evidence/va:E8/clue/detail": "Un mot jeté, de la main de Marisol, décrit des cris venant de la chambre 6 vers 21h40. Elle était là, quoi qu'elle ait d'abord raconté à la police.",
+ "evidence/va:E8/fileContent": {
+  "_hdfr": [
+   "MOT RÉCUPÉRÉ · CORBEILLE DE LA CHAMBRE 5\n",
+   "#hdfr:35:489618623:34aa6054091f9b87b8de",
+   "\n\n« J'arrive pas à dormir, désolée. Ça crie encore à côté, une voix\nd'homme, ça avait l'air méchant. Je veux pas être mêlée à ça, on\ndevrait même pas ÊTRE ici. ",
+   "#hdfr:32:786003753:6bb63db3a650ead6c850",
+   " M »\n\nAttribué à Marisol Tavares grâce à un échantillon d'écriture\nrecueilli pendant l'audition."
+  ]
+ },
+ "evidence/va:E9/name": "La mallette de Dominic, fermée à combinaison",
+ "evidence/va:E9/description": "La mallette de Dominic, récupérée dans le placard de la chambre. Une serrure à combinaison à 4 chiffres, pas de clé. Le code doit se trouver quelque part, écrit de sa main.",
+ "evidence/va:E9/presentationMessage": "Cette mallette était dans le placard de Dominic depuis le début, toujours fermée. Quoi qu'il y ait dedans, il ne voulait pas que n'importe qui tombe dessus.",
+ "evidence/va:E9/lockHint": {
+  "_hdfr": [
+   "#hdfr:29:1129727364:bbd7826612347b7427d8",
+   " Rien dans ses affaires ne la mentionne."
+  ]
+ },
+ "evidence/va:E9/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · MALLETTE FERMÉE À COMBINAISON\nRécupérée dans le placard de la chambre 6.\n\n",
+   "#hdfr:57:1268332532:8fc92c39236c0abad00b",
+   " Aucune clé\n",
+   "#hdfr:62:1882597691:d451e455e35dd10805e0",
+   "\nécrite dans ses affaires : le carnet, le registre et le portefeuille\nont tous été vérifiés.\n\nIl la gardait en tête, et il l'a laissée quelque part."
+  ]
+ },
+ "evidence/va:E10/name": "Le dossier d'enquête de Dominic",
+ "evidence/va:E10/description": "Le contenu de la mallette : tout le dossier de Dominic sur Grant Holloway, avec une note disant qu'il avait organisé une rencontre en personne avec Grant « pour lui laisser d'abord une chance de se dénoncer ».",
+ "evidence/va:E10/presentationMessage": "C'est votre dossier, monsieur Holloway. Le dossier qu'il montait sur vous. Chaque demande, chaque date, et une ligne en bas disant qu'il avait organisé une rencontre avec vous pour vous laisser d'abord une chance de vous dénoncer. Vous étiez le dernier obstacle entre lui et le Comité de contrôle.",
+ "evidence/va:E10/clue/detail": "Le dossier de Dominic expose toute la fraude et indique qu'il avait rendez-vous avec Grant Holloway en personne, le soir de sa mort, pour lui laisser d'abord une chance de se dénoncer.",
+ "evidence/va:E10/fileContent": {
+  "_hdfr": [
+   "DOSSIER D'ENQUÊTE · D. ASHWORTH\nSujet : Grant Holloway / Holloway Restoration & Roofing\n\nDossier complet : trois demandes d'indemnisation montées de toutes\npièces, même clinique, même médecin, formulaires d'admission\nquasi identiques.\nPréjudice estimé pour l'assureur : plus de 40 000 $.\n\nAgrafée sur le dessus : une page écrite de sa main.\n\n",
+   "#hdfr:32:272337665:a69bbe17e2c46991ccfb",
+   " ",
+   "#hdfr:30:1424348358:19ee9929e6c5347ae94b"
+  ]
+ },
+ "evidence/va:E14/name": "Papier plié · dans la mallette",
+ "evidence/va:E14/description": {
+  "_hdfr": [
+   "#hdfr:85:1503035724:f9966339ead52a16d4a4",
+   " Il y a écrit une ligne et l'a pliée serré."
+  ]
+ },
+ "evidence/va:E14/presentationMessage": "Il l'a pliée en quatre et rangée derrière le dossier. Une ligne, de son écriture. Il voulait qu'on la trouve si on ne le retrouvait pas, lui.",
+ "evidence/va:E14/fileContent": {
+  "_hdfr": [
+   "PAPIER RÉCUPÉRÉ · MALLETTE, DERRIÈRE LE DOSSIER\n",
+   "#hdfr:43:1825058630:3bb298fec787a89ad9b9",
+   "\n\nManuscrit, stylo à bille, appuyé assez fort pour marquer le verso :\n\n        ",
+   "#hdfr:27:1072064635:8197d1c895ad22a2c994",
+   "\n\n        555-3999\n\n        il n'est pas dans l'annuaire. ",
+   "#hdfr:28:1748325896:2f1ac76746fe2ea00ba6",
+   "\n\nRien d'autre, sur aucune des deux faces."
+  ]
+ },
+ "evidence/va:E15/name": "Chambre 6 · le mur de la table de nuit (À RÉCUPÉRER SUR LE TERRAIN)",
+ "evidence/va:E15/description": {
+  "_hdfr": [
+   "#hdfr:68:1861471818:ac07f71422b63e199c1d",
+   " Une patrouille peut y retourner photographier le mur près de la table de nuit."
+  ]
+ },
+ "evidence/va:E15/presentationMessage": "Voici le mur à côté du lit de la chambre 6, monsieur Holloway. Il a écrit dessus. En lumière rasante, ça se voit encore.",
+ "evidence/va:E15/fieldHint": {
+  "_hdfr": [
+   "#hdfr:39:1861471818:a663fab4d6b65c4208a9",
+   " Dominic y a passé deux nuits à travailler. Envoyez une patrouille au Tideline et faites photographier la chambre correctement cette fois, table de nuit comprise."
+  ]
+ },
+ "evidence/va:E15/hotspotLabels/0": "Table de nuit : le téléphone de la chambre, et le carton numéroté laissé par le premier intervenant.",
+ "evidence/va:E15/hotspotLabels/1": {
+  "_hdfr": [
+   "Lit refait. ",
+   "#hdfr:64:1861471861:653139eac445ff0377b1"
+  ]
+ },
+ "evidence/va:E15/hotspotLabels/2": "Mur au-dessus de la table de nuit : quatre chiffres, gravés légèrement dans la peinture avec quelque chose de métallique. 3 2 2 5.",
+ "evidence/va:E15/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · PHOTOGRAPHIE DE SCÈNE (PRISE PAR LA PATROUILLE)\n",
+   "#hdfr:30:227944560:4111d29c979b732f7e14",
+   " ",
+   "#hdfr:32:827094693:40a01242b41418a2a68c",
+   "\nscellés.\n\n",
+   "#hdfr:41:311315973:b11a53d9cf4db189177b",
+   "\n\n",
+   "#hdfr:55:1861471861:2699c4f672dd277aad36",
+   " Ce qui s'y\ntrouve encore ne vous sautera pas aux yeux."
+  ]
+ },
+ "evidence/va:E11/name": "Procès-verbal · l'aveu de Grant Holloway",
+ "evidence/va:E11/description": "Consigné pendant l'audition de Grant Holloway, une fois le dossier des demandes versé aux pièces et la question posée sans détour sur ses rapports avec Dominic : il admet l'avoir retrouvé au motel ce soir-là « pour parler », alors qu'il avait d'abord nié y avoir mis les pieds.",
+ "evidence/va:E11/presentationMessage": {
+  "_hdfr": [
+   "C'est votre propre aveu, au procès-verbal, monsieur Holloway. Vous m'avez dit vous-même que vous l'aviez retrouvé au motel ce soir-là « pour parler ». ",
+   "#hdfr:49:2095283553:4d9fc797551deb3301c0"
+  ]
+ },
+ "evidence/va:E11/clue/label": "Grant admet avoir retrouvé Dominic ce soir-là",
+ "evidence/va:E11/clue/detail": "Pressé directement, Grant Holloway admet avoir retrouvé Dominic au motel le soir de sa mort « pour parler », alors qu'il affirmait d'abord être resté chez lui toute la soirée.",
+ "evidence/va:E11/fileContent": {
+  "_hdfr": [
+   "PROCÈS-VERBAL D'AUDITION RPD · G. HOLLOWAY\n",
+   "#hdfr:50:285563619:ad8b652d1548a2346dab",
+   "\n\nINSPECTEUR : Vous l'avez bien retrouvé au motel ce soir-là ?\nHOLLOWAY : …Ouais. Ouais, je l'ai vu. Juste pour parler. Que ça,\nparler. Je vous ai dit que j'étais chez moi, je sais, mais je… je\n",
+   "#hdfr:26:2071584323:dbd39287ca8c5295613d",
+   " Et puis je suis rentré. C'est tout. Il\ns'est rien passé d'autre.\n\nCette déclaration contredit directement la première version de\nHolloway, qui affirmait être resté chez lui toute la soirée."
+  ]
+ },
+ "evidence/va:E12/description": "Récupérée sur le corps. Le verre est fêlé et les aiguilles bloquées sur 21h41, l'heure à laquelle Marisol dit avoir entendu des cris.",
+ "evidence/va:E12/presentationMessage": "Sa montre s'est arrêtée à 21h41, verre fêlé, aiguilles bloquées net. Ce n'est pas une coïncidence, madame Tavares : c'est exactement la minute où vous dites avoir entendu des cris.",
+ "evidence/va:E12/clue/label": "Arrêtée à 21h41, verre fêlé",
+ "evidence/va:E12/clue/detail": "La montre de Dominic s'est arrêtée à 21h41, le verre fêlé dans la lutte. L'heure à laquelle Marisol dit avoir entendu une dispute à travers le mur.",
+ "evidence/va:E12/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · MONTRE-BRACELET\nRécupérée au poignet de la victime, sur place.\n\n",
+   "#hdfr:54:306071882:05848e5d7c931b69653b",
+   " Les aiguilles\nsont bloquées et n'ont pas bougé depuis 21h41.\n\nFaites pivoter l'objet pour l'examiner sous tous les angles."
+  ]
+ },
+ "evidence/va:E13/name": "Clé de la chambre 6 · double",
+ "evidence/va:E13/description": "Un porte-clés en laiton ébréché, marqué « 6 », coincé dans le chambranle de la chambre 6. Ce n'est pas la clé remise à Dominic à son arrivée.",
+ "evidence/va:E13/presentationMessage": "Cette clé n'est pas celle remise à Dominic à la réception. Quelqu'un d'autre avait de quoi entrer dans la chambre 6 cette nuit-là, sans jamais passer par votre registre, monsieur Frey.",
+ "evidence/va:E13/clue/label": "Une seconde clé de la chambre 6, jamais enregistrée",
+ "evidence/va:E13/clue/detail": "Un porte-clés en double de la chambre 6, coincé dans le chambranle, qui n'est pas la clé remise à Dominic. Quelqu'un d'autre pouvait entrer cette nuit-là.",
+ "evidence/va:E13/forensicsReport": {
+  "_hdfr": [
+   "L'examen des empreintes sur le porte-clés a donné un pouce partiel\net deux traces floues, toutes sur l'anneau et non sur la plaque.\n",
+   "#hdfr:62:766900029:febf649e1990cd587412",
+   "\nHolloway, et aucune correspondance au fichier. Le dernier à l'avoir\n",
+   "#hdfr:41:1165848671:b6350f9fab87b675c45e",
+   " La plaque elle-même est\nune plaque vierge d'origine du Tideline, pas une copie."
+  ]
+ },
+ "evidence/va:E13/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · PORTE-CLÉS EN DOUBLE\n",
+   "#hdfr:61:528708135:06fc0cec94e86acd36a8",
+   "\n\nPorte-clés en laiton ébréché, frappé « 6 » à la main. Ce n'est pas\nla clé notée comme remise à « D. Ash » à son arrivée : une seconde\n",
+   "#hdfr:41:1774599066:b3233078a0c349965005",
+   "\n\nFaites pivoter l'objet pour l'examiner. Soumettez-le au labo pour le\nrelevé d'empreintes."
+  ]
+ },
+ "openingStatements/va:grant-holloway": "Grant Holloway. J'ai déjà dit à l'agent dehors tout ce que je sais, autant dire rien, parce que je n'y étais pas. J'étais chez moi. Demandez à ma femme.",
+ "openingStatements/va:ellis-frey": "Je sais ce que vous allez dire. Seul de service, toute la nuit, oui. Mais j'ai pas touché à ce type. J'ai besoin de ce boulot, c'est tout. On peut commencer par là ?",
+ "openingStatements/va:marisol-tavares": "Marisol Tavares. Je ne vois pas ce qu'une cliente de la chambre 5 vient faire là-dedans, mais allez-y, posez la question que vous êtes venu me poser.",
+ "openingStatements/va:wade-kessler": "Wade Kessler. Prenez votre temps, inspecteur. Je n'ai rien de pressé, et le mort non plus, j'imagine.",
+ "questions/va:grant-q2/messageToLLM": "Une caméra de la promenade montre un pick-up semblable au vôtre garé juste devant la chambre 6 vers 21h30. Expliquez-moi ça.",
+ "questions/va:grant-q3/displayText": "Ces demandes d'indemnisation déposées par votre entreprise ont tout l'air d'être gonflées.",
+ "questions/va:grant-q3/messageToLLM": {
+  "_hdfr": [
+   "Trois de vos employés ont déposé des demandes d'indemnisation quasi identiques en l'espace de quatre mois, monsieur Holloway. ",
+   "#hdfr:32:1388821464:a3f8682f10c896bf1b37",
+   " C'est le dossier de fraude que Dominic Ashworth montait contre vous. ",
+   "#hdfr:25:1381792698:cf091feabfb6cac8e18c"
+  ]
+ },
+ "questions/va:grant-q4/displayText": "Vous l'avez vraiment retrouvé au motel ce soir-là ?",
+ "questions/va:grant-q4/messageToLLM": "J'ai son dossier sur vous, monsieur Holloway, avec une note disant qu'il avait rendez-vous avec vous en personne, le soir de sa mort, pour vous laisser d'abord une chance de vous dénoncer. Vous l'avez vraiment retrouvé au motel ce soir-là ?",
+ "questions/va:grant-q5/messageToLLM": {
+  "_hdfr": [
+   "#hdfr:82:1372681259:61bfb14397eb5d204230",
+   " D'abord vous n'aviez jamais approché ce motel. ",
+   "#hdfr:52:302126501:99f66d75cdc165225e4d",
+   " Laquelle est la bonne ?"
+  ]
+ },
+ "questions/va:ellis-q1/messageToLLM": {
+  "_hdfr": [
+   "#hdfr:74:2021552994:b3a8e7b80d8c05c7a04d",
+   " Racontez-moi cette nuit."
+  ]
+ },
+ "questions/va:ellis-q2/displayText": "Votre registre des clients a des trous.",
+ "questions/va:ellis-q2/messageToLLM": "Votre registre des clients a des trous, monsieur Frey : des nuits où des chambres étaient manifestement occupées sans qu'aucune arrivée ne soit notée. Qu'est-ce qui se passe, là ?",
+ "questions/va:ellis-q3/displayText": "Pourquoi le registre de cette nuit-là est-il si vide ?",
+ "questions/va:ellis-q3/messageToLLM": "Le registre de cette nuit-là est plein de trous, monsieur Frey. Des chambres occupées d'après le ménage, sans la moindre arrivée en face. Qui dormait dans ces chambres, et qui encaissait ?",
+ "questions/va:marisol-q2/displayText": {
+  "_hdfr": [
+   "#hdfr:55:1993588948:bbc10ef508f92a962b86",
+   " Avez-vous entendu des cris ou des voix dans la chambre d'à côté ?"
+  ]
+ },
+ "questions/va:marisol-q2/messageToLLM": {
+  "_hdfr": [
+   "#hdfr:94:1993588948:5b596e7262174f54c266",
+   " Vous étiez plus près de la chambre 6 que n'importe qui."
+  ]
+ },
+ "questions/va:marisol-q3/messageToLLM": "Vous avez pris la chambre 5 sous un faux nom, madame Tavares, avec un homme qui n'est pas votre mari. Avec qui étiez-vous ?",
+ "questions/va:marisol-q4/messageToLLM": {
+  "_hdfr": [
+   "Votre propre mot parle de cris venant de la chambre 6 vers 21h40, madame Tavares. ",
+   "#hdfr:46:1769633831:4a3248e7de6f8a5a51ad"
+  ]
+ },
+ "questions/va:wade-q2/messageToLLM": {
+  "_hdfr": [
+   "#hdfr:102:1197220744:5dd99ad9970491fb3167",
+   " Vous m'expliquez le ton ?"
+  ]
+ },
+ "questions/va:wade-q3/displayText": "Combien Dominic vous devait-il, et jusqu'où étiez-vous prêt à aller pour le récupérer ?",
+ "questions/va:wade-q3/messageToLLM": "Combien Dominic Ashworth vous devait-il, monsieur Kessler, et jusqu'où étiez-vous prêt à aller pour récupérer cet argent ?",
+ "endings/va/perfect": {
+  "_hdfr": [
+   "COMPLET · AFFAIRE CLASSÉE. ",
+   "#hdfr:52:2097023220:568246dc3b223f76f14a",
+   " Le dossier sorti de la mallette, l'image de la promenade, le récit de Marisol et son propre aveu consigné n'ont laissé aucune prise à la défense. Le parquet a fait savoir qu'il a de quoi poursuivre à la fois le meurtre et la fraude aux accidents du travail qui est à l'origine de tout."
+  ]
+ },
+ "endings/va/good": {
+  "_hdfr": [
+   "Grant Holloway a été inculpé du meurtre de Dominic Ashworth et l'arrestation tient, mais sans toutes les pièces écrites, le volet fraude finit en renvoi au civil au lieu d'une poursuite pénale. ",
+   "#hdfr:70:600440176:2cf724803268d3e16a2b"
+  ]
+ },
+ "endings/va/wrong": {
+  "_hdfr": [
+   "Vous n'aviez qu'une seule chance et vous avez désigné la mauvaise personne. Entre les locations au noir d'Ellis et les mensonges apeurés de Marisol, vous avez choisi la personne qui paniquait devant vous plutôt que celle qui a tué un homme dans la chambre 6. ",
+   "#hdfr:129:2097023220:e646ffdc16b0636ebaa0",
+   " C'est définitif : il n'y a pas de seconde tentative."
+  ]
+ },
+ "endings/va/cold": {
+  "_hdfr": [
+   "Le dossier est retourné sur l'étagère sans conclusion. ",
+   "#hdfr:105:160301772:eb43f0573afaa9e44fd5"
+  ]
+ },
+ "emails/email-room5-note/subject": "Second passage chambre 5, mot manuscrit récupéré dans la corbeille",
+ "emails/email-room5-note/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nSecond passage dans la chambre 5 du Tideline, après le signalement reçu au sujet de l'occupante. Au fond de la corbeille, sous le bureau, il y avait une feuille du bloc-notes du motel roulée en boule. Le ménage n'était pas repassé depuis la nuit qui nous intéresse.\n\nElle est manuscrite, non signée, et adressée à quelqu'un avec qui l'auteure avait partagé la chambre plus tôt dans la soirée. Ce qui va vous intéresser : elle parle des « cris à côté » vers 21h40. La chambre 6 est juste à côté.\n\nPhotographiée en place, mise sous scellés et versée à votre dossier.\n\n",
+   "#hdfr:26:927360135:561e8fb9b61cf07e7cd5"
+  ]
+ },
+ "emails/email-claims/from": "Comité de contrôle des assurances de Ravenport",
+ "emails/email-claims/subject": "Re : Holloway Restoration, revue des demandes, dossier demandé",
+ "emails/email-claims/body": "Inspecteur,\n\nVous trouverez ci-joint le dossier de revue des demandes que le comité avait confié à M. Ashworth. Nous n'avions pas encore donné suite à ses premières conclusions. Nous n'avons appris son décès que ce matin.\n\nNotez qu'il s'agit de la seule copie que nous communiquons. Elle ne sera pas déposée auprès de votre service des archives et vous ne la trouverez pas dans votre dossier d'affaire : elle reste dans ce message. Nous vous conseillons de le mettre de côté, là où vous saurez le retrouver.\n\nMerci de considérer ceci comme une piste d'audit en cours. Nous aimerions être tenus informés de tout élément utile à une éventuelle saisine pour fraude.\n\nComité de contrôle des assurances de Ravenport",
+ "emails/email-motel-legal/subject": "Demande officielle, incident du Tideline Motor Inn",
+ "emails/email-motel-legal/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nMeridian Hospitality Holdings est propriétaire de l'établissement exploité sous l'enseigne Tideline Motor Inn. Nous souhaitons une résolution rapide de cette affaire et demandons que toute sollicitation de la presse soit adressée à notre bureau plutôt qu'au personnel sur place.\n\nNous comptons sur la discrétion de votre service.\n\n",
+   "#hdfr:48:1622923708:759d0d1a9c5cedb29d25"
+  ]
+ },
+ "emails/email-lot-camera/subject": "Parking du Tideline, images de la nuit, comme demandé",
+ "emails/email-lot-camera/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nNous exploitons les caméras de la promenade sous contrat. Le système du motel lui-même est en panne depuis un an environ et personne n'a payé pour le réparer, ce qui explique sans doute en bonne partie le choix de votre victime.\n\nJ'ai repassé moi-même les images du parking. À 04h12, il reste trois véhicules sur ce parking et chacun appartient à un client qui occupait encore sa chambre le lendemain matin. Comparez avec l'image de 21h30 que votre service a déjà tirée : le pick-up garé devant la chambre 6 n'y est plus. Son propriétaire n'a pas dormi sur place.\n\n",
+   "#hdfr:29:379354694:ad1bedb69385d624c24e",
+   " Nos caméras regardent la promenade, pas les chambres.\n\n",
+   "#hdfr:41:503639506:dab9aef13fe43849ce05"
+  ]
+ },
+ "emails/email-pressure-1/body": {
+  "_hdfr": [
+   "Inspecteur,\n\n",
+   "#hdfr:27:1232867769:01320bb61aba233e17a7",
+   " Je ne sais pas quoi vous demander qu'on ne vous ait pas déjà demandé, sinon ceci : s'il vous plaît. Il était prudent, méthodique, il ne prenait pas de risques inutiles. Quoi qu'il ait été en train de faire, il estimait que ça valait toutes ces précautions. Je vous en prie, trouvez ce que c'était.\n\nRenata"
+  ]
+ },
+ "emails/email-pressure-2/subject": "Demande officielle de calendrier d'enquête",
+ "emails/email-pressure-2/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nNotre direction régionale est, on le comprendra, préoccupée par la perturbation persistante de l'activité du Tideline. Nous souhaiterions un calendrier réaliste et demandons que la présence policière sur le site soit réduite autant que possible à l'avenir.\n\n",
+   "#hdfr:50:867426529:e2fa610a8df8b351ab4c"
+  ]
+ },
+ "emails/email-pressure-3/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nNous agissons pour le compte d'une partie concernée par l'affaire du Tideline Motor Inn. Si cette enquête n'était pas menée avec la diligence et la transparence requises, notre client serait prêt à déposer une plainte formelle auprès du Comité de contrôle indépendant concernant la conduite et le rythme de l'enquête de la police de Ravenport.\n\n",
+   "#hdfr:46:461230094:b6c989c78cb5fcdf83ca",
+   "\n\n",
+   "#hdfr:25:1767186604:882c06628904c3bd87f5"
+  ]
+ },
+ "script/ev-room5-sweep/actions/1/body": {
+  "_hdfr": [
+   "Le second passage dans la chambre 5 a livré un mot manuscrit dans la corbeille. Photographié et versé au dossier. ",
+   "#hdfr:37:1349951767:442c3636c01561d26a20"
+  ]
+ },
+ "script/ev-claims-nudge/actions/0/body": "Ce dossier de demandes d'indemnisation dit qu'Ashworth avait rendez-vous avec Holloway le soir de sa mort. Mettez-le sous le nez de Holloway : savoir s'il est vraiment allé à ce motel, voilà ce qui manque au dossier.",
+ "script/ev-dispatch-note/actions/0/body": "Le groupe propriétaire du Tideline appelle déjà pour se plaindre de la « mauvaise presse ». La pression commence tôt sur cette affaire.",
+ "script/ev-clerk-jumpy/actions/0/body": "Le registre des clients a des trous qui ne collent pas avec les relevés du ménage. À demander directement à Ellis Frey.",
+ "script/ev-notepad-uv/actions/0/body": {
+  "_hdfr": [
+   "#hdfr:74:1984131071:8bb0ef619cdccfc5c739",
+   " La mallette est toujours fermée."
+  ]
+ },
+ "script/ev-room-photographed/actions/0/title": "PATROUILLE DE RETOUR · CHAMBRE 6",
+ "script/ev-room-photographed/actions/0/body": "La patrouille a photographié la chambre 6 et consigné l'image. Rien n'a été prélevé : la chambre avait déjà été nettoyée et relouée.",
+ "script/ev-twist-safe/actions/0/body": "Inspecteur, police scientifique. La carte mémoire du détecteur de fumée de la chambre 6 a été retirée, proprement, sans qu'un seul grain de poussière ait bougé autour. Quelqu'un a vidé un enregistreur que Dominic avait installé dans sa propre chambre avant sa mort. C'était préparé. De son côté à lui, en tout cas.",
+ "script/ev-twist-safe/actions/0/clue/detail": "La carte mémoire du détecteur de fumée de la chambre 6 a été retirée sans rien déranger d'autre. Dominic avait discrètement équipé sa chambre, et quelqu'un l'a trouvé.",
+ "script/ev-wade-alibi/actions/0/body": "L'alibi de Wade Kessler tient : les tickets de caisse et le témoignage du barman le placent à l'Anchor & Ale toute la nuit.",
+ "script/ev-briefcase-opened/actions/2/body": "La mallette est ouverte. Deux feuillets d'enquête et un papier plié derrière, le tout versé à votre dossier.",
+ "script/ev-fob-printed/actions/0/title": "LABO · PORTE-CLÉS EN DOUBLE",
+ "script/ev-fob-printed/actions/0/body": "Aucune correspondance sur le porte-clés. Un pouce partiel sur l'anneau, rien au fichier. Celui qui s'en est servi a fait attention.",
+ "script/ev-grant-rattled/actions/0/body": "Grant Holloway interroge son avocat sur la « responsabilité de l'employeur ». Il a compris que le dossier des demandes est sorti.",
+ "script/ev-priya-tip/actions/0/body": "Ça vaut la peine de tirer les images de la promenade près de la chambre 6, si ce n'est pas déjà fait : le pick-up gris décrit par Priya devrait y être.",
+ "script/ev-wrong/actions/0/title": "LE DOSSIER DE FRAUDE MEURT AUSSI",
+ "script/ev-wrong/actions/0/body": "L'affaire de fraude aux accidents du travail de Grant Holloway s'éteint discrètement avec la mauvaise arrestation. Personne au Comité de contrôle n'y donne suite.",
+ "script/ev-wrong/actions/1/text": "J'aurais jamais dû vous parler.",
+ "script/ev-solved/actions/0/body": "Le Comité de contrôle a rouvert la saisine pour fraude aux accidents du travail contre Holloway Restoration, désormais appuyée sur une affaire de meurtre en cours.",
+ "script/ev-solved/actions/1/text": "Vu aux infos. Je suis contente que ce soit lui et pas… je ne sais pas. Merci de ne pas m'avoir obligée à le dire au tribunal.",
+ "emails/email-room5-note/timestamp": "20 JANV. 2020 · 14:05",
+ "emails/email-claims/timestamp": "20 JANV. 2020 · 09:40",
+ "emails/email-motel-legal/timestamp": "20 JANV. 2020 · 11:00",
+ "emails/email-lot-camera/timestamp": "20 JANV. 2020 · 10:20",
+ "emails/email-pressure-1/timestamp": "20 JANV. 2020 · 12:15",
+ "emails/email-pressure-2/timestamp": "20 JANV. 2020 · 16:40",
+ "emails/email-pressure-3/timestamp": "20 JANV. 2020 · 21:20",
+ "evidence/va:E6/phoneRecords/0/time": "16 JANV., 14:20",
+ "evidence/va:E6/phoneRecords/1/time": "17 JANV., 19:05",
+ "evidence/va:E6/phoneRecords/2/time": "18 JANV., 11:12",
+ "evidence/va:E6/phoneRecords/3/time": "19 JANV., 21:15"
+}

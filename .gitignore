@@ -1,0 +1,26 @@
+# travail local et dépendances
+.work/
+node_modules/
+
+# textes du jeu extraits de la copie locale (droits Shu'la Lab) : jamais publiés.
+# Ils se régénèrent avec `node cases_extract.js` puis `node cases_sheet.js <id>`.
+cases/*.en.json
+cases/*.fr.orig.json
+cases/*.fr.json
+cases/*.sheet.txt
+
+# publiables : patch.js, verify.js, audit.js, mechanics.js, cases_*.js, *_fr.json,
+# fr_additions.json, fr_overrides.json, cases/*.meta.json, cases/*.fr.flat.json (nos textes)
+# La liste exacte du livrable est dans release.js (node release.js).
+backup_save/
+backup_flat/
+scratch/
+release/
+Docs/
+HANDOFF.md
+
+# Node portable embarqué dans le paquet joueur (téléchargé depuis nodejs.org, empreinte vérifiée)
+vendor/
+
+# Node portable du paquet joueur (publié dans le zip des Releases, pas dans le dépôt)
+node/

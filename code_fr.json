@@ -1,0 +1,73 @@
+{
+ "consigneStudio": "#hdfr:272:998636205:9b47222d9cd89442d888",
+ "termes": [
+  [
+   "#hdfr:13:955182164:ade1dc2fda041f01f194",
+   "CAHIER DE FERMETURE"
+  ],
+  [
+   "#hdfr:15:613973332:a6189c57123b2ee1b662",
+   "OBJET MANQUANT"
+  ],
+  [
+   "#hdfr:70:492994142:fd4d7efcf870d149d184",
+   "Le ticket de Westgate vient d’arriver dans vos dossiers. Qui l’a signé ?"
+  ],
+  [
+   "#hdfr:58:420781211:c88b3fe9b5e6b86c900c",
+   "T. Vale. Les clés, le registre, le ticket : voilà une chaîne de preuves."
+  ],
+  [
+   "#hdfr:56:2091856441:9129f6924ec1cab6988a",
+   "Ouvrez le ticket, tout en bas : SIGNATURE DU VENDEUR."
+  ],
+  [
+   "#hdfr:45:1273767887:6c5075de100448d01b0b",
+   "**AFFAIRES** est ouvert. Bon courage."
+  ],
+  [
+   "#hdfr:128:151190407:af524cc39947fb8d1df3",
+   "Les mots racontent des histoires, les preuves disent la vérité. S'ils partent dans tous les sens, ne les suivez pas. Appuyez-vous sur ce que dit le papier."
+  ],
+  [
+   "#hdfr:71:333696074:f358d1032f9d21c1325e",
+   "[\"CODE\",\"CASE\",\"TEST\",\"ZONE\",\"NOTE\",\"DATE\",\"PLAN\",\"TAXI\",\"CLUB\",\"FILM\"]"
+  ],
+  [
+   "#hdfr:42:1950409079:38e4350c7bc91251fa3e",
+   "le Conseil de surveillance et l’hôtel de ville"
+  ],
+  [
+   "#hdfr:45:355276306:32d64b51a0959a979785",
+   "est sur votre bureau, dès que vous n'aurez plus de doute."
+  ],
+  [
+   "#hdfr:47:1054696712:773d3b3ee5f6fae46bf2",
+   "Brigade criminelle de Ravenport."
+  ],
+  [
+   "#hdfr:31:459907216:eec1b23a6bcf82ab6640",
+   "**LA CLÉ DU PRÊTEUR**"
+  ],
+  [
+   "#hdfr:31:1003062506:417eb82b4ad5b4c5a460",
+   "« LA CLÉ DU PRÊTEUR »"
+  ]
+ ],
+ "promptAnglais": [
+  [
+   "#hdfr:45:1037035219:78ede78414b2427415e6",
+   "[L'inspecteur pose une pièce sur la table : "
+  ],
+  [
+   "#hdfr:78:1424603999:cd5bb83faf4e9afdbf07",
+   "(CONSIGNE DE LANGUE, PRIORITAIRE SUR TOUT LE RESTE : écris TOUTE ta réponse en "
+  ],
+  [
+   "#hdfr:28:1838546439:9fea253f5bd2ae373edf",
+   "Écris toute ta réponse en "
+  ]
+ ],
+ "consigneGreffier": "Écris toute ta réponse en français, et dans aucune autre langue. Cette consigne prime sur toutes les indications de forme ci-dessus.",
+ "greffierQueue": "#hdfr:88:2084810893:aec763f16bd376f92c16"
+}

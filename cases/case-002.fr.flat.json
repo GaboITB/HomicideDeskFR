@@ -1,0 +1,502 @@
+{
+ "title": "Silence radio",
+ "tagline": "Un animateur de nuit étranglé dans son propre studio, en plein direct.",
+ "description": "Elliot Grange, 44 ans, animateur de « Fréquence Nuit » sur Harrow 91.5, retrouvé mort dans son studio vers 03h30, étranglé avec le câble de son propre micro. Aucune effraction : celui qui a fait ça avait un badge du personnel. L'automate a maintenu la radio à l'antenne, sur un silence complet, pendant quarante minutes avant que quelqu'un s'en aperçoive.",
+ "captainBriefing": {
+  "_hdfr": [
+   "Inspecteur, on a un corps à Harrow 91.5, la radio associative de l'ancienne imprimerie. Elliot Grange, l'animateur de nuit, étranglé dans son studio un peu avant trois heures. Aucune effraction. Celui qui a fait ça avait un accès du personnel et connaissait les lieux. ",
+   "#hdfr:45:1905074305:5d71080ef9a9ee4c0751",
+   " Trouvez qui l'a fait taire, et pourquoi il s'apprêtait à donner un nom à l'antenne."
+  ]
+ },
+ "suspects/dana-wexler/role": "Directrice de la radio, 47 ans",
+ "suspects/theo-brandt/role": "Ingénieur son, 33 ans",
+ "suspects/victor-sloane/role": "Animateur radio, réseau national, 51 ans",
+ "witnesses/yusuf-demir/openingStatement": {
+  "_hdfr": [
+   "#hdfr:103:815180173:e2aff6b81af6b6f0a03a",
+   " Demandez-moi ce que vous voulez, je ne bouge pas d'ici."
+  ]
+ },
+ "witnesses/yusuf-demir/clue/label": "Une femme à la porte de livraison, 03h05",
+ "witnesses/yusuf-demir/clue/detail": "Yusuf a vu une femme sortir en courant par la porte de livraison du personnel à 03h05 et rejoindre une voiture déjà en marche qui l'attendait. Il confirme que cette porte n'a pas de lecteur de badge et qu'on la cale ouverte une fois les bureaux fermés.",
+ "phoneContacts/priya-nandi/role": "Animatrice de nuit, sur une autre radio de quartier",
+ "phoneNumbers/555-0148/label": "La ligne privée de Dana",
+ "phoneNumbers/555-0148/transcript": {
+  "_hdfr": [
+   "#hdfr:37:575886827:afc8d5f5746b8713b5be",
+   " Laissez un message. »\n\nMessage conservé, E. ",
+   "#hdfr:37:735005825:a1beb3cdfaf7fcbfecac",
+   "\n« Dana, c'est moi… J'ai refait les comptes deux fois. Huit mille\ndollars en cinq mois, et chaque demande porte tes initiales. Tu as\njusqu'à l'émission de samedi pour le dire toi-même. Sinon, c'est\nmoi qui le lis à l'antenne. À toi de voir. »"
+  ]
+ },
+ "phoneNumbers/555-0148/grantsClue/detail": "Grange a laissé à Wexler jusqu'à l'émission de samedi pour expliquer elle-même le trou dans les comptes, faute de quoi il la nommerait à l'antenne.",
+ "storeItems/req-driver-set/desc": "Embouts trempés, jusqu'aux tailles de l'électronique grand public. Pour toute pièce sous scellés qu'on a vissée alors qu'elle n'aurait pas dû l'être.",
+ "files/root/name": "AFFAIRE N° 002 · Silence radio",
+ "files/file-E9/name": "Câble du micro · sachet scellé",
+ "files/file-E11/name": "Dashcam du trottoir d'en face · 03:05",
+ "files/file-E14/name": "CAM 04 · entrée principale, 01:58",
+ "files/file-E15/name": "Capture de visage · personne identifiée",
+ "files/file-E3/name": "Journal de la ligne des auditeurs",
+ "files/file-E5/name": "Registre de la subvention de la radio",
+ "files/file-E7/name": "Relevé des badges · porte du personnel",
+ "files/file-E4/name": "La cassette personnelle de Grange",
+ "files/file-E13/name": "Jaquette de la cassette",
+ "files/folder-personnel/name": "Dossiers du personnel",
+ "files/file-E6/name": "La lettre de licenciement de Theo Brandt",
+ "files/file-E10/name": "L'agenda de bureau de Wexler · cette nuit-là",
+ "evidence/va:E1/description": "Scène du studio : Grange retrouvé affaissé sur la console vers 03h30, le câble de son propre micro enroulé deux fois autour du cou. Aucune effraction, l'accès aux studios se fait uniquement par badge du personnel. L'automate a continué de diffuser du silence à partir de 02h47 parce que personne n'a lancé le segment suivant.",
+ "evidence/va:E1/presentationMessage": "Grange a été retrouvé vers 03h30, le câble de son propre micro enroulé deux fois autour du cou. Aucune effraction : celui qui a fait ça avait un badge du personnel. La radio a diffusé du silence pendant quarante minutes parce qu'il ne restait personne pour s'en apercevoir.",
+ "evidence/va:E1/fileContent": {
+  "_hdfr": [
+   "DIVISION DE HARROW FLATS · RAPPORT DE SCÈNE DE CRIME\nAFFAIRE N° 002 · Studios Harrow 91.5, ancienne imprimerie\n\nVICTIME : Elliot Grange, 44 ans, animateur de « Fréquence Nuit »\nLIEU : studio de diffusion A, Harrow 91.5\nHEURE DU DÉCÈS (estimation) : 02:45–03:15, vendredi 17 janvier 2020\n\nRÉSUMÉ :\nVictime retrouvée affaissée sur la console de diffusion à 03:27 par\nl'ingénieur son du matin. Cause du décès : strangulation au lien,\navec le câble de micro XLR de la victime, enroulé deux fois autour\ndu cou. Aucune blessure de défense relevée au premier examen.\n\nACCÈS :\nAucune effraction. Accès aux studios par badge du personnel\nuniquement. Relevé de la porte demandé séparément (voir le relevé\ndes badges dès réception).\n\nAUTOMATE DE DIFFUSION :\nLe logiciel d'automatisation a maintenu la radio sur du silence à\npartir de 02:47 : personne n'a lancé le segment suivant à la main.\nC'est pour cela que le silence a duré quarante minutes avant que\nl'ingénieur son du matin s'en aperçoive et prévienne.\n\nPREMIÈRE ANALYSE :\nLa scène a été maquillée pour faire croire que la victime s'est\nprise dans le câble en tendant le bras vers un potentiomètre et\ns'est étranglée par accident. ",
+   "#hdfr:28:542255741:a4835493dfe592589a78",
+   "\necchymoses laissées par le lien ne corroborent pas cette hypothèse.\n\n",
+   "#hdfr:27:271878663:7970572051c0a28c4cf8"
+  ]
+ },
+ "evidence/va:E2/description": "Les dernières minutes du direct de Grange, récupérées sur le serveur d'automatisation de la radio. Il a annoncé un sujet sur « où est vraiment passé l'argent » quelques instants avant que l'antenne ne tombe dans le silence.",
+ "evidence/va:E2/presentationMessage": "Voici la dernière chose qu'Elliot Grange a dite à l'antenne : « Et après la pause, un sujet que je garde sous le coude depuis quelques jours… où est vraiment passé l'argent. Restez avec nous. » Puis le silence, à partir de 02h47.",
+ "evidence/va:E2/audioTranscript": {
+  "_hdfr": [
+   "SERVEUR D'AUTOMATISATION HARROW 91.5 · JOURNAL DE DIFFUSION\n",
+   "#hdfr:57:1636444933:9bfbacc26a2f940a5128",
+   "\n\n[02:44:12] E. GRANGE (direct) : « …et après la pause, un sujet que\nje garde sous le coude depuis quelques jours… où est vraiment passé\nl'argent. Restez avec nous. »\n\n[02:44:40] début du tapis musical, pause programmée de 3 minutes.\n\n[02:47:02] fin du tapis, aucun top reçu de l'animateur.\n\n[02:47:03 et après] SILENCE RADIO, l'automate est resté sur le\n",
+   "#hdfr:66:1294235083:4e756fb9b8c3d6938d62",
+   "\nl'ingénieur son, au petit matin.\n\n[FIN DU JOURNAL]"
+  ]
+ },
+ "evidence/va:E2/fileContent": {
+  "_hdfr": [
+   "HARROW 91.5 · EXPORT DU SERVEUR D'AUTOMATISATION\n",
+   "#hdfr:58:2079021108:1a3aa6a053d7e6658df4",
+   "\n\n",
+   "#hdfr:64:319065333:03d7bec827ce4939d424",
+   "\nLa transcription se débloque après l'écoute."
+  ]
+ },
+ "evidence/va:E3/phoneRecords/0/note": "abouti · bureau de Wexler",
+ "evidence/va:E3/phoneRecords/1/to": "Ligne des auditeurs, Fréquence Nuit",
+ "evidence/va:E3/phoneRecords/2/to": "Ligne des auditeurs, Fréquence Nuit",
+ "evidence/va:E3/phoneRecords/3/to": "Ligne des auditeurs, Fréquence Nuit",
+ "evidence/va:E3/name": "Journal de la ligne des auditeurs",
+ "evidence/va:E3/description": "Cette nuit-là, la ligne des auditeurs a reçu trois appels courts d'un numéro masqué, tous raccrochés avant le passage à l'antenne. Le même numéro masqué a aussi appelé une fois le bureau de la directrice, l'après-midi.",
+ "evidence/va:E3/presentationMessage": "Un numéro masqué a appelé l'émission trois fois dans la nuit, en raccrochant chaque fois avant de passer à l'antenne, et a appelé une fois le bureau de la directrice l'après-midi. Même numéro, deux lignes qui n'ont rien à voir.",
+ "evidence/va:E3/clue/detail": "Le même numéro masqué a appelé l'émission trois fois dans la nuit et le bureau de la directrice une fois l'après-midi de la veille.",
+ "evidence/va:E3/fileContent": {
+  "_hdfr": [
+   "HARROW 91.5 · JOURNAL DE LA LIGNE DES AUDITEURS\nVendredi 17 janvier 2020 (nuit) + après-midi de la veille\n\n",
+   "#hdfr:66:1687079641:c6f883446dd972af0313",
+   "\n15:40  | MASQUÉ   | Ligne du bureau de la direction | 3:10  | abouti, bureau de Wexler\n23:10  | MASQUÉ   | Ligne des auditeurs             | 0:45  | raccroché avant l'antenne\n00:05  | MASQUÉ   | Ligne des auditeurs             | 0:12  | raccroché avant l'antenne\n02:20  | MASQUÉ   | Ligne des auditeurs             | 0:08  | raccroché avant l'antenne\n\nMême numéro masqué pour les quatre appels. Le numéro lui-même\nfigure dans les « numéros récents » de l'afficheur du standard de\nla radio : 555-0199."
+  ]
+ },
+ "evidence/va:E4/name": "La cassette personnelle de Grange · « PRIVÉ · NE PAS DIFFUSER »",
+ "evidence/va:E4/description": {
+  "_hdfr": [
+   "#hdfr:113:654559575:8591a9416acae1012d23",
+   " Le genre de cassette dont il se servait pour proposer un sujet à un invité, sauf que celle-ci ne contient aucun enregistrement, et que la coque a été vissée par-dessus la jaquette."
+  ]
+ },
+ "evidence/va:E4/presentationMessage": "Grange avait ça dans la poche de sa veste : une cassette personnelle marquée « PRIVÉ, NE PAS DIFFUSER ». Rien d'enregistré dessus. Il avait vissé la coque par-dessus la jaquette glissée à l'intérieur.",
+ "evidence/va:E4/lockedHint": "Les deux vis de la coque sont cruciformes et fraisées, enfoncées bien trop profondément sous le plastique pour une pièce de monnaie ou une pointe de couteau. Ce qu'il faut pour ouvrir ça ne se trouve pas dans votre tiroir de bureau.",
+ "evidence/va:E4/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · CASSETTE PERSONNELLE (SOUS SCELLÉS)\nRécupérée sur place, dans la poche de veste de la victime.\n\nUne cassette de démo ordinaire, annotée au marqueur :\n« PRIVÉ · NE PAS DIFFUSER · E.G. »\nAucun enregistrement sur la bande.\n\nLa coque a été vissée. Les coques de ce type se clipsent : elles ne\n",
+   "#hdfr:33:2007957673:dda3eb412c34bd882996",
+   " Quelqu'un a posé ces vis à la\nmain.\n\nFaites pivoter l'objet pour l'examiner sous tous les angles."
+  ]
+ },
+ "evidence/va:E5/name": "Registre de la subvention de la radio",
+ "evidence/va:E5/description": "Cinq mois de lignes « maintenance du matériel » et « actions de proximité » imputées à la subvention municipale. Entre le budget et les montants réclamés, plus de 8 000 $ ne sont couverts par aucun justificatif, et chaque mois porte le paraphe « D.W. ».",
+ "evidence/va:E5/presentationMessage": "Cinq mois de dépenses sur la subvention, budget d'un côté, montants réclamés de l'autre. Maintenance du matériel, actions de proximité : huit mille dollars sans justificatif, et chaque mois, sans exception, paraphé D.W.",
+ "evidence/va:E5/clue/label": "Huit mille dollars sans justificatif",
+ "evidence/va:E5/clue/detail": {
+  "_hdfr": [
+   "#hdfr:50:1602747044:6595d7448cb5403128cc",
+   " Entre le budget et les montants réclamés, plus de 8 000 $ ne sont couverts par aucun justificatif."
+  ]
+ },
+ "evidence/va:E5/fileContent": {
+  "_hdfr": [
+   "SUBVENTION MUNICIPALE · REGISTRE DE SUBVENTION HARROW 91.5\n",
+   "#hdfr:29:1895890547:77a15bfab8a9f0277a36",
+   "\n\nMOIS       | POSTE                   | BUDGÉTÉ  | RÉCLAMÉ  | PARAPHE\nsept. 2019 | Maintenance du matériel | 400 $    | 2 100 $  | D.W.\nsept. 2019 | Actions de proximité    | 600 $    | 1 850 $  | D.W.\noct. 2019  | Maintenance du matériel | 400 $    | 1 950 $  | D.W.\nnov. 2019  | Actions de proximité    | 600 $    | 1 700 $  | D.W.\ndéc. 2019  | Maintenance du matériel | 400 $    | 1 880 $  | D.W.\njanv. 2020 | Actions de proximité    | 600 $    | 1 620 $  | D.W.\n\n",
+   "#hdfr:52:159940530:125f5232d81e23eea945",
+   "\n",
+   "#hdfr:45:1806851212:962926aa5bafd50ab610",
+   "\n\nNOTE DE L'AUDITEUR : les justificatifs des demandes « maintenance du\n",
+   "#hdfr:67:958066586:52fa037f98371af53d70",
+   "\nsystème d'achats de la radio. Signalé pour la revue trimestrielle."
+  ]
+ },
+ "evidence/va:E6/name": "La lettre de licenciement de Theo Brandt",
+ "evidence/va:E6/description": "Lettre de licenciement de Theo Brandt, à effet immédiat, pour « manquements disciplinaires », signée par Dana Wexler trois jours avant la mort de Grange.",
+ "evidence/va:E6/presentationMessage": "Theo Brandt a été licencié trois jours avant la mort de Grange. « Manquements disciplinaires », signé de la main de Dana Wexler. À effet immédiat.",
+ "evidence/va:E6/fileContent": {
+  "_hdfr": [
+   "HARROW 91.5 · NOTIFICATION DE LICENCIEMENT\nÀ : Theo Brandt, ingénieur son\n",
+   "#hdfr:28:558533036:e16c0c3321cd58d01512",
+   "\n\nÀ compter de ce jour, il est mis fin à votre contrat avec Harrow\n91.5 pour manquements disciplinaires, à la suite de l'incident\nsurvenu en régie le 12 janvier. Vos accès au matériel de la radio\nsont supprimés dès la présente notification. Le solde de tout compte\nsera versé selon la procédure habituelle.\n\nD. Wexler, directrice de la radio"
+  ]
+ },
+ "evidence/va:E7/name": "Relevé des badges · porte du personnel",
+ "evidence/va:E7/description": "Relevé des badges de la porte du personnel, la nuit du meurtre : le badge de Dana Wexler entre à 02h31 et sort à 02h58, avec un second passage en entrée, validé à la main à 02h40, signalé « dérogation manuelle, code superviseur ».",
+ "evidence/va:E7/presentationMessage": "Le relevé des badges de la porte du personnel, cette nuit-là : votre badge entre à 02h31 et sort à 02h58. Et un second passage en entrée, validé à la main à 02h40, signalé dérogation manuelle, code superviseur. Vous m'avez dit que vous étiez rentrée chez vous avant minuit, madame Wexler.",
+ "evidence/va:E7/clue/label": "Le badge de Wexler, de 02h31 à 02h58",
+ "evidence/va:E7/clue/detail": "Un second passage en entrée, validé à la main à 02h40, signalé « dérogation manuelle, code superviseur », en plein créneau du meurtre.",
+ "evidence/va:E7/fileContent": {
+  "_hdfr": [
+   "HARROW 91.5 · RELEVÉ DES BADGES, PORTE DU PERSONNEL\nNuit du jeudi 16 au vendredi 17 janvier 2020\n\n",
+   "#hdfr:62:1687874849:a5639af7af209569202c",
+   "\n21:15  | T. Brandt        | Personnel  | SORTIE  | (déjà licencié, accès censé être supprimé)\n23:50  | E. ",
+   "#hdfr:38:1714440146:73d2a3c85bdde4e9e1dd",
+   "\n02:31  | D. ",
+   "#hdfr:38:1456868119:9754f6cf33b77f870fd8",
+   "\n02:40  | D. ",
+   "#hdfr:80:1456868119:86c0167dd454569ba7fc",
+   "\n02:58  | D. ",
+   "#hdfr:38:1456868119:437d1de3ac07949d2a0a",
+   "\n\nNOTE SYSTÈME : un passage validé en dérogation manuelle à 02:40,\npour un badge déjà enregistré en ENTRÉE à 02:31, n'a rien\nd'habituel. On n'y recourt normalement que lorsque le lecteur n'a\npas lu le badge correctement. Les codes de dérogation de niveau\nsuperviseur ne sont détenus que par la direction de la radio."
+  ]
+ },
+ "evidence/va:E8/name": "Enregistrement d'une boîte vocale privée",
+ "evidence/va:E8/description": "Obtenu en composant le numéro caché dans la cassette de Grange. L'annonce est la voix de Dana Wexler elle-même. Un message conservé, laissé par Grange la veille de sa mort, pose un ultimatum sans détour.",
+ "evidence/va:E8/presentationMessage": {
+  "_hdfr": [
+   "C'est votre boîte vocale privée, madame Wexler. ",
+   "#hdfr:98:42221466:89a956aefe19b5c38efd",
+   " Je te laisse jusqu'à l'émission de samedi pour le dire toi-même. Sinon, c'est moi qui le lis à l'antenne. À toi de voir. »"
+  ]
+ },
+ "evidence/va:E8/audioTranscript": {
+  "_hdfr": [
+   "BOÎTE VOCALE PRIVÉE · RÉCUPÉRÉE EN COMPOSANT LE NUMÉRO\nAnnonce (D. ",
+   "#hdfr:53:501976255:755758a3608f7e0826ab",
+   "\nLaissez un message. »\n\nMESSAGE CONSERVÉ · laissé le jeudi 16 janvier 2020, 22:40\nDE : E. Grange\n\n« Dana, c'est moi… J'ai refait les comptes deux fois. Huit mille\ndollars en cinq mois, et chaque demande porte tes initiales. Tu as\njusqu'à l'émission de samedi pour le dire toi-même. Sinon, c'est\nmoi qui le lis à l'antenne. À toi de voir. »\n\n[FIN DU MESSAGE]"
+  ]
+ },
+ "evidence/va:E8/clue/detail": "Grange a laissé à Wexler jusqu'à l'émission de samedi pour expliquer elle-même le trou dans les comptes, faute de quoi il la nommerait à l'antenne.",
+ "evidence/va:E8/fileContent": {
+  "_hdfr": [
+   "#hdfr:34:988365501:98965fab6745b308b1de",
+   "\nObtenue en composant le numéro trouvé dans la cassette personnelle\nde Grange.\n\n",
+   "#hdfr:60:319065333:0fc5c1cedc7a8fcde41f",
+   "\nconservé. La transcription se débloque après l'écoute."
+  ]
+ },
+ "evidence/va:E9/name": "Câble de micro · analyse des traces",
+ "evidence/va:E9/description": "L'arme du crime : le câble de micro XLR de Grange lui-même. L'analyse montre un double enroulement serré volontairement, pas un câble accroché par accident, et des fibres de gant en cuir sur le corps du connecteur qui ne correspondent à aucun gant recensé dans l'équipe.",
+ "evidence/va:E9/presentationMessage": "Le labo a rendu ses conclusions sur le câble du micro. Le double enroulement a été serré volontairement, personne ne s'emmêle dans un câble comme ça par accident. Et il y a sur le connecteur des fibres de gant en cuir qui ne correspondent à aucun gant recensé dans votre équipe.",
+ "evidence/va:E9/forensicsReport": "Les marques de compression sur le câble correspondent à un lien\nserré volontairement en double enroulement, et non à un emmêlement\naccidentel. Les fibres de gant en cuir (taille M) prélevées sur le\ncorps du connecteur ne correspondent à aucun gant recensé dans\nl'équipe de la radio.",
+ "evidence/va:E9/fileContent": "SACHET SCELLÉ · CÂBLE DE MICRO XLR (ARME DU CRIME)\nSaisi dans le studio A, encore enroulé autour du cou de la victime\nau moment des constatations.\n\nSoumettez-le au labo pour obtenir l'analyse des marques et des\nfibres.",
+ "evidence/va:E10/name": "L'agenda de bureau de Wexler · cette nuit-là",
+ "evidence/va:E10/description": "La page de la nuit du meurtre dans l'agenda de bureau de Dana Wexler : « E.G., 2h30 », écrit puis rayé assez fort pour déchirer le papier.",
+ "evidence/va:E10/presentationMessage": {
+  "_hdfr": [
+   "Votre agenda de bureau, madame Wexler, à la page de cette nuit-là. « E.G., deux heures trente. ",
+   "#hdfr:55:1899205591:fa1dffa48a7046f1afb2",
+   " Vous saviez exactement à quelle heure vous aviez rendez-vous avec lui."
+  ]
+ },
+ "evidence/va:E10/clue/detail": "L'agenda de Wexler elle-même : « E.G., 2h30 », écrit puis rayé avec violence.",
+ "evidence/va:E10/fileContent": {
+  "_hdfr": [
+   "#hdfr:40:940330529:0cd7b016885ce8441475",
+   "\n",
+   "#hdfr:28:236867611:f06e3693fb6f0f5856c9",
+   "\n\n[notes du matin, affaires courantes de la radio…]\n\n« E.G., 2h30 » [rayé assez fort pour déchirer la page]\n\n",
+   "#hdfr:34:1256493842:47c322e528af800792d3"
+  ]
+ },
+ "evidence/va:E11/name": "Dashcam du trottoir d'en face · porte de livraison, 03:05",
+ "evidence/va:E11/description": "La dashcam d'un taxi de nuit garé en face de l'ancienne imprimerie : à 03h05, la porte de livraison du personnel s'ouvre et une femme en sort en courant, droit vers une voiture qui l'attend. En plein créneau du meurtre, et elle ne se retourne pas une seule fois.",
+ "evidence/va:E11/presentationMessage": {
+  "_hdfr": [
+   "Un taxi était garé en face de votre porte de livraison cette nuit-là, madame Wexler, et sa dashcam tournait. À trois heures cinq, la porte s'ouvre et une femme en sort en courant. ",
+   "#hdfr:42:1993588948:065e6f975f9be14542ec"
+  ]
+ },
+ "evidence/va:E11/clue/label": "Une femme qui part en courant, 03h05",
+ "evidence/va:E11/clue/detail": "La dashcam d'un taxi filme une femme non identifiée qui quitte Harrow 91.5 en courant par la porte de livraison du personnel à 03h05, dans le créneau estimé du meurtre.",
+ "evidence/va:E11/audioTranscript": {
+  "_hdfr": [
+   "DASHCAM DE TAXI · véhicule garé le long du trottoir, face à la\n",
+   "#hdfr:57:998875843:306ae672dd21c9a3ef88",
+   "\nRemise spontanément par le chauffeur, Y. Demir.\n\n",
+   "#hdfr:57:145405139:402fb089dc2116c4f3a3",
+   " Une femme\n          en sort en courant, sans se retourner ni regarder la rue.\n03:05:49  Elle traverse la chaussée jusqu'à un véhicule particulier\n          garé plus haut dans la rue. Pas un taxi, pas un véhicule\n          de service.\n",
+   "#hdfr:30:162254325:520d3624179d724259f0",
+   " Aucune plaque lisible avec cette\n          exposition.\n\nConcorde avec la déclaration du chauffeur lors de son audition.\n\nAucune identification possible à partir de cette séquence. Le visage\nde la femme n'apparaît jamais face à l'objectif et l'exposition ne\npermet pas de lire une plaque.\n\nRECOMMANDATION : transmettre cette pièce à l'Unité de soutien\nscientifique. Les caméras de la radio enregistraient toutes sur un\nmême enregistreur cette nuit-là, et l'Imagerie peut travailler sur\nla source plutôt que sur cette copie."
+  ]
+ },
+ "evidence/va:E11/forensicsReport": {
+  "_hdfr": [
+   "#hdfr:40:1403809278:e6f53a293d2ae881728e",
+   "\nPIÈCE : dashcam du trottoir d'en face, porte de livraison du\npersonnel, 03:05 (E11)\n\n1. RETOUR À LA SOURCE\nLa copie de la dashcam ne permettra jamais d'identifier qui que ce\nsoit. Nous sommes donc allés chercher l'enregistreur de la radio\net en avons tiré les images de la caméra de l'entrée principale,\npour les heures qui encadrent les faits.\n\nCAM 04 montre la même femme à 01:58, soixante-sept minutes avant sa\nsortie en courant : elle arrive à pied depuis le trottoir et\nrejoint un homme sur le perron. L'échange commence sèchement, et ça\nne dure pas : à 01:58:44, les deux s'enlacent, puis ils font le\ntour ensemble vers le côté du personnel, à l'abri du vent.\n\n2. CAPTURE DU VISAGE\nUne image de CAM 04 la montre assez franchement de face pour être\naméliorée. ",
+   "#hdfr:55:1639395929:24289a03cb0ebd211cc1",
+   "\npièce à part.\n\n   ",
+   "#hdfr:33:212632601:5d55d0609df7d5fb005d",
+   " Aucun antécédent.\n   L'homme est identifié comme OWEN ARDLEY, 31 ans, son mari.\n\n3. DÉCLARATION · CORROBORÉE\n",
+   "#hdfr:66:1758082076:e0224dfecd7dea6b82a4",
+   "\n",
+   "#hdfr:45:670243451:849c07b8a19e40c0c3b3",
+   " Sa version : une\ndispute à la maison, elle est partie en voiture chercher son mari,\nils se sont expliqués sur le perron, puis elle a attendu dans le sas\nde livraison, qui ferme par une simple barre, sans lecteur ni badge,\npendant qu'il finissait de récupérer ce qu'il était venu chercher.\nÀ 03:05, elle a entendu sa voiture démarrer et elle est sortie par\n",
+   "#hdfr:62:2034339755:f24f272afe2b712f40af",
+   "\n\nLe chauffeur, Y. Demir, décrit de son côté une femme courant vers\nune voiture déjà en marche, qui l'a attendue. C'est un mari qui\nn'est pas encore parti, pas une fuite. Owen Ardley confirme.\n\n4. CONCLUSION\nNELL ARDLEY N'EST PAS SUSPECTE DANS CETTE ENQUÊTE.\nElle se trouvait dans le sas de livraison, à l'opposé du studio A,\n",
+   "#hdfr:35:1044376436:bc4d8fefd3638ff0f0e4",
+   " Sa course était tout ce qui\nparaissait louche chez elle, et c'était une femme qui courait après\nune voiture.\n\nDeux pièces jointes au présent rapport : CAM 04, entrée principale\n(01:58), et la capture de visage améliorée."
+  ]
+ },
+ "evidence/va:E11/forensicsMedia/videoLabel": "CAM 04 · ENTRÉE PRINCIPALE · 01:58 (extraite de l'enregistreur de la radio)",
+ "evidence/va:E11/forensicsMedia/imageCaption": "Capture de visage améliorée à partir de CAM 04, identifiée : Nell Ardley, 29 ans. Hors de cause.",
+ "evidence/va:E11/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · IMAGES RÉCUPÉRÉES (DASHCAM)\nDashcam d'un taxi garé en face de la porte de livraison du\npersonnel.\n\n",
+   "#hdfr:68:1207708976:5629c7c4653ac2847c19"
+  ]
+ },
+ "evidence/va:E14/name": "CAM 04 · entrée principale, 01:58",
+ "evidence/va:E14/description": {
+  "_hdfr": [
+   "Les images de la caméra de l'entrée principale de la radio, récupérées par l'Imagerie sur le même enregistreur : la femme de la dashcam arrive à pied à 01h58 et rejoint un homme sur le perron. ",
+   "#hdfr:30:678277305:9b3dd2256a54b19bd331",
+   " Ça finit dans les bras l'un de l'autre."
+  ]
+ },
+ "evidence/va:E14/presentationMessage": "C'est votre propre caméra d'entrée, madame Wexler, celle que personne n'a pensé à me proposer. La femme de la porte de livraison retrouve son mari sur le perron, juste avant deux heures. Cette femme n'est la clé de rien, et je crois que vous le saviez déjà.",
+ "evidence/va:E14/clue/detail": "CAM 04 et la capture améliorée identifient la femme de la dashcam : Nell Ardley, qui attendait son mari dans le sas de livraison. Elle est hors de cause, et sa course de 03h05 ne veut rien dire.",
+ "evidence/va:E14/audioTranscript": {
+  "_hdfr": [
+   "CAM 04 · ENTRÉE PRINCIPALE (sans piste audio)\nRécupérée sur l'enregistreur de la radio par l'Imagerie de la\npolice de Ravenport.\n\n01:58:12  Une femme approche à pied depuis le trottoir. Un homme\n          sort par la porte principale et s'arrête sur le perron.\n",
+   "#hdfr:28:67257220:cf79dc46e75666f0c408",
+   " La femme désigne la rue à plusieurs\n          reprises. L'homme ne s'écarte pas.\n",
+   "#hdfr:27:438194388:a35d7cc23113be7a8189",
+   " Les deux s'enlacent et restent ainsi\n          onze secondes.\n01:59:04  Ils sortent du cadre ensemble par la gauche, vers le côté\n          du personnel, à l'abri du vent.\n\nIdentifiés : NELL et OWEN ARDLEY, mariés. Ni l'un ni l'autre n'est\nconcerné par cette enquête. Voir le rapport d'imagerie de l'Unité\nde soutien scientifique joint à la pièce E11."
+  ]
+ },
+ "evidence/va:E14/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · IMAGES RÉCUPÉRÉES (CAMÉRA DE LA RADIO)\n",
+   "#hdfr:33:1123297521:a4d51e5b05fc9b482fe9",
+   " ",
+   "#hdfr:30:1695530018:9c401f543d4c3cf3e808",
+   "\npolice de Ravenport sur l'enregistreur de la radio, lors du\n",
+   "#hdfr:25:1462643406:4bdc764d32e0f38ec6b3",
+   "\n\n",
+   "#hdfr:68:1207708976:5629c7c4653ac2847c19"
+  ]
+ },
+ "evidence/va:E15/name": "Capture de visage · personne identifiée",
+ "evidence/va:E15/description": "La seule image de CAM 04 assez nette pour être améliorée, et l'identification qui en est ressortie : Nell Ardley, 29 ans, aucun antécédent. La femme de la dashcam, et elle n'est pas suspecte.",
+ "evidence/va:E15/presentationMessage": "La voici, madame Wexler. Nell Ardley. Vingt-neuf ans, aucun antécédent, et pendant tout ce temps-là elle attendait dans un sas, à l'opposé du studio A. Celui qui est entré dans ce studio, ce n'est pas elle.",
+ "evidence/va:E15/hotspotLabels/0": {
+  "_hdfr": [
+   "#hdfr:99:1138508686:725f21cabd66794ea562",
+   " Correspondance trouvée dans le fichier des permis de conduire : NELL ARDLEY, 29 ans."
+  ]
+ },
+ "evidence/va:E15/hotspotLabels/1": "Extraite de CAM 04 à 01:58:47, pendant les onze secondes où elle fait face à l'objectif. Il n'existe aucune image exploitable dans toute la séquence de la dashcam.",
+ "evidence/va:E15/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · CAPTURE DE VISAGE AMÉLIORÉE\nImage unique, CAM 04, entrée principale, 01:58:47.\nAméliorée par l'Imagerie de la police de Ravenport (pièce E11).\n\n",
+   "#hdfr:33:212632601:c8451caf9dc909a43c99",
+   " Aucun antécédent.\nSTATUT : HORS DE CAUSE, voir le rapport d'imagerie complet de\nl'Unité de soutien scientifique.\n\nElle est venue à la radio chercher son mari et elle est repartie\navec lui."
+  ]
+ },
+ "evidence/va:E12/name": "Jeu de tournevis de précision · dotation de la boutique",
+ "evidence/va:E12/description": "Une trousse d'embouts de précision trempés, sortie de la boutique. Ce n'est pas une preuve. C'est simplement le seul outil du poste de police capable de tourner une vis cruciforme fraisée aussi petite.",
+ "evidence/va:E12/presentationMessage": "C'est un jeu de tournevis de la boutique, pas une preuve de quoi que ce soit. C'est juste ce qu'il fallait pour ouvrir une coque de cassette.",
+ "evidence/va:E12/fileContent": {
+  "_hdfr": [
+   "MATÉRIEL · JEU DE TOURNEVIS DE PRÉCISION (BOUTIQUE RPD)\n",
+   "#hdfr:29:351942036:317d0c565d7cd8747746",
+   "\n\nUne trousse d'embouts trempés, cruciformes et plats, jusqu'aux\ntailles utilisées sur les boîtiers de l'électronique grand public.\n\nFaites pivoter l'objet pour l'examiner. Utilisez-le sur toute pièce\nsous scellés qui a été vissée."
+  ]
+ },
+ "evidence/va:E13/name": "Jaquette · à l'intérieur de la coque",
+ "evidence/va:E13/description": "Ce que Grange protégeait en vissant sa cassette : la jaquette en papier du boîtier, avec trois lignes au crayon, de sa main, sur la face intérieure.",
+ "evidence/va:E13/presentationMessage": {
+  "_hdfr": [
+   "C'était à l'intérieur de la coque de la cassette qu'il avait sur lui, vissée par-dessus. ",
+   "#hdfr:70:125775356:9c1421cb053fbb80057a"
+  ]
+ },
+ "evidence/va:E13/fileContent": {
+  "_hdfr": [
+   "PIÈCE À CONVICTION · JAQUETTE DE CASSETTE\n",
+   "#hdfr:67:1695558737:222ddfc29befd84b43e4",
+   "\nfois les vis retirées.\n\nUne jaquette imprimée ordinaire de cassette de démo vierge, pliée\ndeux fois. Sur la face intérieure, au crayon à papier, de la main\nde la victime :\n\n        portable D.W., 555-0148\n        appeler avant sam.\n        la laisser s'expliquer\n\nRien d'autre sur la jaquette. ",
+   "#hdfr:28:1471514445:77346c41ea3d64158ebf",
+   "\n\nNOTE DU SERVICE DES SCELLÉS : au crayon, pas à l'encre.\nÉcrit par quelqu'un qui se gardait la possibilité de l'effacer."
+  ]
+ },
+ "openingStatements/va:dana-wexler": "Je dirige une radio qui arrive à peine à payer l'électricité, inspecteur. Je vous donne le temps que j'ai, mais j'ai une journée d'antenne à assurer.",
+ "openingStatements/va:theo-brandt": "Je vais vous éviter la question : oui, viré trois jours avant. Je le sais, tout le monde le sait. Maintenant allez voir les vrais relevés de la porte au lieu de me regarder, moi.",
+ "openingStatements/va:victor-sloane": {
+  "_hdfr": [
+   "Inspecteur. ",
+   "#hdfr:54:818454947:89712628d12bdae44f8b",
+   " ",
+   "#hdfr:37:154222591:8e238f05794b09c1458d",
+   " Vraiment. Allez-y, posez vos questions, j'ai tout le temps du monde tant qu'on ne m'a pas donné cette tranche. Ce qui n'est toujours pas fait, soit dit en passant."
+  ]
+ },
+ "questions/va:wexler-q2/displayText": "Ce registre de subvention montre un trou que vous avez validé vous-même.",
+ "questions/va:wexler-q2/messageToLLM": {
+  "_hdfr": [
+   "Le registre de la subvention municipale montre un trou de huit mille dollars par rapport aux justificatifs, sur cinq mois, et chaque demande est paraphée D.W. ",
+   "#hdfr:26:716150308:b05d6690a723ac5a6c31",
+   " ",
+   "#hdfr:25:1381792698:cf091feabfb6cac8e18c"
+  ]
+ },
+ "questions/va:wexler-q3/messageToLLM": "J'ai un enregistrement de votre boîte vocale privée, madame Wexler. Elliot Grange vous dit qu'il a trouvé le trou et vous laisse jusqu'à l'émission de samedi pour l'expliquer vous-même, sinon il vous nomme à l'antenne. Qu'est-ce que vous avez fait de cet ultimatum ?",
+ "questions/va:wexler-q4/displayText": "Votre badge a rouvert la porte à deux heures et demie, alors que vous étiez censée être chez vous.",
+ "questions/va:wexler-q4/messageToLLM": "Vous m'avez dit que vous étiez rentrée chez vous avant minuit, madame Wexler. Le relevé de la porte du personnel montre votre badge en entrée à 02h31, une dérogation manuelle superviseur à 02h40, et une sortie à 02h58. Expliquez-moi ça.",
+ "questions/va:theo-q1/displayText": "Pourquoi avez-vous été licencié trois jours avant la mort de Grange ?",
+ "questions/va:theo-q2/displayText": "Qui d'autre pouvait entrer dans le bâtiment cette nuit-là, avec quelles clés, quels codes ?",
+ "questions/va:theo-q2/messageToLLM": "Vos accès ont été supprimés à votre licenciement. Qui d'autre pouvait entrer dans ce bâtiment pendant la nuit ? Avec quel badge, avec quels codes ?",
+ "questions/va:theo-q3/displayText": "Grange préparait quelque chose pour le week-end ?",
+ "questions/va:theo-q3/messageToLLM": "Il préparait quelque chose pour le week-end ? Il vous en avait parlé, ou vous avez remarqué qu'il travaillait sur autre chose que d'habitude ?",
+ "questions/va:victor-q1/messageToLLM": {
+  "_hdfr": [
+   "Vous faites campagne pour la tranche horaire de Grange depuis plus d'un an, et bruyamment, de l'avis général. ",
+   "#hdfr:50:954470618:6a7af00eb45b09fb5544"
+  ]
+ },
+ "endings/va/perfect": "SILENCE RADIO · AFFAIRE CLASSÉE. Dana Wexler a été arrêtée à la radio vendredi après-midi. Le registre de subvention, l'anomalie du badge, la boîte vocale et la page d'agenda n'ont laissé aucune prise à la défense. Harrow 91.5 est revenue à l'antenne samedi soir avec une émission en hommage à Elliot Grange.",
+ "endings/va/good": {
+  "_hdfr": [
+   "Dana Wexler a été inculpée du meurtre d'Elliot Grange et l'arrestation tient, mais sans toutes les pièces écrites, le dossier est plus mince que le parquet ne l'aurait voulu. ",
+   "#hdfr:62:855508320:e0ae2a3327b22e330945"
+  ]
+ },
+ "endings/va/wrong": "Vous n'aviez qu'une seule chance et vous avez désigné la mauvaise personne. Dana Wexler est toujours derrière le bureau de direction de Harrow 91.5, et ce numéro qu'Elliot Grange a protégé jusqu'à en mourir, personne d'autre ne l'a jamais composé. C'est définitif : il n'y a pas de seconde tentative.",
+ "endings/va/cold": {
+  "_hdfr": [
+   "Le dossier est retourné sur l'étagère sans conclusion. ",
+   "#hdfr:43:855508320:2f270e67ace7f17192e8"
+  ]
+ },
+ "emails/email-swipe-log/from": "Harrow 91.5, Services techniques du bâtiment",
+ "emails/email-swipe-log/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nConformément à la demande de la police de Ravenport concernant la radio, vous trouverez ci-joint les relevés du lecteur de la porte du personnel pour la nuit du jeudi 16 au vendredi 17 janvier.\n\nUn point que vos services voudront constater par eux-mêmes : il y a, au petit matin, un second passage validé en dérogation manuelle sur un badge que le système avait déjà enregistré en ENTRÉE. Les codes de dérogation de niveau superviseur ne sont détenus que par la direction de la radio. Un badge ordinaire ne permet pas de faire ça.\n\n",
+   "#hdfr:56:795848157:db9e28ce76b8ea436102",
+   "\n\n",
+   "#hdfr:44:1674525017:28a7b0e6f15cbf15136f"
+  ]
+ },
+ "emails/email-ledger/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nComme demandé, vous trouverez ci-joint le registre trimestriel de subvention de Harrow 91.5, de septembre 2019 à janvier 2020. Notre bureau avait relevé un écart par rapport aux justificatifs au dernier trimestre, sans avoir encore ouvert d'audit en bonne et due forme.\n\nDites-nous s'il vous faut aussi les exercices précédents.\n\n",
+   "#hdfr:45:2000950304:eba608bb92517f649595"
+  ]
+ },
+ "emails/email-footage/subject": "Harrow 91.5, dashcam remise par un chauffeur de taxi",
+ "emails/email-footage/body": "Inspecteur,\n\nUne séquence en pièce jointe. Un chauffeur de taxi, Y. Demir, était garé en face de la porte de livraison du personnel de l'ancienne imprimerie cette nuit-là, et il a remis sa dashcam sans qu'on ait à insister.\n\nÀ 03h05, cette porte s'ouvre et une femme en sort en courant. Elle ne se retourne pas et ne regarde pas la rue. C'est en plein dans le créneau du meurtre.\n\nComprenez bien ce que cette séquence n'est PAS. Il n'y a pas de visage dedans, pas de plaque, et rien qui vous dise qui elle est ni ce qu'elle faisait là. On peut aller plus loin, mais pas à partir de cette copie : envoyez la pièce à l'Unité de soutien scientifique et laissez l'Imagerie travailler sur l'enregistreur de la radio. Ils iront plus loin en un après-midi que cette séquence en une semaine.\n\nPour ce que ça vaut, la caméra intérieure du studio était branchée sur le même enregistreur. On n'y voit personne entrer dans le studio A entre 02h00 et l'arrivée de l'ingénieur son du matin. Celui qui est entré est donc passé par le côté régie, hors champ, ce qui vous dit qu'il savait où était l'objectif.\n\nImagerie, Division technique RPD",
+ "emails/email-imaging-id/subject": "RE : dashcam Harrow 91.5, personne identifiée et hors de cause",
+ "emails/email-imaging-id/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nLe rapport complet est joint à la pièce. Voici la version courte, parce que vous la voudrez avant d'en lire quatre pages :\n\n",
+   "#hdfr:27:70303450:555bc6fefd17e0db6d40",
+   " Elle a vingt-neuf ans, aucun antécédent, et ce n'est pas votre suspecte.\n\nNous n'avons rien pu tirer de la copie de la dashcam, alors nous sommes allés chercher l'enregistreur de la radio. Leur caméra d'entrée la montre qui arrive à pied à 01h58 et retrouve un homme sur le perron. ",
+   "#hdfr:30:678277305:9b3dd2256a54b19bd331",
+   " Ça finit dans les bras l'un de l'autre, puis ils font le tour ensemble vers le côté du personnel, à l'abri du vent. ",
+   "#hdfr:27:895162856:df041e93af18b59636fc",
+   "\n\nElle a attendu dans le sas de livraison, fermé par une simple barre, sans lecteur, rien d'enregistré, pendant qu'il récupérait ce qu'il était venu chercher. À 03h05, elle a entendu sa voiture démarrer et elle est sortie par cette porte en courant pour le rattraper avant qu'il ne parte. Le chauffeur a vu une femme courir vers une voiture qui l'a ensuite attendue. ",
+   "#hdfr:27:222495702:16a9a7f85282b1349f2e",
+   " Elle s'est présentée à la division de Harrow ce matin avant qu'on le lui demande.\n\nTout ce qu'elle avait de louche, c'était cette course. Et cette course, c'était une femme qui rattrapait une voiture.\n\nDeux pièces sont dans votre dossier Images récupérées : la séquence de l'entrée principale et la capture améliorée. À votre place, je les rangerais quelque part où vous pourrez les retrouver. Pas parce qu'elle a fait quelque chose, mais parce que celui qui l'a fait, lui, savait où était cet objectif.\n\n",
+   "#hdfr:43:367732731:f2f232371c0e37e28340"
+  ]
+ },
+ "emails/email-imaging-id/imageCaptions/0": "Capture de visage améliorée à partir de CAM 04, 01:58:47. Identifiée : Nell Ardley, 29 ans. Aucun antécédent. Hors de cause.",
+ "emails/email-pressure-1/subject": "Les notes d'Elliot pour son sujet",
+ "emails/email-pressure-1/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nJe suis la productrice des émissions de la journée. Je ne sais pas si ça compte, mais Elliot était plus renfermé que d'habitude ces deux dernières semaines. Il enfermait ses notes dans le tiroir de son bureau au lieu de les ranger dans l'armoire commune, ce qu'il ne faisait jamais avant. Il m'a dit une fois : « Il y a des choses qu'on ne laisse pas traîner dans un bureau. ",
+   "#hdfr:49:1027561464:b41ed1c73dbfff6ac967",
+   " J'aurais dû.\n\n",
+   "#hdfr:45:965347666:61601bd3bfb383a1ebeb",
+   "\n\nMarcy"
+  ]
+ },
+ "emails/email-pressure-2/subject": "Demande officielle de calendrier d'enquête",
+ "emails/email-pressure-2/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nLe conseil est, on le comprendra, extrêmement préoccupé. Harrow 91.5 ne tient à l'antenne que grâce à la bienveillance du public et à une modeste subvention municipale. Une enquête pour homicide longue et médiatisée met les deux en péril. Nous vous serions reconnaissants de nous communiquer au plus vite un calendrier réaliste.\n\nNous faisons confiance à la police de Ravenport pour traiter cette affaire avec la discrétion que mérite la place de la radio dans le quartier.\n\n",
+   "#hdfr:39:1249417630:4befccec3261a490e786"
+  ]
+ },
+ "emails/email-pressure-3/body": {
+  "_hdfr": [
+   "Inspecteur,\n\nNous agissons pour le compte d'une partie concernée par l'affaire Harrow 91.5. Si cette enquête ne devait pas être menée avec la diligence et la transparence requises, notre client serait prêt à déposer une plainte formelle auprès du Comité de contrôle concernant la conduite et le rythme des investigations de la police de Ravenport.\n\n",
+   "#hdfr:46:461230094:b6c989c78cb5fcdf83ca",
+   "\n\n",
+   "#hdfr:25:1359374259:4a1e1e989341bab930ad"
+  ]
+ },
+ "script/ev-swipe-records-pull/actions/1/body": {
+  "_hdfr": [
+   "Les services techniques ont communiqué le relevé des badges de la porte du personnel pour la nuit du meurtre. ",
+   "#hdfr:37:1349951767:442c3636c01561d26a20"
+  ]
+ },
+ "script/ev-ultimatum-nudge/actions/0/body": {
+  "_hdfr": [
+   "#hdfr:53:1197220749:cd89d8864463b2da2f9e",
+   " Mettez l'ultimatum sous le nez de Wexler : ce qu'elle a fait de sa nuit de jeudi, voilà ce qui manque au dossier."
+  ]
+ },
+ "script/ev-scene-secured/actions/0/body": "L'étage des studios de Harrow 91.5 est sous scellés le temps de l'enquête. Le journal de l'automate de diffusion est dans vos dossiers.",
+ "script/ev-dialer-intro/actions/0/title": "NOUVEAU : CLAVIER TÉLÉPHONIQUE",
+ "script/ev-dialer-intro/actions/0/body": "Vous pouvez maintenant composer les numéros relevés dans les pièces depuis votre téléphone personnel. Ouvrez le clavier téléphonique.",
+ "script/ev-twist/actions/0/body": {
+  "_hdfr": [
+   "Inspecteur, avant de classer ça en accident : la seconde voie d'enregistrement de la console a capté onze secondes de lutte avant que tout ne se taise. ",
+   "#hdfr:27:1562915405:01622573777d9ae58e45"
+  ]
+ },
+ "script/ev-twist/actions/0/clue/detail": "Une seconde voie d'enregistrement a capté onze secondes de lutte avant que tout ne se taise. On s'est battu dans ce studio, ce n'était pas un accident.",
+ "script/ev-priya-first/actions/0/text": {
+  "_hdfr": [
+   "J'ai appris pour Elliot. Il m'a appelée mardi, il avait peur, ça s'entendait, il disait qu'un truc allait exploser à la radio dès que la mauvaise personne comprendrait qu'il savait. Sur le moment je n'y ai pas fait attention. ",
+   "#hdfr:28:349419084:fbf422707526e968bfb1"
+  ]
+ },
+ "script/ev-theo-clears/actions/0/body": "Le titre de transport de Theo Brandt le met hors de cause : les validations le placent à l'autre bout du quartier toute la nuit, jamais près de Harrow 91.5.",
+ "script/ev-footage-filed/actions/1/body": {
+  "_hdfr": [
+   "#hdfr:67:1146931149:be2381aa957d8ec496c4",
+   " Lisez-la jusqu'au bout : l'Imagerie ne libère le journal de l'analyste qu'après."
+  ]
+ },
+ "script/ev-imaging-identified/actions/3/title": "PERSONNE IDENTIFIÉE · ET HORS DE CAUSE",
+ "script/ev-imaging-identified/actions/3/body": {
+  "_hdfr": [
+   "L'Imagerie est allée chercher les images de la caméra de la radio et a mis un nom sur la femme de la dashcam : Nell Ardley. Elle courait après son mari, elle ne fuyait pas une scène de crime. ",
+   "#hdfr:30:273660008:c6c1ddeadb439b000bc5"
+  ]
+ },
+ "script/ev-voicemail-warning/actions/0/title": "ALERTE · PREUVE AUDIO",
+ "script/ev-voicemail-warning/actions/0/body": "Cette boîte vocale a été vidée à distance vingt minutes après votre appel. Vous en détenez la dernière copie.",
+ "script/ev-wexler-counsel/actions/0/message": "Inspecteur, le président du conseil d'administration de la radio vient d'appeler directement le directeur de la police. Wexler a pris un avocat. Avancez prudemment, mais ne ralentissez surtout pas.",
+ "script/ev-swipe-log-note/actions/0/body": "Cette anomalie de badge, c'est exactement le genre de chronologie concrète qu'un jury retient. Belle trouvaille.",
+ "script/ev-diary-flag/actions/0/body": {
+  "_hdfr": [
+   "#hdfr:56:603982827:89cfef74e977297682ee",
+   " Venez chercher votre mandat."
+  ]
+ },
+ "script/ev-solved/actions/0/body": "Harrow 91.5 reprend l'antenne samedi soir avec une émission en hommage à Elliot Grange.",
+ "script/ev-priya-correct/actions/0/text": "J'ai vu les infos. Merci de ne pas avoir laissé l'affaire s'éteindre.",
+ "script/ev-wrong/actions/0/body": "Un journaliste de la Gazette publie la vraie histoire deux soirs plus tard, en parlant d'une arrestation qui « avait visé la mauvaise personne ».",
+ "script/ev-priya-wrong/actions/0/text": "…C'est tout ? C'est cette personne-là qu'ils ont inculpée ?",
+ "emails/email-ledger/timestamp": "17 JANV. 2020 · 10:12",
+ "emails/email-swipe-log/timestamp": "17 JANV. 2020 · 13:22",
+ "emails/email-footage/timestamp": "17 JANV. 2020 · 11:05",
+ "emails/email-imaging-id/timestamp": "17 JANV. 2020 · 15:40",
+ "emails/email-pressure-1/timestamp": "17 JANV. 2020 · 11:30",
+ "emails/email-pressure-2/timestamp": "17 JANV. 2020 · 15:40",
+ "emails/email-pressure-3/timestamp": "17 JANV. 2020 · 20:05"
+}

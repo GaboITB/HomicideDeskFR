@@ -1,0 +1,68 @@
+{
+ "_note": "Mécaniques du jeu rendues au français (1.2.1). stress : un motif par mot-clé anglais du jeu (8 points par mot-clé trouvé, comme en VO). gestes : un motif français par icône, essayé à côté du motif anglais, dans l'ordre du jeu. Motifs appliqués au texte en minuscules. Bornes de mot (?<!\\p{L}) et (?!\\p{L}) : drapeaux « iu » obligatoires.",
+ "stress": [
+  {
+   "vo": "prove",
+   "motif": "(?<!\\p{L})prouv"
+  },
+  {
+   "vo": "saw you",
+   "motif": "(?<!\\p{L})(?:vous|t')(?:ai|a|avons|ont|avez|as) vue?s?(?!\\p{L})|(?<!\\p{L})on vous a vue?s?(?!\\p{L})"
+  },
+  {
+   "vo": "evidence",
+   "motif": "(?<!\\p{L})preuves?(?!\\p{L})|(?<!\\p{L})pièces? à conviction"
+  },
+  {
+   "vo": "lied",
+   "motif": "(?<!\\p{L})menti(?:e|es|s)?(?!\\p{L})"
+  },
+  {
+   "vo": "access code",
+   "motif": "(?<!\\p{L})codes? d.accès|(?<!\\p{L})codes? d.acces|(?<!\\p{L})codes? (?:de la porte|d.entrée|d.entree)|(?<!\\p{L})digicode"
+  },
+  {
+   "vo": "bank",
+   "motif": "(?<!\\p{L})banques?(?!\\p{L})|(?<!\\p{L})bancaires?(?!\\p{L})"
+  },
+  {
+   "vo": "will",
+   "motif": "(?<!\\p{L})testament"
+  },
+  {
+   "vo": "debt",
+   "motif": "(?<!\\p{L})dettes?(?!\\p{L})|(?<!\\p{L})endett|(?<!\\p{L})doi[st] de l.argent"
+  },
+  {
+   "vo": "key",
+   "motif": "(?<!\\p{L})clés?(?!\\p{L})|(?<!\\p{L})clefs?(?!\\p{L})|(?<!\\p{L})cles?(?!\\p{L})"
+  },
+  {
+   "vo": "cctv",
+   "motif": "(?<!\\p{L})vidéosurveillance|(?<!\\p{L})videosurveillance|(?<!\\p{L})caméras?(?!\\p{L})|(?<!\\p{L})cameras?(?!\\p{L})|(?<!\\p{L})cctv(?!\\p{L})|(?<!\\p{L})vidéo(?!\\p{L})"
+  },
+  {
+   "vo": "fired",
+   "motif": "(?<!\\p{L})licenci|(?<!\\p{L})virée?s?(?!\\p{L})|(?<!\\p{L})renvoyée?s?(?!\\p{L})"
+  },
+  {
+   "vo": "silverware",
+   "motif": "(?<!\\p{L})argenterie|(?<!\\p{L})couverts? en argent"
+  }
+ ],
+ "gestes": {
+  "react-refuse": "secou\\p{L}* (?:la |sa )?tête|fai\\p{L}* non de la tête|(?<!\\p{L})refus",
+  "react-shrug": "hauss\\p{L}* (?:les |des )?épaules|haussement d.épaules",
+  "react-smirk": "(?<!\\p{L})ri(?:t|re|ant|canant|cane\\p{L}*)(?!\\p{L})|(?<!\\p{L})pouff|(?<!\\p{L})moqu|narquois|sourire en coin|souri\\p{L}* en coin|(?<!\\p{L})rictus",
+  "react-nervous": "nerv|transpir|sueur|s.agit|agité|gigot|se tortill|déglut|avale sa salive|trembl|tripot|se gratt|se mord|mâch|se raidi|se frott|remu",
+  "react-angry": "colère|frapp|claqu|s.emport|fusill\\p{L}* du regard|foudroi|serr\\p{L}* (?:les dents|les poings|le poing|la mâchoire)|(?<!\\p{L})poing|hostil|furieu|agac|irrit|exaspér|contrari",
+  "react-cry": "pleur|larme|sanglot|s.essui",
+  "react-sigh": "soupir|expir|souffl|respir",
+  "react-think": "(?<!\\p{L})pause|réfléch|hésit|(?<!\\p{L})pens|considèr|médit|marque un temps",
+  "react-look": "regard|coup d.œil|coup d.oeil|(?<!\\p{L})fix|observ|(?<!\\p{L})yeux(?!\\p{L})|scrut",
+  "react-silent": "silen|se tai|muet|ne dit (?:rien|mot)|lèvres (?:serr|pinc)",
+  "react-wince": "fron[cç]\\p{L}* (?:les )?sourcils|sourcils fron[cç]és|grimac|tressaill|mal à l.aise|gên|crisp",
+  "react-smile": "souri|hoch\\p{L}* la tête|acquiesc|(?<!\\p{L})calme|détend",
+  "react-lean": "pench|s.appui|s.adoss|s.accoud|se recul"
+ }
+}

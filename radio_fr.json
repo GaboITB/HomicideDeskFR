@@ -1,0 +1,65 @@
+{
+ "#hdfr:71:1096246674:e70f3fbd351da1c8181f": {
+  "brief": "Un vélo a été volé devant la bibliothèque de Ravenport entre 14:00 et 14:20.",
+  "clue": "La vidéosurveillance montre un voleur en gilet fluo. Une seule personne a signé le registre des visiteurs de la bibliothèque avec les doigts tachés de graisse.",
+  "options": [
+   "Le coursier qui a livré à 14:05",
+   "L'étudiant qui révise depuis 09:00",
+   "La bibliothécaire de service"
+  ]
+ },
+ "#hdfr:59:1390305283:5df711605d7639dff1d9": {
+  "brief": "La petite caisse de la cantine du poste de police a disparu dans la nuit.",
+  "clue": "La boîte à monnaie ne porte aucune trace d'effraction : celui qui l'a ouverte avait une clé. Le double est accroché dans la cuisine, accessible seulement pendant le ménage de nuit.",
+  "options": [
+   "Le cuisinier de jour",
+   "L'agent d'entretien de nuit",
+   "Un visiteur de passage"
+  ]
+ },
+ "#hdfr:90:1072751068:ce2ca6283f9767109aa3": {
+  "brief": "Un graffiti est apparu sur le mur du passage souterrain après la fin de la pluie, hier soir à 23:00.",
+  "clue": "La peinture a coulé par endroits : elle a été appliquée sur une surface mouillée. La pluie s'est arrêtée à 23:00 et le mur reste humide environ une heure.",
+  "options": [
+   "Un tagueur aperçu à 22:15",
+   "Un tagueur aperçu à 23:20",
+   "Un tagueur aperçu à 01:30"
+  ]
+ },
+ "#hdfr:55:1415750484:2b50b26b05ae799fb956": {
+  "brief": "Une voiture en stationnement a été rayée sur Harbor Street ce matin.",
+  "clue": "Le transfert de peinture bleue sur l'aile abîmée se situe à 90 cm du sol : la hauteur d'un pare-chocs de camionnette, pas d'une voiture.",
+  "options": [
+   "La citadine rouge garée derrière",
+   "La camionnette de livraison bleue de la même rue",
+   "Un cycliste de passage"
+  ]
+ },
+ "#hdfr:63:1730632706:6e9dd9342cf795ed4fea": {
+  "brief": "Quelqu'un a déclenché l'alarme incendie du palais de justice. Aucun feu constaté.",
+  "clue": "Le déclencheur se trouve à côté de la salle d'audience 3, actionné deux minutes avant la lecture d'un verdict prévue dans cette salle.",
+  "options": [
+   "Un juré en pause cigarette",
+   "Un proche de l'accusé de la salle 3",
+   "Un technicien de maintenance au 2e étage"
+  ]
+ },
+ "#hdfr:59:1024384223:3fae6bb1da51179923ac": {
+  "brief": "Une courge primée a été sabotée au concours des jardins ouvriers.",
+  "clue": "La coupe de la tige a été faite de la main gauche (inclinée de droite à gauche). Un seul concurrent signe la feuille d'inscription de la main gauche.",
+  "options": [
+   "Le président du jury, droitier",
+   "Le jardinier rival, gaucher",
+   "Un renard"
+  ]
+ },
+ "#hdfr:71:434693931:598e68d31a5ad06a4ac0": {
+  "brief": "La tirelire de collecte a disparu du comptoir de la boulangerie pendant le coup de feu de midi.",
+  "clue": "La tirelire était enchaînée et la chaîne a été coupée net. Un client a payé avec des pièces qui sentaient la pâtisserie, une pince coupante dépassant de son sac à outils.",
+  "options": [
+   "L'électricien qui a acheté un friand",
+   "L'habitué qui paie par carte",
+   "L'apprenti boulanger"
+  ]
+ }
+}
