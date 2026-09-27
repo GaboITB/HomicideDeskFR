@@ -17,14 +17,19 @@ jeu au moment de l'installation.
 
 | | Version française d'origine | Avec le patch |
 |---|---|---|
-| Textes des affaires | traduction mot à mot, 890 textes restés en anglais | 7 affaires réécrites en français naturel, relues face à l'anglais |
-| Pièces à conviction | seul le nom était traduit | nom, description et document complet en français |
-| Radio, météo, terminal, fil du commissariat | en anglais | en français |
-| Ce que lit le modèle qui joue les suspects | 75 % d'anglais, les suspects changent de langue | 100 % français, 32 fiches de personnages traduites |
-| Suspects | lâchent parfois leur secret sans preuve | les faits cachés n'arrivent qu'avec la pièce qui les révèle |
-| Délai de réponse (puce graphique intégrée) | 12,6 s par réplique, jusqu'à 68 s | 7,9 s, 10,6 s sur l'affaire la plus lourde, rythme de la version anglaise |
-| Stress quand vous accusez | seuls les mots anglais comptaient | « menti », « preuve », « dette »… comptent comme en anglais |
-| Icônes de réaction | neutres sur 67 % des répliques | 1 % |
+| Texte affiché en anglais | 30 % du texte, et les affaires 005 et 006 jamais traduites | 0 % : les 7 affaires réécrites ou traduites en français naturel, relues face à l'anglais |
+| Pièces à conviction | seul le nom était traduit (000 à 004) | nom, description et document complet en français |
+| Radio, météo, terminal, fil du commissariat, base RPD-NET, relevé du compte | en anglais | en français |
+| Ce que lit le modèle qui joue les suspects | 86,5 % d'anglais, et la question du tour envoyée deux fois | français, question envoyée une fois, 32 fiches de personnages traduites |
+| Faits cachés des suspects | donnés au modèle dès la première question (110 sur 110 mesurés) | 1 sur 110 : chaque fait n'arrive qu'avec la pièce qui le révèle |
+| Stress quand vous accusez | seuls les mots anglais comptaient : 0 point sur 48 questions françaises | 56 points (64 en anglais), « je vous ai vu » pèse sur le coupable |
+| Icônes de réaction | neutres sur 98,7 % des gestes français | 1 % |
+| Dates | bureau sans lien avec l'affaire, affaire 001 datée de 2024 | date et heure de l'affaire en cours, affaire 001 en 2020 |
+| Délai de réponse | mesure en cours (processeur, cas du joueur type) | avec la puce graphique activée (réglage facultatif plus bas) : 7,3 s par réplique en moyenne sur une partie de test |
+| Validation du mandat d'arrêt | mesure en cours (processeur, cas du joueur type) | le parquet lit le dossier pendant votre rédaction : 7 à 15 s au lieu de 24 à 46 s sans cette lecture anticipée (puce graphique activée) |
+
+Chiffres mesurés le 27/09/2026 sur le vrai code des deux versions (jeu Steam build 25152927 contre
+patch 1.2.4), à méthode identique.
 
 En option, l'installateur propose **Gemma 3 4B** (3,3 Go, téléchargé une seule fois), qui joue les
 suspects bien mieux en français que le modèle livré. Une carte graphique qui fait déjà tourner le
