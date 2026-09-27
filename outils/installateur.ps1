@@ -7,7 +7,7 @@
 #   -Action detecter    affiche le dossier du jeu trouvé, sans rien modifier
 #   -Jeu "<dossier>"    impose le dossier du jeu au lieu de le chercher dans Steam
 #
-# HDFR_SANS_PAUSE=1 supprime les attentes au clavier (tests automatiques).
+# HDFR_SANS_PAUSE=1 supprime les attentes au clavier, HDFR_LIBRE_MO impose la place libre (tests).
 param(
   [ValidateSet('installer', 'retirer', 'detecter')] [string]$Action = 'installer',
   [string]$Jeu = ''
@@ -99,9 +99,18 @@ function Processus-Du-Jeu([string]$chemin) {
   }
 }
 
+function Racine-Disque([string]$chemin) {
+  return [IO.Path]::GetPathRoot((Resolve-Path -LiteralPath $chemin).Path).ToUpperInvariant()
+}
+# HDFR_LIBRE_MO impose la place libre de chaque disque, en Mo (tests automatiques).
 function Octets-Libres([string]$chemin) {
-  $racine = [IO.Path]::GetPathRoot((Resolve-Path -LiteralPath $chemin).Path)
-  return (New-Object IO.DriveInfo($racine)).AvailableFreeSpace
+  if ($env:HDFR_LIBRE_MO) { return [double]$env:HDFR_LIBRE_MO * 1MB }
+  return (New-Object IO.DriveInfo(Racine-Disque $chemin)).AvailableFreeSpace
+}
+function Taille-Dossier([string]$dossier) {
+  if (-not (Test-Path -LiteralPath $dossier)) { return [double]0 }
+  $somme = (Get-ChildItem -LiteralPath $dossier -Recurse -File -Force | Measure-Object -Property Length -Sum).Sum
+  if ($somme) { return [double]$somme } else { return [double]0 }
 }
 
 # --- lancement de patch.js, écran et journal -----------------------------------------------------
@@ -217,6 +226,24 @@ function Memoire-Carte-Mo {
   } catch { return 0 }
 }
 
+# Code 3 de patch.js : app.asar ou sa sauvegarde abîmés, ou sauvegarde absente d'un jeu patché.
+$MessageSteam = "Un fichier du jeu est abîmé (ou sa copie de sauvegarde manque) : le patch ne peut pas savoir quelle est la version d'origine, il n'a rien modifié.`n" +
+  "Dans Steam : clic droit sur Homicide Desk, Propriétés, Fichiers installés, « Vérifier l'intégrité des fichiers »"
+
+# Toute erreur non prévue : message en français, pause, jamais une fenêtre qui se ferme seule.
+trap {
+  $erreur = $_
+  try { Journal ("erreur imprévue : " + ($erreur | Out-String)) } catch {}
+  try { Fermer-Barre } catch {}
+  Write-Host ''
+  Write-Host "Une erreur imprévue a interrompu le patch." -ForegroundColor Red
+  Write-Host ("Détail technique : " + $erreur.Exception.Message) -ForegroundColor DarkGray
+  Write-Host "Si le jeu ne démarre plus : dans Steam, clic droit sur Homicide Desk, Propriétés, Fichiers installés, « Vérifier l'intégrité des fichiers »."
+  Write-Host "Pour signaler le problème, joignez le fichier journal.txt du dossier « fichiers » et une capture de cette fenêtre."
+  Attendre-Fin
+  exit 1
+}
+
 # =================================================================================================
 Set-Content -LiteralPath $JOURNAL -Value ("Patch français de Homicide Desk, {0}, action : {1}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm'), $Action) -Encoding UTF8
 
@@ -285,15 +312,35 @@ Write-Host 'Le jeu est fermé.'
 if ($Action -eq 'installer') {
   Etape 3 $total "vérification de la place disponible"
   $Go = 1GB
+  # Besoins calculés sur CE jeu (mesure du 26/09 : pic du dossier de travail = 2 fois app.asar et
+  # app.asar.unpacked, l'archive extraite puis réempaquetée). Le dossier de travail est rendu à la
+  # fin, la sauvegarde app.asar.orig reste dans le dossier du jeu. Même disque : les deux s'ajoutent.
+  $res = Join-Path $script:DossierJeu 'resources'
+  $asarO = [double](Get-Item -LiteralPath (Join-Path $res 'app.asar')).Length
+  $unpackedO = Taille-Dossier (Join-Path $res 'app.asar.unpacked')
+  $origO = if (Test-Path -LiteralPath (Join-Path $res 'app.asar.orig')) { [double](Get-Item -LiteralPath (Join-Path $res 'app.asar.orig')).Length } else { [double]0 }
+  $marge = 200MB
+  $besoinTravail = 2 * ($asarO + $unpackedO) + $marge
+  $besoinJeu = [Math]::Max([double]0, $asarO - $origO) + $marge
   $iciLibre = Octets-Libres $ICI
   $jeuLibre = Octets-Libres $script:DossierJeu
-  Journal ("place libre : patch {0:N1} Go, jeu {1:N1} Go" -f ($iciLibre / $Go), ($jeuLibre / $Go))
-  if ($iciLibre -lt 2.2 * $Go) { Echec ("Il faut environ 2,2 Go libres sur le disque où se trouve ce dossier, il n'y en a que {0:N1}. Libérez de la place ou déplacez le dossier du patch sur un autre disque." -f ($iciLibre / $Go)) }
-  if ($jeuLibre -lt 1 * $Go) { Echec ("Il faut environ 1 Go libre sur le disque du jeu pour sa copie de sauvegarde, il n'y en a que {0:N1}." -f ($jeuLibre / $Go)) }
+  $memeDisque = (Racine-Disque $ICI) -eq (Racine-Disque $script:DossierJeu)
+  Journal ("place : travail {0:N2} Go, sauvegarde {1:N2} Go, même disque : {2}, libre : patch {3:N2} Go, jeu {4:N2} Go" -f ($besoinTravail / $Go), ($besoinJeu / $Go), $memeDisque, ($iciLibre / $Go), ($jeuLibre / $Go))
+  $enGo = { param($o) ([Math]::Ceiling($o / $Go * 10) / 10).ToString('0.0', $FR) }
+  $libreGo = { param($o) ([Math]::Floor($o / $Go * 10) / 10).ToString('0.0', $FR) }
+  if ($memeDisque) {
+    if ($iciLibre -lt $besoinTravail + $besoinJeu) {
+      Echec ("Il faut {0} Go libres sur le disque {1} (le jeu et ce dossier y sont tous les deux), il n'y en a que {2}. {3} Go sont rendus à la fin, le reste est la sauvegarde du jeu d'origine. Libérez de la place ou déplacez le dossier du patch sur un autre disque." -f (& $enGo ($besoinTravail + $besoinJeu)), (Racine-Disque $ICI), (& $libreGo $iciLibre), (& $enGo $besoinTravail))
+    }
+  } else {
+    if ($iciLibre -lt $besoinTravail) { Echec ("Il faut {0} Go libres sur le disque où se trouve ce dossier (rendus à la fin), il n'y en a que {1}. Libérez de la place ou déplacez le dossier du patch sur un autre disque." -f (& $enGo $besoinTravail), (& $libreGo $iciLibre)) }
+    if ($jeuLibre -lt $besoinJeu) { Echec ("Il faut {0} Go libres sur le disque du jeu pour sa copie de sauvegarde, il n'y en a que {1}." -f (& $enGo $besoinJeu), (& $libreGo $jeuLibre)) }
+  }
   Write-Host 'Place suffisante.'
 
   Etape 4 $total 'installation du patch (1 à 5 minutes, ne fermez pas cette fenêtre)'
   $r = Lancer-Patch '--reinstaller'
+  if ($r.Code -eq 3) { Echec ($MessageSteam + ", puis relancez « Installer le patch FR ».") }
   if ($r.Code -ne 0) {
     Echec ("L'installation n'a pas abouti. Votre jeu est resté (ou revenu) tel que Steam l'a installé.`n" +
       "S'il ne démarrait plus : dans Steam, clic droit sur Homicide Desk, Propriétés, Fichiers installés, « Vérifier l'intégrité des fichiers ».")
@@ -355,21 +402,24 @@ if ($Action -eq 'installer') {
 
 # --- retirer --------------------------------------------------------------------------------------
 Etape 3 $total 'remise du jeu d''origine'
-# Gemma 4B d'abord, s'il a été ajouté par le patch : rend environ 3,3 Go (sans effet sinon).
-$null = Lancer-Modele 'retirer'
-$r = Lancer-Patch '--restore'
-if ($r.Code -eq 0) {
-  Write-Host ''
-  Write-Host "C'est fait : le jeu est revenu à sa version d'origine." -ForegroundColor Green
-  Attendre-Fin
-  exit 0
+# Le jeu d'abord : code 0 remis d'origine, 2 rien à retirer, 3 archive abîmée (Steam seul peut la
+# remettre). Gemma 4B n'est supprimé qu'ensuite, et jamais si le jeu n'a pas pu être remis.
+$r = Lancer-Patch '--retirer'
+if ($r.Code -eq 3) { Echec ($MessageSteam + ". Steam remet alors le jeu d'origine.") }
+if ($r.Code -ne 0 -and $r.Code -ne 2) {
+  Echec ("Le jeu n'a pas pu être remis d'origine automatiquement.`n" +
+    "Dans Steam : clic droit sur Homicide Desk, Propriétés, Fichiers installés, « Vérifier l'intégrité des fichiers ». Steam remet alors le jeu d'origine.")
 }
-$detail = Get-Content -LiteralPath $JOURNAL -Raw -Encoding UTF8
-if ($detail -match "n'est pas patché") {
-  Write-Host ''
-  Write-Host "Le patch n'est pas installé (ou Steam l'a déjà retiré lors d'une mise à jour) : rien à faire." -ForegroundColor Green
-  Attendre-Fin
-  exit 0
+Write-Host ''
+if ($r.Code -eq 0) { Write-Host "Le jeu est revenu à sa version d'origine." -ForegroundColor Green }
+else { Write-Host "Le patch n'était plus installé (Steam l'a retiré lors d'une mise à jour) : le jeu est déjà d'origine." -ForegroundColor Green }
+# Gemma 4B, ajouté par le patch : rend environ 3,3 Go. Présence lue dans le magasin du jeu, le
+# moteur n'est démarré que s'il y a quelque chose à supprimer.
+$bibliotheque = Join-Path $script:DossierJeu 'resources\ollama-models\manifests\registry.ollama.ai\library'
+if ((Test-Path -LiteralPath (Join-Path $bibliotheque 'homicide-gemma4b\latest')) -or (Test-Path -LiteralPath (Join-Path $bibliotheque 'gemma3\4b'))) {
+  if ((Lancer-Modele 'retirer') -ne 0) { Write-Host "Gemma 4B n'a pas pu être supprimé : relancez « Retirer le patch FR » plus tard." -ForegroundColor Yellow }
 }
-Echec ("Le jeu n'a pas pu être remis d'origine automatiquement.`n" +
-  "Dans Steam : clic droit sur Homicide Desk, Propriétés, Fichiers installés, « Vérifier l'intégrité des fichiers ». Steam remet alors le jeu d'origine.")
+Write-Host ''
+Write-Host "C'est fait." -ForegroundColor Green
+Attendre-Fin
+exit 0

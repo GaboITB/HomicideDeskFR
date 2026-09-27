@@ -510,6 +510,7 @@
  },
  "endings/va/cold": "Le dossier est retourné sur l'étagère sans conclusion. L'appartement 04 de Harborview a été reloué dans l'année, et personne n'a jamais dit au nouveau locataire ce qui s'y était passé.",
  "emails/email-coroner/from": "Bureau du médecin légiste de Ravenport",
+ "emails/email-coroner/subject": "Affaire n° 004, rapport complémentaire (reclassement)",
  "emails/email-coroner/body": {
   "_hdfr": [
    "Inspecteur,\n\nVous trouverez ci-joint notre rapport complémentaire sur la scène Petrov. Les constats relatifs au sillon de ligature, aux pétéchies et au créneau du décès sont incompatibles avec une pendaison volontaire. Nous recommandons que cette affaire soit reclassée et instruite comme un homicide, avec effet immédiat.\n\n",

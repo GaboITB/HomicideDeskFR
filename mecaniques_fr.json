@@ -1,5 +1,5 @@
 {
- "_note": "Mécaniques du jeu rendues au français (1.2.1). stress : un motif par mot-clé anglais du jeu (8 points par mot-clé trouvé, comme en VO). gestes : un motif français par icône, essayé à côté du motif anglais, dans l'ordre du jeu. Motifs appliqués au texte en minuscules. Bornes de mot (?<!\\p{L}) et (?!\\p{L}) : drapeaux « iu » obligatoires.",
+ "_note": "Mécaniques du jeu rendues au français (1.2.1). stress : un motif par mot-clé anglais du jeu (8 points par mot-clé trouvé, comme en VO). gestes : un motif français par icône, essayé à côté du motif anglais, dans l'ordre du jeu. Motifs appliqués au texte en minuscules. Bornes de mot (?<!\\p{L}) et (?!\\p{L}) : drapeaux « iu » obligatoires. coupableSeul (décision de l'auteur du 26/09/2026) : ce mot-clé ne compte que face au coupable de l'affaire, écart volontaire à la VO où il touche tout suspect non témoin.",
  "stress": [
   {
    "vo": "prove",
@@ -7,7 +7,8 @@
   },
   {
    "vo": "saw you",
-   "motif": "(?<!\\p{L})(?:vous|t')(?:ai|a|avons|ont|avez|as) vue?s?(?!\\p{L})|(?<!\\p{L})on vous a vue?s?(?!\\p{L})"
+   "motif": "(?<!\\p{L})(?:vous\\s+|t['’]\\s*)(?:ai|a|avons|ont|avait|avaient|avions|aurait|auraient|aurais|aurions|aura|auront)\\s+(?:(?:bien|déjà|deja|même|meme|aussi|pourtant|encore|tous|toutes|\\p{L}+ment)\\s+)?(?:vue?s?|aperçue?s?|apercue?s?|repérée?s?|reperee?s?)(?!\\p{L})|(?<!\\p{L})(?:vous\\s+(?:avez|aviez|auriez)|tu\\s+as|t['’]as)\\s+(?:(?:bien|déjà|deja)\\s+)?été\\s+(?:vue?s?|aperçue?s?|apercue?s?|repérée?s?|reperee?s?)(?!\\p{L})",
+   "coupableSeul": true
   },
   {
    "vo": "evidence",
@@ -31,7 +32,7 @@
   },
   {
    "vo": "debt",
-   "motif": "(?<!\\p{L})dettes?(?!\\p{L})|(?<!\\p{L})endett|(?<!\\p{L})doi[st] de l.argent"
+   "motif": "(?<!\\p{L})dettes?(?!\\p{L})|(?<!\\p{L})endett|(?<!\\p{L})(?:dois|doit|doivent|devez|devons|deviez|devais|devait|devaient|devrait|devriez) (?:(?:encore|toujours|beaucoup) )?(?:de l.argent|des sous)"
   },
   {
    "vo": "key",

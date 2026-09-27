@@ -32,19 +32,58 @@ modèle 12B du jeu le garde.
 
 ### Installer
 
-1. Téléchargez `HomicideDeskFR-1.2.1.zip` dans les **Releases** de ce dépôt.
-2. Clic droit, « Extraire tout ».
+1. Téléchargez `HomicideDeskFR-1.2.2.zip` dans les **Releases** de ce dépôt.
+2. Clic droit, « Extraire tout ». Si le dossier obtenu en contient un second du même nom,
+   ouvrez-le : les deux fichiers à double-cliquer sont dedans.
 3. Fermez le jeu, puis double-cliquez sur **« Installer le patch FR »**.
 4. Lancez le jeu et choisissez « Français » dans les paramètres.
+5. **Gardez le dossier du patch** : il sert à le retirer et à le remettre après une mise à jour.
 
-Windows 10 ou 11, environ 2,5 Go libres pendant l'installation. Rien à installer d'autre, rien à
-taper. **« Retirer le patch FR »**, ou « Vérifier l'intégrité des fichiers » dans Steam, remet le
-jeu d'origine. Après une mise à jour du jeu par Steam, relancez « Installer le patch FR ».
+Windows 10 ou 11, environ 3,3 Go libres pendant l'installation si le jeu et le patch sont sur le
+même disque (2,3 Go rendus à la fin), chiffre calculé et vérifié par l'installateur. Rien à
+installer d'autre, rien à taper. **« Retirer le patch FR »**, ou « Vérifier l'intégrité des
+fichiers » dans Steam, remet le jeu d'origine. Après une mise à jour du jeu par Steam, relancez
+« Installer le patch FR ».
+
+### Nouveautés de la 1.2.2 (26/09/2026)
+
+- **Réponses plus rapides avec Gemma 4B** : le moteur garde en mémoire tout ce qu'il a déjà lu
+  (cache complet de Gemma 3, `LLAMA_ARG_SWA_FULL`). Mesuré sur la puce intégrée : relecture d'un
+  tour au même suspect de 2,8 à 3,1 s ramenée à 0,56 à 0,73 s, retour sur un suspect de 5,0 s à 2,7 s.
+- **Préchauffage avec l'historique** : en revenant sur un suspect, le moteur relit sa conversation
+  pendant que vous tapez, sous la forme exacte du tour suivant.
+- **Répliques coupées relancées** : une réplique interrompue par le moteur (flux fermé sans fin)
+  est redemandée une fois, au lieu de s'afficher tronquée comme si elle était complète.
+- **Capitaine Morrison partout** : plus de « commissaire Morrison ».
+- **Question unique** : la question du tour partait deux fois au modèle (défaut du jeu, VO
+  comprise). En français, elle n'est plus envoyée qu'une fois.
+- **Installation plus sûre** : une archive du jeu abîmée ou tronquée est reconnue (empreinte de
+  chaque fichier) et ne remplace plus jamais la sauvegarde, le joueur est envoyé vers la
+  vérification de Steam. « Retirer le patch FR » remet le jeu, efface la sauvegarde, puis
+  seulement Gemma 4B. Place calculée sur le jeu du joueur, dossier de travail effacé même après un
+  échec, erreur imprévue expliquée en français.
+- **« Je vous ai vu… » met la pression au coupable** : la tournure est reconnue sous toutes ses
+  formes naturelles (« je vous ai vu », « un témoin vous a vue », « nous vous avons vus »…) et ne
+  stresse plus que le coupable de l'affaire. « Vous devez de l'argent » compte aussi.
+- **Préchauffage plus juste** : plus de lecture perdue sur le premier suspect à l'ouverture, ni
+  pour un suspect sous avocat ou relâché. Le moteur lit dès le choix du suspect, l'épinglage d'une
+  pièce et la frappe de la question, avec l'humeur que la question donnera au suspect.
+- **Les autres langues ne sont plus touchées** : hors français, le jeu envoie de nouveau au modèle
+  exactement le texte du studio (fiches, règles, SMS, greffier).
+- **Mise à jour du jeu** : si Steam change le code du jeu au point qu'un repère essentiel du patch
+  manque, l'installation s'arrête proprement et laisse le jeu d'origine, au lieu de s'appliquer à
+  moitié.
+- **Textes** : relevé du compte, 680 fiches RPD-NET générées, compteurs du menu Démarrer, couleurs
+  de fil et capture du tableau en français. « Affaires internes », « comité de contrôle »,
+  difficulté « Capitaine », grades dans l'ordre français, « occasion » au lieu d'« opportunité »,
+  espaces insécables à l'écran, montants en « 120 $ ». Recherche RPD-NET sans accents obligatoires.
+- **SMS de Whitmore** : ses réponses ne sont plus coupées en pleine phrase.
 
 ### Questions fréquentes
 
 - **Les autres langues sont-elles touchées ?** Non. L'anglais et les neuf autres langues restent
-  identiques au jeu d'origine, vérifié à chaque version.
+  identiques au jeu d'origine, jusqu'au texte envoyé au modèle (fiches des personnages, règles,
+  SMS, greffier) : vérifié à chaque version sur 52 interrogatoires rejoués contre le jeu d'origine.
 - **Les voix ?** Les enregistrements sont joués en anglais et ne sont pas traduisibles. Leurs
   transcriptions sont en français.
 - **Un problème ?** Ouvrez une *issue* avec le fichier `journal.txt` du dossier du patch et
@@ -93,7 +132,8 @@ distributed. Not affiliated with Shu'la Lab LLC.
 5. **Met en français tout le prompt envoyé au modèle**, et pas seulement la consigne de langue :
    les 32 personnalités des personnages (`prompts_fr.json`), les six blocs de règles écrits dans le
    code (`litteraux_fr.json`), les en-têtes et les humeurs assemblés à la volée, le contact SMS du
-   service du personnel et le greffier du procureur (`fragments_fr.json`). Le modèle recevait
+   service du personnel et le greffier du procureur (`fragments_fr.json`). Chaque texte est choisi
+   au moment de l'envoi, selon la langue : les autres langues reçoivent celui du studio. Le modèle recevait
    jusque-là une consigne française noyée dans 75 % d'anglais, et répondait en anglais ou mélangeait
    les deux langues dans une même phrase. La consigne elle-même est renforcée (accord au genre du
    personnage, pas d'anglicismes, vouvoiement).
@@ -173,8 +213,11 @@ présent sur tout Windows 10 et 11) avec le Node portable du paquet (`node/node.
 officielle de nodejs.org dont l'empreinte est vérifiée). Les dépendances sont déjà dans
 `node_modules`. Le détail de chaque installation est écrit dans `journal.txt`.
 
-**Windows seulement.** Il faut environ 2,5 Go libres pendant l'installation. Le dossier de travail
-est supprimé à la fin, il reste la copie d'origine du jeu (861 Mo, `resources\app.asar.orig`).
+**Windows seulement.** L'installateur calcule la place sur le jeu du joueur et la vérifie avant de
+commencer : deux fois `app.asar` et `app.asar.unpacked` pour le dossier de travail (pic mesuré de
+2,1 Go, 2,3 Go demandés, rendus à la fin) et une fois `app.asar` pour la copie d'origine du jeu
+(0,8 Go, `resources\app.asar.orig`, 1 Go demandé), soit 3,3 Go sur un même disque. Une archive du
+jeu abîmée ou tronquée (empreintes SHA-256 de l'en-tête) arrête tout avant la moindre écriture.
 Gemma 4B demande environ 4 Go de plus sur le disque du jeu et une connexion Internet, une seule
 fois. Sans connexion, le patch s'installe quand même et le jeu garde Qwen 4B.
 
@@ -189,13 +232,15 @@ node patch.js                   # applique le patch (sauvegarde l'original en ap
 node patch.js --reinstaller     # idem, en remettant d'abord l'original si le jeu est déjà patché
 node patch.js --check           # état : original ou PATCHÉ
 node patch.js --restore         # remet le jeu d'origine
+node patch.js --retirer         # idem, puis efface app.asar.orig (« Retirer le patch FR »)
 node verify.js                  # contrôle du contenu de l'archive installée
 node audit.js                   # compare les textes réécrits à l'anglais (nombres, heures, codes)
 ```
 
 **Après chaque mise à jour Steam** du jeu, `app.asar` est remplacé et le jeu redevient celui
-d'origine : relancer simplement « Installer le patch FR » (ou `node patch.js`). **Ne pas retirer le patch après
-une mise à jour** : la sauvegarde date de la version précédente, et le script refuse pour cette raison.
+d'origine : relancer simplement « Installer le patch FR » (ou `node patch.js`). Après une mise à
+jour, la sauvegarde date de la version précédente : `--restore` refuse de la remettre, et « Retirer
+le patch FR » dit qu'il n'y a rien à retirer et efface cette sauvegarde périmée.
 Une « vérification de l'intégrité des fichiers » dans Steam retire aussi le patch. Ne jamais lancer
 `patch.js` pendant que le jeu tourne.
 

@@ -6,6 +6,25 @@ const fs = require("fs");
 const path = require("path");
 
 const CASES_DIR = path.join(__dirname, "cases");
+// Conditions du jeu : jamais dans la surcouche d'une affaire neuve. La fusion du jeu écrase une
+// question clé par clé, une copie figerait les conditions de la VO à la date de l'extraction
+// (pièces requises des questions de 005 et 006, audit du 26/09/2026).
+const LOGIQUE = new Set(["requiredEvidenceIds", "evidenceToUnlockId", "stressIncrease", "hideAfterAsked",
+  "unlockedByQuestionId", "guiltySuspectId", "accuseThreshold", "requiredEvidenceToAccuse", "requiredInterrogations"]);
+// Chemins des conditions présentes dans un objet (vide si aucune).
+function conditions(o, p = "", acc = []) {
+  if (o && typeof o === "object") for (const k of Object.keys(o)) {
+    if (LOGIQUE.has(k)) acc.push(p + "." + k);
+    else conditions(o[k], p + "." + k, acc);
+  }
+  return acc;
+}
+// Copie sans les conditions.
+function sansConditions(o) {
+  if (Array.isArray(o)) return o.map(sansConditions);
+  if (o && typeof o === "object") return Object.fromEntries(Object.entries(o).filter(([k]) => !LOGIQUE.has(k)).map(([k, v]) => [k, sansConditions(v)]));
+  return o;
+}
 
 function shape(o, p, acc) {
   if (Array.isArray(o)) { acc.push(p + "[]:" + o.length); o.forEach((v, i) => shape(v, p + "[" + i + "]", acc)); }
@@ -80,6 +99,29 @@ function injectCases(s, log = console.log) {
   return s;
 }
 
+// Contrôle de structure d'une réécriture contre l'objet français du studio : structure identique
+// exigée. Seule exception admise : une clé que le studio a OUBLIÉE alors que la VO la porte (un
+// identifiant d'indice, par exemple, que la fusion du jeu écrase et perd dans les dix langues
+// traduites). On la rétablit sciemment. Rend { enTrop, erreur }, erreur nulle si tout va bien.
+// Partagé par l'injection et l'auto-test.
+function verifierStructure(current, work, id) {
+  const voP = path.join(CASES_DIR, id + ".en.json");
+  const voObj = fs.existsSync(voP) ? JSON.parse(fs.readFileSync(voP, "utf8")) : null;
+  const cheminsVO = new Set(voObj ? shapeAlias(voObj, "", []) : []);
+  const la = shape(current, "", []), lb = shape(work, "", []);
+  const ensA = new Set(la), ensB = new Set(lb);
+  const enTrop = lb.filter(x => !ensA.has(x));
+  const enMoins = la.filter(x => !ensB.has(x));
+  const enTropNonVO = enTrop.filter(x => !cheminsVO.has(x));
+  if (enMoins.length || enTropNonVO.length)
+    return { enTrop, erreur: "le studio a modifié la structure de cette affaire" +
+      (enMoins.length ? " | manquant chez nous : " + enMoins.slice(0, 3).join(", ") : "") +
+      (enTropNonVO.length ? " | en trop chez nous : " + enTropNonVO.slice(0, 3).join(", ") : "") };
+  const pa = [...placeholders(current)].sort().join(","), pb = [...placeholders(work)].sort().join(",");
+  if (pa !== pb) return { enTrop, erreur: "les variables {…} diffèrent (" + pa + " contre " + pb + ")" };
+  return { enTrop, erreur: null };
+}
+
 function injectOne(s, meta, log, compter) {
   const workPath = path.join(CASES_DIR, meta.id + ".fr.json");
   const origPath = path.join(CASES_DIR, meta.id + ".fr.orig.json");
@@ -88,7 +130,10 @@ function injectOne(s, meta, log, compter) {
   // Le jeu fusionne clé par clé, une chaîne absente reste donc simplement en anglais.
   if (meta.neuve) {
     if (!fs.existsSync(workPath)) throw new Error(path.basename(workPath) + " absent (préparation des affaires incomplète)");
-    const work = JSON.parse(fs.readFileSync(workPath, "utf8"));
+    const lu = JSON.parse(fs.readFileSync(workPath, "utf8"));
+    const figees = conditions(lu);
+    if (figees.length) log("ATTENTION : affaire " + meta.id + " : " + figees.length + " condition(s) du jeu retirée(s) de la traduction (" + figees.slice(0, 2).join(", ") + ")");
+    const work = sansConditions(lu);
     const nom = "hdfrFr" + meta.id.replace(/[^0-9]/g, "");
     if (s.includes(nom + "=")) { log("affaire " + meta.id + " : déjà injectée"); return s; }
     const carte = s.match(/(?<![\w$])(\w+)=\{"case-000":\{ar:/);
@@ -128,26 +173,11 @@ function injectOne(s, meta, log, compter) {
   const current = new Function("return (" + s.slice(fa, fb) + ")")();
   if (current.title !== meta.frTitle) throw new Error("l'objet trouvé n'a pas le titre attendu (« " + current.title + " »)");
 
-  // Le contrôle exige une structure identique à la VF du studio. Seule exception admise : une clé
-  // que le studio a OUBLIÉE alors que la VO la porte (un identifiant d'indice, par exemple, que la
-  // fusion du jeu écrase et perd dans les dix langues traduites). On la rétablit sciemment.
-  const voP = path.join(CASES_DIR, meta.id + ".en.json");
-  const voObj = fs.existsSync(voP) ? JSON.parse(fs.readFileSync(voP, "utf8")) : null;
-  const cheminsVO = new Set(voObj ? shapeAlias(voObj, "", []) : []);
-  const la = shape(current, "", []), lb = shape(work, "", []);
-  const ensA = new Set(la), ensB = new Set(lb);
-  const enTrop = lb.filter(x => !ensA.has(x));
-  const enMoins = la.filter(x => !ensB.has(x));
-  const enTropNonVO = enTrop.filter(x => !cheminsVO.has(x));
-  if (enMoins.length || enTropNonVO.length)
-    throw new Error("le studio a modifié la structure de cette affaire" +
-      (enMoins.length ? " | manquant chez nous : " + enMoins.slice(0, 3).join(", ") : "") +
-      (enTropNonVO.length ? " | en trop chez nous : " + enTropNonVO.slice(0, 3).join(", ") : ""));
+  const { enTrop, erreur } = verifierStructure(current, work, meta.id);
+  if (erreur) throw new Error(erreur);
   if (enTrop.length)
     log("affaire " + meta.id + " : " + enTrop.length +
       " clé(s) rétablie(s), oubliée(s) par le studio mais présente(s) dans la VO");
-  const pa = [...placeholders(current)].sort().join(","), pb = [...placeholders(work)].sort().join(",");
-  if (pa !== pb) throw new Error("les variables {…} diffèrent (" + pa + " contre " + pb + ")");
   if (JSON.stringify(current) !== JSON.stringify(orig))
     log("ATTENTION : affaire " + meta.id + " : le studio a modifié son texte depuis l'extraction de référence, " +
       "la structure est la même donc la traduction est injectée, mais un fait a pu changer");
@@ -158,17 +188,34 @@ function injectOne(s, meta, log, compter) {
   return s;
 }
 
-module.exports = { injectCases };
+module.exports = { injectCases, LOGIQUE };
 
 if (require.main === module) {
-  // auto-test : vérifie la structure de chaque .fr.json sans toucher au bundle
-  for (const mf of fs.readdirSync(CASES_DIR).filter(f => f.endsWith(".meta.json"))) {
-    const id = JSON.parse(fs.readFileSync(path.join(CASES_DIR, mf), "utf8")).id;
+  // Auto-test, sans bundle : chaque réécriture passe les contrôles de l'injection (verifierStructure)
+  // contre la VF de référence extraite (.fr.orig.json). Une affaire neuve, sans VF du studio, ne
+  // doit porter aucune condition du jeu. Code de sortie 1 si une affaire est en écart.
+  let ecarts = 0;
+  for (const mf of fs.readdirSync(CASES_DIR).filter(f => f.endsWith(".meta.json")).sort()) {
+    const meta = JSON.parse(fs.readFileSync(path.join(CASES_DIR, mf), "utf8"));
+    const id = meta.id;
     const w = path.join(CASES_DIR, id + ".fr.json"), o = path.join(CASES_DIR, id + ".fr.orig.json");
-    if (!fs.existsSync(w)) continue;
-    const work = JSON.parse(fs.readFileSync(w, "utf8")), orig = JSON.parse(fs.readFileSync(o, "utf8"));
-    const same = JSON.stringify(work) === JSON.stringify(orig);
-    const ok = shape(orig, "", []).join("\n") === shape(work, "", []).join("\n");
-    console.log(id, same ? "non réécrit" : (ok ? "réécrit, structure OK" : "réécrit, STRUCTURE DIFFÉRENTE"));
+    if (!fs.existsSync(w)) { console.log(id, "absent (préparation des affaires à faire)"); continue; }
+    const work = JSON.parse(fs.readFileSync(w, "utf8"));
+    if (meta.neuve) {
+      // pas de VF du studio : la surcouche ne doit porter aucune condition du jeu
+      const figees = conditions(work);
+      if (figees.length) ecarts++;
+      console.log(id, "neuve, " + (figees.length ? figees.length + " CONDITION(S) FIGÉE(S) : " + figees.slice(0, 3).join(", ") : "aucune condition du jeu figée"));
+      continue;
+    }
+    if (!fs.existsSync(o)) { console.log(id, "VF de référence absente (.fr.orig.json) : non vérifiée"); continue; }
+    const orig = JSON.parse(fs.readFileSync(o, "utf8"));
+    if (JSON.stringify(work) === JSON.stringify(orig)) { console.log(id, "non réécrit"); continue; }
+    const { enTrop, erreur } = verifierStructure(orig, work, id);
+    if (erreur) ecarts++;
+    console.log(id, erreur ? "réécrit, ÉCART : " + erreur :
+      "réécrit, structure OK" + (enTrop.length ? " (" + enTrop.length + " clé(s) rétablie(s) depuis la VO)" : ""));
   }
+  console.log(ecarts ? ecarts + " affaire(s) en écart" : "toutes les affaires passent");
+  process.exit(ecarts ? 1 : 0);
 }

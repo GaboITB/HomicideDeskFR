@@ -16,6 +16,8 @@ backup_save/
 backup_flat/
 scratch/
 release/
+release.construction/
+release.ancien-*/
 Docs/
 HANDOFF.md
 

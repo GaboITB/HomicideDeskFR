@@ -13,13 +13,18 @@ INSTALLER
 ---------
 
 1. Décompressez ce fichier zip si ce n'est pas déjà fait : clic droit sur le zip, « Extraire tout ».
+   Windows crée souvent un dossier « HomicideDeskFR-… » qui en contient un second du même
+   nom : ouvrez-les jusqu'à voir « Installer le patch FR » et « Retirer le patch FR ».
 2. Fermez Homicide Desk s'il est ouvert.
-3. Dans le dossier décompressé, double-cliquez sur « Installer le patch FR ».
+3. Dans ce dossier, double-cliquez sur « Installer le patch FR ».
 4. L'installateur propose de télécharger Gemma 4B : répondez « O » (ou Entrée) pour l'avoir,
    « n » pour vous en passer. Voir « GEMMA 4B » plus bas.
 5. Attendez le message « C'est fait ! » (1 à 5 minutes pour le patch, plus le
    téléchargement de Gemma 4B si vous l'avez demandé).
 6. Lancez le jeu depuis Steam et choisissez « Français » dans ses paramètres.
+7. GARDEZ le dossier du patch : il sert à retirer le patch, et à le remettre après chaque mise
+   à jour du jeu. Déplacez-le si vous voulez (Documents, par exemple), mais ne le supprimez pas.
+   Supprimé par erreur ? Téléchargez et décompressez à nouveau le zip, puis relancez.
 
 Le patch trouve le jeu tout seul dans Steam. S'il n'y arrive pas, une fenêtre vous demande
 d'indiquer le dossier du jeu : dans Steam, clic droit sur Homicide Desk, Gérer, Parcourir les
@@ -63,20 +68,26 @@ Le jeu redevient mal traduit ? Double-cliquez à nouveau sur « Installer le pat
 RETIRER LE PATCH
 ----------------
 
-Double-cliquez sur « Retirer le patch FR ». Le jeu redevient exactement tel que Steam l'a installé.
-Ne le faites pas après une mise à jour du jeu : Steam a déjà retiré le patch, il n'y a rien à faire.
+Double-cliquez sur « Retirer le patch FR ». Le jeu redevient exactement tel que Steam l'a installé,
+la copie de sauvegarde du jeu est effacée, et Gemma 4B est supprimé s'il avait été ajouté.
+Après une mise à jour du jeu, Steam a déjà retiré le patch : l'installateur le dit, et supprime
+seulement Gemma 4B et l'ancienne sauvegarde.
+Vous pouvez ensuite supprimer le dossier du patch.
 
 
 EN CAS DE PROBLÈME
 ------------------
 
-- Le jeu ne démarre plus : dans Steam, clic droit sur Homicide Desk, Propriétés, Fichiers installés,
-  « Vérifier l'intégrité des fichiers ». Steam remet le jeu d'origine.
+- Le jeu ne démarre plus, ou l'installateur dit qu'un fichier du jeu est abîmé : dans Steam, clic
+  droit sur Homicide Desk, Propriétés, Fichiers installés, « Vérifier l'intégrité des fichiers ».
+  Steam remet le jeu d'origine. Relancez ensuite « Installer le patch FR ».
 - Si l'installateur indique qu'un fichier du patch a disparu, décompressez à nouveau le zip.
 - Pour signaler un souci, joignez le fichier « journal.txt » qui se trouve dans le dossier
   « fichiers » : il décrit ce que le patch a fait.
-- Il faut environ 2,5 Go libres pendant l'installation. Ils sont rendus à la fin, sauf 861 Mo :
-  la sauvegarde du jeu d'origine, placée dans le dossier du jeu pour pouvoir retirer le patch.
+- Place : environ 2,3 Go libres sur le disque du dossier du patch, rendus à la fin, et 1 Go sur
+  celui du jeu pour la sauvegarde du jeu d'origine (0,8 Go, qui reste dans le dossier du jeu pour
+  pouvoir retirer le patch). Sur un même disque, 3,3 Go. L'installateur calcule la place exacte
+  pour votre jeu et la vérifie avant de commencer.
 
 
 À SAVOIR
@@ -88,5 +99,31 @@ EN CAS DE PROBLÈME
   il lui arrive encore de se tromper. Un suspect qui nie même devant une preuve, c'est voulu par
   le jeu : les coupables ne passent jamais aux aveux.
 - Le dossier « fichiers » contient le patch lui-même et sa documentation technique (README.md).
+
+NOUVEAUTÉS DE LA 1.2.2
+----------------------
+
+- Réponses plus rapides avec Gemma 4B : le moteur garde tout ce qu'il a déjà lu, et reprend là
+  où il en était quand vous revenez sur un suspect déjà interrogé.
+- En revenant sur un suspect, sa conversation est relue pendant que vous tapez votre question.
+- Une réplique coupée par le moteur est redemandée une fois, au lieu de s'afficher tronquée.
+- Morrison est « Capitaine » partout.
+- La question du tour n'est plus envoyée deux fois au modèle : le suspect ne vous reproche plus
+  de vous répéter.
+- Installation : un fichier du jeu abîmé est détecté (rien n'est modifié, l'installateur dit quoi
+  faire), la place nécessaire est calculée pour votre jeu, le dossier de travail est effacé même
+  après un échec, « Retirer le patch FR » efface aussi la sauvegarde, et une erreur imprévue
+  s'affiche en français au lieu de fermer la fenêtre.
+- « Je vous ai vu... » met maintenant la pression au coupable, et à lui seul, sous toutes ses
+  formes naturelles. « Vous devez de l'argent » compte aussi.
+- Le moteur prépare la réponse dès que vous choisissez un suspect, épinglez une pièce ou tapez
+  votre question, et plus du tout pour un suspect sous avocat.
+- L'anglais et les autres langues retrouvent exactement le texte du studio.
+- Après une mise à jour du jeu qui casserait le patch, l'installation s'arrête proprement et
+  laisse le jeu tel quel.
+- Plus de textes en français : relevé du compte, fiches de la base RPD-NET, menu Démarrer,
+  tableau d'enquête. « Affaires internes », « comité de contrôle », difficulté « Capitaine ».
+- Les réponses aux SMS de Whitmore ne sont plus coupées.
+
 
 Projet de fan, gratuit, sans lien avec le studio Shu'la Lab.

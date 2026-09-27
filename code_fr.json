@@ -11,15 +11,15 @@
   ],
   [
    "#hdfr:70:492994142:fd4d7efcf870d149d184",
-   "Le ticket de Westgate vient d’arriver dans vos dossiers. Qui l’a signé ?"
+   "Le bordereau de Westgate vient d’arriver dans vos dossiers. Qui l’a signé ?"
   ],
   [
    "#hdfr:58:420781211:c88b3fe9b5e6b86c900c",
-   "T. Vale. Les clés, le registre, le ticket : voilà une chaîne de preuves."
+   "T. Vale. Les clés, le registre, le bordereau : voilà une chaîne de preuves."
   ],
   [
    "#hdfr:56:2091856441:9129f6924ec1cab6988a",
-   "Ouvrez le ticket, tout en bas : SIGNATURE DU VENDEUR."
+   "Ouvrez le bordereau, tout en bas : SIGNATURE DU VENDEUR."
   ],
   [
    "#hdfr:45:1273767887:6c5075de100448d01b0b",
@@ -35,7 +35,7 @@
   ],
   [
    "#hdfr:42:1950409079:38e4350c7bc91251fa3e",
-   "le Conseil de surveillance et l’hôtel de ville"
+   "le comité de contrôle et l’hôtel de ville"
   ],
   [
    "#hdfr:45:355276306:32d64b51a0959a979785",
@@ -52,6 +52,46 @@
   [
    "#hdfr:31:1003062506:417eb82b4ad5b4c5a460",
    "« LA CLÉ DU PRÊTEUR »"
+  ],
+  [
+   "#hdfr:55:39274019:f86f30ccd8012a75585f",
+   "Captain:{rank:\"Capitaine\",note:\"Commande la division."
+  ],
+  [
+   "#hdfr:47:1085805051:e4dde0b9298d6e742ace",
+   "{rank:\"Inspecteur principal\",note:\"Dirige une équipe."
+  ],
+  [
+   "#hdfr:57:898718896:c1e8ad46a140681c1826",
+   "req:\"Classez une affaire avec la mention inspecteur principal.\""
+  ],
+  [
+   "#hdfr:87:1860478090:b7887419abf431e63791",
+   "req:\"Une affaire classée avec la mention inspecteur divisionnaire, ou deux avec la mention inspecteur principal.\""
+  ],
+  [
+   "#hdfr:44:1491091235:cbd463e9b1dd4d841156",
+   "{rank:\"Inspecteur en chef\",note:\"Supervise"
+  ],
+  [
+   "#hdfr:53:1485828696:f05303533c129408e2cf",
+   "req:\"Deux affaires classées avec la mention inspecteur divisionnaire.\""
+  ],
+  [
+   "#hdfr:54:1965395910:d32e3f6484da093f582a",
+   "req:\"Trois affaires classées avec la mention inspecteur divisionnaire.\""
+  ],
+  [
+   "#hdfr:53:1231539017:06d7620bca24eb6ca958",
+   "req:\"Cinq affaires classées avec la mention inspecteur divisionnaire.\""
+  ],
+  [
+   "#hdfr:24:1966971077:5add8cee441abcedde88",
+   "Prenez le dossier n° 000,"
+  ],
+  [
+   "#hdfr:17:969983096:3108fd19da3ad26759fa",
+   "AFFAIRE N° 000 : «"
   ]
  ],
  "promptAnglais": [
@@ -69,5 +109,8 @@
   ]
  ],
  "consigneGreffier": "Écris toute ta réponse en français, et dans aucune autre langue. Cette consigne prime sur toutes les indications de forme ci-dessus.",
- "greffierQueue": "#hdfr:88:2084810893:aec763f16bd376f92c16"
+ "greffierQueue": "#hdfr:88:2084810893:aec763f16bd376f92c16",
+ "_notes": "Valeurs utilisées par l'architecture CACHE_FR (patch.js) : notesEntete précède les notes placées dans le dernier message, notesDevoile précède les passages [[SI]] dévoilés. Rendues explicites le 26/09/2026, elles étaient lues sans exister et le patch prenait ses valeurs de repli, identiques à celles-ci.",
+ "notesEntete": "",
+ "notesDevoile": "Ce que tu peux désormais reconnaître :\n"
 }

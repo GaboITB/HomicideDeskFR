@@ -9,6 +9,7 @@
 const fs = require("fs");
 const path = require("path");
 const DIR = path.join(__dirname, "cases");
+const { LOGIQUE } = require("./cases_inject.js");
 
 function neuves() {
   return fs.readdirSync(DIR).filter(f => f.endsWith(".meta.json")).map(f => {
@@ -32,8 +33,13 @@ for (const id of ids) {
     if (r.retires.length) console.log(id + " : ATTENTION, " + r.retires.length + " texte(s) introuvable(s) dans ce jeu : " + r.retires.slice(0, 5).join(", "));
   }
   const obj = {};
+  let logique = 0;
   for (const [chemin, texte] of Object.entries(plat)) {
     const seg = chemin.split("/");
+    // Conditions du jeu (pièces requises d'une question, déblocages, barème) : jamais dans la
+    // surcouche. La fusion du jeu y écrase la question clé par clé, une copie figerait donc les
+    // conditions de la VO à la date de l'extraction (audit du 26/09/2026).
+    if (seg.some((x) => LOGIQUE.has(x))) { logique++; continue; }
     let n = obj;
     for (let i = 0; i < seg.length - 1; i++) {
       const suivantEstIndice = /^\d+$/.test(seg[i + 1]);
@@ -99,6 +105,7 @@ for (const id of ids) {
     m.length = JSON.stringify(obj).length;
     fs.writeFileSync(mp, JSON.stringify(m, null, 1) + "\n");
   }
+  if (logique) console.log(id + " : " + logique + " condition(s) du jeu ignorée(s) dans le plat (la VO du joueur s'applique)");
   console.log(id + " : " + Object.keys(plat).length + " chaînes, " + bouches + " cellule(s) reprise(s) de la VO, " + Object.keys(obj).length +
     " sections, titre « " + (obj.title || "?") + " » -> " + id + ".fr.json");
 }

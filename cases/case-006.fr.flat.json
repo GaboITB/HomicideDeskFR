@@ -10,7 +10,7 @@
  "suspects/adrian-cove/name": "Adrian Cove",
  "suspects/adrian-cove/role": "Consultant en sécurité incendie, 44 ans",
  "suspects/delia-krantz/name": "#hdfr:12:178496828:2c6fcf49a3610def473c",
- "suspects/delia-krantz/role": "Agent de location, Krantz & Row, 49 ans",
+ "suspects/delia-krantz/role": "Agente de location, Krantz & Row, 49 ans",
  "endings/va/perfect": "CHEZ PERSONNE · AFFAIRE CLASSÉE. Adrian Cove a été inculpé du meurtre de Ruben Aldiss et, sur le dossier de 2011 rouvert, de la mort de Lena Marsh sur Old Mill Road. L'historique des titulaires, la demande d'agrément déposée à la mairie et l'aveu de Sarris posent le même nom sur le même homme à neuf ans d'écart. L'audit du terminal partenaire, lui, ramène la requête à son bureau, six jours avant le meurtre. Ruben Aldiss a été enterré sous son propre nom le quatorze. Sa fille était là. Elle a demandé à récupérer ses affaires.",
  "endings/va/good": "Adrian Cove a été inculpé du meurtre de Ruben Aldiss et l'inculpation tient. Faute de tous les maillons, le dossier de 2011 se reconstruit sur l'enregistrement de ses propres aveux plutôt que sur des pièces écrites, et on a demandé à la famille de Lena Marsh d'attendre. Elle a déjà attendu neuf ans. Ruben Aldiss a été enterré sous son propre nom.",
  "endings/va/wrong": "Vous n'aviez qu'une seule chance, et vous avez pris une escroquerie pour un meurtre. Adrian Cove signe toujours les certificats de sécurité incendie d'Ashcroft Point. Le dossier de 2011 est toujours ouvert. Et l'homme du 11-C a été enterré le quatorze sous le nom de Peter Halloran, parce que personne n'a jamais prouvé le contraire. On a dit à sa fille que le dossier était clos et le corps non identifié. Après ça, elle n'a plus répondu. C'est définitif : il n'y a pas de seconde tentative.",
@@ -36,7 +36,7 @@
  "witnesses/renata-voss/clue/label": "Une cicatrice de 20 cm, flanc gauche",
  "witnesses/renata-voss/clue/detail": "L'homme soigné sous le nom de « Peter Halloran » en janvier portait une cicatrice de néphrectomie de 20 cm au flanc gauche, un signe particulier que RPD-NET conserve sur les fiches de personnes disparues. Cherchez la marque, pas le nom.",
  "emails/email-coroner/from": "Bureau du médecin légiste de Ravenport",
- "emails/email-coroner/subject": "Affaire #006, homme non identifié, Ashcroft Point",
+ "emails/email-coroner/subject": "Affaire n° 006, homme non identifié, Ashcroft Point",
  "emails/email-coroner/body": {
   "_hdfr": [
    "Inspecteur,\n\nL'autopsie de l'homme de l'appartement 11-C est terminée. Cause de la mort : strangulation par lien, par-derrière, une sangle plate ou un cordon, aucune lésion de défense. Il ne l'a pas vu venir, ou il connaissait assez la personne pour ne pas s'en méfier. Décès survenu entre 00h30 et 01h30, le jeudi 27 février.\n\nCe n'est PAS Peter Halloran. Ni la denture ni les empreintes ne donnent de correspondance. Deux éléments peuvent vous aider à lui donner un nom : il a entre 44 et 50 ans, et il porte une ancienne cicatrice chirurgicale, bien refermée, au flanc gauche, compatible avec l'ablation d'un rein il y a une dizaine d'années. La fiche de passage aux urgences retrouvée dans l'appartement (14 janvier) doit porter une observation clinique. Nous avons demandé à l'hôpital général de Ravenport de vous la communiquer.\n\nDr R. ",
@@ -582,7 +582,7 @@
  "netRecords/p:aldiss-cass/fields/1/k": "NOTE",
  "netRecords/p:aldiss-cass/fields/1/v": "A déclaré la disparition de son père en 2014 (à 13 ans). Se renseigne au poste de police des Quais chaque mois de septembre depuis.",
  "netRecords/p:krantz-delia/title": "#hdfr:12:178496828:2c6fcf49a3610def473c",
- "netRecords/p:krantz-delia/sub": "Née le 02/09/1970 · agent de location, Krantz & Row",
+ "netRecords/p:krantz-delia/sub": "Née le 02/09/1970 · agente de location, Krantz & Row",
  "netRecords/p:krantz-delia/fields/0/k": "SOCIÉTÉ",
  "netRecords/p:krantz-delia/fields/0/v": "Krantz & Row Location, Westgate Avenue · agence 555-0688",
  "netRecords/p:krantz-delia/fields/1/k": "ANTÉCÉDENTS",

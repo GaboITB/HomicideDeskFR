@@ -32,7 +32,10 @@
  "net.dispFailed": "CLOS · ARRESTATION ERRONÉE (examen des affaires internes)",
  "cfp.revSign": "Capitaine R. Morrison, Brigade criminelle",
  "acc.morrisonTitle": "Capitaine Morrison",
- "call.name": "#hdfr:20:1106224292:d08dd275350aa01662ae",
+ "call.name": "CAPITAINE MORRISON",
+ "call.rank": "Capitaine · Brigade criminelle",
+ "call.says": "LE CAPITAINE MORRISON DÉCLARE :",
+ "dispatch.captain": "CAPITAINE MORRISON",
  "shop.desk-cat.name": "La minette du poste de police",
  "shop.catTitle": "La minette du poste de police · cliquez pour la caresser",
  "deck.rew": "REMBOBINER",
@@ -45,9 +48,9 @@
  "acc.headline": "Enquête « {title} » : {name} sous les verrous",
  "np.solved.headline": "AFFAIRE CLASSÉE : {suspect} INCULPÉ",
  "acc.pMotiveQ": "Pourquoi tuer ?",
- "acc.pOpportunityQ": "Qu’est-ce qui le place sur les lieux ?",
+ "acc.pOpportunityQ": "Qu’est-ce qui place cette personne sur les lieux ?",
  "acc.pMethodQ": "Comment le crime a-t-il été commis ?",
- "acc.pFail.opportunity": "OPPORTUNITÉ non établie, la pièce jointe ne place pas cette personne sur les lieux dans le créneau du décès.",
+ "acc.pFail.opportunity": "OCCASION non établie, la pièce jointe ne place pas cette personne sur les lieux dans le créneau du décès.",
  "tutObj.6": "Quand vous n’aurez plus de doute, ouvrez le MANDAT D’ARRÊT et procédez à l’arrestation",
  "warrant.readyBody": {
   "_hdfr": [
@@ -127,5 +130,67 @@
    "#hdfr:36:1261248279:9a2dfa336fd9fae334c4",
    " 1,1 million d’habitants, la plus grande ville de Meridia, et la plus usée."
   ]
- }
+ },
+ "difficulty.Chief": "Capitaine",
+ "cbr.diff.Chief": "Capitaine",
+ "net.iaTitle": "AFFAIRES INTERNES · AUDIT D’ACCÈS",
+ "precinct.title": "POSTE DE POLICE · Canal interne",
+ "shop.grp.precinct": "CANAL DU POSTE DE POLICE",
+ "arch.sub": "POLICE DE RAVENPORT · DIVISION DES ARCHIVES · LECTURE SEULE",
+ "cbr.status.failed": "CLASSÉE · ÉCHEC",
+ "cf.footer": "DOCUMENT OFFICIEL : POLICE DE RAVENPORT · TOUTE DIVULGATION NON AUTORISÉE EST INTERDITE",
+ "atlas.rankTitle": "HIÉRARCHIE · ÉCHELLE DES GRADES",
+ "atlas.radioRecovered": {
+  "_hdfr": [
+   "U-19 À CENTRALE : BIEN RÉCUPÉRÉ. ",
+   "#hdfr:27:1211194426:f854f1dc743212589189"
+  ]
+ },
+ "atlas.radioNothing": "U-19 À CENTRALE : RIEN SUR PLACE. CODE 4.",
+ "atlas.radioLogged": {
+  "_hdfr": [
+   "CENTRALE : U-19, 10-97 AU POSTE. ",
+   "#hdfr:25:1950075529:61f9daa68a0fae98d338"
+  ]
+ },
+ "atlas.radioBackInService": "CENTRALE : U-19 DE NOUVEAU DISPONIBLE.",
+ "tutObj.4": "Ouvrez l’INTERROGATOIRE",
+ "acc.pOpportunity": "OCCASION",
+ "acc.theoryPlaceholder": {
+  "_hdfr": [
+   "#hdfr:31:1946947765:a1e7a260d9865c87c7ae",
+   " Citez les pièces précises que vous avez réunies et expliquez comment elles établissent le mobile et l’occasion…"
+  ]
+ },
+ "rank.Detective Sergeant": "#hdfr:20:482463724:f3bde2566148b3d72d0e",
+ "rank.Chief Inspector": "Inspecteur en chef",
+ "board.deceased": "DÉCÈS",
+ "demo.outro.solved": {
+  "_hdfr": [
+   "L'affaire n° 000 est classée. ",
+   "#hdfr:54:1018579830:21a9235921ffd28caaec"
+  ]
+ },
+ "demo.outro.failed": {
+  "_hdfr": [
+   "L'affaire n° 000 est classée sous réserve. ",
+   "#hdfr:66:780984199:1aea9539a6f9fbbd8e34"
+  ]
+ },
+ "bridge.callBody": {
+  "_hdfr": [
+   "#hdfr:81:1044643931:e31d81195e0b366efb02",
+   " ",
+   "#hdfr:43:1662397746:613c2ee4c6fa40065345",
+   " ",
+   "#hdfr:38:321128281:28a1b8bbb14214107bb2",
+   " Le dossier est sur votre bureau : ouvrez AFFAIRES et prenez le dossier n° 001."
+  ]
+ },
+ "menu.continueSub": "AFFAIRE N° {num} · {h} H {m} MIN",
+ "board.caseCard": "AFFAIRE N° {n}",
+ "cbr.caseNo": "AFFAIRE N° {n}",
+ "cf.casePrefix": "AFFAIRE N° ",
+ "atlas.radioProceed": "CENTRALE À U-19 : RENDEZ-VOUS À {loc}. CODE 3.",
+ "bench.notchOff": "COUPÉ"
 }
