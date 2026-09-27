@@ -1,9 +1,8 @@
 # HomicideDeskFR
 
-Patch de localisation française du jeu Steam **Homicide Desk** (Shu'la Lab, app 4935210) : les
-7 affaires en français naturel, toute l'interface traduite, des suspects qui répondent en vrai
-français, et des réponses deux fois plus rapides. Gratuit, local, hors ligne. Projet de fan, sans
-lien avec le studio, à qui les traductions sont offertes.
+**Patch français** du jeu Steam **Homicide Desk** (Shu'la Lab, app 4935210) : les 7 affaires en
+français naturel, toute l'interface traduite, des suspects qui répondent en vrai français, et des
+réponses deux fois plus rapides. Gratuit, local, hors ligne. Projet de fan, sans lien avec le studio.
 
 **Ce dépôt ne contient aucun texte du jeu.** Les textes du studio dont le patch a besoin sont
 désignés par une empreinte et retrouvés dans votre propre copie du jeu à l'installation.
@@ -91,11 +90,12 @@ Les 1.2.2 à 1.2.4 n'ont jamais été publiées, la 1.3.0 reprend tout leur cont
 
 ### English summary
 
-Fan-made French localisation patch for **Homicide Desk**: all seven cases in natural French, the
+Fan-made French patch for **Homicide Desk**: all seven cases in natural French, the
 whole interface translated, a fully French prompt for the local model (the original sends 86,5 %
 English and hands every hidden fact to the model up front), replies about twice as fast (38,6 s to
 17,0 s on a CPU), automatic integrated-GPU use with a safe fallback, and consistent dates. Download
-the zip from Releases, run `Installer le patch FR.bat`. No game text is distributed.
+the zip from Releases, run `Installer le patch FR.bat`. No game text is distributed. Shu'la Lab is
+welcome to reuse anything here, free of charge and without any condition.
 
 ## Étude comparative : VF du studio contre le patch (27/09/2026)
 
@@ -191,8 +191,10 @@ plus : le patch le signale (ATTENTION) et garde le texte du studio.
 ### Diffusion et licence
 
 - Jamais publié : un `app.asar` patché ni une extraction du jeu.
-- Paquet studio : les mêmes traductions dans les structures du jeu, avec des notes techniques
-  (`DEVELOPER_NOTES.md`), offertes à Shu'la Lab LLC pour une intégration officielle.
+- **Pour le studio** : tout ce dépôt est à votre disposition, gratuitement et sans condition.
+  Reprenez ce qui vous intéresse et intégrez-le à votre guise. `DEVELOPER_NOTES.md` détaille chaque
+  choix et chaque correction des affaires. `node release.js` produit aussi les traductions rangées
+  dans vos propres structures (`release/studio/`).
 - Scripts (`*.js`) : licence MIT (`LICENSE`). Fichiers de données : traductions de textes dont les
   droits appartiennent à Shu'la Lab LLC, fournies gratuitement pour un usage avec une copie légale
   du jeu, retirées à la demande du studio.
