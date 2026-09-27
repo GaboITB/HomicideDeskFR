@@ -263,7 +263,7 @@
    "#hdfr:28:1771083336:1ee0e8698e830fb39ba0"
   ]
  },
- "evidence/va:E8/fileContent": "PIÈCE À CONVICTION · RÉCUPÉRATION DE MESSAGERIE\nExtraite du téléphone de la victime.\n\nLancez les enregistrements pour écouter les messages. La\ntranscription se débloque après l'écoute. À recouper avec le\nregistre de sortie signé par le père (obtenu en audition) pour la\nnuit en question.",
+ "evidence/va:E8/fileContent": "PIÈCE À CONVICTION · RÉCUPÉRATION DE MESSAGERIE\nExtraite du téléphone de la victime.\n\nLancez les enregistrements pour écouter les messages. La\ntranscription se débloque après l'écoute. À recouper avec le\nregistre de sortie signé par le père (obtenu en interrogatoire)\npour la nuit en question.",
  "evidence/va:E9/name": "Marcus Bell · échange de courriels",
  "evidence/va:E9/description": "Le rédacteur en chef de Nadia plaide pour enterrer l'enquête au nom du risque juridique, deux semaines avant sa mort. Puis, plus bas dans le même fil, il change complètement d'avis et la soutient jusqu'à la publication.",
  "evidence/va:E9/presentationMessage": "Vous vous êtes battu contre cette enquête deux semaines avant sa mort, monsieur Bell : les avocats du journal étaient nerveux. Mais à la fin de ce même fil, vous aviez complètement changé d'avis. Vous la souteniez, monsieur Bell, jusqu'au bout.",
@@ -364,28 +364,24 @@
    "\nnuméro appelé : N. PETROV (portable). Correspond exactement à\nl'heure de l'appel du poste 4471 de la mairie."
   ]
  },
- "evidence/va:E13/description": "Consigné en audition : confrontée à l'emploi du temps réel de Victor la nuit de la mort de Nadia, Renee Okafor perd son sang-froid et admet qu'il était à Harborview, et non au dîner de levée de fonds qu'il invoquait.",
+ "evidence/va:E13/description": "Consigné en interrogatoire : confrontée à l'emploi du temps réel de Victor la nuit de la mort de Nadia, Renee Okafor perd son sang-froid et admet qu'il était à Harborview, et non au dîner de levée de fonds qu'il invoquait.",
  "evidence/va:E13/presentationMessage": "Vous me l'avez déjà dit, madame Okafor, c'est au procès-verbal. Il n'était pas au dîner de levée de fonds. Il était à Harborview.",
  "evidence/va:E13/clue/label": "Il n'a jamais mis les pieds au dîner de levée de fonds",
- "evidence/va:E13/clue/detail": "Renee Okafor admet en audition que Victor Calloway était à Harborview la nuit de la mort de Nadia, et non au dîner de levée de fonds qu'il invoquait publiquement.",
+ "evidence/va:E13/clue/detail": "Renee Okafor admet en interrogatoire que Victor Calloway était à Harborview la nuit de la mort de Nadia, et non au dîner de levée de fonds qu'il invoquait publiquement.",
  "evidence/va:E13/fileContent": {
   "_hdfr": [
-   "COMPLÉMENT D'AUDITION · R. OKAFOR\n",
-   "#hdfr:41:1306007475:bcb027c18f62fe60af71",
-   "\n\n",
+   "COMPLÉMENT D'AUDITION · R. OKAFOR\nDéclaration consignée, salle d'interrogatoire 2\n\n",
    "#hdfr:68:1715114280:ba940867065c812809f5",
    "\nsur l'endroit où se trouvait vraiment Victor Calloway la nuit du 1er\nfévrier, Mme Okafor n'a pas pu maintenir sa version de la « présence\nau dîner de levée de fonds ». ",
    "#hdfr:36:1539197276:5bac8066a13c39977426",
    "\nsoir-là à la résidence Harborview, et non au dîner inscrit à son\nagenda public. Versé au dossier."
   ]
  },
- "evidence/va:E14/description": "Consigné en audition : confronté au brouillon de l'enquête et au registre des sociétés-écrans en même temps, Victor Calloway ne dément jamais le système. Il se réfugie derrière « le cabinet » et le jargon juridique, et ne dit pas une seule fois qu'il ne l'a pas fait.",
+ "evidence/va:E14/description": "Consigné en interrogatoire : confronté au brouillon de l'enquête et au registre des sociétés-écrans en même temps, Victor Calloway ne dément jamais le système. Il se réfugie derrière « le cabinet » et le jargon juridique, et ne dit pas une seule fois qu'il ne l'a pas fait.",
  "evidence/va:E14/clue/detail": "Confronté au brouillon de l'enquête et au registre des sociétés-écrans en même temps, Victor Calloway n'a pas démenti une seule fois. Il n'a fait que se retrancher derrière la procédure.",
  "evidence/va:E14/fileContent": {
   "_hdfr": [
-   "COMPLÉMENT D'AUDITION · V. CALLOWAY\n",
-   "#hdfr:41:1306007475:f335da793cd09eb581a4",
-   "\n\nConfronté directement au brouillon de l'enquête (E4) et au registre\ndes sociétés-écrans (E7) en même temps, le conseiller Calloway n'a\nrépondu que par des esquives de procédure (« le cabinet », « notre\néquipe juridique », « toute qualification serait prématurée ») et\n",
+   "COMPLÉMENT D'AUDITION · V. CALLOWAY\nDéclaration consignée, salle d'interrogatoire 1\n\nConfronté directement au brouillon de l'enquête (E4) et au registre\ndes sociétés-écrans (E7) en même temps, le conseiller Calloway n'a\nrépondu que par des esquives de procédure (« le cabinet », « notre\néquipe juridique », « toute qualification serait prématurée ») et\n",
    "#hdfr:54:229020883:4594767b7724f0d1efdd",
    "\n",
    "#hdfr:68:1809697910:ac7c4ba0cb242d70239c",

@@ -106,6 +106,8 @@ NOUVEAUTÉS DE LA 1.2.4
 - Le bureau affiche maintenant la date et l'heure de l'affaire en cours. L'affaire 001, datée de 2024
   dans la version d'origine, se passe en 2020 comme les autres, et plusieurs dates contradictoires
   entre documents sont corrigées.
+- Détails : bracelet de la Longines en cuir noir comme le modèle 3D, « interrogatoire » pour les
+  suspects, certificat d'habilitation tamponné « HABILITÉ » et non plus « PREUVE ».
 
 DÉJÀ DANS LA 1.2.3
 ------------------

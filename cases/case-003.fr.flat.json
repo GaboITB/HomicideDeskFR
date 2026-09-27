@@ -228,7 +228,7 @@
    "#hdfr:35:489618623:34aa6054091f9b87b8de",
    "\n\n« J'arrive pas à dormir, désolée. Ça crie encore à côté, une voix\nd'homme, ça avait l'air méchant. Je veux pas être mêlée à ça, on\ndevrait même pas ÊTRE ici. ",
    "#hdfr:32:786003753:6bb63db3a650ead6c850",
-   " M »\n\nAttribué à Marisol Tavares grâce à un échantillon d'écriture\nrecueilli pendant l'audition."
+   " M »\n\nAttribué à Marisol Tavares grâce à un échantillon d'écriture\nrecueilli pendant l'interrogatoire."
   ]
  },
  "evidence/va:E9/name": "La mallette de Dominic, fermée à combinaison",
@@ -316,7 +316,7 @@
   ]
  },
  "evidence/va:E11/name": "Procès-verbal · l'aveu de Grant Holloway",
- "evidence/va:E11/description": "Consigné pendant l'audition de Grant Holloway, une fois le dossier des demandes versé aux pièces et la question posée sans détour sur ses rapports avec Dominic : il admet l'avoir retrouvé au motel ce soir-là « pour parler », alors qu'il avait d'abord nié y avoir mis les pieds.",
+ "evidence/va:E11/description": "Consigné pendant l'interrogatoire de Grant Holloway, une fois le dossier des demandes versé aux pièces et la question posée sans détour sur ses rapports avec Dominic : il admet l'avoir retrouvé au motel ce soir-là « pour parler », alors qu'il avait d'abord nié y avoir mis les pieds.",
  "evidence/va:E11/presentationMessage": {
   "_hdfr": [
    "C'est votre propre aveu, au procès-verbal, monsieur Holloway. Vous m'avez dit vous-même que vous l'aviez retrouvé au motel ce soir-là « pour parler ». ",

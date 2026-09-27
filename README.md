@@ -25,11 +25,12 @@ jeu au moment de l'installation.
 | Stress quand vous accusez | seuls les mots anglais comptaient : 0 point sur 48 questions françaises | 56 points (64 en anglais), « je vous ai vu » pèse sur le coupable |
 | Icônes de réaction | neutres sur 98,7 % des gestes français | 1 % |
 | Dates | bureau sans lien avec l'affaire, affaire 001 datée de 2024 | date et heure de l'affaire en cours, affaire 001 en 2020 |
-| Délai de réponse | mesure en cours (processeur, cas du joueur type) | avec la puce graphique activée (réglage facultatif plus bas) : 7,3 s par réplique en moyenne sur une partie de test |
-| Validation du mandat d'arrêt | mesure en cours (processeur, cas du joueur type) | le parquet lit le dossier pendant votre rédaction : 7 à 15 s au lieu de 24 à 46 s sans cette lecture anticipée (puce graphique activée) |
+| Attente par réplique, sur processeur (cas courant) | 38,6 s en moyenne, jusqu'à 168 s, 53 s en partie complète | 17,0 s en moyenne, jusqu'à 54 s, 13 s en partie complète |
+| Mandat d'arrêt (accusation correcte, processeur) | 118 à 127 s, et refusé 2 fois sur 2 | 47 à 72 s, accepté 3 fois sur 3 |
 
 Chiffres mesurés le 27/09/2026 sur le vrai code des deux versions (jeu Steam build 25152927 contre
-patch 1.2.4), à méthode identique.
+patch 1.2.4), à méthode identique : détail et méthode dans « Étude comparative » plus bas. Avec la
+puce graphique activée (réglage facultatif), les attentes sont encore divisées par 2 à 3.
 
 En option, l'installateur propose **Gemma 3 4B** (3,3 Go, téléchargé une seule fois), qui joue les
 suspects bien mieux en français que le modèle livré. Une carte graphique qui fait déjà tourner le
@@ -95,6 +96,9 @@ Les 1.2.2 et 1.2.3 n'ont jamais été publiées : la 1.2.4 les remplace et repre
   difficulté « Capitaine », grades dans l'ordre français, « occasion » au lieu d'« opportunité »,
   espaces insécables à l'écran, montants en « 120 $ ». Recherche RPD-NET sans accents obligatoires.
 - **SMS de Whitmore** : ses réponses ne sont plus coupées en pleine phrase.
+- **Détails corrigés** : bracelet de la montre Longines en cuir noir comme le modèle 3D, « interrogatoire »
+  pour les suspects et « audition » pour les témoins, certificat d'habilitation tamponné « HABILITÉ »
+  et non plus « PREUVE », en-tête « POLICE DE RAVENPORT » reconnu sur les documents.
 
 ### Questions fréquentes
 
@@ -110,9 +114,10 @@ Les 1.2.2 et 1.2.3 n'ont jamais été publiées : la 1.2.4 les remplace et repre
 
 Fan-made French localisation patch for **Homicide Desk**: the seven cases rewritten in natural
 French from the English original, the missing interface and surfaces translated, a fully French
-prompt for the local model that plays the suspects, faster replies (12,6 s to 7,9 s per reply on
-an integrated GPU), and the English-only stress keywords and reaction gestures given French
-equivalents. Download the zip from Releases, run `Installer le patch FR.bat`. No game text is
+prompt for the local model that plays the suspects (the original sends 86,5 % English and hands
+every hidden fact to the model up front), replies about twice as fast on a plain CPU (38,6 s to
+17,0 s on average), consistent dates, and the English-only stress keywords and reaction gestures
+given French equivalents. Download the zip from Releases, run `Installer le patch FR.bat`. No game text is
 distributed. Not affiliated with Shu'la Lab LLC.
 
 ## Constat (septembre 2026)
@@ -128,7 +133,7 @@ distributed. Not affiliated with Shu'la Lab LLC.
 - Les **réponses des suspects sont générées en direct** par le modèle local. Le jeu choisit lui-même
   son modèle : Gemma 12B si `nvidia-smi` annonce au moins 10 Go de mémoire vidéo, Qwen 4B sinon
   (le patch ajoute Gemma 4B pour le français, voir plus bas).
-  Avec le prompt d'origine, anglais à 75 %, les personnages répondaient dans un français
+  Avec le prompt d'origine, anglais à 86,5 % (mesuré sur 52 interrogatoires), les personnages répondaient dans un français
   approximatif (genre faux, anglicismes, calques) ou changeaient de langue en pleine phrase.
 
 ## Ce que fait le patch
@@ -173,8 +178,13 @@ distributed. Not affiliated with Shu'la Lab LLC.
    - arrêt anticipé (`arret_fr.js`) : le jeu n'affiche que les 4 premières phrases d'une réplique,
      le modèle est donc arrêté dès que l'affichage ne peut plus changer. Texte affiché identique
      au caractère près (vérifié sur 1 457 répliques), environ 30 % d'écriture en moins.
-   - préchauffage : le moteur lit la fiche du suspect dès l'ouverture de l'interrogatoire, et le
-     prompt qui contiendra une pièce dès qu'on l'épingle, pendant que le joueur tape sa question.
+   - préchauffage : le moteur lit ce que la question enverra dès que le joueur choisit un suspect,
+     épingle une pièce ou tape sa question, avec l'humeur que la question provoquera. Une vraie
+     question interrompt tout préchauffage en cours. Le dossier du mandat d'arrêt est lu pendant la
+     rédaction de la conclusion.
+   - cache complet du moteur (`LLAMA_ARG_SWA_FULL`, Gemma 4B) : il reprend là où il en était, y
+     compris au retour sur un suspect déjà interrogé. Aucun jeton changé (80 sur 80 en décodage
+     glouton).
    - fiche stable et historique complet : le moteur réutilise ce qu'il a déjà lu au lieu de tout
      relire à chaque pièce posée ou à chaque tour (la coupe du jeu à 10 messages décalait tout).
    - un personnage ne connaît les faits qu'il cache qu'une fois posée la pièce qui les révèle
@@ -264,14 +274,92 @@ Une « vérification de l'intégrité des fichiers » dans Steam retire aussi le
 Si le studio modifie une affaire, le patch la laisse telle quelle avec un message **ATTENTION** et
 traduit tout le reste. Signalez ce message avec la version du jeu.
 
-## Délai de réponse (même machine, puce intégrée, 25/09/2026)
+## Étude comparative : VF du studio contre patch 1.2.4 (27/09/2026)
 
-Interrogatoire de 12 tours de Tommy Vale (000), délai moyen par tour : jeu d'origine en anglais
-(Qwen 4B) 7,6 s, patch 1.1.0 12,6 s, patch 1.2.0 7,9 s. Pire tour : 24,3 s, 24,8 s et 10,7 s.
-Sur processeur seul : 19,9 s, 26,3 s et 11,1 s. Cas le plus lourd, Adrian Cove (006), 10 tours et
-trois pièces posées, Gemma 4B : patch 1.1.0 22,6 s par tour (pire 68,0 s), patch 1.2.0 10,6 s
-(pire 13,9 s). Qualité jugée à l'aveugle, dont par l'auteur sur
-ses propres questions : 1.2.0 préférée à 1.1.0.
+Le jeu a été réinstallé proprement depuis Steam (build 25152927, archive identique à l'octet près à
+celle du studio) pour servir de référence. Chaque mesure est faite **à méthode identique des deux
+côtés**, sur le **vrai code** du jeu : un harnais charge le `bundle.js` et le `localAI.js` réels
+(celui du studio, puis celui du patch), joue les scénarios comme un joueur, et parle au vrai moteur
+Ollama livré avec le jeu. Machine : Core Ultra 7 155U, 32 Go, puce Intel intégrée.
+
+### Texte affiché et texte envoyé au modèle
+
+| Mesure | VF du studio | Patch 1.2.4 |
+|---|---|---|
+| Texte affiché resté en anglais (hors fiches RPD-NET générées) | 30,2 % des caractères | 0,1 % (faux positifs : noms propres) |
+| Affaires 005 et 006 en français | aucune langue autre que l'anglais | traduites entièrement (932 chaînes) |
+| Fiches RPD-NET générées (680) | 94 % des mots en anglais | français |
+| Mots anglais dans le prompt système envoyé au modèle (52 scénarios) | 86,5 % | 0,4 % (faux positifs) |
+| Question du tour envoyée au modèle | 2 fois (184 requêtes sur 184) | 1 fois |
+| Pièces listées au modèle dès la 1re question | toutes celles ramassées (11,5 en moyenne) | celles déjà montrées |
+| Faits cachés présents dans le prompt avant la pièce qui les révèle | 110 sur 110 | 1 sur 110 (un nom généré par le jeu) |
+| Erreurs de typographie (« Serrure: saisie »), dates au format anglais | 111 et 42 | 0 et 0 |
+
+### Mécaniques
+
+| Mesure | VF du studio | Patch 1.2.4 |
+|---|---|---|
+| Stress gagné par les mots-clés sur 48 questions françaises (anglais : 64) | 0 | 56 |
+| « Je vous ai vu… » face au coupable | 0 point | 8 points, et 0 face aux autres (choix de l'auteur) |
+| Stress total sur 52 scénarios, départ à 0 | 848 | 1 180 |
+| Icônes de réaction neutres sur des gestes français | 98,7 % | 1 % |
+| Date du bureau | en anglais, liée au jour réel, identique pour toutes les affaires | date et heure de l'affaire en cours |
+| Affaire 001 | datée de 2024, les six autres de 2020 | 2020, jours de la semaine conservés |
+
+Une mécanique reste muette des deux côtés : le carnet qui relève les contradictions cherche des
+mots de déni anglais, qu'aucune réplique française ne contient.
+
+### Vitesse (vrai moteur, 5 configurations, 2 tirages chacune, 24 scénarios de 4 affaires)
+
+Sans réglage, le moteur tourne sur le **processeur** : c'est le cas courant, chez le studio comme
+avec le patch. La puce graphique intégrée n'est utilisée que si le joueur l'active (réglage
+facultatif plus haut).
+
+| Configuration | Attente moyenne / médiane / pire | Partie complète | Mandat d'arrêt |
+|---|---|---|---|
+| **VF du studio** (Qwen 4B, processeur) | 38,6 / 21,4 / 168,5 s | 53,1 s | 118 à 127 s, accusation correcte refusée |
+| **Patch 1.2.4** (Gemma 4B, processeur) | **17,0 / 12,8 / 53,7 s** | **13,3 s** | **47 à 72 s, acceptée** |
+| Contrôle : VF du studio sur puce graphique | 13,9 s | 19,0 s | 38 s |
+| Contrôle : patch avec Qwen 4B sur puce graphique | 10,8 s | 8,9 s | 10,8 s, refusée |
+| Patch 1.2.4 sur puce graphique | 9,4 s | 7,6 s | 8,5 s, acceptée |
+
+Ce que disent les configurations de contrôle :
+- **La puce graphique** divise l'attente par 2,5 à 3. C'est le plus gros levier, mais c'est un réglage
+  du joueur, pas un effet du patch.
+- **Le code du patch, à modèle égal** (Qwen sur la puce) : 0 réplique avec de l'anglais au lieu de
+  33 sur 158, 0 fuite de fait caché au lieu de 11, trois fois moins de texte relu par question, mandat
+  3,5 fois plus rapide. C'est bien le patch, et non le modèle, qui supprime l'anglais et les fuites.
+- **Le modèle** : Qwen 4B refuse l'accusation correcte au mandat, avec ou sans patch. Gemma 4B
+  l'accepte. Gemma est aussi un peu plus rapide et utilise moins de mémoire (6,3 Go contre 8,8 Go
+  pour le studio en fin de série).
+
+Réplique au joueur type, patch contre studio : 0 contre 45 répliques sur 158 contenant de l'anglais,
+0 contre 11 fuites de faits cachés, 0 aveu des deux côtés, 0 erreur du moteur des deux côtés.
+
+### Qualité des répliques
+
+Comparer le studio et le patch **à l'aveugle** est impossible : les répliques du studio se
+reconnaissent à leur anglais. Les mesures ci-dessus (langue, fuites, mandat) suffisent à les
+départager.
+
+Entre Gemma 4B et Qwen 4B, **à code du patch égal**, un jugement automatisé à l'aveugle et étalonné
+(24 scénarios, 2 juges par dossier, deux contrôles « même modèle contre lui-même » non
+significatifs, règle de décision fixée avant de voir les notes) n'a **pas départagé** les deux
+modèles (p = 0,069). Les tests de l'auteur, francophone natif, donnent Gemma nettement meilleur en
+français naturel, et Gemma garde les avantages mesurés : secrets mieux tenus, mandat accepté,
+vitesse, mémoire. Gemma 4B reste donc le modèle proposé.
+
+### Ce que le patch coûte
+
+Environ 4,2 Go de disque : la copie d'origine du jeu (0,86 Go) et Gemma 4B (3,34 Go, facultatif).
+« Retirer le patch FR » rend tout, sauf un fichier de 28 octets que le jeu ne lit pas.
+
+### Limites de l'étude
+
+Une seule machine. Affaires 000, 002 et 004 non jouées sur le moteur. Deux tirages par scénario.
+Le patch sur processeur a été mesuré en dernier, processeur déjà chaud : son gain est plutôt
+sous-estimé. Les mesures mécaniques (texte, prompt, faits cachés, stress) ne dépendent pas du
+modèle et portent sur les 52 scénarios.
 
 ## Mesures (Core Ultra 7 155U, puce Intel intégrée, 32 Go, 24/09/2026)
 
@@ -309,7 +397,8 @@ moteur pour les deux modèles, dans les conditions du patch :
 Les fautes relevées comptent tout nom ou fait absent de la fiche du personnage : elles pénalisent
 l'improvisation. À la lecture des réponses côte à côte, Gemma 4B joue nettement mieux : suspects
 plus vivants, réactions justes aux pièces présentées, là où Qwen 4B répond dans un français plat
-et parfois absurde. D'où le choix de le proposer aux joueurs francophones.
+et parfois absurde. D'où le choix de le proposer aux joueurs francophones. L'étude du 27/09 (plus haut) confirme ses
+avantages mesurables, dont l'accusation correcte acceptée au mandat, que Qwen 4B refuse.
 
 Le jeu précharge le modèle au lancement, et directement à la bonne fenêtre après une première
 session française.

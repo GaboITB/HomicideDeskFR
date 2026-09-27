@@ -1328,7 +1328,39 @@ function patchTextesVisibles(s, L) {
     (n ? faits : manques).push("durées h et min (" + n + ")");
   }
 
-  // 8. Fiches RPD-NET générées : la liste passe par hdfrNet (copie traduite, gardée par liste).
+  // 8. Certificat d'habilitation (icône du bureau) : le jeu l'ouvre comme une pièce ordinaire,
+  //    tampon PREUVE et pied « DOCUMENT OFFICIEL · RÉSERVÉ À L'ENQUÊTE ». En français, variante
+  //    propre (hdfr-certificat, inconnue du reste du code, donc rendue comme « standard ») : tampon
+  //    « H A B I L I T É » et pied de page d'état de service, même dessin que les tampons existants.
+  remplacer("certificat : variante propre",
+    /return\{content:(\w+)\[(\w+)\.value\]\?\?\1\.en,variant:"standard"\}\}(?=function \w+\(\)\{return \w+\("cert\.docTitle"\)\})/,
+    (m) => "return{content:" + m[1] + "[" + m[2] + ".value]??" + m[1] + ".en,variant:" + L + '==="fr"?"hdfr-certificat":"standard"}}');
+  const mCe = s.match(/function \w+\(\w+,\w+,(\w+),\w+=\(\)=>!1\)\{var \w+,\w+;const (\w+)=\1==="case-report",(\w+)=\1==="medical"/);
+  if (mCe) {
+    const [, V, O, M] = mCe, fin = Math.min(s.length, mCe.index + 15000);
+    let corps = s.slice(mCe.index, fin);
+    const certif = V + '==="hdfr-certificat"';
+    const avant = corps;
+    corps = corps.replace(new RegExp("(\\w+)\\.stampSealed:" + O + "\\?\\1\\.stampOpen:" + M + "\\?\\1\\.medStamp:\\1\\.stampEvidence"),
+      (x, sa) => x.slice(0, -(sa.length + 14)) + "(" + certif + '?"H A B I L I T É":' + sa + ".stampEvidence)");
+    const tampon = corps !== avant;
+    const avant2 = corps;
+    corps = corps.replace(new RegExp("\\(" + O + "\\?22:" + M + "\\?24:27,700\\)"), "(" + O + "||" + certif + "?22:" + M + "?24:27,700)");
+    const police = corps !== avant2;
+    const avant3 = corps;
+    corps = corps.replace(new RegExp("fillText\\(" + O + "\\?(\\w+)\\.footMaster:" + M + "\\?\\1\\.footMedical:\\1\\.footOfficial,"),
+      (x, sa) => "fillText(" + O + "?" + sa + ".footMaster:" + M + "?" + sa + ".footMedical:" + certif + '?"ÉTAT DE SERVICE · DOCUMENT PERSONNEL":' + sa + ".footOfficial,");
+    const pied = corps !== avant3;
+    s = s.slice(0, mCe.index) + corps + s.slice(fin);
+    (tampon && police && pied ? faits : manques).push("certificat : tampon " + tampon + ", police " + police + ", pied " + pied);
+  } else manques.push("certificat : dessin du papier (ce)");
+  // En-tête « POLICE DE RAVENPORT » reconnu comme celui de l'anglais (bandeau de service et intitulé
+  // du document) : Va() ne connaît que l'anglais, l'arabe et le chinois.
+  remplacer("en-tête « POLICE DE RAVENPORT » du papier",
+    /(\w+)\[0\]\?\?""\)\.toUpperCase\(\)\.includes\("RAVENPORT POLICE"\)/,
+    (m) => m[0] + "||" + L + '==="fr"&&(' + m[1] + '[0]??"").toUpperCase().includes("POLICE DE RAVENPORT")');
+
+  // 9. Fiches RPD-NET générées : la liste passe par hdfrNet (copie traduite, gardée par liste).
   remplacer("fiches RPD-NET générées",
     /(for\(const \w+ of\[\.\.\.\w+\.value,\.\.\.\w+\.value,\.\.\.)(\w+)\(\)\]\)/,
     (m) => m[1] + "hdfrNet(" + m[2] + "())])");

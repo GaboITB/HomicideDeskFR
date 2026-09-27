@@ -13,7 +13,7 @@
  "files/file-E1/name": "Rapport d'intervention · Hollis Pawn & Loan",
  "files/file-E3/name": "Cahier de fermeture · semaine du 6 janvier",
  "files/file-E4/name": "Bordereau d'achat · Westgate Pawn & Loan",
- "evidence/va:E0/description": "Le scan d'expertise envoyé par l'assureur. Une montre d'homme Longines, fabriquée en 1968, cadran argenté, bracelet en cuir marron, étiquette d'inventaire HV-0417. Assurée pour 2 400 $.",
+ "evidence/va:E0/description": "Le scan d'expertise envoyé par l'assureur. Une montre d'homme Longines, fabriquée en 1968, cadran argenté, bracelet en cuir noir, étiquette d'inventaire HV-0417. Assurée pour 2 400 $.",
  "evidence/va:E0/presentationMessage": {
   "_hdfr": [
    "Voici le scan de la Longines, envoyé par l'assureur. ",
@@ -23,7 +23,7 @@
  },
  "evidence/va:E0/fileContent": {
   "_hdfr": [
-   "SCAN D'EXPERTISE DE L'ASSUREUR · MERIDIA MUTUAL\nOBJET : montre d'homme, LONGINES, fabriquée en 1968.\nCadran argenté, bracelet en cuir marron.\n",
+   "SCAN D'EXPERTISE DE L'ASSUREUR · MERIDIA MUTUAL\nOBJET : montre d'homme, LONGINES, fabriquée en 1968.\nCadran argenté, bracelet en cuir noir.\n",
    "#hdfr:31:1745873288:aed3a5d66ed7c81cb693",
    "\n",
    "#hdfr:25:531794631:3cf032257b582fe498d7",
@@ -57,7 +57,7 @@
    "#hdfr:61:1185525950:8c8d6c575c08fd43dc79",
    "\nRÉDACTEUR : agent J. Okafor\n",
    "#hdfr:46:848713757:3892294f3663a51151f8",
-   "\n\nRÉSUMÉ :\nLe propriétaire a ouvert la boutique samedi à 08:05 et a trouvé la\nvitrine principale DÉVERROUILLÉE. Un seul objet manque : une montre\nd'homme Longines, fabriquée en 1968, étiquette d'inventaire HV-0417,\nvaleur assurée 2 400 $. Rien d'autre n'a été touché. Caisse intacte.\n\nCONSTATATIONS :\n- Aucune trace d'effraction. La porte d'entrée, la porte de service\n  et la vitrine ont toutes été ouvertes avec une clé. Pas de trace\n  d'outil, pas de verre brisé.\n- La vitrine a sa propre clé, distincte de celles des portes. Tout a\n  été refermé SAUF la vitrine, laissée ouverte.\n- Locaux fermés par le plaignant lui-même le vendredi 10 janvier à\n  18:30. L'alarme ne s'est pas déclenchée de la nuit : désarmée avec\n  un code valide à 22:12 le vendredi, réarmée à 22:31.\n- Le plaignant détient son propre jeu complet. Il existe deux\n  doubles, remis à ses employés (voir registre des clés, joint).\n\nOBJET MANQUANT :\n1x montre d'homme Longines, 1968, cadran argenté, bracelet cuir\nmarron, inventaire HV-0417, 2 400 $.\n\nSTATUT : en cours · vol (délit grave)"
+   "\n\nRÉSUMÉ :\nLe propriétaire a ouvert la boutique samedi à 08:05 et a trouvé la\nvitrine principale DÉVERROUILLÉE. Un seul objet manque : une montre\nd'homme Longines, fabriquée en 1968, étiquette d'inventaire HV-0417,\nvaleur assurée 2 400 $. Rien d'autre n'a été touché. Caisse intacte.\n\nCONSTATATIONS :\n- Aucune trace d'effraction. La porte d'entrée, la porte de service\n  et la vitrine ont toutes été ouvertes avec une clé. Pas de trace\n  d'outil, pas de verre brisé.\n- La vitrine a sa propre clé, distincte de celles des portes. Tout a\n  été refermé SAUF la vitrine, laissée ouverte.\n- Locaux fermés par le plaignant lui-même le vendredi 10 janvier à\n  18:30. L'alarme ne s'est pas déclenchée de la nuit : désarmée avec\n  un code valide à 22:12 le vendredi, réarmée à 22:31.\n- Le plaignant détient son propre jeu complet. Il existe deux\n  doubles, remis à ses employés (voir registre des clés, joint).\n\nOBJET MANQUANT :\n1x montre d'homme Longines, 1968, cadran argenté, bracelet cuir\nnoir, inventaire HV-0417, 2 400 $.\n\nSTATUT : en cours · vol (délit grave)"
   ]
  },
  "evidence/va:E2/description": "Hollis tient un registre des deux doubles, signé par leurs détenteurs : Dana Brook, la vendeuse, et Tommy Vale, le manutentionnaire du week-end. Les deux jeux comprennent la clé de la vitrine, et tous les trois connaissent le code d'alarme.",
@@ -110,7 +110,7 @@
   "_hdfr": [
    "WESTGATE PAWN & LOAN\n",
    "#hdfr:34:705600322:a0578f8bf090d38c6de0",
-   "\nTÉL 555-0144 · LIC. RP-PB-2071\n\nBORDEREAU D'ACHAT N° 20-0093\nDATE : VEN 10 JANV. 2020   HEURE : 23:40\nEMPLOYÉ : R. OKONKWO · COMPTOIR DE NUIT\n\nACHAT\n1x MONTRE D'HOMME\n   LONGINES : FABR. 1968\n   CADRAN ARGENTÉ / BRACELET CUIR MARRON\n\n",
+   "\nTÉL 555-0144 · LIC. RP-PB-2071\n\nBORDEREAU D'ACHAT N° 20-0093\nDATE : VEN 10 JANV. 2020   HEURE : 23:40\nEMPLOYÉ : R. OKONKWO · COMPTOIR DE NUIT\n\nACHAT\n1x MONTRE D'HOMME\n   LONGINES : FABR. 1968\n   CADRAN ARGENTÉ / BRACELET CUIR NOIR\n\n",
    "#hdfr:25:316793670:a5cab006f6cfb37061da",
    " 650,00 $\n\nDÉCLARATION DU VENDEUR :\n« Je certifie être le propriétaire\n",
    "#hdfr:30:265699616:79b0f5d4fbd7d86a045d",

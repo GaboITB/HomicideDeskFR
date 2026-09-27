@@ -5,7 +5,7 @@
    " Les suspects répondent toujours dans la langue de l'interface. Les documents d'enquête sont traduits en français."
   ]
  },
- "int.noAnswer": "AUCUNE RÉPONSE : la ligne avec la salle d'audition a été coupée. La question n'a pas été décomptée. Réessayez dans un instant.",
+ "int.noAnswer": "AUCUNE RÉPONSE : la ligne avec la salle d'interrogatoire a été coupée. La question n'a pas été décomptée. Réessayez dans un instant.",
  "int.lineBusy": "LIGNE OCCUPÉE : le réseau du poste de police est saturé. La question n'a pas été décomptée. Attendez une minute puis reposez-la.",
  "brief.body": "Nouvelle journée : un nouvel incident vous attend au POSTE DE POLICE, les gains du casse-code sont réinitialisés et votre solde s'élève à {balance} $.",
  "tip.3": {
@@ -18,12 +18,12 @@
  "recap.lastOpen": "Dernier document ouvert : {title}",
  "int.releasedBody": {
   "_hdfr": [
-   "Fin d'audition pour aujourd'hui : {name} a quitté la salle. ",
+   "Fin d'interrogatoire pour aujourd'hui : {name} a quitté la salle. ",
    "#hdfr:44:1377399743:85e2fbffda1f124fa084"
   ]
  },
- "int.releasedPanelBody": "{name} a quitté la salle après l'audition. Profitez-en : relisez les pièces et préparez votre prochaine offensive.",
- "int.sessionEndBody": "Encore {n} question(s) avant la fin de l'audition de {name}.",
+ "int.releasedPanelBody": "{name} a quitté la salle après l'interrogatoire. Profitez-en : relisez les pièces et préparez votre prochaine offensive.",
+ "int.sessionEndBody": "Encore {n} question(s) avant la fin de l'interrogatoire de {name}.",
  "ev.objOpenedBody": "Récupéré et versé aux scellés : {name}.",
  "shop.reqIssuedBody": "Sorti de la boutique et rattaché à votre affaire : {name}.",
  "cfp.iaStamp": "CONTRÔLE DES AFFAIRES INTERNES",
@@ -192,5 +192,18 @@
  "cbr.caseNo": "AFFAIRE N° {n}",
  "cf.casePrefix": "AFFAIRE N° ",
  "atlas.radioProceed": "CENTRALE À U-19 : RENDEZ-VOUS À {loc}. CODE 3.",
- "bench.notchOff": "COUPÉ"
+ "bench.notchOff": "COUPÉ",
+ "interrogation.entering": "LE SUJET EST CONDUIT EN SALLE D'INTERROGATOIRE",
+ "int.entering": "LE SUJET EST CONDUIT EN SALLE D'INTERROGATOIRE 2",
+ "int.room": "SALLE D'INTERROGATOIRE 2 · ENREGISTREMENT",
+ "int.sealedBody": "Ce document est encore classifié, levez les scellés avant de le présenter en interrogatoire.",
+ "fe.prevSealed": "SOUS SCELLÉS, la clé est dans la salle d’interrogatoire",
+ "nb.suspects": "SUSPECTS INTERROGÉS",
+ "board.why.tell": "Note du service : {name} a contredit le dossier en salle d’interrogatoire. Ça, ça tient.",
+ "shop.grp.interrogation": "SALLE D’INTERROGATOIRE",
+ "cf.svc.daD": "Lever une demande d’avocat et reprendre l’interrogatoire",
+ "cf.svc.overtimeD": "Cinq questions d’interrogatoire de plus pour cette séance",
+ "bounty.interrogate-all.detail": "Interrogez chaque suspect au moins une fois",
+ "paper.sealedBanner": "Une partie du contenu est classifiée, interrogez les bons suspects pour la débloquer",
+ "tutObj.5": "Interrogez les deux suspects, joignez les documents qui les contredisent"
 }
