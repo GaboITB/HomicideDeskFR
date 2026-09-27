@@ -661,6 +661,69 @@ function patchRenderer() {
       (projection ? ", humeur projetée" : "") + ")");
   } else log((CACHE_FR && siFiltre ? "ATTENTION" : "info") + " : interrogatoire non reconnu, pas de préchauffage");
 
+  // Préchauffage du greffier du mandat d'arrêt (1.2.3, 27/09/2026). Après
+  // « AUTORISER L'ARRESTATION », 23 à 24 s d'attente (deux parties sur le vrai moteur), dont 16 de
+  // relecture à froid du prompt du greffier (affaire, suspects, résumés, texte complet des pièces
+  // jointes, environ 2 200 jetons). Ce prompt ne dépend que du suspect désigné et des pièces
+  // jointes, pas de la conclusion : le moteur le lit pendant que le joueur écrit et signe.
+  // Même code que la vraie requête, sans copie : le dossier de Le() devient hdfrDossier(), que
+  // Le() appelle elle-même, et SI() rend son prompt système à un rappel (hdfrP) au lieu d'appeler
+  // le modèle. localAI.js écarte un préchauffage identique à ce que le moteur vient de lire, et la
+  // vraie requête interrompt un préchauffage en cours. Rien pendant l'examen ni après le tampon.
+  // Déclencheurs (mesure du 27/09, joueur pressé) : rien avant le nombre minimal de pièces jointes
+  // du mandat (le prompt change à chaque pièce, relire le dossier au seul choix du suspect coûtait
+  // 11 à 37 s pour rien), puis 2,5 s sans nouveau suspect ni nouvelle pièce. Frappe et signature :
+  // 300 ms, sans repousser une attente en cours (reprise si un interrogatoire a pris le cache).
+  {
+    const mLe = s.match(/async function (\w+)\(\)\{var (\w+);if\(!(\w+)\.value\|\|(\w+)\.value\|\|(\w+)\.value\|\|!(\w+)\.value\)return;if\(\w+\.value="",\w+\((\w+)\.value\)<2\)\{[^{}]*\}\4\.value=!0;/);
+    const nLe = mLe ? s.split(mLe[0]).length - 1 : 0;
+    const debutDossier = mLe ? mLe.index + mLe[0].length : -1;
+    const mAppel = mLe ? s.slice(debutDossier, debutDossier + 6000).match(/;let \w+=!0,[^;]*;try\{const \w+=await (\w+)\(([^()]*)\);/) : null;
+    // Le() doit appartenir au composant du mandat (dernier composant déclaré avant elle)
+    const dansMandat = !!mLe && s.lastIndexOf("__name:", mLe.index) === s.lastIndexOf('__name:"WarrantApp"', mLe.index);
+    const SI = mAppel && mAppel[1];
+    const mSi = SI && s.match(new RegExp("async function " + SI + "\\((\\w+),(\\w+),(\\w+),(\\w+)=\"\",(\\w+)=\\[\\]\\)\\{"));
+    const nSi = mSi ? s.split(mSi[0]).length - 1 : 0;
+    const finSi = mSi ? s.indexOf("async function ", mSi.index + 10) : -1;
+    const corpsSi = mSi ? s.slice(mSi.index, finSi) : "";
+    const mCite = corpsSi.match(/if\((\w+)\.length>0&&(\w+)===0\)return\{valid:!1,feedback:"",score:0,graded:!0,uncited:!0\};/);
+    const mJuge = corpsSi.match(/;try\{const\{askSuspectAPI:(\w+)\}=await [\s\S]*?await \1\("judge",\w+,(\w+),\[\]\)/);
+    const mFormat = s.match(/format:(\w+)==="judge"\?(\w+):void 0,hdfrLang:/);
+    const mT = mLe && s.slice(s.lastIndexOf('__name:"WarrantApp"', mLe.index), mLe.index);
+    // pièces jointes (R), signature (ie), lues dans le composant
+    const mJointes = mT && mT.match(/function \w+\((\w+)\)\{(\w+)\.value\.length>=\w+\|\|\(\2\.value=\[\.\.\.\2\.value,\1\]/);
+    const mSigne = mT && mT.match(/!(\w+)\.value&&\w+>=\w+&&\(\1\.value=!0,\w+\.tell\(\)\)/);
+    // nombre minimal de pièces jointes exigé par le mandat (case à cocher du studio)
+    const mMin = mT && mT.match(/"warrant\.ckExhibits",\{min:(\w+)\}/);
+    let noms = null;
+    if (mLe && mAppel) noms = declarateurs(s.slice(debutDossier, debutDossier + mAppel.index));
+    if (CACHE_FR && siFiltre && mApi && nLe === 1 && dansMandat && mAppel && nSi === 1 && mCite && mJuge && mFormat &&
+      mJointes && mSigne && mMin && noms && noms.length) {
+      const [, LE, VAR, EA, FE, TAMPON, SUSPECT, CONCL] = mLe;
+      const decl = s.slice(debutDossier, debutDossier + mAppel.index);
+      const liste = noms.join(",");
+      // 1. SI() : mode préchauffage (rappel hdfrP), sans le refus « aucune pièce citée »
+      const corps = corpsSi.replace(mSi[0], () => mSi[0].slice(0, -2) + ",hdfrP){")
+        .replace(mCite[0], () => "if(!hdfrP&&" + mCite[0].slice(3))
+        .replace(mJuge[0], () => ";if(hdfrP)return hdfrP(" + mJuge[2] + ")" + mJuge[0]);
+      s = s.slice(0, mSi.index) + corps + s.slice(finSi);
+      // 2. Le() : dossier calculé par hdfrDossier(), la même instruction déplacée
+      const i = s.indexOf(mLe[0]);
+      const fonctions = "function hdfrDossier(){var " + VAR + ";" + decl + ";return{" + liste + "}}" +
+        "let hdfrMinuterieG=null;function hdfrChauffeGreffier(hdfrAttente){try{if(" + L + '!=="fr"||!' + SUSPECT + ".value||" + FE + ".value||" + TAMPON +
+        ".value||" + mJointes[2] + ".value.length<" + mMin[1] + ")return;if(hdfrMinuterieG&&hdfrAttente<2500)return;clearTimeout(hdfrMinuterieG);hdfrMinuterieG=setTimeout(()=>{hdfrMinuterieG=null;try{" +
+        "if(!" + SUSPECT + ".value||" + FE + ".value||" + TAMPON + ".value||" + mJointes[2] + ".value.length<" + mMin[1] + ")return;const hdfrA=" + mApi[2] + "();if(!hdfrA)return;" +
+        "const{" + liste + "}=hdfrDossier();" + SI + "(" + mAppel[2] + ",hdfrB=>{hdfrA.ask(hdfrB,[{role:\"user\",content:\"…\"}]," +
+        "{maxTokens:1,temperature:.2,format:" + mFormat[2] + ',hdfrLang:"fr",hdfrPrechauffe:!0}).catch(()=>{})}).catch(()=>{})' +
+        "}catch{}},hdfrAttente)}catch{}}" +
+        "Ra(" + SUSPECT + ",()=>hdfrChauffeGreffier(2500)),Ra(" + mJointes[2] + ",()=>hdfrChauffeGreffier(2500))," +
+        "Ra(" + CONCL + ",()=>hdfrChauffeGreffier(300)),Ra(" + mSigne[1] + ",()=>hdfrChauffeGreffier(300)),Ya(()=>hdfrChauffeGreffier(2500));";
+      const neufLe = mLe[0] + "const{" + liste + "}=hdfrDossier()";
+      s = s.slice(0, i) + fonctions + neufLe + s.slice(i + mLe[0].length + decl.length);
+      log("code : préchauffage du greffier du mandat (français)");
+    } else log((CACHE_FR && siFiltre ? "ATTENTION" : "info") + " : mandat d'arrêt non reconnu, pas de préchauffage du greffier");
+  }
+
   s = patchCaseClosedMail(s, L);
 
   s = patchInlineFrench(s, L);
@@ -1273,6 +1336,36 @@ function patchCaseClosedMail(s, L) {
   else log("code : courriel d'affaire classée, chef d'accusation en français et typographie française");
   return s.slice(0, start) + f + s.slice(stop);
 }
+// Noms déclarés par une instruction « const a=…,b=… » minifiée (préchauffage du greffier) : virgules
+// de premier niveau, hors parenthèses, crochets, accolades, chaînes et gabarits (${…} compris).
+// null si l'instruction n'a pas cette forme.
+function declarateurs(code) {
+  if (!code.startsWith("const ")) return null;
+  const noms = [];
+  let i = 6, debut = 6;
+  const pile = []; // ouvrants en cours : ( [ { ou ` (gabarit), « $ » pour un ${ dans un gabarit
+  const fin = () => { const m = code.slice(debut, i).match(/^\s*([A-Za-z_$][\w$]*)=/); if (!m) throw new Error("déclarateur"); noms.push(m[1]); };
+  try {
+    for (; i < code.length; i++) {
+      const c = code[i], haut = pile[pile.length - 1];
+      if (haut === "`") {
+        if (c === "\\") i++;
+        else if (c === "`") pile.pop();
+        else if (c === "$" && code[i + 1] === "{") { pile.push("$"); i++; }
+        continue;
+      }
+      if (c === '"' || c === "'") { for (i++; i < code.length && code[i] !== c; i++) if (code[i] === "\\") i++; continue; }
+      if (c === "`") pile.push("`");
+      else if (c === "(" || c === "[" || c === "{") pile.push(c);
+      else if (c === ")" || c === "]") pile.pop();
+      else if (c === "}") pile.pop(); // ferme { ou ${
+      else if (c === "," && !pile.length) { fin(); debut = i + 1; }
+    }
+    if (pile.length) return null;
+    fin();
+  } catch (e) { return null; }
+  return noms;
+}
 function grabDict(s, anchor) {
   const i = s.indexOf(anchor);
   if (i < 0) die("ancre introuvable : " + anchor);
@@ -1481,16 +1574,31 @@ function hdfrFilet(systemPrompt, messages, ctx) {
 // caractère près (validé sur 627 répliques). Null si ge() du jeu n'est pas celle validée.
 const HDFR_GE = ${JSON.stringify(HDFR_GE)};
 let hdfrSeq = 0; // numéro de la dernière demande française entrée dans la file
+// dernière demande lue par le moteur (préfixe), et quand : au-delà de 20 min, le modèle a pu être
+// déchargé (KEEP_ALIVE 30 min), on ne présume plus rien
+let hdfrLu = { cle: '', t: 0 };
+const HDFR_LU_MS = 20 * 60 * 1000;
+// Préchauffage en cours (son AbortController) : une vraie demande l'interrompt au lieu d'attendre
+// sa fin (mesure du 27/09 : au clic sur le mandat, la requête du greffier attendait la fin d'une
+// lecture de 11 à 37 s avant de relire elle-même). Couper la connexion fait abandonner le moteur.
+let hdfrChauffeEnCours = null;
 ${arretSrc}
 async function hdfrAskFr(systemPrompt, messages, opts) {
     const ctx = hdfrCtx();
     const msgs = hdfrFilet(systemPrompt, messages, ctx);
+    // [greffier] Préchauffage inutile (1.2.3) : même prompt système et mêmes messages avant le
+    // dernier que la dernière demande lue par le moteur, qui les garde donc en cache. Le rendu
+    // peut ainsi réévaluer souvent (frappe, signature) sans rien coûter au moteur. Une nouvelle
+    // tentative (hdfrReessai) n'est jamais écartée.
+    const hdfrCle = JSON.stringify([systemPrompt, msgs.slice(0, -1)]);
+    if (opts.hdfrPrechauffe && !opts.hdfrReessai && hdfrCle === hdfrLu.cle && Date.now() - hdfrLu.t < HDFR_LU_MS) return '';
     // jamais pour une sortie structurée (juge du mandat) : elle doit arriver entière. Ni pour un
     // SMS (hdfrArret false, posé par le rendu) : ge() ne raccourcit que l'interrogatoire (audit m4).
     const arret = !!HDFR_GE && opts.format === undefined && opts.hdfrArret !== false;
     const res = await fetch(baseUrl + '/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        ...(opts.hdfrSignal ? { signal: opts.hdfrSignal } : {}),
         body: JSON.stringify({
             model: MODEL,
             stream: arret,
@@ -1505,8 +1613,10 @@ async function hdfrAskFr(systemPrompt, messages, opts) {
         }),
     });
     if (!res.ok) {
+        hdfrLu = { cle: '', t: 0 };
         throw new Error('ollama HTTP ' + res.status + ': ' + (await res.text()).slice(0, 200));
     }
+    hdfrLu = { cle: hdfrCle, t: Date.now() };
     if (!arret) {
         const data = await res.json();
         void hdfrVerifierMemoire();
@@ -1566,7 +1676,24 @@ async function hdfrAskFr(systemPrompt, messages, opts) {
         hdfrMemoriserFr();
         // Préchauffage (rendu patché) : inutile dès qu'une demande plus récente attend derrière lui.
         const hdfrMoi = ++hdfrSeq;
-        const lancer = () => (opts.hdfrPrechauffe && hdfrMoi !== hdfrSeq) ? '' : hdfrAskFr(systemPrompt, messages, opts);
+        // Une vraie demande interrompt le préchauffage en cours : il rend '' et la file avance.
+        if (!opts.hdfrPrechauffe && hdfrChauffeEnCours) {
+            console.log('[localAI] [HomicideDeskFR] préchauffage interrompu par une demande');
+            hdfrChauffeEnCours.abort();
+        }
+        const lancer = () => {
+            if (!opts.hdfrPrechauffe) return hdfrAskFr(systemPrompt, messages, opts);
+            if (hdfrMoi !== hdfrSeq) return '';
+            const hdfrC = new AbortController();
+            hdfrChauffeEnCours = hdfrC;
+            return hdfrAskFr(systemPrompt, messages, { ...opts, hdfrSignal: hdfrC.signal })
+                .catch((err) => {
+                    if (!hdfrC.signal.aborted) throw err;
+                    hdfrLu = { cle: '', t: 0 }; // lecture inachevée : rien de sûr en cache
+                    return '';
+                })
+                .finally(() => { if (hdfrChauffeEnCours === hdfrC) hdfrChauffeEnCours = null; });
+        };
         const result = queue.then(lancer, lancer);
         queue = result.catch(() => undefined);
         return result;

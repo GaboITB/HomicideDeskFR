@@ -1,6 +1,6 @@
 {
   "name": "homicidedeskfr",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "French localisation patch for the Steam game Homicide Desk (Shu'la Lab): rewritten case files, completed UI dictionary, localised precinct feed, radio, CAD terminal and case-closed mail.",
   "main": "patch.js",
   "scripts": {

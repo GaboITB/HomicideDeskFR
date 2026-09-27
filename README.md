@@ -32,7 +32,7 @@ modèle 12B du jeu le garde.
 
 ### Installer
 
-1. Téléchargez `HomicideDeskFR-1.2.2.zip` dans les **Releases** de ce dépôt.
+1. Téléchargez `HomicideDeskFR-1.2.3.zip` dans les **Releases** de ce dépôt.
 2. Clic droit, « Extraire tout ». Si le dossier obtenu en contient un second du même nom,
    ouvrez-le : les deux fichiers à double-cliquer sont dedans.
 3. Fermez le jeu, puis double-cliquez sur **« Installer le patch FR »**.
@@ -45,7 +45,13 @@ installer d'autre, rien à taper. **« Retirer le patch FR »**, ou « Vérifier
 fichiers » dans Steam, remet le jeu d'origine. Après une mise à jour du jeu par Steam, relancez
 « Installer le patch FR ».
 
-### Nouveautés de la 1.2.2 (26/09/2026)
+### Nouveautés de la 1.2.3 (27/09/2026)
+
+La 1.2.2 n'a jamais été publiée : la 1.2.3 la remplace et reprend tout son contenu.
+
+- **Mandat d'arrêt validé plus vite** : le parquet lit le dossier pendant que vous rédigez votre
+  conclusion. Mesuré sur la puce intégrée : de 24 à 46 s d'attente après la signature à 7 à 15 s,
+  et un peu plus rapide qu'avant même si vous signez tout de suite.
 
 - **Réponses plus rapides avec Gemma 4B** : le moteur garde en mémoire tout ce qu'il a déjà lu
   (cache complet de Gemma 3, `LLAMA_ARG_SWA_FULL`). Mesuré sur la puce intégrée : relecture d'un

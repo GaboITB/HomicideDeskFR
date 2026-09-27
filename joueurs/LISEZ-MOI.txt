@@ -100,8 +100,11 @@ EN CAS DE PROBLÈME
   le jeu : les coupables ne passent jamais aux aveux.
 - Le dossier « fichiers » contient le patch lui-même et sa documentation technique (README.md).
 
-NOUVEAUTÉS DE LA 1.2.2
+NOUVEAUTÉS DE LA 1.2.3
 ----------------------
+
+- Le mandat d'arrêt est validé bien plus vite : le parquet lit le dossier pendant que vous
+  rédigez votre conclusion (environ 7 à 15 s d'attente au lieu de 24 à 46 s).
 
 - Réponses plus rapides avec Gemma 4B : le moteur garde tout ce qu'il a déjà lu, et reprend là
   où il en était quand vous revenez sur un suspect déjà interrogé.
