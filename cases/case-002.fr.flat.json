@@ -143,7 +143,7 @@
  "evidence/va:E7/description": "Relevé des badges de la porte du personnel, la nuit du meurtre : le badge de Dana Wexler entre à 02h31 et sort à 02h58, avec un second passage en entrée, validé à la main à 02h40, signalé « dérogation manuelle, code superviseur ».",
  "evidence/va:E7/presentationMessage": "Le relevé des badges de la porte du personnel, cette nuit-là : votre badge entre à 02h31 et sort à 02h58. Et un second passage en entrée, validé à la main à 02h40, signalé dérogation manuelle, code superviseur. Vous m'avez dit que vous étiez rentrée chez vous avant minuit, madame Wexler.",
  "evidence/va:E7/clue/label": "Le badge de Wexler, de 02h31 à 02h58",
- "evidence/va:E7/clue/detail": "Un second passage en entrée, validé à la main à 02h40, signalé « dérogation manuelle, code superviseur », en plein créneau du meurtre.",
+ "evidence/va:E7/clue/detail": "Un second passage en entrée, validé à la main à 02h40, signalé « dérogation manuelle, code superviseur », cinq minutes avant le début du créneau du meurtre, et elle ne ressort qu'à 02h58.",
  "evidence/va:E7/fileContent": {
   "_hdfr": [
    "HARROW 91.5 · RELEVÉ DES BADGES, PORTE DU PERSONNEL\nNuit du jeudi 16 au vendredi 17 janvier 2020\n\n",

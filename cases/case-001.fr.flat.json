@@ -27,8 +27,7 @@
  "files/file-E9/uvText": {
   "_hdfr": [
    "#hdfr:27:1711137896:b6a95884cf4b3ec27aab",
-   "\nSi cette page passe sous une lampe UV de la police, c'est que je\nn'ai pas vu lundi.\nLes copies de toutes les factures Kessler sont dans le coffre\nbancaire de ma sœur.\nNe laissez pas Ward s'approcher du serveur de la paie.\n",
-   "#hdfr:34:1425614783:cc1dd5b3a3509452ebd0"
+   "\nSi cette page passe sous une lampe UV de la police, c'est que je\nn'ai pas vu lundi.\nLes copies de toutes les factures Kessler sont dans le coffre\nbancaire de ma sœur.\nNe laissez pas Ward s'approcher du serveur de la paie.\nM.R., écrit dans le noir, jeudi"
   ]
  },
  "evidence/va:E11/name": "Dossier fournisseur, fiche de contact de D. Kessler",
@@ -48,9 +47,9 @@
  "evidence/va:E11/phoneRecords/5/note": "QUATRE tentatives, 19:02–19:31 · pas de réponse, aucun message",
  "evidence/va:E11/forensicsReport": {
   "_hdfr": [
-   "POLICE SCIENTIFIQUE NUMÉRIQUE · IDENTIFICATION D'ABONNÉ\nOBJET : portable indiqué pour le prestataire « D. Kessler »\n\nRÉPONSE DE L'OPÉRATEUR : carte SIM prépayée, activée le 9 janvier\n2023, trois jours avant la validation de la première feuille\nd'heures Kessler. ",
+   "POLICE SCIENTIFIQUE NUMÉRIQUE · IDENTIFICATION D'ABONNÉ\nOBJET : portable indiqué pour le prestataire « D. Kessler »\n\nRÉPONSE DE L'OPÉRATEUR : carte SIM prépayée, activée le 7 janvier\n2019, trois jours avant la validation de la première feuille\nd'heures Kessler. ",
    "#hdfr:46:1644643719:98420df1f16b9265e708",
-   "\n(règles antérieures à 2024).\n\nACTIVITÉ DE L'APPAREIL : la SIM n'a jamais passé un seul appel.\nElle ne se réveille que pour recevoir et, en quatorze mois, elle\nne s'est accrochée qu'à deux antennes : le siège de Vanta Systems, à\nEastdock, et une antenne résidentielle de Mayfair, le soir et le\nweek-end.\n\n",
+   "\n(règles antérieures à 2020).\n\nACTIVITÉ DE L'APPAREIL : la SIM n'a jamais passé un seul appel.\nElle ne se réveille que pour recevoir et, en quatorze mois, elle\nne s'est accrochée qu'à deux antennes : le siège de Vanta Systems, à\nEastdock, et une antenne résidentielle de Mayfair, le soir et le\nweek-end.\n\n",
    "#hdfr:60:643467760:efcdb86ca4db9f3cb6e5",
    "\nl'opérateur. ",
    "#hdfr:54:708915194:8eeb3895f82f97a5d69c",
@@ -70,7 +69,7 @@
    "#hdfr:36:175208844:156f95e612ef8d99d9e8",
    " Kessler »), prestataire,\n",
    "#hdfr:33:1006312094:4f53bc3969c3cce67b06",
-   "\n\nLe formulaire 7-B (nouveau fournisseur) n'indique qu'un seul moyen\nde contact : un numéro de portable. Pas d'adresse, seulement une\nboîte postale fermée en 2021. Aucune coordonnée bancaire sur le\nformulaire. Le journal d'appels joint est l'historique des\nvérifications faites par la paie sur ce numéro.\n\nNOTE DE LA POLICE DE RAVENPORT : transmettez cette fiche au labo.\nLa section numérique peut obtenir de l'opérateur, sur réquisition,\nl'identité de l'abonné."
+   "\n\nLe formulaire 7-B (nouveau fournisseur) n'indique qu'un seul moyen\nde contact : un numéro de portable. Pas d'adresse, seulement une\nboîte postale fermée en 2017. Aucune coordonnée bancaire sur le\nformulaire. Le journal d'appels joint est l'historique des\nvérifications faites par la paie sur ce numéro.\n\nNOTE DE LA POLICE DE RAVENPORT : transmettez cette fiche au labo.\nLa section numérique peut obtenir de l'opérateur, sur réquisition,\nl'identité de l'abonné."
   ]
  },
  "evidence/va:E1/description": {
@@ -84,7 +83,7 @@
  "evidence/va:E1/fileContent": {
   "_hdfr": [
    "#hdfr:40:1628487441:12f41f747cd27aaa26ef",
-   "\nRAPPORT DE SCÈNE · RÉF. : MC/2024/0317/001\n\nDATE : dimanche 17 mars 2024, 21:47\nLIEU : Vanta Systems, 14 Blackfriars Rd, Eastdock, Ravenport\nRÉDACTRICE : inspectrice Amanda Torres\n\nRÉSUMÉ :\nMarcus Reeves, 41 ans, développeur principal, retrouvé mort dans\nla salle des serveurs B, 4e étage. Un seul coup violent, région\ntemporale droite. Aucune trace d'effraction sur les accès.\n\n",
+   "\nRAPPORT DE SCÈNE · RÉF. : MC/2020/0315/001\n\nDATE : dimanche 15 mars 2020, 21:47\nLIEU : Vanta Systems, 14 Blackfriars Rd, Eastdock, Ravenport\nRÉDACTRICE : inspectrice Amanda Torres\n\nRÉSUMÉ :\nMarcus Reeves, 41 ans, développeur principal, retrouvé mort dans\nla salle des serveurs B, 4e étage. Un seul coup violent, région\ntemporale droite. Aucune trace d'effraction sur les accès.\n\n",
    "#hdfr:25:1428781652:35451cc228b5c76dfe7d",
    "\n- Arme probable : rail en acier manquant sur le support R-4, à deux\n  mètres de la victime. ",
    "#hdfr:28:988010312:d89bee24b44511fba432",
@@ -94,7 +93,7 @@
    "#hdfr:57:1701282432:d02042160d51efe6526b",
    " Contenu\n  inventorié, dont un COFFRE EN ACIER fermé à clé, env. 40 cm.\n  Aucune clé sur la victime, dans le casier ni ailleurs dans les\n  locaux.\n- Aucun signe de vol. Portefeuille, téléphone et montre en place.\n\n",
    "#hdfr:29:822980761:9afe638767d03c471c5c",
-   "\nLe Dr K. Patel l'estime entre 21:00 et 21:45, dimanche 17 mars.\n\n",
+   "\nLe Dr K. Patel l'estime entre 21:00 et 21:45, dimanche 15 mars.\n\n",
    "#hdfr:27:271878663:7970572051c0a28c4cf8"
   ]
  },
@@ -115,7 +114,7 @@
  "evidence/va:E2/fileContent": {
   "_hdfr": [
    "#hdfr:41:616236373:294d729646f248d9e89f",
-   "\nDimanche 17 mars 2024\n\nNOM          |BADGE |ENTRÉE|SORTIE|INDICATEURS\n-------------|------|------|------|--------------------------------\nMarcus Reeves|MR-001|10:22 |-     |\nOmar Farooq  |OF-012|17:30 |20:47 |vérifiée, détecteur de l'entrée\nSophie Ward  |SW-003|18:50 |20:58 |[!] CORRECTION MANUELLE 21:44\nLisa Chen    |LC-001|09:15 |17:15 |vérifiée, détecteur de l'entrée\n\nDÉTECTEURS (4e ÉTAGE) : mouvement enregistré jusqu'à 21:33.\nNe correspond pas à la sortie SW-003 enregistrée.\n",
+   "\nDimanche 15 mars 2020\n\nNOM          |BADGE |ENTRÉE|SORTIE|INDICATEURS\n-------------|------|------|------|--------------------------------\nMarcus Reeves|MR-001|10:22 |-     |\nOmar Farooq  |OF-012|17:30 |20:47 |vérifiée, détecteur de l'entrée\nSophie Ward  |SW-003|18:50 |20:58 |[!] CORRECTION MANUELLE 21:44\nLisa Chen    |LC-001|09:15 |17:15 |vérifiée, détecteur de l'entrée\n\nDÉTECTEURS (4e ÉTAGE) : mouvement enregistré jusqu'à 21:33.\nNe correspond pas à la sortie SW-003 enregistrée.\n",
    "#hdfr:68:833332430:c4d7286f4f867726d4d4",
    "\ndu rez-de-chaussée."
   ]
@@ -129,7 +128,7 @@
   "_hdfr": [
    "RELEVÉ OPÉRATEUR · TRANSCRIPTION DU MESSAGE VOCAL\n",
    "#hdfr:43:1935101664:4cdfcccfd4c8c1c7b2af",
-   "\nSamedi 16 mars 2024, 22:19 · durée 0:29\n\n« Dana, c'est moi. Ne me rappelle pas ce soir. Écoute… écoute-moi,\nc'est tout. ",
+   "\nSamedi 14 mars 2020, 22:19 · durée 0:29\n\n« Dana, c'est moi. Ne me rappelle pas ce soir. Écoute… écoute-moi,\nc'est tout. ",
    "#hdfr:50:955059102:ab86d0492383f0e8c2bc",
    "\ncause des factures, au boulot. Je suis tombé sur un truc que je\nn'aurais jamais dû voir, et demain… demain, je vais le dire à la\n",
    "#hdfr:50:996554866:52bfd5eafa7e175fbadb",
@@ -141,7 +140,7 @@
    "#hdfr:47:1909838276:e892019531fa5a80978b",
    "\n",
    "#hdfr:43:1935101664:4cdfcccfd4c8c1c7b2af",
-   "\nSamedi 16 mars 2024, 22:19\n\n",
+   "\nSamedi 14 mars 2020, 22:19\n\n",
    "#hdfr:48:319065333:4e32e184a443e3a88df5",
    "\nLa transcription se débloque après l'écoute."
   ]
@@ -164,9 +163,7 @@
  "evidence/va:E4/spreadsheetRows/10/4": "S. Ward, 14 feuilles sur 14",
  "evidence/va:E4/fileContent": {
   "_hdfr": [
-   "VANTA SYSTEMS · EXPORT DE FACTURATION DES PRESTATAIRES\nDemandé par : M. ",
-   "#hdfr:29:632002849:64ba7126177a09dd1570",
-   "\nLivré par le service des archives\n\nPRESTATAIRE « D. KESSLER » · HEURES SUP, JANV. 2023 – FÉVR. 2024\n",
+   "VANTA SYSTEMS · EXPORT DE FACTURATION DES PRESTATAIRES\nDemandé par : M. Reeves, vendredi 13 mars 2020\nLivré par le service des archives\n\nPRESTATAIRE « D. KESSLER » · HEURES SUP, JANV. 2019 – FÉVR. 2020\n",
    "#hdfr:53:1178606424:4ea06dad2232a11b998b",
    "\nValidé sur chaque feuille par : S. Ward.\n\n",
    "#hdfr:66:1681473166:537227f0d54aa815596d",
@@ -195,7 +192,7 @@
  },
  "evidence/va:E5/fileContent": {
   "_hdfr": [
-   "PHOTOGRAPHIE DE POLICE SCIENTIFIQUE · SALLE DES SERVEURS B\nRÉF. : MC/2024/0317/PHT-04\n\nImage CCTV1, 21:47:12, récupérée sur l'enregistreur de l'immeuble\nlors de la passation de la scène.\n",
+   "PHOTOGRAPHIE DE POLICE SCIENTIFIQUE · SALLE DES SERVEURS B\nRÉF. : MC/2020/0315/PHT-04\n\nImage CCTV1, 21:47:12, récupérée sur l'enregistreur de l'immeuble\nlors de la passation de la scène.\n",
    "#hdfr:37:886961994:5a4ed6c8f152a89deba1",
    "\nNOTE DU LABO : traces de solvant présentes. Un passage aux\nultraviolets est recommandé (outil LAMPE UV, clic droit sur le\nbureau)."
   ]
@@ -210,9 +207,7 @@
  "evidence/va:E6/clue/detail": "Les appels furieux d'Omar s'arrêtent à 20h40 et sa sortie vérifiée est à 20h47. Les appels cessent AVANT le début du créneau du meurtre.",
  "evidence/va:E6/fileContent": {
   "_hdfr": [
-   "RELEVÉ OPÉRATEUR · JOURNAL DES APPELS\n",
-   "#hdfr:45:365839656:625a1767f16fcbad0dd8",
-   "\n\nSix appels entrants d'O. Farooq, 19:50–20:40, de plus en plus\ncourts.\nUn appel entrant de S. Ward à 21:02, le dernier auquel la victime a\nrépondu.\n",
+   "RELEVÉ OPÉRATEUR · JOURNAL DES APPELS\nABONNÉ : Marcus Reeves, dimanche 15 mars 2020\n\nSix appels entrants d'O. Farooq, 19:50–20:40, de plus en plus\ncourts.\nUn appel entrant de S. Ward à 21:02, le dernier auquel la victime a\nrépondu.\n",
    "#hdfr:41:1461654583:db0273e04ba2e24daa97"
   ]
  },
@@ -238,9 +233,7 @@
    "#hdfr:30:1473277257:2850985c11f1d6f93e8c",
    "\n",
    "#hdfr:66:1548660318:df5ba5bf6d394b4fe8d0",
-   "\nmère de la victime)\n",
-   "#hdfr:51:177820197:28d5cad1ef74de893162",
-   "\n\n",
+   "\nmère de la victime)\nDATE DE DÉPÔT : jeudi 12 mars, payé 3 mois d'avance\n\n",
    "#hdfr:47:1612186615:ff864a3f355386d06512",
    " Correspond au profil\nde serrure du coffre en acier saisi dans le casier de la victime\n(pièce E8).\n\n",
    "#hdfr:49:1706534605:521c3d944f7e6db128a4",
@@ -285,9 +278,9 @@
  },
  "evidence/va:E9/fileContent": {
   "_hdfr": [
-   "PAGES MANUSCRITES · RÉCUPÉRÉES DANS LE COFFRE (PIÈCE E8)\nQuatorze pages au stylo à bille, l'écriture de la victime d'un bout\nà l'autre.\n\nEn tête de la page 1 : « KESSLER, ce que je peux prouver »\n\n- janv. 23 ...... ",
+   "PAGES MANUSCRITES · RÉCUPÉRÉES DANS LE COFFRE (PIÈCE E8)\nQuatorze pages au stylo à bille, l'écriture de la victime d'un bout\nà l'autre.\n\nEn tête de la page 1 : « KESSLER, ce que je peux prouver »\n\n- janv. 2019 ...... ",
    "#hdfr:41:556271751:2c465f9813c299d7a830",
-   "\n- févr. 23 ...... 9 700 $, badge jamais délivré (vu sécurité)\n- avr. 23 ...... 9 300 $, « son » bureau est un placard à balais\n- juin 23 ...... 10 800 $, compte bénéficiaire changé deux fois,\n  deux comptes personnels\n- août 23 ...... 10 100 $\n- oct. 23 ...... 11 700 $\n- déc. 23 ...... 13 200 $, le plus gros mois tombe toujours quand\n  les auditeurs dorment\n- févr. 24 ...... 12 500 $\n\n(dernière page, soulignée deux fois :)\n« Total 141 300 $. Quatorze feuilles. Une seule personne qui valide.\nS.W. valide chaque feuille.\nJe lui dis dimanche. Conseil mardi. ",
+   "\n- févr. 2019 ...... 9 700 $, badge jamais délivré (vu sécurité)\n- avr. 2019 ...... 9 300 $, « son » bureau est un placard à balais\n- juin 2019 ...... 10 800 $, compte bénéficiaire changé deux fois,\n  deux comptes personnels\n- août 2019 ...... 10 100 $\n- oct. 2019 ...... 11 700 $\n- déc. 2019 ...... 13 200 $, le plus gros mois tombe toujours quand\n  les auditeurs dorment\n- févr. 2020 ...... 12 500 $\n\n(dernière page, soulignée deux fois :)\n« Total 141 300 $. Quatorze feuilles. Une seule personne qui valide.\nS.W. valide chaque feuille.\nJe lui dis dimanche. Conseil mardi. ",
    "#hdfr:27:1590047037:46b1b32794adec9424d0",
    " »"
   ]
@@ -297,9 +290,7 @@
   "_hdfr": [
    "La paie a ressorti les originaux. ",
    "#hdfr:40:725076112:a8f7b2dce1ff38452c37",
-   " ",
-   "#hdfr:97:466972357:69b4f092958e24e6adc9",
-   " Pas des initiales. ",
+   " Kessler, de janvier 2019 à février 2020, et votre signature est sur chacune d'elles, madame Ward. Pas des initiales. ",
    "#hdfr:40:950352899:16469fd3bf0e185e30af"
   ]
  },
@@ -309,7 +300,7 @@
    "#hdfr:56:616236373:9443c73d5dc8cc7cc316",
    "\nFEUILLES D'AUTORISATION PRESTATAIRE · « D. KESSLER »\n\n",
    "#hdfr:61:720967645:366d666dca831d292b36",
-   "\nd'heures, janvier 2023 à février 2024.\n\n",
+   "\nd'heures, janvier 2019 à février 2020.\n\n",
    "#hdfr:25:176848689:89be635722f07cfcb894",
    "\n",
    "#hdfr:25:20472253:3595c21dcd0bd3d23c2f",
@@ -396,7 +387,7 @@
  },
  "emails/email-kessler-number/body": {
   "_hdfr": [
-   "Inspecteur,\n\nVoici le dossier fournisseur de « D. Kessler », comme vous l'avez demandé. Il tient en peu de chose : le formulaire de création indique le nom Dominic Kessler, un numéro de portable et une boîte postale, fermée depuis 2021.\n\nSachez que nous avons nous-mêmes appelé ce numéro chaque trimestre, pour les vérifications habituelles, quatorze mois durant. Ça n'a jamais décroché. À chaque fois, la même messagerie.\n\nVous trouverez ci-joint la fiche de contact, avec l'historique de nos appels.\n\n",
+   "Inspecteur,\n\nVoici le dossier fournisseur de « D. Kessler », comme vous l'avez demandé. Il tient en peu de chose : le formulaire de création indique le nom Dominic Kessler, un numéro de portable et une boîte postale, fermée depuis 2017.\n\nSachez que nous avons nous-mêmes appelé ce numéro chaque trimestre, pour les vérifications habituelles, quatorze mois durant. Ça n'a jamais décroché. À chaque fois, la même messagerie.\n\nVous trouverez ci-joint la fiche de contact, avec l'historique de nos appels.\n\n",
    "#hdfr:33:1519998295:97f51ed7357d28a7a28e"
   ]
  },
@@ -417,7 +408,7 @@
  "emails/email-005/body": "Inspecteur,\n\nVous allez tomber sur mon numéro dans le téléphone de Marcus, dimanche soir, et je ne dors plus à force d'imaginer ce que vous allez en penser. Alors autant vous le dire moi-même : je l'ai appelé six fois. SIX. Pour une revue de code. Il n'y a rien de plus bête.\n\nVendredi, il avait démoli mon travail devant toute l'équipe. Je voulais des excuses. Il me raccrochait au nez à chaque fois. Et maintenant il est mort, et les derniers mots que je lui ai dits étaient des mots de colère.\n\nJe suis parti à 20h47, le détecteur de la porte d'entrée l'a forcément enregistré. Vérifiez, s'il vous plaît. Je passe quand vous voulez.\n\nOmar",
  "emails/email-006/subject": "Conseil d'administration mardi, j'ai besoin de quelque chose",
  "emails/email-006/body": "Inspecteur,\n\nExcusez-moi d'insister, je sais comment ça peut être pris.\n\nLe conseil d'administration se réunit mardi à 09h00. Trois administrateurs m'ont déjà appelé aujourd'hui. Notre contact dans la presse retient un article qui, à ce qu'on me dit, contient « enquête de police » dès la première ligne.\n\nSi vous pouvez me dire quoi que ce soit, même à titre officieux, ça m'aiderait à tenir la maison. Je ne cherche pas à gêner votre travail. J'ai juste besoin de savoir si mon entreprise pleure un accident ou si elle cache quelque chose de bien pire.\n\nDaniel Marsh",
- "emails/email-007/body": "Inspecteur,\n\nNous sommes les avocats de Mme Sophie Ward, directrice technique chez Vanta Systems.\n\nNotre cliente coopère pleinement avec vos services depuis dimanche soir. Nous vous demandons officiellement soit d'engager des poursuites à son encontre, soit de lui confirmer par écrit qu'elle n'est plus visée par l'enquête. L'incertitude actuelle lui cause un préjudice professionnel et personnel important.\n\nÀ défaut de réponse sur le fond avant lundi 09h00, nous saisirons le Comité de contrôle indépendant d'une plainte en bonne et due forme.\n\nNous vous prions d'agréer, Inspecteur, l'expression de nos salutations distinguées.\n\nRachel Hardwick\nHardwick & Crane LLP",
+ "emails/email-007/body": "Inspecteur,\n\nNous sommes les avocats de Mme Sophie Ward, directrice technique chez Vanta Systems.\n\nNotre cliente coopère pleinement avec vos services depuis dimanche soir. Nous vous demandons officiellement soit d'engager des poursuites à son encontre, soit de lui confirmer par écrit qu'elle n'est plus visée par l'enquête. L'incertitude actuelle lui cause un préjudice professionnel et personnel important.\n\nÀ défaut de réponse sur le fond avant demain, mardi, 09h00, nous saisirons le Comité de contrôle indépendant d'une plainte en bonne et due forme.\n\nNous vous prions d'agréer, Inspecteur, l'expression de nos salutations distinguées.\n\nRachel Hardwick\nHardwick & Crane LLP",
  "emails/email-morrison-1/from": "Capitaine R. Morrison",
  "emails/email-morrison-1/body": "Inspecteur,\n\nUn point rapide. L'affaire Reeves est suivie très haut : le commandant d'arrondissement m'en a parlé ce matin, en la citant nommément. Le conseil de Vanta se réunit mardi, et la presse rôde déjà.\n\nFaites les choses dans l'ordre : dossiers, labo, auditions. Mais ne laissez pas traîner. Je veux une note d'avancement sur mon bureau à la fin de votre service.\n\nMorrison",
  "emails/email-morrison-2/from": "Capitaine R. Morrison",
@@ -433,15 +424,16 @@
   "_hdfr": [
    "Inspecteur,\n\n",
    "#hdfr:60:579197096:93450257977fa9607e4e",
-   " Demandez à Omar Farooq pourquoi il a annulé le déploiement de vendredi à 18h, juste avant de se mettre à appeler Marcus sans arrêt. ",
+   " Demandez à Omar Farooq pourquoi il a annulé le déploiement de vendredi à 18h, deux jours avant de se mettre à appeler Marcus sans arrêt. ",
    "#hdfr:37:1004406451:37c5b538c4d3f8931f7a",
    "\n\nJe veux seulement aider."
   ]
  },
  "emails/email-ia/from": "Les affaires internes · Police de Ravenport",
- "emails/email-ia/body": "Inspecteur,\n\nNotre service a ouvert un dossier d'examen concernant l'arrestation effectuée dans l'affaire MC/2024/0317, à la suite de la remise en liberté sans poursuites de la personne interpellée.\n\nUne arrestation injustifiée, sous les yeux de la presse, retombe sur tout le service. Cet examen restera inscrit à votre dossier. Nous vous rappelons qu'une telle mention ne s'efface que par un travail d'enquête rigoureux et constant. Par rien d'autre.\n\nLes affaires internes, police de Ravenport",
+ "emails/email-ia/subject": "AVIS D'EXAMEN · Affaire MC/2020/0315",
+ "emails/email-ia/body": "Inspecteur,\n\nNotre service a ouvert un dossier d'examen concernant l'arrestation effectuée dans l'affaire MC/2020/0315, à la suite de la remise en liberté sans poursuites de la personne interpellée.\n\nUne arrestation injustifiée, sous les yeux de la presse, retombe sur tout le service. Cet examen restera inscrit à votre dossier. Nous vous rappelons qu'une telle mention ne s'efface que par un travail d'enquête rigoureux et constant. Par rien d'autre.\n\nLes affaires internes, police de Ravenport",
  "emails/email-commend/from": "Capitaine R. Morrison",
- "emails/email-commend/body": "Inspecteur,\n\nLe procureur m'a appelé avant que j'aie fini mon premier café. Un coffre fermé à clé, l'écriture de la victime, quatorze signatures : c'est à ça que doit ressembler un dossier.\n\nLe conseil s'est réuni ce matin avec la vérité sur la table, et pas une rumeur. C'est grâce à vous.\n\nPrenez votre soirée. Et passez me voir après : il y aura d'autres affaires.\n\nMorrison",
+ "emails/email-commend/body": "Inspecteur,\n\nLe procureur m'a appelé avant que j'aie fini mon premier café. Un coffre fermé à clé, l'écriture de la victime, quatorze signatures : c'est à ça que doit ressembler un dossier.\n\nLe conseil se réunit ce matin avec la vérité sur la table, et pas une rumeur. C'est grâce à vous.\n\nPrenez votre soirée. Et passez me voir après : il y aura d'autres affaires.\n\nMorrison",
  "script/ev-kessler-file/actions/1/body": {
   "_hdfr": [
    "#hdfr:63:471778098:b9549edcb413f08e7c7d",
@@ -540,7 +532,7 @@
  },
  "pressArchive/articles/0/body/1": "Le PDG Daniel Marsh a qualifié ce succès de « validation du travail de toute notre équipe de développement ». Sophie Ward, directrice technique, qui a piloté la proposition technique, a déclaré que la société avait « considérablement accru sa capacité de réalisation » sur la durée du contrat.",
  "pressArchive/articles/0/body/2": "L'action de la maison mère de Vanta a gagné 4,2 % à l'annonce.",
- "pressArchive/articles/1/date": "15 mars 2024, deux jours avant les faits",
+ "pressArchive/articles/1/date": "13 mars 2020, deux jours avant les faits",
  "pressArchive/articles/1/headline": "LE PRIX CACHÉ DE LA CROISSANCE : LA SOUS-TRAITANCE DANS LE VISEUR CHEZ LES SOCIÉTÉS TECHNOLOGIQUES DE RAVENPORT",
  "pressArchive/articles/1/subhead": "Les auditeurs préviennent : la fraude au « salarié fantôme » est la fraude en col blanc qui progresse le plus vite à Meridia",
  "pressArchive/articles/1/hotspot/phrase": "celui qui valide et celui qui encaisse sont la même personne sous deux noms",
@@ -548,7 +540,7 @@
  "pressArchive/articles/1/body/0": "Une enquête de l'Eastdock Register sur les dépôts de bilan et les signalements transmis à la brigade financière suggère que les abus de facturation de sous-traitance ont triplé en deux ans dans le secteur technologique de Meridia. Le schéma que décrivent les auditeurs est toujours le même : un prestataire qui n'existe que sur le papier, des factures payées à l'heure, et un seul signataire haut placé.",
  "pressArchive/articles/1/body/1": "« Le signe ne trompe jamais », explique un expert-comptable judiciaire, qui parle en termes généraux. « Aucune trace d'embauche, des comptes bénéficiaires qui changent, et quand on finit par sortir le dossier, on découvre que celui qui valide et celui qui encaisse sont la même personne sous deux noms. »",
  "pressArchive/articles/1/body/2": "Plusieurs sociétés d'Eastdock ont refusé de commenter leurs contrôles de sous-traitance, parmi lesquelles Vanta Systems, qui prépare une réunion de son conseil d'administration la semaine prochaine.",
- "pressArchive/articles/2/date": "18 mars 2024, le lendemain",
+ "pressArchive/articles/2/date": "16 mars 2020, le lendemain",
  "pressArchive/articles/2/headline": "UN DÉVELOPPEUR PRINCIPAL RETROUVÉ MORT CHEZ VANTA SYSTEMS",
  "pressArchive/articles/2/subhead": "La police de Ravenport ouvre une enquête criminelle. L'immeuble est bouclé",
  "pressArchive/articles/2/imageCaption": "La salle des serveurs B de Vanta Systems, Blackfriars Rd, mise sous scellés par la police de Ravenport dimanche soir.",
@@ -559,25 +551,40 @@
    " L'immeuble est bouclé dans l'attente des constatations de la police scientifique."
   ]
  },
- "pressArchive/articles/2/body/2": "Entré chez Vanta Systems en 2019, Reeves était décrit par ses collègues comme « la colonne vertébrale de l'équipe de développement ». Il laisse une mère et une sœur.",
+ "pressArchive/articles/2/body/2": "Entré chez Vanta Systems en 2015, Reeves était décrit par ses collègues comme « la colonne vertébrale de l'équipe de développement ». Il laisse une mère et une sœur.",
  "pressArchive/articles/1/hotspot/clue/id": "#hdfr:16:1350193396:a0e7fdb90b385671f7f8",
- "emails/email-001/timestamp": "17 MARS 2024 · 22:15",
- "emails/email-002/timestamp": "18 MARS 2024 · 07:44",
- "emails/email-003/timestamp": "18 MARS 2024 · 09:02",
- "emails/email-kessler-number/timestamp": "18 MARS 2024 · 11:20",
- "emails/email-005/timestamp": "18 MARS 2024 · 13:30",
- "emails/email-006/timestamp": "18 MARS 2024 · 15:00",
- "emails/email-007/timestamp": "18 MARS 2024 · 17:45",
- "emails/email-morrison-1/timestamp": "18 MARS 2024 · 12:10",
- "emails/email-morrison-2/timestamp": "18 MARS 2024 · 16:20",
- "emails/email-hr/timestamp": "18 MARS 2024 · 14:05",
- "emails/email-anon-tip/timestamp": "18 MARS 2024 · 11:20",
- "emails/email-ia/timestamp": "19 MARS 2024 · 09:00",
- "emails/email-commend/timestamp": "19 MARS 2024 · 08:10",
+ "emails/email-001/timestamp": "15 MARS 2020 · 22:15",
+ "emails/email-002/timestamp": "16 MARS 2020 · 07:44",
+ "emails/email-003/timestamp": "16 MARS 2020 · 09:02",
+ "emails/email-kessler-number/timestamp": "16 MARS 2020 · 11:20",
+ "emails/email-005/timestamp": "16 MARS 2020 · 13:30",
+ "emails/email-006/timestamp": "16 MARS 2020 · 15:00",
+ "emails/email-007/timestamp": "16 MARS 2020 · 17:45",
+ "emails/email-morrison-1/timestamp": "16 MARS 2020 · 12:10",
+ "emails/email-morrison-2/timestamp": "16 MARS 2020 · 16:20",
+ "emails/email-hr/timestamp": "16 MARS 2020 · 14:05",
+ "emails/email-anon-tip/timestamp": "16 MARS 2020 · 11:20",
+ "emails/email-ia/timestamp": "17 MARS 2020 · 09:00",
+ "emails/email-commend/timestamp": "17 MARS 2020 · 08:10",
  "evidence/va:E11/phoneRecords/0/to": "D. Kessler (portable)",
  "evidence/va:E11/phoneRecords/1/to": "D. Kessler (portable)",
  "evidence/va:E11/phoneRecords/2/to": "D. Kessler (portable)",
  "evidence/va:E11/phoneRecords/3/to": "D. Kessler (portable)",
  "evidence/va:E11/phoneRecords/4/to": "D. Kessler (portable)",
- "evidence/va:E11/phoneRecords/5/to": "D. Kessler (portable)"
+ "evidence/va:E11/phoneRecords/5/to": "D. Kessler (portable)",
+ "evidence/va:E11/phoneRecords/0/time": "JANV. 2019",
+ "evidence/va:E11/phoneRecords/1/time": "AVR. 2019",
+ "evidence/va:E11/phoneRecords/2/time": "AOÛT 2019",
+ "evidence/va:E11/phoneRecords/3/time": "NOV. 2019",
+ "evidence/va:E11/phoneRecords/4/time": "FÉVR. 2020",
+ "evidence/va:E11/phoneRecords/5/time": "13 MARS 2020",
+ "evidence/va:E4/spreadsheetRows/1/0": "janv. 2019",
+ "evidence/va:E4/spreadsheetRows/2/0": "févr. 2019",
+ "evidence/va:E4/spreadsheetRows/3/0": "avr. 2019",
+ "evidence/va:E4/spreadsheetRows/4/0": "juin 2019",
+ "evidence/va:E4/spreadsheetRows/5/0": "août 2019",
+ "evidence/va:E4/spreadsheetRows/6/0": "oct. 2019",
+ "evidence/va:E4/spreadsheetRows/7/0": "déc. 2019",
+ "evidence/va:E4/spreadsheetRows/8/0": "févr. 2020",
+ "pressArchive/articles/0/date": "#hdfr:14:1911616847:4dd2e1923e5aa3a9f7c9"
 }

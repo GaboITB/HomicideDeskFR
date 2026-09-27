@@ -250,8 +250,10 @@ function patchRenderer() {
   const TERM_FIXES = code.termes;
 
   // Date de chaque affaire (« 17 March 2024 ») : champ anglais hors objet de traduction, affiché tel
-  // quel sur l'ouverture, la carte des Archives, la liste des affaires et RPD-NET.
-  const DATES_FR = { "11 January 2020": "11 janvier 2020", "17 March 2024": "17 mars 2024",
+  // quel sur l'ouverture, la carte des Archives, la liste des affaires et RPD-NET. L'affaire 001 est
+  // reculée de 209 semaines en français (17/03/2024, un dimanche, devient le dimanche 15/03/2020) :
+  // seule de la série en 2024, elle tombait quatre ans après le bureau et les six autres affaires.
+  const DATES_FR = { "11 January 2020": "11 janvier 2020", "17 March 2024": "15 mars 2020",
     "17 January 2020": "17 janvier 2020", "20 January 2020": "20 janvier 2020", "2 February 2020": "2 février 2020",
     "19 February 2020": "19 février 2020", "2 March 2020": "2 mars 2020" };
 
@@ -320,6 +322,45 @@ function patchRenderer() {
     (m) => "function " + m[1] + "(e=" + m[2] + "()){if(" + L + '!=="en"){try{return e.toLocaleDateString(' + L +
       ',{weekday:"short",day:"numeric",month:"short",year:"numeric"}).toUpperCase()}catch(_){}}' +
       m[0].slice(m[0].indexOf("){return") + 2));
+
+  // Horloge du bureau calée sur l'affaire (1.2.3, 27/09/2026). Le studio affiche partout
+  // Rn(t) = 1er janvier 2020 + (t - 1er juillet 2026) : la date réelle moins six ans et demi, sans
+  // lien avec l'affaire, et une heure d'écart en été (heure locale d'hiver contre temps universel).
+  // En français, pendant une affaire commencée (caseStartTime, sauvegardé avec elle), l'horloge part
+  // de la date de l'affaire (champ date) à l'heure de son premier courriel du jour, puis s'écoule
+  // au rythme réel. Tout ce qui passe par Rn suit : bureau, barre des tâches, pause, verrouillage,
+  // certificat, courriels du service, journal. Sans affaire commencée, ou date illisible : horloge
+  // du studio. Autres langues : Rn du studio, inchangée.
+  {
+    const mRn = s.match(/function (\w+)\((\w+)\)\{return new Date\((\w+)\+\(\2-(\w+)\)\)\}function (\w+)\(\)\{return \1\(Date\.now\(\)\)\}/);
+    const nRn = mRn ? s.split(mRn[0]).length - 1 : 0;
+    const mJeu = s.match(/(\w+)=\w+\("game",\(\)=>\{/);
+    const nJeu = (s.match(/\w+\("game",\(\)=>\{/g) || []).length;
+    if (mRn && nRn === 1 && mJeu && nJeu === 1) {
+      const [tout, RN, T, BASE, ORIGINE] = mRn;
+      const horloge =
+        // mois français ou anglais, abrégés ou non, accents ignorés
+        "function hdfrMois(hdfrM){hdfrM=String(hdfrM).normalize(\"NFD\").replace(/[\\u0300-\\u036f]/g,\"\").toLowerCase();" +
+        "return[/^jan/,/^fe/,/^mar/,/^a[vp]/,/^ma[iy]/,/^ju(?:i?n|ne)/,/^ju(?:il|l)/,/^a[ou]/,/^se/,/^oc/,/^no/,/^de/].findIndex(hdfrR=>hdfrR.test(hdfrM))}" +
+        // « 17 mars 2024 », « 17 MAR 2024 · 22:15 » : [année, mois, jour, minutes ou -1]
+        "function hdfrJour(hdfrT){const hdfrD=String(hdfrT||\"\").match(/(\\d{1,2})\\s+([^\\s\\d·.,]+)\\.?\\s+(\\d{4})/);if(!hdfrD)return null;" +
+        "const hdfrN=hdfrMois(hdfrD[2]);if(hdfrN<0)return null;const hdfrH=String(hdfrT).slice(hdfrD.index+hdfrD[0].length).match(/(\\d{1,2})[:h](\\d{2})/);" +
+        "return[+hdfrD[3],hdfrN,+hdfrD[1],hdfrH?+hdfrH[1]*60+ +hdfrH[2]:-1]}" +
+        // début de l'affaire : sa date, à l'heure du premier courriel de ce jour-là (8 h sans courriel)
+        "function hdfrDebutAffaire(hdfrC){const hdfrA=hdfrJour(hdfrC.date);if(!hdfrA)return null;let hdfrMin=-1;" +
+        "for(const hdfrE of hdfrC.emails??[]){const hdfrB=hdfrJour(hdfrE.timestamp);" +
+        "if(hdfrB&&hdfrB[3]>=0&&hdfrB[0]===hdfrA[0]&&hdfrB[1]===hdfrA[1]&&hdfrB[2]===hdfrA[2]&&(hdfrMin<0||hdfrB[3]<hdfrMin))hdfrMin=hdfrB[3]}" +
+        "if(hdfrMin<0)hdfrMin=480;return new Date(hdfrA[0],hdfrA[1],hdfrA[2],Math.floor(hdfrMin/60),hdfrMin%60).getTime()}" +
+        "const hdfrDebuts=new Map();" +
+        "function hdfrHorloge(hdfrT){try{if(" + L + '!=="fr")return null;const hdfrG=' + mJeu[1] + "(),hdfrC=hdfrG.activeCase,hdfrZ=hdfrG.caseStartTime;" +
+        "if(!hdfrC||!hdfrZ)return null;const hdfrK=hdfrG.activeCaseId+\"|\"+hdfrC.date;" +
+        "if(!hdfrDebuts.has(hdfrK))hdfrDebuts.set(hdfrK,hdfrDebutAffaire(hdfrC));const hdfrO=hdfrDebuts.get(hdfrK);" +
+        "return hdfrO===null?null:new Date(hdfrO+(hdfrT-hdfrZ))}catch(hdfrX){return null}}";
+      s = s.replace(tout, () => horloge + "function " + RN + "(" + T + "){return hdfrHorloge(" + T + ")??new Date(" + BASE + "+(" + T + "-" + ORIGINE + "))}" +
+        tout.slice(tout.indexOf("}function ") + 1));
+      log("code : horloge du bureau calée sur l'affaire en cours (français)");
+    } else log("ATTENTION : horloge du jeu non reconnue, horloge du bureau laissée à celle du studio");
+  }
 
   // Papier 3D : en-têtes, tampons, filigranes et pieds de page en anglais, arabe et chinois seulement.
   reFix("en-têtes du papier 3D",

@@ -32,7 +32,7 @@ modèle 12B du jeu le garde.
 
 ### Installer
 
-1. Téléchargez `HomicideDeskFR-1.2.3.zip` dans les **Releases** de ce dépôt.
+1. Téléchargez `HomicideDeskFR-1.2.4.zip` dans les **Releases** de ce dépôt.
 2. Clic droit, « Extraire tout ». Si le dossier obtenu en contient un second du même nom,
    ouvrez-le : les deux fichiers à double-cliquer sont dedans.
 3. Fermez le jeu, puis double-cliquez sur **« Installer le patch FR »**.
@@ -45,9 +45,15 @@ installer d'autre, rien à taper. **« Retirer le patch FR »**, ou « Vérifier
 fichiers » dans Steam, remet le jeu d'origine. Après une mise à jour du jeu par Steam, relancez
 « Installer le patch FR ».
 
-### Nouveautés de la 1.2.3 (27/09/2026)
+### Nouveautés de la 1.2.4 (27/09/2026)
 
-La 1.2.2 n'a jamais été publiée : la 1.2.3 la remplace et reprend tout son contenu.
+Les 1.2.2 et 1.2.3 n'ont jamais été publiées : la 1.2.4 les remplace et reprend tout leur contenu.
+
+- **Dates cohérentes** : pendant une affaire, le bureau affiche la date et l'heure de l'affaire, puis le
+  temps s'écoule normalement (sauvegarde comprise). L'affaire 001, seule de la série en 2024 dans la
+  version d'origine, est ramenée en 2020 avec toutes ses pièces. Plusieurs dates et heures
+  contradictoires entre documents sont corrigées (courriels envoyés avant la découverte du corps,
+  créneau du meurtre, nuits supprimées, photo du hall), toutes déclarées au studio.
 
 - **Mandat d'arrêt validé plus vite** : le parquet lit le dossier pendant que vous rédigez votre
   conclusion. Mesuré sur la puce intégrée : de 24 à 46 s d'attente après la signature à 7 à 15 s,
