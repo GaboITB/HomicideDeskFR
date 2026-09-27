@@ -75,6 +75,25 @@ seulement Gemma 4B et l'ancienne sauvegarde.
 Vous pouvez ensuite supprimer le dossier du patch.
 
 
+PUCE GRAPHIQUE INTÉGRÉE (EXPÉRIMENTAL)
+--------------------------------------
+
+Sans carte graphique dédiée, le jeu fait tout calculer à votre processeur. En français, le patch
+essaie au premier lancement la puce graphique intégrée à votre processeur (Intel ou AMD) : il
+mesure les deux, garde la puce seulement si elle répond plus vite, et revient au processeur au
+moindre souci, même en pleine partie. L'essai prend moins d'une minute, une seule fois,
+pendant le menu du jeu. Sur la machine de test, l'attente par réponse passe de 17 à 9 secondes.
+Avec une carte graphique dédiée (NVIDIA, AMD, Intel Arc), rien ne change.
+
+C'est expérimental. Pour la désactiver : créez le fichier
+%APPDATA%\detective-os\localai-override.json contenant { "igpu": false }
+(pour le trouver, tapez %APPDATA%\detective-os dans la barre d'adresse de l'explorateur).
+
+Pour nous aider à décider de la garder, envoyez-nous, avec le nom de votre processeur, le fichier
+%APPDATA%\detective-os\launch.log après une partie : ses lignes « puce graphique » disent ce qui
+a été décidé et pourquoi.
+
+
 EN CAS DE PROBLÈME
 ------------------
 
@@ -100,8 +119,12 @@ EN CAS DE PROBLÈME
   le jeu : les coupables ne passent jamais aux aveux.
 - Le dossier « fichiers » contient le patch lui-même et sa documentation technique (README.md).
 
-NOUVEAUTÉS DE LA 1.2.4
+NOUVEAUTÉS DE LA 1.3.0
 ----------------------
+
+La 1.3.0 remplace la 1.2.4, jamais publiée, et reprend tout son contenu.
+
+- La puce graphique intégrée est essayée automatiquement en français (voir plus haut).
 
 - Le bureau affiche maintenant la date et l'heure de l'affaire en cours. L'affaire 001, datée de 2024
   dans la version d'origine, se passe en 2020 comme les autres, et plusieurs dates contradictoires

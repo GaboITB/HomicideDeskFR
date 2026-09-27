@@ -1538,8 +1538,9 @@ function hdfrEnvMoteur(model) {
   const anchorEnv = "OLLAMA_NUM_PARALLEL: '1',\n            },";
   if (!s.includes(anchorEnv)) die("ancre env OLLAMA_NUM_PARALLEL introuvable");
   s = s.replace(anchorEnv, () => `OLLAMA_NUM_PARALLEL: '1',
-                // [HomicideDeskFR] puce graphique intégrée via Vulkan, sur demande explicite seulement
-                ...(hdfrOverride().igpu === true ? { OLLAMA_IGPU_ENABLE: '1' } : {}),
+                // [HomicideDeskFR] puce graphique intégrée via Vulkan : réglage du joueur, sinon essai
+                // réussi mémorisé en français (voir hdfrEnvPuce, 1.3.0)
+                ...hdfrEnvPuce(),
                 // [HomicideDeskFR] cache de préfixe de Gemma 3 en français (voir hdfrEnvMoteur)
                 ...hdfrEnvMoteur(MODEL),
             },`);
@@ -1589,6 +1590,9 @@ function hdfrLireCtx() {
     catch { return {}; }
 }
 function hdfrEcrireCtx(v) {
+    // [puce] le résultat de l'essai de la puce graphique survit aux changements de langue
+    const puce = 'puce' in v ? v.puce : hdfrLireCtx().puce;
+    if (puce) v = { ...v, puce };
     try { fs_1.default.writeFileSync(hdfrFichierCtx(), JSON.stringify(v)); }
     catch (err) { console.error('[localAI] [HomicideDeskFR] contexte non mémorisé :', err); }
 }
@@ -1755,7 +1759,11 @@ async function hdfrAskFr(systemPrompt, messages, opts) {
             hdfrChauffeEnCours.abort();
         }
         const lancer = () => {
-            if (!opts.hdfrPrechauffe) return hdfrAskFr(systemPrompt, messages, opts);
+            // [puce] le moteur plante sur la puce graphique : relance sur le processeur, question reposée une fois
+            if (!opts.hdfrPrechauffe) return hdfrAskFr(systemPrompt, messages, opts).catch(async (err) => {
+                if (opts.hdfrApresPlantage || !(await hdfrPuceApresErreur(err))) throw err;
+                return hdfrAskFr(systemPrompt, messages, { ...opts, hdfrApresPlantage: true });
+            });
             if (hdfrMoi !== hdfrSeq) return '';
             const hdfrC = new AbortController();
             hdfrChauffeEnCours = hdfrC;
@@ -1774,6 +1782,15 @@ async function hdfrAskFr(systemPrompt, messages, opts) {
     // Autre langue après une session française : le préchargement suivant reprend le réglage du studio.
     hdfrLangueEcrite = false;
     if (hdfrLireCtx().lang === 'fr') hdfrEcrireCtx({});
+    // [puce] puce activée automatiquement pour une session française : l'autre langue retrouve le
+    // moteur du studio, sur le processeur (le réglage du joueur, lui, vaut pour toutes les langues)
+    if (hdfrPuceAuSpawn && hdfrOverride().igpu === undefined) {
+        hdfrPuceLog('désactivée pour cette session : question dans une autre langue');
+        const r = () => hdfrRedemarrer(false);
+        const p = queue.then(r, r);
+        queue = p.catch(() => undefined);
+        await p;
+    }
     if (hdfrModeleFr) {
         const dossier = hdfrModeleFr;
         hdfrModeleFr = '';
@@ -1791,6 +1808,201 @@ async function hdfrAskFr(systemPrompt, messages, opts) {
     "                    // [HomicideDeskFR] même fenêtre que la dernière session française\n" +
     "                    ...(hdfrLireCtx().lang === 'fr' ? { options: { num_ctx: hdfrCtx() } } : {}) }),");
   log("localAI.js : fenêtre " + 6144 + " et filet anti-débordement en français");
+
+  // ── [puce] Puce graphique intégrée activée automatiquement, avec filet (1.3.0, 27/09/2026) ──────
+  // Sans réglage, l'Ollama du jeu écarte la puce intégrée (« dropping integrated GPU ») et tourne sur
+  // le processeur. Avec OLLAMA_IGPU_ENABLE=1 (étude du 27/09, même machine) : attente divisée par
+  // 2,5 à 3. Session française seulement, jamais si le modèle est déjà sur une carte graphique, et
+  // gardée seulement si elle bat le processeur sur la même machine. Tout échec ramène au processeur
+  // sans casser la partie et est mémorisé (hdfr-contexte.json) jusqu'à la prochaine mise à jour du
+  // jeu ou du patch. localai-override.json : {"igpu": true} force, {"igpu": false} interdit.
+  const anchorWarmUp = "function warmUp() {\n    void (async () => {\n        try {\n            await ensureServer();\n";
+  if (!s.includes(anchorWarmUp)) die("ancre warmUp introuvable dans localAI.js");
+  const anchorSpawn = "        child.stderr?.on('data', (b) => {";
+  if (s.split(anchorSpawn).length !== 2) die("ancre du lancement d'ollama introuvable dans localAI.js");
+  s = s.replace(anchorSpawn, () => "        hdfrSurveiller(child); // [puce] plantage et erreurs Vulkan du moteur\n" + anchorSpawn);
+  s = s.replace(anchorWarmUp, () => `// ── [HomicideDeskFR] puce graphique intégrée automatique (1.3.0) ─────────────
+// Décision de la session (null : pas encore prise). Un lancement d'ollama lit hdfrEnvPuce().
+let hdfrPuceVoulue = null, hdfrPuceAuSpawn = false, hdfrPuceFaite = false, hdfrPuceEnCours = null;
+let hdfrPuceErreur = '', hdfrPlantage = false;
+const HDFR_VERSION = ${JSON.stringify(require("./package.json").version)};
+const HDFR_PUCE_DELAI = 180000;  // essai complet : chargements, deux mesures, redémarrage
+const HDFR_PUCE_GAIN = 0.95;     // gardée si le tour estimé sur la puce fait 95 % au plus du processeur
+// Tour type estimé : 400 jetons relus (le cache garde le reste) et 60 écrits (répliques de 41 à 73
+// jetons mesurées le 26/09). La puce accélère surtout la relecture, un seuil sur la seule écriture
+// l'aurait mal jugée.
+const HDFR_PUCE_LUS = 400, HDFR_PUCE_ECRITS = 60;
+const HDFR_PUCE_TEXTE = 'Lis ce rapport puis résume-le en une phrase.' + Array.from({ length: 10 }, (_, i) =>
+    ' Rapport ' + (i + 1) + ' : la patrouille de nuit a relevé les allées et venues autour du dépôt, noté les plaques ' +
+    'des véhicules garés, interrogé le gardien et vérifié les serrures des trois portes de service.').join('');
+function hdfrPuceLog(msg) { console.log('[localAI] [HomicideDeskFR] puce graphique : ' + msg); }
+function hdfrPuceCle() {
+    let jeu = '';
+    try { jeu = electron_1.app.getVersion(); } catch { /* version du jeu inconnue */ }
+    return jeu + '|' + HDFR_VERSION;
+}
+function hdfrPuceMemoriser(etat, raison, mesures) {
+    hdfrEcrireCtx({ ...hdfrLireCtx(), puce: { etat, raison, cle: hdfrPuceCle(), date: new Date().toISOString().slice(0, 10), ...(mesures || {}) } });
+}
+/** Environnement d'un lancement d'ollama. Hors réglage du joueur, la puce n'est demandée au
+ *  lancement que si un essai l'a validée pour CETTE version du jeu et du patch, en français. */
+function hdfrEnvPuce() {
+    const force = hdfrOverride().igpu;
+    let puce;
+    if (force === true || force === false) puce = force;
+    else {
+        if (hdfrPuceVoulue === null) {
+            const c = hdfrLireCtx();
+            hdfrPuceVoulue = c.lang === 'fr' && !!c.puce && c.puce.etat === 'ok' && c.puce.cle === hdfrPuceCle();
+        }
+        puce = hdfrPuceVoulue;
+    }
+    hdfrPuceAuSpawn = puce;
+    return puce ? { OLLAMA_IGPU_ENABLE: '1' } : {};
+}
+/** Chaque ollama lancé : erreurs Vulkan, et plantage quand il tourne sur la puce. */
+function hdfrSurveiller(c) {
+    if (!c) return;
+    c.hdfrPuce = hdfrPuceAuSpawn;
+    c.stderr?.on('data', (b) => {
+        const l = b.toString();
+        if (c.hdfrPuce && /vulkan|VK_ERROR/i.test(l) && /error|fail/i.test(l)) hdfrPuceErreur = 'erreur Vulkan : ' + l.trim().slice(0, 160);
+    });
+    c.on('exit', (code) => {
+        // arrêt voulu (redémarrage, fin du jeu) ou moteur sur le processeur : rien à faire
+        if (!c.hdfrPuce || c.hdfrVoulu || c !== child) return;
+        hdfrPuceErreur = hdfrPuceErreur || 'plantage du moteur (code ' + code + ')';
+        if (hdfrPuceEnCours || hdfrOverride().igpu === true) return; // l'essai conclut lui-même, le joueur a forcé
+        hdfrPuceVoulue = false;
+        hdfrPlantage = true;
+        hdfrPuceMemoriser('echec', 'plantage en cours de partie : ' + hdfrPuceErreur);
+        hdfrPuceLog('désactivée : plantage en cours de partie, relance sur le processeur (' + hdfrPuceErreur + ')');
+    });
+}
+/** Arrête le moteur en cours et le relance avec (true) ou sans (false) la puce. */
+async function hdfrRedemarrer(puce) {
+    hdfrPuceVoulue = puce;
+    hdfrLu = { cle: '', t: 0 }; // cache du moteur perdu
+    const c = child;
+    if (c) {
+        c.hdfrVoulu = true;
+        // le code du studio journalise ensuite « ERROR [localAI] ollama exited » : c'est cet arrêt voulu
+        hdfrPuceLog('arrêt volontaire du moteur pour le relancer ' + (puce ? 'sur la puce graphique' : 'sur le processeur') +
+            ' (la ligne « ollama exited » qui suit est normale)');
+        const fin = new Promise((r) => { const t = setTimeout(r, 10000); c.once('exit', () => { clearTimeout(t); r(); }); });
+        await unloadModel();
+        if (process.platform === 'win32') await run('taskkill', ['/PID', String(c.pid), '/T', '/F'], 5000);
+        else { try { c.kill(); } catch { /* déjà arrêté */ } }
+        await fin;
+        if (child === c) { child = null; state = 'unavailable'; startPromise = null; }
+    }
+    await ensureServer();
+}
+/** Charge le modèle (même fenêtre que le préchargement) et rend sa part en mémoire graphique. */
+async function hdfrPuceCharger() {
+    const r = await fetch(baseUrl + '/api/generate', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: MODEL, prompt: '', keep_alive: KEEP_ALIVE, options: { num_ctx: hdfrCtx() } }),
+    });
+    if (!r.ok) throw new Error('chargement du modèle : HTTP ' + r.status);
+    const ps = await (await fetch(baseUrl + '/api/ps')).json();
+    const m = (ps.models || []).find(x => x.name === MODEL || x.model === MODEL || String(x.name).split(':')[0] === MODEL);
+    return m ? Number(m.size_vram) || 0 : null;
+}
+/** Mesure une demande fixe : vitesses de relecture et d'écriture, tour type estimé (s). */
+async function hdfrPuceMesurer() {
+    const r = await fetch(baseUrl + '/api/generate', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ model: MODEL, prompt: HDFR_PUCE_TEXTE, stream: false, keep_alive: KEEP_ALIVE,
+            options: { num_ctx: hdfrCtx(), num_predict: 32, temperature: 0, seed: 7 } }),
+    });
+    if (!r.ok) throw new Error('mesure : HTTP ' + r.status);
+    const d = await r.json();
+    if (!(d.eval_count > 0) || !String(d.response || '').trim()) throw new Error('réponse vide');
+    const lus = d.prompt_eval_count / (d.prompt_eval_duration / 1e9), ecrits = d.eval_count / (d.eval_duration / 1e9);
+    const tour = HDFR_PUCE_LUS / lus + HDFR_PUCE_ECRITS / ecrits;
+    if (!Number.isFinite(tour) || tour <= 0) throw new Error('mesure illisible');
+    return { lus: Math.round(lus), ecrits: Math.round(ecrits * 10) / 10, tour: Math.round(tour * 10) / 10 };
+}
+async function hdfrPuceDerouler() {
+    hdfrPuceErreur = '';
+    const memo = hdfrLireCtx().puce;
+    let delai;
+    const limite = new Promise((_, ko) => { delai = setTimeout(() => ko(new Error('délai dépassé (' + HDFR_PUCE_DELAI / 1000 + ' s)')), HDFR_PUCE_DELAI); });
+    const controle = () => { if (hdfrPuceErreur) throw new Error(hdfrPuceErreur); };
+    let essai = false;
+    try {
+        await Promise.race([limite, (async () => {
+            if (hdfrPuceAuSpawn) {
+                // lancement direct sur la puce (essai réussi mémorisé) : encore faut-il qu'elle serve
+                essai = true;
+                const v = await hdfrPuceCharger();
+                controle();
+                if (!(v > 0)) throw new Error('modèle non chargé en mémoire graphique');
+                hdfrPuceLog('activée (essai réussi le ' + memo.date + ')');
+                return;
+            }
+            if (memo && memo.etat === 'echec' && memo.cle === hdfrPuceCle()) {
+                hdfrPuceLog('non essayée, échec mémorisé le ' + memo.date + ' : ' + memo.raison);
+                return;
+            }
+            const v0 = await hdfrPuceCharger();
+            if (v0 === null) { hdfrPuceLog('non essayée : modèle absent de /api/ps'); return; }
+            if (v0 > 0) { hdfrPuceLog('non essayée : le modèle est déjà sur une carte graphique (' + Math.round(v0 / 1048576) + ' Mo)'); return; }
+            const cpu = await hdfrPuceMesurer();
+            hdfrPuceLog('essai (processeur : relecture ' + cpu.lus + ' jetons/s, écriture ' + cpu.ecrits + ' jetons/s, tour estimé ' + cpu.tour + ' s)');
+            essai = true;
+            await hdfrRedemarrer(true);
+            controle();
+            const v1 = await hdfrPuceCharger();
+            controle();
+            if (!(v1 > 0)) throw new Error('modèle non chargé en mémoire graphique');
+            const puce = await hdfrPuceMesurer();
+            controle();
+            if (puce.tour > HDFR_PUCE_GAIN * cpu.tour)
+                throw new Error('plus lente que le processeur (tour estimé ' + puce.tour + ' s contre ' + cpu.tour + ' s)');
+            hdfrPuceMemoriser('ok', '', { processeur: cpu, puce });
+            hdfrPuceLog('activée (relecture ' + puce.lus + ' jetons/s, écriture ' + puce.ecrits + ' jetons/s, tour estimé ' + puce.tour + ' s contre ' + cpu.tour + ' s sur le processeur)');
+        })()]);
+    }
+    catch (err) {
+        const raison = hdfrPuceErreur || String(err && err.message || err);
+        if (!essai) { hdfrPuceLog('non essayée : ' + raison); return; }
+        hdfrPuceMemoriser('echec', raison);
+        hdfrPuceLog('désactivée : ' + raison);
+        try { await hdfrRedemarrer(false); }
+        catch (e) { console.error('[localAI] [HomicideDeskFR] relance sur le processeur impossible :', e); }
+    }
+    finally { clearTimeout(delai); hdfrPuceErreur = ''; }
+}
+/** Au démarrage du jeu, après le lancement du moteur : décision et essai, dans la file du moteur
+ *  (une question posée entre-temps attend la fin de l'essai au lieu de le croiser). */
+async function hdfrPuceEssai() {
+    if (hdfrPuceFaite) return;
+    hdfrPuceFaite = true;
+    const force = hdfrOverride().igpu;
+    if (force === true) { hdfrPuceLog('forcée par localai-override.json'); return; }
+    if (force === false) { hdfrPuceLog('désactivée par localai-override.json'); return; }
+    if (hdfrLireCtx().lang !== 'fr') return; // autres langues : moteur du studio, rien d'essayé
+    const p = queue.then(hdfrPuceDerouler, hdfrPuceDerouler);
+    queue = p.catch(() => undefined);
+    hdfrPuceEnCours = p;
+    try { await p; } finally { hdfrPuceEnCours = null; }
+}
+/** Une erreur du moteur pendant une question française, sur la puce : relance sur le processeur,
+ *  mémorisation, et la question repart une fois. Rend true si la question doit repartir. */
+async function hdfrPuceApresErreur(err) {
+    const puceAuto = hdfrPuceAuSpawn && hdfrOverride().igpu === undefined;
+    if (hdfrPlantage) { hdfrPlantage = false; await ensureServer(); return true; }
+    const txt = String(err && err.message || err) + ' ' + String(err && err.cause && err.cause.code || '');
+    if (!puceAuto || !/HTTP 5\\d\\d|runner|terminated|vulkan|fetch failed|ECONNRESET|ECONNREFUSED|socket/i.test(txt)) return false;
+    hdfrPuceMemoriser('echec', 'erreur du moteur en cours de partie : ' + txt.trim().slice(0, 160));
+    hdfrPuceLog('désactivée : erreur du moteur en cours de partie, relance sur le processeur (' + txt.trim().slice(0, 160) + ')');
+    await hdfrRedemarrer(false);
+    return true;
+}
+` + anchorWarmUp + "            await hdfrPuceEssai(); // [puce] essai ou vérification, avant le préchargement\n");
+  log("localAI.js : puce graphique intégrée automatique en français, avec retour au processeur");
 
   s = MARKER + "\n" + s;
   fs.writeFileSync(file, s);

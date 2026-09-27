@@ -29,8 +29,9 @@ jeu au moment de l'installation.
 | Mandat d'arrêt (accusation correcte, processeur) | 118 à 127 s, et refusé 2 fois sur 2 | 47 à 72 s, accepté 3 fois sur 3 |
 
 Chiffres mesurés le 27/09/2026 sur le vrai code des deux versions (jeu Steam build 25152927 contre
-patch 1.2.4), à méthode identique : détail et méthode dans « Étude comparative » plus bas. Avec la
-puce graphique activée (réglage facultatif), les attentes sont encore divisées par 2 à 3.
+patch 1.2.4), à méthode identique : détail et méthode dans « Étude comparative » plus bas. Sur la
+puce graphique intégrée, les attentes sont encore divisées par 2 à 3 : depuis la 1.3.0, le patch
+l'essaie tout seul en français (voir « Puce graphique intégrée »).
 
 En option, l'installateur propose **Gemma 3 4B** (3,3 Go, téléchargé une seule fois), qui joue les
 suspects bien mieux en français que le modèle livré. Une carte graphique qui fait déjà tourner le
@@ -38,7 +39,7 @@ modèle 12B du jeu le garde.
 
 ### Installer
 
-1. Téléchargez `HomicideDeskFR-1.2.4.zip` dans les **Releases** de ce dépôt.
+1. Téléchargez `HomicideDeskFR-1.3.0.zip` dans les **Releases** de ce dépôt.
 2. Clic droit, « Extraire tout ». Si le dossier obtenu en contient un second du même nom,
    ouvrez-le : les deux fichiers à double-cliquer sont dedans.
 3. Fermez le jeu, puis double-cliquez sur **« Installer le patch FR »**.
@@ -51,9 +52,17 @@ installer d'autre, rien à taper. **« Retirer le patch FR »**, ou « Vérifier
 fichiers » dans Steam, remet le jeu d'origine. Après une mise à jour du jeu par Steam, relancez
 « Installer le patch FR ».
 
-### Nouveautés de la 1.2.4 (27/09/2026)
+### Nouveautés de la 1.3.0 (27/09/2026)
 
-Les 1.2.2 et 1.2.3 n'ont jamais été publiées : la 1.2.4 les remplace et reprend tout leur contenu.
+Les 1.2.2, 1.2.3 et 1.2.4 n'ont jamais été publiées : la 1.3.0 les remplace et reprend tout leur
+contenu.
+
+- **Puce graphique intégrée activée automatiquement (expérimental)** : sur un ordinateur sans carte
+  graphique dédiée, le moteur du jeu tourne sur le processeur. En français, le patch essaie
+  maintenant la puce graphique intégrée au premier lancement, la garde seulement si elle répond
+  plus vite, et revient au processeur au moindre souci. Mesuré sur une puce Intel : attente par
+  réplique de 17,0 s à 9,4 s. Détails, désactivation et retours attendus dans « Puce graphique
+  intégrée » plus bas.
 
 - **Dates cohérentes** : pendant une affaire, le bureau affiche la date et l'heure de l'affaire, puis le
   temps s'écoule normalement (sauvegarde comprise). L'affaire 001, seule de la série en 2024 dans la
@@ -99,6 +108,36 @@ Les 1.2.2 et 1.2.3 n'ont jamais été publiées : la 1.2.4 les remplace et repre
 - **Détails corrigés** : bracelet de la montre Longines en cuir noir comme le modèle 3D, « interrogatoire »
   pour les suspects et « audition » pour les témoins, certificat d'habilitation tamponné « HABILITÉ »
   et non plus « PREUVE », en-tête « POLICE DE RAVENPORT » reconnu sur les documents.
+
+### Puce graphique intégrée (expérimental, 1.3.0)
+
+La plupart des ordinateurs portables et beaucoup de PC de bureau n'ont pas de carte graphique
+dédiée, mais une puce graphique intégrée au processeur (Intel Iris ou Arc intégré, AMD Radeon
+intégré). Le moteur d'IA du jeu l'ignore et fait tout calculer au processeur. En français, le patch
+l'essaie au démarrage du jeu :
+
+1. Le modèle est d'abord chargé comme d'habitude. S'il tourne déjà sur une carte graphique
+   (NVIDIA, AMD, Intel Arc dédiée, portable hybride compris), rien n'est essayé.
+2. Sinon, une courte mesure est faite sur le processeur, puis le moteur est relancé sur la puce et
+   refait la même mesure.
+3. La puce n'est gardée que si le modèle est bien chargé dans sa mémoire et qu'un tour
+   d'interrogatoire type y est plus rapide. Sinon, retour au processeur.
+
+L'essai prend moins d'une minute (50 s mesurées), une seule fois, pendant le menu du jeu. Son résultat est
+mémorisé dans `%APPDATA%\detective-os\hdfr-contexte.json` : les lancements suivants partent
+directement sur la puce, ou restent sur le processeur sans réessayer. Un nouvel essai a lieu après
+une mise à jour du jeu ou du patch. Si le moteur plante sur la puce en cours de partie, il repart
+sur le processeur, la question est reposée, et la puce n'est plus utilisée. Les autres langues ne
+sont jamais concernées : le jeu y garde son propre fonctionnement.
+
+**C'est expérimental** : mesuré sur une seule machine (Intel Core Ultra 7 155U). Pour la désactiver,
+créez `%APPDATA%\detective-os\localai-override.json` avec `{ "igpu": false }`. Pour la forcer,
+`{ "igpu": true }` (voir « Réglage facultatif du modèle »).
+
+**Vos retours nous aident à décider de la garder.** Ouvrez une *issue* avec votre processeur et
+votre puce graphique, et le fichier `%APPDATA%\detective-os\launch.log` après une partie : ses
+lignes « puce graphique » disent ce qui a été décidé et pourquoi (« activée », « non essayée : … »,
+« désactivée : … », avec les vitesses mesurées).
 
 ### Questions fréquentes
 
@@ -213,8 +252,9 @@ Qui veut forcer un modèle ou essayer la puce graphique intégrée crée lui-mê
   absent renvoie au choix automatique. **Attention** :
   Gemma 12B pèse 8,1 Go et, sans carte d'au moins 10 Go, il déborde sur le processeur et les
   réponses deviennent très lentes. C'est précisément ce que la détection du jeu évite.
-- `igpu` : `true` active la puce graphique intégrée (Vulkan) pour le moteur Ollama du jeu. Absent
-  ou `false` : comportement d'origine. Non testé sur les portables à deux cartes graphiques.
+- `igpu` : `true` force la puce graphique intégrée (Vulkan) pour le moteur Ollama du jeu, dans
+  toutes les langues, sans essai ni retour automatique. `false` l'interdit. Absent : essai
+  automatique en français (voir « Puce graphique intégrée »).
 - `num_ctx` : impose la fenêtre de contexte des sessions françaises (par défaut 6 144, ou 5 120
   si le modèle ne tient pas entier en mémoire graphique).
 
@@ -311,9 +351,10 @@ mots de déni anglais, qu'aucune réplique française ne contient.
 
 ### Vitesse (vrai moteur, 5 configurations, 2 tirages chacune, 24 scénarios de 4 affaires)
 
-Sans réglage, le moteur tourne sur le **processeur** : c'est le cas courant, chez le studio comme
-avec le patch. La puce graphique intégrée n'est utilisée que si le joueur l'active (réglage
-facultatif plus haut).
+Sans carte graphique dédiée, le moteur du studio tourne sur le **processeur** : c'est le cas
+courant. Ces mesures ont été faites avec la 1.2.4, qui n'utilisait la puce graphique intégrée que
+si le joueur l'activait. Depuis la 1.3.0, le patch l'essaie tout seul en français (dernière ligne
+du tableau).
 
 | Configuration | Attente moyenne / médiane / pire | Partie complète | Mandat d'arrêt |
 |---|---|---|---|
@@ -324,8 +365,8 @@ facultatif plus haut).
 | Patch 1.2.4 sur puce graphique | 9,4 s | 7,6 s | 8,5 s, acceptée |
 
 Ce que disent les configurations de contrôle :
-- **La puce graphique** divise l'attente par 2,5 à 3. C'est le plus gros levier, mais c'est un réglage
-  du joueur, pas un effet du patch.
+- **La puce graphique** divise l'attente par 2,5 à 3. C'est le plus gros levier : la 1.3.0 l'essaie
+  automatiquement en français, avec retour au processeur au moindre souci.
 - **Le code du patch, à modèle égal** (Qwen sur la puce) : 0 réplique avec de l'anglais au lieu de
   33 sur 158, 0 fuite de fait caché au lieu de 11, trois fois moins de texte relu par question, mandat
   3,5 fois plus rapide. C'est bien le patch, et non le modèle, qui supprime l'anglais et les fuites.
